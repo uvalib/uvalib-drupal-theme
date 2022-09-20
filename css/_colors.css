@@ -1,0 +1,335 @@
+:root {
+  --brand-blue-lightest: #87B9D9;
+  --brand-blue-lighter: #3395D4;
+  --brand-blue-light: #0370B7;
+  --brand-blue-base: #232D4B;
+  --brand-orange-lightest: #FFEAD6;
+  --brand-orange-lighter: #FFC999;
+  --brand-orange-light: #FFB370;
+  --brand-orange-base: #E57200;
+  --brand-orange-dark: #B35900;
+  --brand-orange-darker: #854200;
+  --blue-alt-lightest: #BFE7F7;
+  --blue-alt-lighter: #91D8F2;
+  --blue-alt-light: #55C4EC;
+  --blue-alt-base: #007BAC;
+  --blue-alt-dark: #005679;
+  --blue-alt-darkest: #141E3C;
+  --teal-lightest: #C8F2F4;
+  --teal-light: #5BD7DE;
+  --teal-base: #25CAD3;
+  --teal-dark: #1DA1A8;
+  --teal-darker: #16777C;
+  --green-lightest: #DDEFDC;
+  --green-lighter: #89CC74;
+  --green-base: #62BB46;
+  --green-dark: #4E9737;
+  --red-lightest: #FBCFDA;
+  --red-base: #EF3F6B;
+  --red-dark: #DF1E43;
+  --red-darker: #B30000;
+  --yellow-lightest: #FEF6C8;
+  --yellow-base: #ECC602;
+  --yellow-dark: #B99C02;
+  --grey-lightest: #F1F1F1;
+  --grey-light: #DADADA;
+  --grey-base: #808080;
+  --grey-dark: #4F4F4F;
+  --grey-darkest: #2B2B2B;
+}
+
+.hex-brand-blue-lightest {
+  color: #87B9D9;
+}
+
+.brand-blue-lightest {
+  color: --clr-brand-blue-lightest;
+}
+
+.hex-brand-blue-lighter {
+  color: #3395D4;
+}
+
+.brand-blue-lighter {
+  color: --clr-brand-blue-lighter;
+}
+
+.hex-brand-blue-light {
+  color: #0370B7;
+}
+
+.brand-blue-light {
+  color: --clr-brand-blue-light;
+}
+
+.hex-brand-blue-base {
+  color: #232D4B;
+}
+
+.brand-blue-base {
+  color: --clr-brand-blue-base;
+}
+
+.hex-brand-orange-lightest {
+  color: #FFEAD6;
+}
+
+.brand-orange-lightest {
+  color: --clr-brand-orange-lightest;
+}
+
+.hex-brand-orange-lighter {
+  color: #FFC999;
+}
+
+.brand-orange-lighter {
+  color: --clr-brand-orange-lighter;
+}
+
+.hex-brand-orange-light {
+  color: #FFB370;
+}
+
+.brand-orange-light {
+  color: --clr-brand-orange-light;
+}
+
+.hex-brand-orange-base {
+  color: #E57200;
+}
+
+.brand-orange-base {
+  color: --clr-brand-orange-base;
+}
+
+.hex-brand-orange-dark {
+  color: #B35900;
+}
+
+.brand-orange-dark {
+  color: --clr-brand-orange-dark;
+}
+
+.hex-brand-orange-darker {
+  color: #854200;
+}
+
+.brand-orange-darker {
+  color: --clr-brand-orange-darker;
+}
+
+.hex-blue-alt-lightest {
+  color: #BFE7F7;
+}
+
+.blue-alt-lightest {
+  color: --clr-blue-alt-lightest;
+}
+
+.hex-blue-alt-lighter {
+  color: #91D8F2;
+}
+
+.blue-alt-lighter {
+  color: --clr-blue-alt-lighter;
+}
+
+.hex-blue-alt-light {
+  color: #55C4EC;
+}
+
+.blue-alt-light {
+  color: --clr-blue-alt-light;
+}
+
+.hex-blue-alt-base {
+  color: #007BAC;
+}
+
+.blue-alt-base {
+  color: --clr-blue-alt-base;
+}
+
+.hex-blue-alt-dark {
+  color: #005679;
+}
+
+.blue-alt-dark {
+  color: --clr-blue-alt-dark;
+}
+
+.hex-blue-alt-darkest {
+  color: #141E3C;
+}
+
+.blue-alt-darkest {
+  color: --clr-blue-alt-darkest;
+}
+
+.hex-teal-lightest {
+  color: #C8F2F4;
+}
+
+.teal-lightest {
+  color: --clr-teal-lightest;
+}
+
+.hex-teal-light {
+  color: #5BD7DE;
+}
+
+.teal-light {
+  color: --clr-teal-light;
+}
+
+.hex-teal-base {
+  color: #25CAD3;
+}
+
+.teal-base {
+  color: --clr-teal-base;
+}
+
+.hex-teal-dark {
+  color: #1DA1A8;
+}
+
+.teal-dark {
+  color: --clr-teal-dark;
+}
+
+.hex-teal-darker {
+  color: #16777C;
+}
+
+.teal-darker {
+  color: --clr-teal-darker;
+}
+
+.hex-green-lightest {
+  color: #DDEFDC;
+}
+
+.green-lightest {
+  color: --clr-green-lightest;
+}
+
+.hex-green-lighter {
+  color: #89CC74;
+}
+
+.green-lighter {
+  color: --clr-green-lighter;
+}
+
+.hex-green-base {
+  color: #62BB46;
+}
+
+.green-base {
+  color: --clr-green-base;
+}
+
+.hex-green-dark {
+  color: #4E9737;
+}
+
+.green-dark {
+  color: --clr-green-dark;
+}
+
+.hex-red-lightest {
+  color: #FBCFDA;
+}
+
+.red-lightest {
+  color: --clr-red-lightest;
+}
+
+.hex-red-base {
+  color: #EF3F6B;
+}
+
+.red-base {
+  color: --clr-red-base;
+}
+
+.hex-red-dark {
+  color: #DF1E43;
+}
+
+.red-dark {
+  color: --clr-red-dark;
+}
+
+.hex-red-darker {
+  color: #B30000;
+}
+
+.red-darker {
+  color: --clr-red-darker;
+}
+
+.hex-yellow-lightest {
+  color: #FEF6C8;
+}
+
+.yellow-lightest {
+  color: --clr-yellow-lightest;
+}
+
+.hex-yellow-base {
+  color: #ECC602;
+}
+
+.yellow-base {
+  color: --clr-yellow-base;
+}
+
+.hex-yellow-dark {
+  color: #B99C02;
+}
+
+.yellow-dark {
+  color: --clr-yellow-dark;
+}
+
+.hex-grey-lightest {
+  color: #F1F1F1;
+}
+
+.grey-lightest {
+  color: --clr-grey-lightest;
+}
+
+.hex-grey-light {
+  color: #DADADA;
+}
+
+.grey-light {
+  color: --clr-grey-light;
+}
+
+.hex-grey-base {
+  color: #808080;
+}
+
+.grey-base {
+  color: --clr-grey-base;
+}
+
+.hex-grey-dark {
+  color: #4F4F4F;
+}
+
+.grey-dark {
+  color: --clr-grey-dark;
+}
+
+.hex-grey-darkest {
+  color: #2B2B2B;
+}
+
+.grey-darkest {
+  color: --clr-grey-darkest;
+}

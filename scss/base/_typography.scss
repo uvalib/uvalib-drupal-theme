@@ -1,0 +1,112 @@
+$font-sizes: (
+  h1: 3.052rem,
+  h2: 2.441rem,
+  h3: 1.953rem,
+  h4: 1.563rem,
+  h5: 1.125rem,
+  p: 1rem
+);
+
+$alt-font-sizes: (
+  h1: 2.488rem,
+  h2: 2.074rem,
+  h3: 1.728rem,
+  h4: 1.44rem,
+  h5: 1.2rem,
+  p: 1rem
+);
+
+
+// @each $size, $value in $type-scale {
+//   --h#{$size}, .h#{$size} {
+//     font-size: $value;
+//   }
+// }
+
+// FranklinGothic URW Book
+// font-family: franklin-gothic-urw, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// FranklinGothic URW Medium
+// font-family: franklin-gothic-urw, sans-serif;
+// font-weight: 500;
+// font-style: normal;
+
+// FranklinGothic URW Demi
+// font-family: franklin-gothic-urw, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// FranklinGothic URW Heavy
+// font-family: franklin-gothic-urw, sans-serif;
+// font-weight: 900;
+// font-style: normal;
+
+// FranklinGothic URW Book Italic
+// font-family: franklin-gothic-urw, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+
+
+
+
+
+
+// html {
+//     /* font variables */
+//     --font-primary: var(--uva-font-family);
+
+//     /*Pulling in fonts via Typekit, weights will pull in font variants*/
+//     --uva-font-family: 'franklin-gothic-urw',arial,sans-serif;
+//     --uva-font-family-condensed: 'franklin-gothic-urw-cond',arial narrow,sans-serif;
+
+//     --font-weight-light: 300; /*not used?*/
+//     --font-weight-book: 400;
+//     --font-weight-medium: 500;
+//     --font-weight-demi: 700;
+//     --font-weight-heavy: 900;
+
+// /* Main sizing unit - changing this will update most of the font size/spacing variables on the site */
+//     --uvalib-main-font-size-unit: 16px;
+
+// /* spacing unit of measure */
+//     --uvalib-spacing-unit: 1em;
+
+// /* typography variables */
+//     --uvalib-font-base: {
+//     font-family: var(--font-primary);
+//     font-weight: 300;
+//     text-transform: none;
+//     }
+//     --h1: {
+//     font-family: var(--uva-font-family);
+//     font-weight: var(--font-weight-demi);
+//     font-size: 3.05em;
+//     line-height: 2.5rem;
+//     }
+//     --h2: {
+//     font-family: var(--uva-font-family);
+//     font-weight: var(--font-weight-demi);
+//     font-size: 2.44em;
+//     line-height: 2.3rem;
+//     }
+//     --h3: {
+//     font-family: var(--uva-font-family);
+//     font-weight: var(--font-weight-demi);
+//     font-size: 1.95em;
+//     line-height: 1.95rem;
+//     }
+//     --h4: {
+//     font-family: var(--uva-font-family);
+//     font-weight: var(--font-weight-demi);
+//     font-size: 1.56em;
+//     line-height: 1.5rem;
+//     }
+//     --h5: {
+//     font-family: var(--uva-font-family);
+//     font-weight: var(--font-weight-demi);
+//     font-size: 1.25em;
+//     }
+// }

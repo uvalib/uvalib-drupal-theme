@@ -1,0 +1,20 @@
+# All libraries are defined in alphabetical order.
+
+foundation:
+  version: VERSION
+  css:
+    component:
+      css/base.css: { }
+      css/breadcrumbs.css: { }
+      css/header.css: { }
+      css/icons.css: { }
+      css/page-title.css: { }
+      
+    theme:
+      css/foundation.css: { }
+
+# next_chapter:
+#   version: 1.0
+#   css:
+#     theme:
+#       css/nextchapter.css { }

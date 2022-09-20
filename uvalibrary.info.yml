@@ -1,0 +1,21 @@
+name: UVA Library
+type: theme
+description: This is a sub-theme of W3CSS Theme.
+core_version_requirement: 9.x
+base theme: drupal8_w3css_theme
+screenshot: comingsoon.png
+libraries:
+  - uvalibrary/foundation
+
+
+
+# regions:
+#   header: 'Header'
+#   content: 'Content'
+#   content_bottom: 'Content (bottom)'
+#   primary_menu: 'Primary menu'
+#   banner_top: 'Banner (top)'
+#   banner_bottom: 'Banner (bottom)'
+#   footer: 'Footer'
+#   page_top: 'Page top'
+#   page_bottom: 'Page bottom'
