@@ -375,7 +375,8 @@
   text-decoration: none !important;
 }
 #header .drupal-utility-nav ul li {
-  background-color: olivedrab;
+  background-color: yellow;
+  color: black;
 }
 
 #block-uvalibrary-branding {
