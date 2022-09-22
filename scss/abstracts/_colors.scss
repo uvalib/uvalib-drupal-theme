@@ -72,6 +72,16 @@ $colors: (
         .#{$color}-#{$shade} { color: --clr-#{$color}-#{$shade}; }
     }
 }
+
+
+// this searches through the map in the colors file and returns the color for the variable
+@function map-deep-get($colors, $keys...) {
+    @each $key in $keys {
+        $colors: map-get($colors, $key);
+    }
+    @return $colors;
+}
+
 // /* OFFICIAL BRAND COLORS */
 // --uvalib-text-light: #FFFFFF;
 // --uvalib-text: var(--uvalib-grey-dark);

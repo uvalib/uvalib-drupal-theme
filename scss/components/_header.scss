@@ -1,12 +1,3 @@
-@use 'colors' as *;
-// this searches through the map in the colors file and returns the color for the variable
-@function map-deep-get($colors, $keys...) {
-    @each $key in $keys {
-        $colors: map-get($colors, $key);
-    }
-    @return $colors;
-}
-
 #header { 
     background-color: #ffffff !important;
     border-bottom: 5px solid map-deep-get($colors, brand-blue, base);
