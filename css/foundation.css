@@ -17336,6 +17336,7 @@ readers do not read off random characters that represent icons */
 
 h1, .h1 {
   font-size: 2.488rem;
+  color: purple !important;
 }
 
 h2, .h2 {
