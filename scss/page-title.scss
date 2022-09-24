@@ -1,6 +1,6 @@
-@use 'fonts' as *;
+@use './base/typography' as *;
 
 h1.page-title {
   padding: 0;
-  font-size: map-get($alt-font-sizes, 'h1'); 
+  font-size: map-get($alt-font-sizes, 'h1');
 }

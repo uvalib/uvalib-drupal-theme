@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 $font-sizes: (
   h1: 3.052rem,
   h2: 2.441rem,
@@ -16,12 +18,25 @@ $alt-font-sizes: (
   p: 1rem
 );
 
+@each $size, $value in $alt-font-sizes {
+  --#{$size}, .#{$size} {
+    font-size: $value;
+  }
+}
 
-// @each $size, $value in $type-scale {
-//   --h#{$size}, .h#{$size} {
-//     font-size: $value;
-//   }
-// }
+$font-weights: (
+  'book': 400,
+  'medium': 500,
+  'demi': 700,
+  'heavy': 900
+);
+
+
+// THIS ISN'T WORKING
+* {
+  color: $text-color-base !important;
+}
+
 
 // FranklinGothic URW Book
 // font-family: franklin-gothic-urw, sans-serif;

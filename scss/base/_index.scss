@@ -1,6 +1,8 @@
 @forward 'reset';
 @forward 'font-face';
-@forward 'fonts';
-@forward 'type-scale';
+// @forward '../fa/variables';
+// @forward 'icons';
+@forward 'colors';
 @forward 'typography';
-// @forward 'base';
+@forward 'accessibility';
+@forward 'breakpoints';

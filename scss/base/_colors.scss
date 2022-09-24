@@ -1,0 +1,168 @@
+// SCSS mixin color definitions for UVA Libary sites
+// $colors: (
+//     brand-blue: (
+//         lightest: #87B9D9,
+//         lighter: #3395D4,
+//         light: #0370B7,
+//         base: #232D4B,
+//     ),
+//     brand-orange: (
+//         lightest: #FFEAD6,
+//         lighter: #FFC999,
+//         light: #FFB370,
+//         base: #E57200,
+//         dark: #B35900,
+//         darker: #854200,
+//     ),
+//     blue-alt: (
+//         lightest: #BFE7F7,
+//         lighter: #91D8F2,
+//         light: #55C4EC,
+//         base: #007BAC,
+//         dark: #005679,
+//         darkest: #141E3C,
+//     ),
+//     teal: (
+//         lightest: #C8F2F4,
+//         light: #5BD7DE,
+//         base: #25CAD3,
+//         dark: #1DA1A8,
+//         darker: #16777C,
+//     ),
+//     green: (
+//         lightest: #DDEFDC,
+//         lighter: #89CC74,
+//         base: #62BB46,
+//         dark: #4E9737,
+//     ),
+//     red: (
+//         lightest: #FBCFDA,
+//         base: #EF3F6B,
+//         dark: #DF1E43,
+//         darker: #B30000,
+//     ),
+//     yellow: (
+//         lightest: #FEF6C8,
+//         base: #ECC602,
+//         dark: #B99C02,
+//     ),
+//     grey: (
+//         lightest: #F1F1F1,
+//         light: #DADADA,
+//         base: #808080,
+//         dark: #4F4F4F,
+//         darkest: #2B2B2B,
+//     )
+// );
+
+
+$brand-blue-lightest: #87B9D9;
+$brand-blue-lighter: #3395D4;
+$brand-blue-light: #0370B7;
+$brand-blue-base: #232D4B;
+
+$brand-orange-lightest: #FFEAD6;
+$brand-orange-lighter: #FFC999;
+$brand-orange-light: #FFB370;
+$brand-orange-base: #E57200;
+$brand-orange-dark: #B35900;
+$brand-orange-darker: #854200;
+
+$blue-alt-lightest: #BFE7F7;
+$blue-alt-lighter: #91D8F2;
+$blue-alt-light: #55C4EC;
+$blue-alt-base: #007BAC;
+$blue-alt-dark: #005679;
+$blue-alt-darkest: #141E3C;
+
+$teal-lightest: #C8F2F4;
+$teal-light: #5BD7DE;
+$teal-base: #25CAD3;
+$teal-dark: #1DA1A8;
+$teal-darker: #16777C;
+
+$green-lightest: #DDEFDC;
+$green-lighter: #89CC74;
+$green-base: #62BB46;
+$green-dark: #4E9737;
+
+$red-lightest: #FBCFDA;
+$red-base: #EF3F6B;
+$red-dark: #DF1E43;
+$red-darker: #B30000;
+
+$yellow-lightest: #FEF6C8;
+$yellow-base: #ECC602;
+$yellow-dark: #B99C02;
+
+$grey-lightest: #F1F1F1;
+$grey-light: #DADADA;
+$grey-base: #808080;
+$grey-dark: #4F4F4F;
+$grey-darkest: #2B2B2B;
+
+$text-color-base: $grey-dark;
+$text-color-dark: $grey-darkest;
+
+// :root {
+// // pulls in colors
+// @each $color, $shades in $colors {
+//     @each $shade, $value in $shades { --#{$color}-#{$shade}: #{$value}; }
+//     }
+// }
+// // outputs colors as usable classes 
+// @each $color, $shades in $colors {
+//     @each $shade, $value in $shades {
+//         // ****NEED TO CHOOSE ONE FORMAT****
+//         // outputs colors as HEX
+//         .hex-#{$color}-#{$shade} { color: $value; }
+//         // outputs colors as variable name
+//         .#{$color}-#{$shade} { color: --clr-#{$color}-#{$shade}; }
+//     }
+// }
+
+
+// // this searches through the map in the colors file and returns the color for the variable
+// @function map-deep-get($colors, $keys...) {
+//     @each $key in $keys {
+//         $colors: map-get($colors, $key);
+//     }
+//     @return $colors;
+// }
+
+// /* OFFICIAL BRAND COLORS */
+// --uvalib-text-light: #FFFFFF;
+// --uvalib-text: var(--uvalib-grey-dark);
+// --uvalib-text-dark: var(--uvalib-grey-darkest);
+
+// --uvalib-red-emergency: var(--uvalib-red-darker);
+
+// /* ALERT COLORS - ADA COMPLIANT */
+// --uvalib-alert-a1-bg: var(--uvalib-red-lightest);
+// --uvalib-alert-a1-border: var(--uvalib-red-dark);
+// --uvalib-alert-a2-bg: var(--uvalib-yellow-lightest);
+// --uvalib-alert-a2-border: var(--uvalib-yellow);
+// --uvalib-alert-a3-bg: var(--uvalib-blue-alt-lightest);
+// --uvalib-alert-a3-border: var(--uvalib-blue-alt);
+// --uvalib-alert-a4-bg: var(--uvalib-teal);
+// --uvalib-alert-r1-bg: var(--uvalib-yellow-lightest);
+// --uvalib-alert-r1-border: var(--uvalib-yellow);
+// --uvalib-alert-r2-bg: var(--uvalib-teal-lightest);
+// --uvalib-alert-r2-border: var(--uvalib-teal);
+
+// --uvalib-alert-error-inline: var(--uvalib-red-darker);
+// --uvalib-alert-confirmation-inline: var(--uvalib-green-dark);
+
+// --uvalib-alert-info-bg: var(--uvalib-blue-alt-lightest);
+// --uvalib-alert-info-border: var(--uvalib-blue-alt);
+// --uvalib-alert-confirmation-bg: var(--uvalib-green-lightest);
+// --uvalib-alert-confirmation-border: var(--uvalib-green-dark);
+
+// --uvalib-status-available: var(--uvalib-blue-alt);
+// --uvalib-status-modified: var(--uvalib-yellow);
+// --uvalib-status-notavailable: var(--uvalib-red-darker);
+
+// --accessibility-outline-color--bgislight: var(--uvalib-blue-alt-dark);
+// --accessibility-outline-color--bgisdark: var(--uvalib-blue-alt-lightest);
+
+// /*END*/

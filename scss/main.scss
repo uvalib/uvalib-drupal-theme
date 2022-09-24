@@ -1,0 +1,19 @@
+//base & reset
+@use 'base';
+
+// variables & functions
+@use 'abstracts';
+
+// buttons, breadcrumbs, etc.
+@use 'components/index';
+
+// header, nav, etc.
+@use 'layouts';
+
+// homepage, hours, etc.
+@use 'pages';
+
+.f00 {
+  font-family: 'Font Awesome Pro 6';
+  content: '\f2ed';
+}

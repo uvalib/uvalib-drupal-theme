@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+  font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif !important;
+}
+
+--h1, .h1 {
+  font-size: 2.488rem;
+}
+
+--h2, .h2 {
+  font-size: 2.074rem;
+}
+
+--h3, .h3 {
+  font-size: 1.728rem;
+}
+
+--h4, .h4 {
+  font-size: 1.44rem;
+}
+
+--h5, .h5 {
+  font-size: 1.2rem;
+}
+
+--p, .p {
+  font-size: 1rem;
+}
+
+* {
+  color: #4F4F4F !important;
+}
+
+a {
+  text-decoration: underline !important;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none !important;
+}
+
+#header {
+  background-color: #ffffff !important;
+  border-bottom: 5px solid #232D4B;
+}
+#header .header-inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+#header .header-inner .utility-nav {
+  align-self: flex-end;
+}
+#header .header-inner .utility-nav .w3-button:hover {
+  background-color: white !important;
+}
+#header .header-inner .utility-nav ul li:last-child {
+  display: flex;
+}
+#header .header-inner .utility-nav ul li:last-child::before {
+  margin-top: 0.5em;
+}
+#header .header-inner .utility-nav ul li:last-child a {
+  padding-left: 0.35em;
+}
+#header .main-nav {
+  font-weight: 500;
+}
+#header .main-nav ul li {
+  background-color: white;
+}
+#header .main-nav a {
+  text-decoration: none !important;
+}
+#header .drupal-utility-nav ul li {
+  background-color: yellow;
+  color: black;
+}
+
+#block-uvalibrary-branding {
+  margin-top: -40px;
+}
+
+a.site-logo {
+  text-decoration: none !important;
+}
+a.site-logo img {
+  max-width: 225px;
+}
+
+.f00 {
+  font-family: "Font Awesome Pro 6";
+  content: "";
+}
