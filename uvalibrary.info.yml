@@ -3,7 +3,7 @@ type: theme
 description: This is a sub-theme of W3CSS Theme.
 core_version_requirement: 9.x
 base theme: drupal8_w3css_theme
-screenshot: uvalibrary-theme.png
+screenshot: assets/uvalibrary-theme.png
 libraries:
   - uvalibrary/foundation
 
