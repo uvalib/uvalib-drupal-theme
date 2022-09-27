@@ -3,5 +3,5 @@
 *.sass.map
 *.scss.map
 .DS_Store
-/scss/css
-fontawesome-pro-6.2.0-web/
+scss/css
+# scss/abstracts/fa/

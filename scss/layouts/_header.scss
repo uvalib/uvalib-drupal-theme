@@ -1,62 +1,86 @@
-@use '../abstracts' as *;
-@use '../base/' as *;
+@use '../abstracts'as *;
+@use '../abstracts/fa/solid.scss';
+@use '../base/'as *;
 
-#header { 
-    background-color: #ffffff !important;
-    border-bottom: 5px solid $brand-blue-base;
-    .header-inner {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: flex-start;
-        .utility-nav {
-            align-self: flex-end;
-            .w3-button {
-                &:hover {
-                    background-color: white !important;
-                }
+#header {
+  background-color: #ffffff !important;
+  border-bottom: 5px solid $brand-blue-base;
+
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+
+    .utility-nav {
+      align-self: flex-end;
+
+      .w3-button {
+        &:hover {
+          background-color: white !important;
+        }
+      }
+
+      ul li {
+        &:last-child {
+          display: flex;
+
+          a {
+            @extend %fa-icon;
+            @extend .fa-regular;
+            font-family: "Font Awesome 6 Pro";
+            padding-left: .35em;
+
+            &::before {
+              // not the correct bell icon
+              //font-family: "Font Awesome 6 Pro";
+              // content: map-get($fa-icons, "bell");
+              content: fa-content ($fa-var-bell);
+              margin-top: .5em;
+              color: red !important;
             }
-            ul li {
-                &:last-child {
-                display: flex;
-                    &::before {
-                        // not the correct bell icon
-                        //font-family: "Font Awesome 6 Pro";
-                        // content: map-get($fa-icons, "bell");
-                        margin-top: .5em;
-                    }
-                    a {
-                        padding-left: .35em;
-                    }
-                }
+
+            &::after {
+              // content: \f358 ;
+              content: fa-content ($fa-var-bell);
+              color: green !important;
             }
+          }
         }
+      }
     }
-    .main-nav {
-        font-weight: 500;
-        ul li { 
-            background-color: white;
-        }
-        a { 
-            // color: map-deep-get($colors, brand-blue, base);
-            text-decoration: none !important;
-        }
+  }
+
+  .main-nav {
+    font-weight: 500;
+
+    ul li {
+      background-color: white;
     }
-    // this is the drupal login buttons
-    .drupal-utility-nav ul li {
-        background-color: yellow;
-        color: black;
+
+    a {
+      // color: map-deep-get($colors, brand-blue, base);
+      text-decoration: none !important;
     }
+  }
+
+  // this is the drupal login buttons
+  .drupal-utility-nav ul li {
+    background-color: yellow;
+    color: black;
+  }
 }
 
 #block-uvalibrary-branding {
-    margin-top: -40px
+  margin-top: -40px
 }
+
 a.site-logo {
-    text-decoration: none !important;
-    img {
-        max-width: 225px;
-    }
+  text-decoration: none !important;
+
+  img {
+    max-width: 225px;
+  }
 }
