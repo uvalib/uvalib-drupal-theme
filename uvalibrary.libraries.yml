@@ -4,38 +4,15 @@ foundation:
   version: VERSION
   css:
     component:
-      # css/base.css: { }
-      # css/breadcrumbs.css: { }
-      # css/header.css: { }
-      # css/icons.css: { }
       css/page-title.css: { }
       
     theme:
       # UVA font
       https://use.typekit.net/oym8nvz.css: { }
-      # css/foundation.css: { }
       css/main.css: { }
   
-  # js:
-    # FontAwesome 6.0 SVG Set
-    # js/light.js: { }
-    # js/regular.js: { }
-    # js/thin.js: { }
-    # js/fontawesome.js: { }
-
 # next_chapter:
 #   version: 1.0
 #   css:
 #     theme:
 #       css/nextchapter.css { }
-
-# {# UVA font #}
-#     <link rel="stylesheet" href="https://use.typekit.net/oym8nvz.css">
-#     {# FontAwesome 6.0 SVG Set #}
-#     <script defer src="web/themes/custom/uvalibrary/js/fa/light.js"></script>
-#     <script defer src="web/themes/custom/uvalibrary/js/fa/regular.js"></script>
-#     <script defer src="web/themes/custom/uvalibrary/js/fa/solid.js"></script>
-#     <script defer src="web/themes/custom/uvalibrary/js/fa/thin.js"></script>
-#     <script defer src="web/themes/custom/uvalibrary/js/fa/v4-shims.js"></script>
-#     <script defer src="web/themes/custom/uvalibrary/js/fa/fontawesome.js"></script>
-#     {# <script src="https://kit.fontawesome.com/b116d9fea3.js" crossorigin="anonymous"></script> #}

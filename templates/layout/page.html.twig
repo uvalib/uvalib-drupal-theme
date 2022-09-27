@@ -54,332 +54,355 @@
  * @see html.html.twig
  */
 #}
-  {% if page.primary_menu_vertical %}
-  <!-- Start: Main Navigation - Vertical -->
-<div id="main-navigation-v" class="main-navigation-wrapper w3-sidebar w3-bar-block w3-animate-left w3-theme {{ color_primary_menu }}" role="navigation" aria-label="{{ 'Main Navigation'|t }}">
-  <div id="main-navigation-inner-v" class="main-navigation-inner-v">
-    <div id="close-nav" class="close-nav w3-button w3-bar-block w3-large w3-theme {{ color_primary_menu }}">
-      {# <i class="fa fa-close"></i> #}
-      <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </div>
-    {{ page.primary_menu_vertical }}
-  </div>
-</div>
-<!-- End: Main Navigation - Vertical -->
+{% if page.primary_menu_vertical %}
+	<!-- Start: Main Navigation - Vertical -->
+	<div id="main-navigation-v" class="main-navigation-wrapper w3-sidebar w3-bar-block w3-animate-left w3-theme {{ color_primary_menu }}" role="navigation" aria-label="{{ 'Main Navigation'|t }}">
+		<div id="main-navigation-inner-v" class="main-navigation-inner-v">
+			<div id="close-nav" class="close-nav w3-button w3-bar-block w3-large w3-theme {{ color_primary_menu }}">
+				<svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</div>
+			{{ page.primary_menu_vertical }}
+		</div>
+	</div>
+	<!-- End: Main Navigation - Vertical -->
 {% endif %}
 <!-- Start: Page Wrapper -->
-<div class="page-wrapper w3-col w3-clear w3-animate-opacity w3-text-theme {{ color_page_wrapper }}">
+<div
+	class="page-wrapper w3-col w3-clear w3-animate-opacity w3-text-theme {{ color_page_wrapper }}">
 
-  <!-- Start: Header -->
-  <header id="header" class="w3-col w3-clear w3-theme-l4 {{ sitename_animation }} {{ color_header }}" role="banner" aria-label="{{ 'Site header'|t }}">
-    {# PLACEHOLDER FOR PRE-HEADER <div>above</div> #}
-    <div id="header-inner" class="w3-container header-inner {{ website_width }}">
-      {% if page.primary_menu_vertical %}
-      <div id="open-nav-inner" class="open-nav-inner w3-opacity w3-hover-opacity-off w3-left w3-button w3-left-align w3-large w3-theme {{ color_primary_menu }}">
-        {# <i class="fa fa-bars"></i> #}
-        <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </div>
-      {% endif %}
-      {% if page.header %}
-      {{ page.header }}
-      {% endif %}
-    </div>
-  </header>
-  {# PLACEHOLDER FOR ALERT MESSAGES <div>below</div> #}
-  <!-- End: Header -->
+	<!-- Start: Header -->
+	<header
+		id="header" class="w3-col w3-clear w3-theme-l4 {{ sitename_animation }} {{ color_header }}" role="banner" aria-label="{{ 'Site header'|t }}">
+		{# PLACEHOLDER FOR PRE-HEADER <div>above</div> #}
+		<div id="header-inner" class="w3-container header-inner {{ website_width }}">
+			{% if page.primary_menu_vertical %}
+				<div
+					id="open-nav-inner" class="open-nav-inner w3-opacity w3-hover-opacity-off w3-left w3-button w3-left-align w3-large w3-theme {{ color_primary_menu }}">
+					{# <i class="fa fa-bars"></i> #}
+					<svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</div>
+			{% endif %}
+			{% if page.header %}
+				{{ page.header }}
+			{% endif %}
+		</div>
+	</header>
+	{# PLACEHOLDER FOR ALERT MESSAGES <div>below</div> #}
+	<!-- End: Header -->
 
-  {% if page.primary_menu %}
-  <!-- Start: Main Navigation - Horizontal -->
-  <div id="main-navigation-h" class="w3-col w3-clear main-navigation-wrapper w3-theme {{ color_primary_menu }}" role="navigation" aria-label="{{ 'Main Navigation'|t }}" >
-    <div id="main-navigation-inner-h" class="w3-row main-navigation-inner-h {{ website_width }}">
-      <div class="mobile-nav w3-hide-large w3-button w3-block w3-right-align w3-large w3-theme {{ color_primary_menu }}">
-        {# <i class="fa fa-bars"></i> #}
-        <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </div>
-      {{ page.primary_menu }}
-    </div>
-  </div>
-  <!-- End: Main Navigation - Horizontal -->
-  {% endif %}
+	{% if page.primary_menu %}
+		<!-- Start: Main Navigation - Horizontal -->
+		<div id="main-navigation-h" class="w3-col w3-clear main-navigation-wrapper w3-theme {{ color_primary_menu }}" role="navigation" aria-label="{{ 'Main Navigation'|t }}">
+			<div id="main-navigation-inner-h" class="w3-row main-navigation-inner-h {{ website_width }}">
+				<div
+					class="mobile-nav w3-hide-large w3-button w3-block w3-right-align w3-large w3-theme {{ color_primary_menu }}">
+					{# <i class="fa fa-bars"></i> #}
+					<svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</div>
+				{{ page.primary_menu }}
+			</div>
+		</div>
+		<!-- End: Main Navigation - Horizontal -->
+	{% endif %}
 
-  {% if is_front and page.welcome_text %}
-  <!-- Start: Welcome Text -->
-  <div id="welcome-text" class="w3-col w3-clear w3-theme-l5 {{ color_welcome_text }}">
-    <div id="welcome-text-inner" class="w3-row welcome-text-inner {{ website_width }}">
-      {{ page.welcome_text }}
-    </div>
-  </div>
-  <!-- End: Welcome Text -->
-  {% endif %}
+	{% if is_front and page.welcome_text %}
+		<!-- Start: Welcome Text -->
+		<div id="welcome-text" class="w3-col w3-clear w3-theme-l5 {{ color_welcome_text }}">
+			<div id="welcome-text-inner" class="w3-row welcome-text-inner {{ website_width }}">
+				{{ page.welcome_text }}
+			</div>
+		</div>
+		<!-- End: Welcome Text -->
+	{% endif %}
 
-  {% if page.highlighted %}
-  <!-- Start: Highlighted -->
-  <div id="highlighted" class="w3-col w3-clear w3-theme-l2 {{ color_highlighted}}">
-    <div id="highlighted-inner" class="d8-fade w3-row highlighted-inner {{ website_width }}">
-      {{ page.highlighted }}
-    </div>
-  </div>
-  <!-- End: Highlighted -->
-  {% endif %}
+	{% if page.highlighted %}
+		<!-- Start: Highlighted -->
+		<div id="highlighted" class="w3-col w3-clear w3-theme-l2 {{ color_highlighted}}">
+			<div id="highlighted-inner" class="d8-fade w3-row highlighted-inner {{ website_width }}">
+				{{ page.highlighted }}
+			</div>
+		</div>
+		<!-- End: Highlighted -->
+	{% endif %}
 
-  {% if is_front %}
-    {% if page.top_first or page.top_second or page.top_third %}
-  <!-- Start: Top Container -->
-  <div id="top-container" class="w3-col w3-clear w3-theme-l4 {{ color_top_container }}">
-    <div id="top-container-inner" class="w3-row-padding top-container-inner {{ website_width }}">
-      {% if page.top_first %}
-      <!-- Start: Top container first region -->
-      <div class="{{ top_w3css }} top-box {{ top_region ? 'top-region' }} first-top">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_top_first}}">
-         {{ page.top_first }}
-        </div>
-      </div>
-      <!-- End: Top Container First -->
-      {% endif %}
-      {% if page.top_second %}
-      <!-- Start: Top Container Second  -->
-      <div class="{{ top_w3css }} top-box {{ top_region ? 'top-region' }} second-top">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_top_second }}">
-         {{ page.top_second }}
-        </div>
-      </div>
-      <!-- End: Top Container Second -->
-      {% endif %}
-      {% if page.top_third %}
-      <!-- Start: Top Container Third -->
-      <div class="{{ top_w3css }} top-box {{ top_region ? 'top-region' }} third-top">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_top_third }}">
-          {{ page.top_third }}
-        </div>
-      </div>
-      <!-- End: Top Container Third -->
-      {% endif %}
-    </div>
-  </div>
-  <!-- End: Top container -->
-    {% endif %}
-  {% endif %}
+	{% if is_front %}
+		{% if page.top_first or page.top_second or page.top_third %}
+			<!-- Start: Top Container -->
+			<div id="top-container" class="w3-col w3-clear w3-theme-l4 {{ color_top_container }}">
+				<div id="top-container-inner" class="w3-row-padding top-container-inner {{ website_width }}">
+					{% if page.top_first %}
+						<!-- Start: Top container first region -->
+						<div class="{{ top_w3css }} top-box {{ top_region ? 'top-region' }} first-top">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_top_first}}">
+								{{ page.top_first }}
+							</div>
+						</div>
+						<!-- End: Top Container First -->
+					{% endif %}
+					{% if page.top_second %}
+						<!-- Start: Top Container Second  -->
+						<div class="{{ top_w3css }} top-box {{ top_region ? 'top-region' }} second-top">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_top_second }}">
+								{{ page.top_second }}
+							</div>
+						</div>
+						<!-- End: Top Container Second -->
+					{% endif %}
+					{% if page.top_third %}
+						<!-- Start: Top Container Third -->
+						<div class="{{ top_w3css }} top-box {{ top_region ? 'top-region' }} third-top">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_top_third }}">
+								{{ page.top_third }}
+							</div>
+						</div>
+						<!-- End: Top Container Third -->
+					{% endif %}
+				</div>
+			</div>
+			<!-- End: Top container -->
+		{% endif %}
+	{% endif %}
 
-  {% if page.page_title and not is_front %}
-  <!-- Start: Page Title -->
-  <div id="page-title" class="w3-col w3-clear w3-theme-d5 {{ pagetitle_animation }} {{ color_page_title }}">
-    <div id="page-title-inner" class="d8-fade w3-row page-title-inner {{ website_width }}">
-      {{ page.page_title }}
-    </div>
-  </div>
-  <!-- End: Page Title -->
-  {% endif %}
+	{% if page.page_title and not is_front %}
+		<!-- Start: Page Title -->
+		<div id="page-title" class="w3-col w3-clear w3-theme-d5 {{ pagetitle_animation }} {{ color_page_title }}">
+			<div id="page-title-inner" class="d8-fade w3-row page-title-inner {{ website_width }}">
+				{{ page.page_title }}
+			</div>
+		</div>
+		<!-- End: Page Title -->
+	{% endif %}
 
-  <!-- Start: Main -->
-  <div id="main-container" class="w3-col w3-clear w3-theme-l5 {{ color_main }}">
-    <div id="main-container-inner" class="w3-row main-container-inner {{ website_width }}">
-      {% if page.breadcrumb|render|striptags|trim %}
-      <!-- Breadcrumb -->
-      <div class="w3-row w3-breadcrumb {{ color_breadcrumb }}">
-        {{ page.breadcrumb }}
-      </div>
-      <!-- End: Breadcrumb -->
-      {% endif %}
-      <!-- Start Main Container  -->
-      <div class="w3-col w3-clear w3-row-padding">
-        {% if page.sidebar_first %}
-        <!-- Start Left SideBar -->
-        <div class ="{{ sidebarfirst }} main-box {{ main_region ? 'main-region' }} first-sidebar" role="complementary">
-          <div class="d8-fade w3-sidebar-first w3-mobile {{ color_sidebar_first }}">
-            {{ page.sidebar_first }}
-          </div>
-        </div>
-        <!-- End: Left SideBar -->
-        {% endif %}
-        {% if page.content %}
-        <!-- Start: Main Content -->
-        <div class="{{ content_w3css }} main-box {{ main_region ? 'main-region' }} w3css-content" role="main">
-          <div class="d8-fade w3-mobile {{ color_content }}">
-            {{ page.content }}
-          </div>
-        </div>
-        <!-- End: Main Content -->
-        {% endif %}
-        {% if page.sidebar_second %}
-        <!-- Start: Right SideBar -->
-        <div class="{{ sidebarsecond }} main-box {{ main_region ? 'main-region' }} second-sidebar" role="complementary">
-          <div class="d8-fade w3-sidebar-second w3-mobile {{ color_sidebar_second }}">
-            {{ page.sidebar_second }}
-          </div>
-        </div>
-        <!-- End: Right SideBar -->
-        {% endif %}
-      </div>
-      <!-- Endn: Main Container  -->
-    </div>
-  </div>
-  <!-- End: Main -->
+	<!-- Start: Main -->
+	<div id="main-container" class="w3-col w3-clear w3-theme-l5 {{ color_main }}">
+		<div id="main-container-inner" class="w3-row main-container-inner {{ website_width }}">
+			{% if page.breadcrumb|render|striptags|trim %}
+				<!-- Breadcrumb -->
+				<div class="w3-row w3-breadcrumb {{ color_breadcrumb }}">
+					{{ page.breadcrumb }}
+				</div>
+				<!-- End: Breadcrumb -->
+			{% endif %}
+			<!-- Start Main Container  -->
+			<div class="w3-col w3-clear w3-row-padding">
+				{% if page.sidebar_first %}
+					<!-- Start Left SideBar -->
+					<div class="{{ sidebarfirst }} main-box {{ main_region ? 'main-region' }} first-sidebar" role="complementary">
+						<div class="d8-fade w3-sidebar-first w3-mobile {{ color_sidebar_first }}">
+							{{ page.sidebar_first }}
+						</div>
+					</div>
+					<!-- End: Left SideBar -->
+				{% endif %}
+				{% if page.content %}
+					<!-- Start: Main Content -->
+					<div class="{{ content_w3css }} main-box {{ main_region ? 'main-region' }} w3css-content" role="main">
+						<div class="d8-fade w3-mobile {{ color_content }}">
+							{{ page.content }}
+						</div>
+					</div>
+					<!-- End: Main Content -->
+				{% endif %}
+				{% if page.sidebar_second %}
+					<!-- Start: Right SideBar -->
+					<div class="{{ sidebarsecond }} main-box {{ main_region ? 'main-region' }} second-sidebar" role="complementary">
+						<div class="d8-fade w3-sidebar-second w3-mobile {{ color_sidebar_second }}">
+							{{ page.sidebar_second }}
+						</div>
+					</div>
+					<!-- End: Right SideBar -->
+				{% endif %}
+			</div>
+			<!-- Endn: Main Container  -->
+		</div>
+	</div>
+	<!-- End: Main -->
 
-  {% if is_front %}
-    {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
-      <!-- Start: Bottom -->
-  <div id="bottom-container" class="w3-col w3-clear w3-theme-l2 {{ color_bottom_container }}">
-    <div id="bottom-container-inner" class="w3-row-padding bottom-container-inner {{ website_width }}">
-      {% if page.bottom_first %}
-      <!-- Start: Bottom First -->
-      <div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} first-bottom">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_first }}">
-          {{ page.bottom_first }}
-        </div>
-      </div>
-      <!-- End: Bottom First -->
-      {% endif %}
-      {% if page.bottom_second %}
-      <!-- Start: Bottom Second -->
-      <div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} second-bottom">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_second }}">
-          {{ page.bottom_second }}
-        </div>
-      </div>
-      <!-- End: Bottom Second -->
-      {% endif %}
-      {% if page.bottom_third %}
-      <!-- Start: Bottom Third  -->
-      <div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} third-bottom">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_third }}">
-          {{ page.bottom_third }}
-        </div>
-      </div>
-      <!-- End: Bottom Third -->
-      {% endif %}
-      {% if page.bottom_forth %}
-      <!-- Start: Bottom Forth  -->
-      <div class ="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} forth-bottom">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_forth }}">
-          {{ page.bottom_forth }}
-        </div>
-      </div>
-      <!-- End: Bottom Forth -->
-      {% endif %}
-    </div>
-  </div>
-  <!-- End: Bottom -->
-    {% endif %}
-  {% endif %}
+	{% if is_front %}
+		{% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
+			<!-- Start: Bottom -->
+			<div id="bottom-container" class="w3-col w3-clear w3-theme-l2 {{ color_bottom_container }}">
+				<div id="bottom-container-inner" class="w3-row-padding bottom-container-inner {{ website_width }}">
+					{% if page.bottom_first %}
+						<!-- Start: Bottom First -->
+						<div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} first-bottom">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_first }}">
+								{{ page.bottom_first }}
+							</div>
+						</div>
+						<!-- End: Bottom First -->
+					{% endif %}
+					{% if page.bottom_second %}
+						<!-- Start: Bottom Second -->
+						<div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} second-bottom">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_second }}">
+								{{ page.bottom_second }}
+							</div>
+						</div>
+						<!-- End: Bottom Second -->
+					{% endif %}
+					{% if page.bottom_third %}
+						<!-- Start: Bottom Third  -->
+						<div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} third-bottom">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_third }}">
+								{{ page.bottom_third }}
+							</div>
+						</div>
+						<!-- End: Bottom Third -->
+					{% endif %}
+					{% if page.bottom_forth %}
+						<!-- Start: Bottom Forth  -->
+						<div class="{{ bottom_w3css }} bottom-box {{ bottom_region ? 'bottom-region' }} forth-bottom">
+							<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_bottom_forth }}">
+								{{ page.bottom_forth }}
+							</div>
+						</div>
+						<!-- End: Bottom Forth -->
+					{% endif %}
+				</div>
+			</div>
+			<!-- End: Bottom -->
+		{% endif %}
+	{% endif %}
 
-  {% if page.footer_first or page.footer_second or page.footer_third %}
-  <!-- start: Footer -->
-  <div id="footer-container" class="w3-col w3-clear w3-theme-d3 {{ color_footer_container }}">
-    <div id="footer-container-inner" class="w3-row-padding footer-container-inner {{ website_width }}">
+	{% if page.footer_first or page.footer_second or page.footer_third %}
+		<!-- start: Footer -->
+		<div id="footer-container" class="w3-col w3-clear w3-theme-d3 {{ color_footer_container }}">
+			<div id="footer-container-inner" class="w3-row-padding footer-container-inner {{ website_width }}">
 
-      {% if page.footer_first %}
-      <!-- Start: Footer First  -->
-      <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} first-footer">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_first }}">
-          {{ page.footer_first }}
-        </div>
-      </div>
-      <!-- End: Footer First -->
-      {% endif %}
-      {% if page.footer_second %}
-      <!-- Start: Footer Second Region -->
-      <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} second-footer">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_footer_second }}">
-          {{ page.footer_second }}
-        </div>
-      </div>
-    <!-- End: Footer Second -->
-      {% endif %}
-      {% if page.footer_third %}
-      <!-- Start: Footer Third -->
-      <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-        <div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-          {{ page.footer_third }}
-        </div>
-      </div>
-      <!-- End: Footer Third -->
-      {% endif %}
-    </div>
-  </div>
-  <!-- End: Footer -->
-  {% endif %}
+				{% if page.footer_first %}
+					<!-- Start: Footer First  -->
+					<div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} first-footer">
+						<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_first }}">
+							{{ page.footer_first }}
+						</div>
+					</div>
+					<!-- End: Footer First -->
+				{% endif %}
+				{% if page.footer_second %}
+					<!-- Start: Footer Second Region -->
+					<div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} second-footer">
+						<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l5 {{ color_footer_second }}">
+							{{ page.footer_second }}
+						</div>
+					</div>
+					<!-- End: Footer Second -->
+				{% endif %}
+				{% if page.footer_third %}
+					<!-- Start: Footer Third -->
+					<div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
+						<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+							{{ page.footer_third }}
+						</div>
+					</div>
+					<!-- End: Footer Third -->
+				{% endif %}
+			</div>
+		</div>
+		<!-- End: Footer -->
+	{% endif %}
 
-  {% if page.footer_menu or show_social_icon %}
-    <!-- Start: Footer Menu -->
-  <div id="footer-menu" class="w3-col w3-clear w3-theme-d4 {{ color_footer_menu }}">
-    <div id="footer-menu-inner" class="w3-row footer-menu-inner {{ website_width }}">
-      {% if show_social_icon %}
-        <!-- Start: Social Media -->
-      <div class="d8-fade w3-center w3-container w3-mobile social-media">
-        {% if facebook_url %}
-        <a href="{{ facebook_url }}" title="Facebook" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-facebook"></i></a>
-        {% endif %}
-        {% if twitter_url %}
-        <a href="{{ twitter_url }}" title="Twitter" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-twitter"></i></a>
-        {% endif %}
-        {% if pinterest_url %}
-        <a href="{{ pinterest_url }}" title="Pinterest" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-pinterest"></i></a>
-        {% endif %}
-        {% if google_plus_url %}
-        <a href="{{ google_plus_url }}" title="Google" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-google-plus"></i></a>
-        {% endif %}
-        {% if linkedin_url %}
-        <a href="{{ linkedin_url }}" title="Linkedin" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-linkedin"></i></a>
-        {% endif %}
-        {% if instagram_url %}
-        <a href="{{ instagram_url }}" title="Instagram" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-instagram"></i></a>
-        {% endif %}
-        {% if youtube_url %}
-        <a href="{{ youtube_url }}" title="Youtube" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank"><i class="w3-social-icon fa-youtube"></i></a>
-        {% endif %}
-        {% if drupal_url %}
-        <a href="{{ drupal_url }}" title="Drupal" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank" ><i class="w3-social-icon fa-drupal"></i></a>
-        {% endif %}
-        {% if rss_url %}
-        <a href="{{ rss_url }}" title="RSS Feed" class="w3-opacity w3-hover-opacity-off w3-hover-text-orange w3-show-inline-block w3-xlarge w3-padding" target="_blank" ><i class="w3-social-icon fa-rss"></i></a>
-        {% endif %}
-      </div>
-      <!-- End: Social Media -->
-      {% endif %}
-      <!-- Start: Bottom Menu -->
-      {% if page.footer_menu %}
-      <div class="d8-fade w3-container w3-center w3-mobile">
-        {{ page.footer_menu }}
-      </div>
-      <!-- End: Bottom Menu -->
-      {% endif %}
-    </div>
-  </div>
-  <!-- End: Footer Menu -->
-  {% endif %}
+	{% if page.footer_menu or show_social_icon %}
+		<!-- Start: Footer Menu -->
+		<div id="footer-menu" class="w3-col w3-clear w3-theme-d4 {{ color_footer_menu }}">
+			<div id="footer-menu-inner" class="w3-row footer-menu-inner {{ website_width }}">
+				{% if show_social_icon %}
+					<!-- Start: Social Media -->
+					<div class="d8-fade w3-center w3-container w3-mobile social-media">
+						{% if facebook_url %}
+							<a href="{{ facebook_url }}" title="Facebook" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-facebook"></i>
+							</a>
+						{% endif %}
+						{% if twitter_url %}
+							<a href="{{ twitter_url }}" title="Twitter" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-twitter"></i>
+							</a>
+						{% endif %}
+						{% if pinterest_url %}
+							<a href="{{ pinterest_url }}" title="Pinterest" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-pinterest"></i>
+							</a>
+						{% endif %}
+						{% if google_plus_url %}
+							<a href="{{ google_plus_url }}" title="Google" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-google-plus"></i>
+							</a>
+						{% endif %}
+						{% if linkedin_url %}
+							<a href="{{ linkedin_url }}" title="Linkedin" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-linkedin"></i>
+							</a>
+						{% endif %}
+						{% if instagram_url %}
+							<a href="{{ instagram_url }}" title="Instagram" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-instagram"></i>
+							</a>
+						{% endif %}
+						{% if youtube_url %}
+							<a href="{{ youtube_url }}" title="Youtube" class="w3-opacity w3-hover-opacity-off w3-hover-text-red w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-youtube"></i>
+							</a>
+						{% endif %}
+						{% if drupal_url %}
+							<a href="{{ drupal_url }}" title="Drupal" class="w3-opacity w3-hover-opacity-off w3-hover-text-blue w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-drupal"></i>
+							</a>
+						{% endif %}
+						{% if rss_url %}
+							<a href="{{ rss_url }}" title="RSS Feed" class="w3-opacity w3-hover-opacity-off w3-hover-text-orange w3-show-inline-block w3-xlarge w3-padding" target="_blank">
+								<i class="w3-social-icon fa-rss"></i>
+							</a>
+						{% endif %}
+					</div>
+					<!-- End: Social Media -->
+				{% endif %}
+				<!-- Start: Bottom Menu -->
+				{% if page.footer_menu %}
+					<div class="d8-fade w3-container w3-center w3-mobile">
+						{{ page.footer_menu }}
+					</div>
+					<!-- End: Bottom Menu -->
+				{% endif %}
+			</div>
+		</div>
+		<!-- End: Footer Menu -->
+	{% endif %}
 
-  {% if copyright_text or show_credit_link %}
-  <!-- Start: Copyright -->
-  <div id="copyright" class="w3-col w3-clear w3-theme-d5 {{ color_copyright }}">
-    <div id="copyright-inner" class="w3-row copyright-inner {{ website_width }}">
-      {% if copyright_text %}
-      <!-- Start: Copyright -->
-      <div class="w3-half w3-container w3-mobile">
-        <p class="w3-section w3-left-align w3-opacity w3-hover-opacity-off">{{copyright_text}}</p>
-      </div>
-      <!-- End: Copyright -->
-      {% endif %}
-      {% if show_credit_link %}
-      <!-- Start: Credit Link -->
-      <div class="w3-half w3-container w3-mobile">
-        <p class="w3-section w3-right-align w3-opacity w3-hover-opacity-off">Developed &#38; Designed by <a href="https://www.alaahaddad.com" title="Alaa Haddad" target="_blank">Alaa Haddad</a></p>
-      </div>
-      <!-- End: Credit Link -->
-      {% endif %}
-    </div>
-  </div>
-  <!-- End: Copyright -->
-  {% endif %}
+	{% if copyright_text or show_credit_link %}
+		<!-- Start: Copyright -->
+		<div id="copyright" class="w3-col w3-clear w3-theme-d5 {{ color_copyright }}">
+			<div id="copyright-inner" class="w3-row copyright-inner {{ website_width }}">
+				{% if copyright_text %}
+					<!-- Start: Copyright -->
+					<div class="w3-half w3-container w3-mobile">
+						<p class="w3-section w3-left-align w3-opacity w3-hover-opacity-off">{{copyright_text}}</p>
+					</div>
+					<!-- End: Copyright -->
+				{% endif %}
+				{% if show_credit_link %}
+					<!-- Start: Credit Link -->
+					<div class="w3-half w3-container w3-mobile">
+						<p class="w3-section w3-right-align w3-opacity w3-hover-opacity-off">Developed &#38; Designed by
+							<a href="https://www.alaahaddad.com" title="Alaa Haddad" target="_blank">Alaa Haddad</a>
+						</p>
+					</div>
+					<!-- End: Credit Link -->
+				{% endif %}
+			</div>
+		</div>
+		<!-- End: Copyright -->
+	{% endif %}
 </div>
 <!-- End: Page Wrapper -->

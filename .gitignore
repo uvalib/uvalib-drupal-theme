@@ -4,4 +4,3 @@
 *.scss.map
 .DS_Store
 scss/css
-# scss/abstracts/fa/

@@ -1,5 +1,4 @@
 @use '../abstracts'as *;
-@use '../abstracts/fa/solid.scss';
 @use '../base/'as *;
 
 #header {
@@ -28,25 +27,12 @@
           display: flex;
 
           a {
-            @extend %fa-icon;
-            @extend .fa-regular;
-            font-family: "Font Awesome 6 Pro";
             padding-left: .35em;
+          }
 
-            &::before {
-              // not the correct bell icon
-              //font-family: "Font Awesome 6 Pro";
-              // content: map-get($fa-icons, "bell");
-              content: fa-content ($fa-var-bell);
-              margin-top: .5em;
-              color: red !important;
-            }
-
-            &::after {
-              // content: \f358 ;
-              content: fa-content ($fa-var-bell);
-              color: green !important;
-            }
+          &::before {
+            @include svg-base;
+            content: $icon-bell;
           }
         }
       }

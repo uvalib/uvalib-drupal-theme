@@ -1,0 +1,56 @@
+// This controls the overall size and placement of the icon
+@mixin svg-base {
+  display: inline-block;
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  margin-top: .75em;
+}
+
+// To add an icon: copy the correct icon from 
+// library/fontawesome/svgs into uvalibrary/assets/svg-icons, 
+// then add the code here
+$icon-bell: url(../assets/svg-icons/bell.svg);
+$icon-menu-expand: url(../assets/svg-icons/caret-down.svg);
+$icon-university: url(../assets/svg-icons/building-columns.svg);
+$icon-calendar: url(../assets/svg-icons/calendar-days.svg);
+$icon-menu-collapse: url(../assets/svg-icons/caret-up.svg);
+$icon-slide-left: url(../assets/svg-icons/chevrons-left.svg);
+$icon-slide-right: url(../assets/svg-icons/chevrons-right.svg);
+$icon-success: url(../assets/svg-icons/circle-check.svg);
+$icon-scroll-top: url(../assets/svg-icons/circle-chevron-up.svg);
+$icon-critical: url(../assets/svg-icons/circle-exclamation.svg);
+$icon-info: url(../assets/svg-icons/circle-info.svg);
+$icon-account: url(../assets/svg-icons/circle-user.svg);
+$icon-hours: url(../assets/svg-icons/clock.svg);
+$icon-aal: url(../assets/svg-icons/comment-dots.svg);
+$icon-copy: url(../assets/svg-icons/copy.svg);
+$icon-download: url(../assets/svg-icons/download.svg);
+$icon-page-back: url(../assets/svg-icons/arrow-left.svg);
+$icon-page-forward: url(../assets/svg-icons/arrow-right.svg);
+$icon-refresh: url(../assets/svg-icons/arrow-rotate-right.svg);
+$icon-external-link: url(../assets/svg-icons/arrow-up-right-from-square.svg);
+$icon-error: url(../assets/svg-icons/ban.svg);
+$icon-alert: url(../assets/svg-icons/bell.svg);
+$icon-bookmark: url(../assets/svg-icons/bookmark.svg);
+$icon-email: url(../assets/svg-icons/envelope.svg);
+$icon-pdf: url(../assets/svg-icons/file-pdf.svg);
+$icon-flickr: url(../assets/svg-icons/flickr.svg);
+$icon-instagram: url(../assets/svg-icons/instagram.svg);
+$icon-list-view: url(../assets/svg-icons/list-ul.svg);
+$icon-image-expand: url(../assets/svg-icons/magnifying-glass-plus.svg);
+$icon-search: url(../assets/svg-icons/magnifying-glass.svg);
+$icon-accordian-collapse: url(../assets/svg-icons/minus.svg);
+$icon-edit: url(../assets/svg-icons/pen-to-square.svg);
+$icon-accordian-expand: url(../assets/svg-icons/plus.svg);
+$icon-print: url(../assets/svg-icons/print.svg);
+$icon-cite: url(../assets/svg-icons/quote-right.svg);
+$icon-facebook: url(../assets/svg-icons/square-facebook.svg);
+$icon-twitter: url(../assets/svg-icons/square-twitter.svg);
+$icon-vimeo: url(../assets/svg-icons/square-vimeo.svg);
+$icon-close: url(../assets/svg-icons/square-x.svg);
+$icon-special: url(../assets/svg-icons/star.svg);
+$icon-delete: url(../assets/svg-icons/trash-can.svg);
+$icon-warning: url(../assets/svg-icons/triangle-exclamation.svg);
+$icon-youtube: url(../assets/svg-icons/youtube.svg);
+$icon-grid-view: url(../assets/svg-icons/grid-horizontal.svg);
