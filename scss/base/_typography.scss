@@ -1,35 +1,82 @@
-@use 'colors' as *;
+@use 'colors'as *;
 
-$font-sizes: (
-  h1: 3.052rem,
+$font-sizes: (h1: 3.052rem,
   h2: 2.441rem,
   h3: 1.953rem,
   h4: 1.563rem,
   h5: 1.125rem,
-  p: 1rem
-);
+  p: 1rem);
 
-$alt-font-sizes: (
-  h1: 2.488rem,
+$alt-font-sizes: (h1: 2.488rem,
   h2: 2.074rem,
   h3: 1.728rem,
   h4: 1.44rem,
   h5: 1.2rem,
-  p: 1rem
-);
+  h6: 1rem);
 
-@each $size, $value in $alt-font-sizes {
-  --#{$size}, .#{$size} {
-    font-size: $value;
+$font-weights: ('book': 400,
+  'medium': 500,
+  'demi': 700,
+  'heavy': 900);
+
+html,
+body {
+  font-size: 17px !important;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: map-get($font-weights, book);
+  padding-block-end: 1rem;
+}
+
+
+@each $size,
+$value in $alt-font-sizes {
+
+  #{$size},
+  .#{$size} {
+    font-size: $value !important;
+    font-weight: map-get($font-weights, demi) !important;
   }
 }
 
-$font-weights: (
-  'book': 400,
-  'medium': 500,
-  'demi': 700,
-  'heavy': 900
-);
+
+// h1.page-title,
+// .h1 {
+//   font-size: map-get($alt-font-sizes, h1);
+//   padding: 0;
+// }
+// h2,
+// .h2 {
+//   font-size: map-get($alt-font-sizes, h2);
+//   padding: 0;
+// }
+// h3,
+// .h3 {
+//   font-size: map-get($alt-font-sizes, h3);
+//   padding: 0;
+// }
+
+// h4,
+// .h4 {
+//   font-size: map-get($alt-font-sizes, h4);
+//   padding: 0;
+// }
+
+// h5,
+// .h5 {
+//   font-size: map-get($alt-font-sizes, h5);
+//   padding: 0;
+// }
+
+// h6,
+// .h6 {
+//   font-size: map-get($alt-font-sizes, h6);
+//   padding: 0;
+// }
+
+
 
 
 // THIS ISN'T WORKING

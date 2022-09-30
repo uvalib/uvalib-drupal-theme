@@ -6,7 +6,11 @@ base theme: drupal8_w3css_theme
 screenshot: assets/uvalibrary-theme.png
 libraries:
   - uvalibrary/foundation
-
+stylesheets-remove:
+  - themes/contrib/d8w3css/css/base/base.css
+  - themes/contrib/d8w3css/css/theme/border-animation.css
+  - themes/contrib/d8w3css/css/theme/sitename-animation.css
+  - themes/contrib/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
 
 
 # regions:

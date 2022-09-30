@@ -1,11 +1,9 @@
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -19,37 +17,31 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
   list-style: none;
 }
 
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -57,7 +49,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -72,43 +63,116 @@ select {
     scroll-behavior: auto !important;
   }
 }
+html,
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #2B2B2B;
+}
+
+.fa,
+.svg-inline--fa {
+  color: inherit;
+}
+
+#header,
+#copyright,
+.close-nav,
+.mobile-nav,
+#page-title,
+#highlighted,
+.page-wrapper,
+#footer-menu,
+#top-container,
+#main-container,
+#bottom-container,
+#footer-container,
+.search-slide-wrapper,
+.main-navigation-wrapper,
+#top-container .top-box > div,
+#footer-container .footer-box > div,
+#bottom-container-inner .bottom-box > div {
+  background-color: white;
+  color: darkolivegreen;
+}
+
 * {
   font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif !important;
 }
 
---h1, .h1 {
-  font-size: 2.488rem;
+html,
+body {
+  font-size: 17px !important;
 }
 
---h2, .h2 {
-  font-size: 2.074rem;
-}
-
---h3, .h3 {
-  font-size: 1.728rem;
-}
-
---h4, .h4 {
-  font-size: 1.44rem;
-}
-
---h5, .h5 {
-  font-size: 1.2rem;
-}
-
---p, .p {
+p {
   font-size: 1rem;
+  font-weight: 400;
+  padding-block-end: 1rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.488rem !important;
+  font-weight: 700 !important;
+}
+
+h2,
+.h2 {
+  font-size: 2.074rem !important;
+  font-weight: 700 !important;
+}
+
+h3,
+.h3 {
+  font-size: 1.728rem !important;
+  font-weight: 700 !important;
+}
+
+h4,
+.h4 {
+  font-size: 1.44rem !important;
+  font-weight: 700 !important;
+}
+
+h5,
+.h5 {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+h6,
+.h6 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
 }
 
 * {
   color: #4F4F4F !important;
 }
 
-a {
+a,
+ul li a {
   text-decoration: underline !important;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active, a:focus,
+ul li a:hover,
+ul li a:active,
+ul li a:focus {
   text-decoration: none !important;
+}
+
+.w3-border {
+  border: 1px solid orange !important;
+}
+
+.w3-hover-over:hover,
+.w3-button:hover {
+  color: #2B2B2B !important;
+  background-color: #fff !important;
 }
 
 #header {
@@ -123,19 +187,16 @@ a:hover, a:active, a:focus {
   align-content: stretch;
   align-items: flex-start;
 }
-#header .header-inner .utility-nav {
+#header .utility-nav {
   align-self: flex-end;
 }
-#header .header-inner .utility-nav .w3-button:hover {
-  background-color: white !important;
-}
-#header .header-inner .utility-nav ul li:last-child {
+#header .utility-nav ul li:last-child {
   display: flex;
 }
-#header .header-inner .utility-nav ul li:last-child a {
+#header .utility-nav ul li:last-child a {
   padding-left: 0.35em;
 }
-#header .header-inner .utility-nav ul li:last-child::before {
+#header .utility-nav ul li:last-child::before {
   display: inline-block;
   content: "";
   width: 1rem;
@@ -143,26 +204,31 @@ a:hover, a:active, a:focus {
   margin-top: 0.75em;
   content: url(../assets/svg-icons/bell.svg);
 }
-#header .header-inner .utility-nav ul li:last-child::after {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/bookmark.svg);
-}
 #header .main-nav {
   font-weight: 500;
 }
 #header .main-nav ul li {
   background-color: white;
 }
-#header .main-nav a {
+#header .main-nav ul li a:hover {
+  background-color: #DADADA;
+}
+#header .main-nav ul li[class~=li-parent] a {
+  text-decoration: none !important;
+}
+#header .main-nav ul ul[class~=ul-child] li a {
+  text-decoration: underline !important;
+}
+#header .main-nav ul ul[class~=ul-child] li a:hover {
   text-decoration: none !important;
 }
 #header .drupal-utility-nav ul li {
-  background-color: yellow;
+  background-color: #25CAD3;
   color: black;
+}
+#header .w3-button:hover {
+  color: #2B2B2B !important;
+  background-color: #fff !important;
 }
 
 #block-uvalibrary-branding {

@@ -1,39 +1,28 @@
-@use '../abstracts'as *;
-@use '../base/'as *;
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
 
 #header {
   background-color: #ffffff !important;
   border-bottom: 5px solid $brand-blue-base;
 
   .header-inner {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-start;
+    @include flex-start;
+  }
 
-    .utility-nav {
-      align-self: flex-end;
+  .utility-nav {
+    align-self: flex-end;
 
-      .w3-button {
-        &:hover {
-          background-color: white !important;
+    ul li {
+      &:last-child {
+        display: flex;
+
+        a {
+          padding-left: .35em;
         }
-      }
 
-      ul li {
-        &:last-child {
-          display: flex;
-
-          a {
-            padding-left: .35em;
-          }
-
-          &::before {
-            @include svg-base;
-            content: $icon-bell;
-          }
+        &::before {
+          @include svg-base;
+          content: $icon-bell;
         }
       }
     }
@@ -43,19 +32,48 @@
     font-weight: 500;
 
     ul li {
+      //dropdown nav background
       background-color: white;
+
+      a {
+        &:hover {
+          background-color: $grey-light;
+        }
+      }
     }
 
-    a {
-      // color: map-deep-get($colors, brand-blue, base);
-      text-decoration: none !important;
+    ul {
+      li[class~="li-parent"] {
+
+        a {
+          text-decoration: none !important;
+
+          // &:hover {
+          //   text-decoration: underline !important;
+          // }
+        }
+      }
+
+      ul[class~="ul-child"] li {
+        a {
+          text-decoration: underline !important;
+
+          &:hover {
+            text-decoration: none !important;
+          }
+        }
+      }
     }
   }
 
   // this is the drupal login buttons
   .drupal-utility-nav ul li {
-    background-color: yellow;
+    background-color: $teal-base;
     color: black;
+  }
+
+  .w3-button:hover {
+    @include menu-link-default;
   }
 }
 
