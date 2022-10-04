@@ -3,7 +3,7 @@
 
 #header {
   background-color: #ffffff !important;
-  border-bottom: 5px solid $brand-blue-base;
+  border-bottom: 5px solid $uva-brand-blue-base;
 
   .header-inner {
     @include flex-start;
@@ -22,7 +22,7 @@
 
         &::before {
           @include svg-base;
-          content: $icon-bell;
+          content: $icon-alert;
         }
       }
     }
@@ -31,30 +31,25 @@
   .main-nav {
     font-weight: 500;
 
-    ul li {
-      //dropdown nav background
-      background-color: white;
-
-      a {
-        &:hover {
-          background-color: $grey-light;
-        }
-      }
-    }
-
     ul {
+      li {
+        //dropdown nav background
+        background-color: white;
+      }
+
       li[class~="li-parent"] {
+        // &:hover::after {
+        //   content: 'test';
+        //   color: teal !important;
+        // }
 
         a {
           text-decoration: none !important;
-
-          // &:hover {
-          //   text-decoration: underline !important;
-          // }
         }
       }
 
-      ul[class~="ul-child"] li {
+
+      &[class~="ul-child"] li {
         a {
           text-decoration: underline !important;
 
@@ -66,15 +61,27 @@
     }
   }
 
+  li.li-item.li-item-main.li-expanded.li-parent {
+    color: teal !important;
+
+    a {
+      &:hover {
+        background-color: $uva-grey-light;
+      }
+    }
+  }
+
   // this is the drupal login buttons
   .drupal-utility-nav ul li {
-    background-color: $teal-base;
+    background-color: $uva-teal-base;
     color: black;
   }
 
-  .w3-button:hover {
-    @include menu-link-default;
-  }
+  // .w3-button:hover {
+  //   // @include menu-link-default;
+  //   color: $text-color-dark !important;
+  //   background-color: green !important;
+  // }
 }
 
 #block-uvalibrary-branding {

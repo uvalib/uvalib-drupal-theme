@@ -99,6 +99,78 @@ textarea {
   color: darkolivegreen;
 }
 
+* {
+  font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif !important;
+}
+
+html,
+body {
+  font-size: 17px !important;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-block-end: 1rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.488rem !important;
+  font-weight: 700 !important;
+}
+
+h2,
+.h2 {
+  font-size: 2.074rem !important;
+  font-weight: 700 !important;
+}
+
+h3,
+.h3 {
+  font-size: 1.728rem !important;
+  font-weight: 700 !important;
+}
+
+h4,
+.h4 {
+  font-size: 1.44rem !important;
+  font-weight: 700 !important;
+}
+
+h5,
+.h5 {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+h6,
+.h6 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+}
+
+* {
+  color: #4F4F4F !important;
+}
+
+a,
+ul li a {
+  text-decoration: underline !important;
+}
+a:hover, a:active, a:focus,
+ul li a:hover,
+ul li a:active,
+ul li a:focus {
+  text-decoration: none !important;
+}
+
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+.w3-wide {
+  letter-spacing: 4px;
+}
+
 .w3-image {
   max-width: 100%;
   height: auto;
@@ -139,7 +211,7 @@ img {
 
 .w3-hoverable tbody tr:hover,
 .w3-ul.w3-hoverable li:hover {
-  background-color: #ccc;
+  background-color: #EF3F6B;
 }
 
 .w3-centered tr th,
@@ -280,13 +352,13 @@ img {
 
 .w3-dropdown-hover:first-child,
 .w3-dropdown-click:hover {
-  background-color: #ccc;
+  background-color: #EF3F6B;
   color: #000;
 }
 
 .w3-dropdown-hover:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child {
-  background-color: #ccc;
+  background-color: #EF3F6B;
   color: #000;
 }
 
@@ -939,350 +1011,4 @@ img {
 
 .w3-center {
   text-align: center !important;
-}
-
-.w3-border-0 {
-  border: 0 !important;
-}
-
-.w3-left {
-  float: left !important;
-}
-
-.w3-right {
-  float: right !important;
-}
-
-* {
-  font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif !important;
-}
-
-html,
-body {
-  font-size: 17px !important;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  padding-block-end: 1rem;
-}
-
-h1,
-.h1 {
-  font-size: 2.488rem !important;
-  font-weight: 700 !important;
-}
-
-h2,
-.h2 {
-  font-size: 2.074rem !important;
-  font-weight: 700 !important;
-}
-
-h3,
-.h3 {
-  font-size: 1.728rem !important;
-  font-weight: 700 !important;
-}
-
-h4,
-.h4 {
-  font-size: 1.44rem !important;
-  font-weight: 700 !important;
-}
-
-h5,
-.h5 {
-  font-size: 1.2rem !important;
-  font-weight: 700 !important;
-}
-
-h6,
-.h6 {
-  font-size: 1rem !important;
-  font-weight: 700 !important;
-}
-
-* {
-  color: #4F4F4F !important;
-}
-
-a {
-  text-decoration: underline !important;
-}
-a span {
-  text-decoration: underline;
-  color: #0000FF;
-}
-a span:hover {
-  text-decoration: none;
-}
-a span:visited {
-  color: #660099;
-}
-a:link paper-button {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none !important;
-}
-a:active {
-  text-decoration: none !important;
-}
-a:focus {
-  text-decoration: none !important;
-}
-
-ul li a {
-  text-decoration: underline !important;
-}
-ul li a:hover {
-  text-decoration: none !important;
-}
-ul li a:active {
-  text-decoration: none !important;
-}
-ul li a:focus {
-  text-decoration: none !important;
-}
-
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:focus {
-  background-color: #F1F1F1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #007BAC;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-}
-
-.uva-alert {
-  font-size: 1.06rem;
-  line-height: 1.5;
-  position: relative;
-  color: #2B2B2B;
-}
-
-.uva-alert--a1 {
-  padding: 0.5em;
-  background-color: #FBCFDA;
-  border-left: 8px solid #DF1E43;
-}
-.uva-alert--a1::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/circle-exclamation.svg);
-  font-size: 1.5em;
-  display: table-cell;
-}
-
-.uva-alert--a2 {
-  padding: 0.5em;
-  background-color: #FEF6C8;
-  border-left: 8px solid #ECC602;
-}
-.uva-alert--a2::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/triangle-exclamation.svg);
-  font-size: 1.5em;
-  display: table-cell;
-}
-
-.uva-alert--a3 {
-  padding: 0.5em;
-  background-color: #BFE7F7;
-  border-left: 8px solid #007BAC;
-}
-.uva-alert--a3::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/circle-info.svg);
-  font-size: 1.5em;
-  display: table-cell;
-}
-
-.uva-alert--dismissible a.uva-alert--close {
-  font-size: 1.5em;
-  display: table-cell;
-  position: absolute;
-  top: 0.25em;
-  right: 0.45em;
-  text-decoration: none;
-  color: #2B2B2B;
-}
-
-.uva-alert--r1 {
-  border: 0.2em solid var(--alert-border-color);
-  border-radius: 0.5em;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  background-color: #FEF6C8;
-  --alert-border-color: $uva-yellow-base;
-}
-
-.uva-alert--r2 {
-  border: 0.2em solid var(--alert-border-color);
-  border-radius: 0.5em;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  background-color: #C8F2F4;
-  --alert-border-color: $uva-teal-base;
-}
-
-.uva-alert--error {
-  margin: 0;
-  padding: 0;
-  color: #B30000;
-}
-
-.uva-alert--confirmation {
-  margin: 0;
-  padding: 0;
-  color: #4E9737;
-}
-
-.uva-alert__heading {
-  font-size: 1.33rem;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  margin-right: 1em;
-}
-
-.uva-alert__body {
-  padding-left: 1.25rem;
-  display: table-cell;
-  vertical-align: top;
-}
-
-.uva-alert__text {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.uva-alert__text p {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.uva-alert--a4 {
-  background-color: #25CAD3;
-  text-align: center;
-  padding: 0.5em;
-}
-.uva-alert--a4 .uva-alert__body {
-  display: inline-block;
-  padding-left: 1.25rem;
-}
-.uva-alert--a4 .uva-alert__body .uva-alert__heading {
-  display: inline-block;
-  font-size: 1.15em;
-  font-weight: bold;
-  margin: 0;
-}
-.uva-alert--a4 .uva-alert__text {
-  display: inline-block;
-  color: #000;
-  font-size: 1em;
-}
-.uva-alert--a4 .uva-alert__text a {
-  color: #141E3C;
-}
-
-.w3-border {
-  border: 1px solid orange !important;
-}
-
-#header {
-  background-color: #ffffff !important;
-  border-bottom: 5px solid #232D4B;
-}
-#header .header-inner {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
-}
-#header .utility-nav {
-  align-self: flex-end;
-}
-#header .utility-nav ul li:last-child {
-  display: flex;
-}
-#header .utility-nav ul li:last-child a {
-  padding-left: 0.35em;
-}
-#header .utility-nav ul li:last-child::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/bell.svg);
-}
-#header .main-nav {
-  font-weight: 500;
-}
-#header .main-nav ul li {
-  background-color: white;
-}
-#header .main-nav ul li[class~=li-parent] a {
-  text-decoration: none !important;
-}
-#header .main-nav ul[class~=ul-child] li a {
-  text-decoration: underline !important;
-}
-#header .main-nav ul[class~=ul-child] li a:hover {
-  text-decoration: none !important;
-}
-#header li.li-item.li-item-main.li-expanded.li-parent {
-  color: teal !important;
-}
-#header li.li-item.li-item-main.li-expanded.li-parent a:hover {
-  background-color: #DADADA;
-}
-#header .drupal-utility-nav ul li {
-  background-color: #25CAD3;
-  color: black;
-}
-
-#block-uvalibrary-branding {
-  margin-top: -40px;
-}
-
-a.site-logo {
-  text-decoration: none !important;
-}
-a.site-logo img {
-  max-width: 225px;
 }

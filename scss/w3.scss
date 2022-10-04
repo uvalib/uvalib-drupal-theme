@@ -1,46 +1,5 @@
-@use '../abstracts'as *;
-@use 'colors'as *;
-
-
-html,
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-  color: $uva-text-color-dark;
-}
-
-
-.fa,
-.svg-inline--fa {
-  color: inherit;
-}
-
-#header,
-#copyright,
-.close-nav,
-.mobile-nav,
-#page-title,
-#highlighted,
-.page-wrapper,
-#footer-menu,
-#top-container,
-#main-container,
-#bottom-container,
-#footer-container,
-.search-slide-wrapper,
-.main-navigation-wrapper,
-#top-container .top-box>div,
-#footer-container .footer-box>div,
-#bottom-container-inner .bottom-box>div {
-  background-color: white;
-  color: darkolivegreen;
-}
-
-// from w3.css
-//* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+﻿@use './base/'as *;
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 // html {
 //   box-sizing: border-box;
 // }
@@ -51,7 +10,7 @@ textarea {
 //   box-sizing: inherit;
 // }
 
-// /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 // html {
 //   -ms-text-size-adjust: 100%;
 //   -webkit-text-size-adjust: 100%;
@@ -321,9 +280,9 @@ textarea {
 //   margin: 10px 0;
 // }
 
-// .w3-wide {
-//   letter-spacing: 4px;
-// }
+.w3-wide {
+  letter-spacing: 4px;
+}
 
 // hr {
 //   border: 0;
@@ -375,7 +334,7 @@ img {
 
 .w3-hoverable tbody tr:hover,
 .w3-ul.w3-hoverable li:hover {
-  background-color: #ccc;
+  background-color: $red-base;
 }
 
 .w3-centered tr th,
@@ -524,13 +483,13 @@ img {
 
 .w3-dropdown-hover:first-child,
 .w3-dropdown-click:hover {
-  background-color: #ccc;
+  background-color: $red-base;
   color: #000;
 }
 
 .w3-dropdown-hover:hover>.w3-button:first-child,
 .w3-dropdown-click:hover>.w3-button:first-child {
-  background-color: #ccc;
+  background-color: $red-base;
   color: #000;
 }
 
@@ -1425,9 +1384,9 @@ img {
   text-align: center !important;
 }
 
-.w3-border-0 {
-  border: 0 !important;
-}
+// .w3-border-0 {
+//   border: 0 !important;
+// }
 
 // .w3-border {
 //   border: 1px solid #ccc !important;
@@ -1544,13 +1503,13 @@ img {
 //   padding-top: 24px !important;
 // }
 
-.w3-left {
-  float: left !important;
-}
+// .w3-left {
+//   float: left !important;
+// }
 
-.w3-right {
-  float: right !important;
-}
+// .w3-right {
+//   float: right !important;
+// }
 
 // .w3-hover-over:hover,
 // .w3-button:hover {

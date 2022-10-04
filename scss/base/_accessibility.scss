@@ -1,12 +1,102 @@
-a,
-ul li a {
-  text-decoration: underline !important;
-  // outline: none;
+@use 'colors'as *;
 
-  &:hover,
-  &:active,
+// a,
+// ul li a {
+//   text-decoration: underline !important;
+//   // outline: none;
+
+//   &:hover,
+//   &:active,
+//   &:focus {
+//     text-decoration: none !important;
+//     // outline: none;
+//   }
+// }
+
+a {
+
+  // link colors as specifed in the old guide
+  span {
+    text-decoration: underline;
+    color: #0000FF;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: #660099;
+    }
+  }
+
+  // this needs to go
+  &:link {
+    paper-button {
+      text-decoration: none;
+    }
+  }
+
+  text-decoration: underline !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+
+  &:active {
+    text-decoration: none !important;
+  }
+
   &:focus {
     text-decoration: none !important;
-    // outline: none;
   }
+}
+
+ul {
+  li {
+    a {
+      text-decoration: underline !important;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+
+      &:active {
+        text-decoration: none !important;
+      }
+
+      &:focus {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+
+/// Text meant only for screen readers. Mostly used in the Search Bar and Header components
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: $uva-grey-lightest;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: $uva-blue-alt-base;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
 }
