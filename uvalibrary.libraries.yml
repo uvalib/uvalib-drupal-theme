@@ -6,11 +6,16 @@ foundation:
     component:
       css/page-title.css: { }
       
-      
     theme:
       # UVA font
       https://use.typekit.net/oym8nvz.css: { }
       css/main.css: { }
 
   js:
+    js/custom.js: { }
     js/main.js: { }
+  dependencies:
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

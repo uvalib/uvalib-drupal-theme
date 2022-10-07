@@ -1223,7 +1223,6 @@ ul li a:focus {
 
 #header {
   background-color: #ffffff !important;
-  border-bottom: 5px solid #232D4B;
 }
 #header .header-inner {
   display: flex;
@@ -1250,21 +1249,6 @@ ul li a:focus {
   margin-top: 0.75em;
   content: url(../assets/svg-icons/bell.svg);
 }
-#header .main-nav {
-  font-weight: 500;
-}
-#header .main-nav ul li {
-  background-color: white;
-}
-#header .main-nav ul li[class~=li-parent] a {
-  text-decoration: none !important;
-}
-#header .main-nav ul[class~=ul-child] li a {
-  text-decoration: underline !important;
-}
-#header .main-nav ul[class~=ul-child] li a:hover {
-  text-decoration: none !important;
-}
 #header li.li-item.li-item-main.li-expanded.li-parent {
   color: teal !important;
 }
@@ -1285,4 +1269,22 @@ a.site-logo {
 }
 a.site-logo img {
   max-width: 225px;
+}
+
+.main-nav {
+  background-color: #ffffff !important;
+  border-bottom: 5px solid #232D4B;
+  font-weight: 500;
+}
+.main-nav ul li {
+  background-color: white;
+}
+.main-nav ul li[class~=li-parent] a {
+  text-decoration: none !important;
+}
+.main-nav ul[class~=ul-child] li a {
+  text-decoration: underline !important;
+}
+.main-nav ul[class~=ul-child] li a:hover {
+  text-decoration: none !important;
 }

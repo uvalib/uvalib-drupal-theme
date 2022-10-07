@@ -3,7 +3,6 @@
 
 #header {
   background-color: #ffffff !important;
-  border-bottom: 5px solid $uva-brand-blue-base;
 
   .header-inner {
     @include flex-start;
@@ -23,39 +22,6 @@
         &::before {
           @include svg-base;
           content: $icon-alert;
-        }
-      }
-    }
-  }
-
-  .main-nav {
-    font-weight: 500;
-
-    ul {
-      li {
-        //dropdown nav background
-        background-color: white;
-      }
-
-      li[class~="li-parent"] {
-        // &:hover::after {
-        //   content: 'test';
-        //   color: teal !important;
-        // }
-
-        a {
-          text-decoration: none !important;
-        }
-      }
-
-
-      &[class~="ul-child"] li {
-        a {
-          text-decoration: underline !important;
-
-          &:hover {
-            text-decoration: none !important;
-          }
         }
       }
     }

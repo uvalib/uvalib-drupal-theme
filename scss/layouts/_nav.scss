@@ -1,0 +1,37 @@
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
+
+.main-nav {
+  background-color: #ffffff !important;
+  border-bottom: 5px solid $uva-brand-blue-base;
+  font-weight: 500;
+
+  ul {
+    li {
+      //dropdown nav background
+      background-color: white;
+    }
+
+    li[class~="li-parent"] {
+      // &:hover::after {
+      //   content: 'test';
+      //   color: teal !important;
+      // }
+
+      a {
+        text-decoration: none !important;
+      }
+    }
+
+
+    &[class~="ul-child"] li {
+      a {
+        text-decoration: underline !important;
+
+        &:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+}

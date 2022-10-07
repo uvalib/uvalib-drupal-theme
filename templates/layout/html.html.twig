@@ -39,14 +39,15 @@
 			<css-placeholder token="{{ placeholder_token }}">
 				<body{{attributes.addClass(body_classes)}}>
 					{#
-																														      Keyboard navigation/accessibility link to main content section in
-																														      page.html.twig.
-																														    #}
+																																								      Keyboard navigation/accessibility link to main content section in
+																																								      page.html.twig.
+																																								    #}
 					<a href="#main-content" class="visually-hidden focusable skip-link">
 						{{ 'Skip to main content'|t }}
 					</a>
 					{{ page_top }}
 					{{ page }}
 					{{ page_bottom }}
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 					<js-bottom-placeholder token="{{ placeholder_token }}"></body>
 				</html>
