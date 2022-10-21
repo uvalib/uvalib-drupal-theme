@@ -4,3 +4,29 @@ description: 'Custom Theme for the DH@UVA site dh.virginia.edu'
 package: Other
 core_version_requirement: ^9
 base theme: uvalibrary
+engine: twig
+
+regions:
+  page_top: 'Page Top'
+  page_bottom: 'Page Bottom'
+  content: 'Content'
+  top: 'Page Top'
+  user_first: 'User Bar First'
+  user_second: 'User Bar Second'
+  branding: 'Branding'
+  menu: 'Menu'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  header_first: 'Header First'
+  header_second: 'Header Second'
+  preface_first: 'Preface First'
+  preface_second: 'Preface Second'
+  preface_third: 'Preface Third'
+  postscript_first: 'Postscript First'
+  postscript_second: 'Postscript Second'
+  postscript_third: 'Postscript Third'
+  postscript_fourth: 'Postscript Fourth'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_fourth: 'Footer Fourth'
