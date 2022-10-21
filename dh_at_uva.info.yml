@@ -3,6 +3,9 @@ type: theme
 description: 'Custom Theme for the DH@UVA site dh.virginia.edu'
 package: Other
 core_version_requirement: ^9
+libraries:
+  - dh_at_uva/global-styling
+
 base theme: uvalibrary
 engine: twig
 
