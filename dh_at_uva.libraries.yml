@@ -1,7 +1,10 @@
 global-styling:
   version: 1.x
-  js:
-    js/script.js: {}
   css:
     theme:
       css/style.css: {}
+global-scripts:
+  version: 1.x
+  js:
+    https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js: { type: external, minified: true }
+    js/script.js: {}
