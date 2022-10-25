@@ -1223,6 +1223,7 @@ ul li a:focus {
 
 #header {
   background-color: #ffffff !important;
+  border-bottom: 5px solid #232D4B;
 }
 #header .header-inner {
   display: flex;
@@ -1273,7 +1274,6 @@ a.site-logo img {
 
 .main-nav {
   background-color: #ffffff !important;
-  border-bottom: 5px solid #232D4B;
   font-weight: 500;
 }
 .main-nav ul li {

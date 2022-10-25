@@ -3,6 +3,7 @@
 
 #header {
   background-color: #ffffff !important;
+  border-bottom: 5px solid $uva-brand-blue-base;
 
   .header-inner {
     @include flex-start;
