@@ -1,3 +1,54 @@
+html,
+body {
+  font-size: 17px !important;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-block-end: 1rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.488rem !important;
+  font-weight: 700 !important;
+}
+
+h2,
+.h2 {
+  font-size: 2.074rem !important;
+  font-weight: 700 !important;
+}
+
+h3,
+.h3 {
+  font-size: 1.728rem !important;
+  font-weight: 700 !important;
+}
+
+h4,
+.h4 {
+  font-size: 1.44rem !important;
+  font-weight: 700 !important;
+}
+
+h5,
+.h5 {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+h6,
+.h6 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+}
+
+* {
+  color: #4F4F4F !important;
+}
+
 *,
 *::before,
 *::after {
@@ -957,57 +1008,6 @@ img {
   font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif !important;
 }
 
-html,
-body {
-  font-size: 17px !important;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  padding-block-end: 1rem;
-}
-
-h1,
-.h1 {
-  font-size: 2.488rem !important;
-  font-weight: 700 !important;
-}
-
-h2,
-.h2 {
-  font-size: 2.074rem !important;
-  font-weight: 700 !important;
-}
-
-h3,
-.h3 {
-  font-size: 1.728rem !important;
-  font-weight: 700 !important;
-}
-
-h4,
-.h4 {
-  font-size: 1.44rem !important;
-  font-weight: 700 !important;
-}
-
-h5,
-.h5 {
-  font-size: 1.2rem !important;
-  font-weight: 700 !important;
-}
-
-h6,
-.h6 {
-  font-size: 1rem !important;
-  font-weight: 700 !important;
-}
-
-* {
-  color: #4F4F4F !important;
-}
-
 a {
   text-decoration: underline !important;
 }
@@ -1086,29 +1086,6 @@ ul li a:focus {
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-}
-#header .utility-nav {
-  align-self: flex-end;
-}
-#header .utility-nav ul li:last-child {
-  display: flex;
-}
-#header .utility-nav ul li:last-child a {
-  padding-left: 0.35em;
-}
-#header .utility-nav ul li:last-child::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/bell.svg);
-}
-#header li.li-item.li-item-main.li-expanded.li-parent {
-  color: teal !important;
-}
-#header li.li-item.li-item-main.li-expanded.li-parent a:hover {
-  background-color: #DADADA;
 }
 #header .drupal-utility-nav ul li {
   background-color: #25CAD3;

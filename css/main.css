@@ -1233,29 +1233,6 @@ ul li a:focus {
   align-content: stretch;
   align-items: flex-start;
 }
-#header .utility-nav {
-  align-self: flex-end;
-}
-#header .utility-nav ul li:last-child {
-  display: flex;
-}
-#header .utility-nav ul li:last-child a {
-  padding-left: 0.35em;
-}
-#header .utility-nav ul li:last-child::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/bell.svg);
-}
-#header li.li-item.li-item-main.li-expanded.li-parent {
-  color: teal !important;
-}
-#header li.li-item.li-item-main.li-expanded.li-parent a:hover {
-  background-color: #DADADA;
-}
 #header .drupal-utility-nav ul li {
   background-color: #25CAD3;
   color: black;
@@ -1282,11 +1259,53 @@ a.site-logo img {
 .main-nav ul li[class~=li-parent] a {
   text-decoration: none !important;
 }
+.main-nav ul[class~=ul-child] li {
+  font-weight: 400;
+}
 .main-nav ul[class~=ul-child] li a {
   text-decoration: underline !important;
 }
 .main-nav ul[class~=ul-child] li a:hover {
   text-decoration: none !important;
+}
+
+.utility-nav {
+  align-self: flex-end;
+}
+.utility-nav ul li:nth-child(5) {
+  display: flex;
+}
+.utility-nav ul li:nth-child(5) a {
+  padding-left: 0.35em;
+}
+.utility-nav ul li:nth-child(5)::before {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.75em;
+  content: url(../assets/svg-icons/bell.svg);
+}
+.utility-nav ul li:nth-child(6) {
+  display: flex;
+}
+.utility-nav ul li:nth-child(6) a {
+  padding-left: 0.35em;
+}
+.utility-nav ul li:nth-child(6)::before {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.75em;
+  content: url(../assets/svg-icons/magnifying-glass.svg);
+}
+
+li.li-item.li-item-main.li-expanded.li-parent {
+  color: teal !important;
+}
+li.li-item.li-item-main.li-expanded.li-parent a:hover {
+  background-color: #DADADA;
 }
 
 #footer-container {

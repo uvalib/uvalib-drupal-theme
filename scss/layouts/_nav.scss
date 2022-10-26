@@ -24,6 +24,8 @@
 
 
     &[class~="ul-child"] li {
+      font-weight: 400;
+
       a {
         text-decoration: underline !important;
 
@@ -31,6 +33,49 @@
           text-decoration: none !important;
         }
       }
+    }
+  }
+}
+
+.utility-nav {
+  align-self: flex-end;
+
+  ul li {
+    &:nth-child(5) {
+      // &:last-child {
+      display: flex;
+
+      a {
+        padding-left: .35em;
+      }
+
+      &::before {
+        @include svg-base;
+        content: $icon-alert;
+      }
+    }
+
+    &:nth-child(6) {
+      display: flex;
+
+      a {
+        padding-left: .35em;
+      }
+
+      &::before {
+        @include svg-base;
+        content: $icon-search;
+      }
+    }
+  }
+}
+
+li.li-item.li-item-main.li-expanded.li-parent {
+  color: teal !important;
+
+  a {
+    &:hover {
+      background-color: $uva-grey-light;
     }
   }
 }
