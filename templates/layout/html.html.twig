@@ -33,15 +33,17 @@
 %}
 <!DOCTYPE html>
 <html{{html_attributes}}>
-	<head>
+	<head profile="http://www.w3.org/1999/xhtml/vocab"><!-- do this somehow in twig instead of hardcoded -> print $rdf->profile; -->
 		<head-placeholder token="{{ placeholder_token }}">
-			<title>{{ head_title|safe_join(' | ') }}</title>
-			<css-placeholder token="{{ placeholder_token }}">
-				<body{{attributes.addClass(body_classes)}}>
+		<title>{{ head_title|safe_join(' | ') }}</title>
+		<css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+	</head>
+	<body{{attributes.addClass(body_classes)}}>
 					{#
-																																								      Keyboard navigation/accessibility link to main content section in
-																																								      page.html.twig.
-																																								    #}
+            Keyboard navigation/accessibility link to main content section in page.html.twig.
+					#}
 					<a href="#main-content" class="visually-hidden focusable skip-link">
 						{{ 'Skip to main content'|t }}
 					</a>
@@ -49,5 +51,36 @@
 					{{ page }}
 					{{ page_bottom }}
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-					<js-bottom-placeholder token="{{ placeholder_token }}"></body>
-				</html>
+          <js-placeholder token="{{ placeholder_token|raw }}">
+          <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+	</body>
+</html>
+
+<!--
+  <link rel="stylesheet" href="<?php echo $GLOBALS['base_url']; ?>/sites/all/themes/global/css/font-awesome.min.css">
+ <!--Acess Analytics Script -- >
+  <script src="https://cdn.levelaccess.net/accessjs/YW1wX3V2YTExMDA/access.js" type="text/javascript"></script>
+</head>
+<body<?php print $attributes;?>>
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+  </div>
+  <?php print $page_top; ?>
+  <?php print $page; ?>
+  <?php print $page_bottom; ?>
+  <script src="<?php echo $GLOBALS['base_url']; ?>/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/js/imagesloaded.pkgd.min.js"></script>
+  <script src="<?php echo $GLOBALS['base_url']; ?>/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/js/masonry.pkgd.min.js"></script>
+  <script src="<?php echo $GLOBALS['base_url']; ?>/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/js/script.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144746181-1"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -- >
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144746181-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144746181-1');
+</script>
+</body>
+</html>
+-->

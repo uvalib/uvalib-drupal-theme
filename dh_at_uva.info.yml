@@ -6,6 +6,7 @@ core_version_requirement: ^9
 libraries:
   - dh_at_uva/global-styling
   - dh_at_uva/global-scripts
+  - dh_at_uva/font-awesome
 
 base theme: uvalibrary
 engine: twig
