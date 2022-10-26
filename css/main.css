@@ -1310,6 +1310,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 
 #footer-container {
   background-color: #BFE7F7;
+  width: 100%;
 }
 #footer-container .footer-container-inner .first-footer > div {
   line-height: 1;
@@ -1332,7 +1333,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 
 #footer-menu {
-  background-color: #141E3C;
+  background-color: #232D4B;
 }
 
 #footer-menu-inner li {
@@ -1368,4 +1369,14 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 #footer-menu-inner div section div .contextual-links a {
   color: #2B2B2B !important;
+}
+
+.footer-box.third-footer {
+  background-color: #141E3C;
+  width: 100%;
+  padding-block-start: 1em;
+  padding-inline-start: 1em;
+}
+.footer-box.third-footer .post-footer p {
+  color: #fff !important;
 }
