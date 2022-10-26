@@ -1,2 +1,2016 @@
-html, body {display:none}
-#main-container {background-color: blue;}
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* UVA Template 2016 Global.css */
+
+/*  Font names from Fonts.com
+
+	http://fast.fonts.net/cssapi/2ed92370-fb3f-4cf8-b1ab-37056ab1e4cc.css
+	
+	Fonts.com/Typekit
+	font-family:'BodoniW01-PosterItalic'; / font-family:'bodoni-urw', 700, italic
+	font-family:'FranklinGothicW01-Cond'; / font-family:'franklin-gothic-urw-cond', 400
+	font-family:'ITC Franklin Gothic LT W01 Bk'; /  font-family:'franklin-gothic-urw', 400
+	font-family:'ITC Franklin GothicLTW01BkCnIt'; / font-family:'franklin-gothic-urw-cond', 400, italic
+	font-family:'ITC Franklin Gothic LT W01 Dm'; / font-family:'franklin-gothic-urw', 700
+	font-family:'ITC Franklin Gothic LT W01DmIt'; / font-family:'franklin-gothic-urw', 700 , italic
+	font-family:'ITC Franklin Gothic LT W01DmCn'; /  font-family:'franklin-gothic-urw-cond', 700
+	font-family:'ITC Franklin GothicLTW01DmCnIt'; / font-family:'franklin-gothic-urw-cond', 700, italic
+	font-family:'ITC Franklin Gothic LT W01 Hv'; / font-family: 'franklin-gothic-urw', 900
+	font-family:'ITC Franklin Gothic LT W01 Md';
+	font-family:'ITC Franklin Gothic LT W01MdIt';
+
+
+Colors: 
+
+Primary Orange: #e57200  (Use #E57200 only for search in header)
+Secondary Orange #EB5F0C - use this as orange on blue (banner search words/icon)
+
+Primary Blue:; #002f6c
+Secondary Blue: #002359 - use this for banner & footer background (accessibility)
+
+Light Gray: #F1F1EF
+Medium Gray #DADADA
+Text Gray: #666666
+
+Emergency Red: #DF1E43;
+
+*/
+
+/***************************
+** General Styles
+****************************/
+body {
+	/*font-family: Arial, sans-serif;*/
+	font-family:'ITC Franklin Gothic LT W01 Bk', Arial, sans-serif;
+	font-size:15px;
+	color:#666;
+}
+
+a {
+	color:#20399d;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+h1 {
+	font-family:'ITC Franklin Gothic LT W01 Dm', Arial, sans-serif;
+	font-style:normal;
+	font-size: 45px;
+	color: #002F6C;
+}
+
+h2 {
+	font-family:'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+	font-size: 30px;
+	color: #002F6C;
+	text-transform:uppercase;
+}
+
+h3 {
+	
+	font-family:'ITC Franklin Gothic LT W01 Md', Arial, sans-serif;
+	font-weight:500;
+	font-size: 24px;
+	color: #002F6C;
+}
+h4 {
+	font-family:'ITC Franklin Gothic LT W01 Dm', Arial, sans-serif;
+	font-style:normal;
+	font-size: 19px;
+	font-weight: bold;
+	color: #538335;
+	text-transform:uppercase;
+}
+
+h5 {
+	
+}
+
+.form-required {
+	color: #DF1E43;
+}
+
+.fa-cog {
+	color: #538335;
+}
+
+.more-link {
+	text-align:left;
+	float:left;
+	width:auto;
+}
+#region-content .more-link a {
+	text-decoration: underline;
+	color: #20399d;
+}
+
+#region-content .more-link a:hover  {
+	text-decoration: none;
+}
+
+#region-content .button {
+	display:block;
+	margin:30px 0;
+	text-transform:uppercase;
+	width:auto;
+}
+#region-content .button a {
+	color:#fff;
+	font-size:18px;
+	padding: 15px 25px;
+	background:#002f6c;
+}
+#region-content .button a:hover {
+	text-decoration:underline;
+}
+
+#zone-content-wrapper {
+	border-top: 5px solid #002F6C;
+	margin-top: -4px;
+	padding-top: 15px;
+}
+
+#zone-content-wrapper #zone-content ul.pager li {
+    background:0;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+/*********************************************
+** Responsive Mobile Menus
+*********************************************/
+#mobile-menu {
+  background: url("/sites/all/themes/global/images/mobile-menu-orange.png") 0px 0px no-repeat;
+  height: 32px;
+  width: 24px;
+  margin-top: -4px;
+  float:left;
+}
+
+#mobile-menu p {
+	display: none;
+}
+
+#zone-menu-wrapper {
+  background: #dbdbdb;
+  display: none;
+  position: absolute;
+  top:45px;
+  left:0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+#zone-menu-wrapper #region-menu {
+  margin: 0;
+}
+
+#block-nice-menus-1 {
+	display: none;
+}
+
+#block-menu-block-1 {
+	background: #dbdbdb;
+	width:100%;
+}
+
+#block-menu-block-1 ul {
+	padding-left: 0px;
+}
+
+#block-menu-block-1 ul.menu {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#block-menu-block-1 li {
+	border-width: 0px 2px 2px;
+	border-style: none solid solid;
+	border-color: #CCC;
+	border-left: none;
+	border-right: none;
+	background: #dbdbdb;
+	display: block;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 0.5em 0.5em 0.5em 1em;
+	margin-left: 0;
+}
+
+#block-menu-block-1 li a,
+#block-menu-block-1 li span {
+	font-family:'ITC Franklin GothicLTW01DmCnIt', Arial, sans-serif;
+	font-size:20px;
+	color:#002F6C;
+	text-transform:uppercase;
+  	color: #002F6C;
+}
+
+#block-menu-block-1 li a:hover {
+	text-decoration: none;
+	
+}
+
+#block-menu-block-1 li.active {
+  background: #383838;
+}
+
+#block-menu-block-1 a.active {
+  color: white;
+}
+
+#block-menu-block-1 li ul {
+  	display: none;
+  	margin: 0.5em 0 0 -1em;
+}
+
+#block-menu-block-1 li.expanded {
+  	padding: 0.5em 0 0.5em 1em;
+  	background: url("/sites/all/themes/global/images/caret-down-blue.png") no-repeat;
+	background-position: 95% 10px;
+	background-size: auto, 20px;
+}
+
+#block-menu-block-1 li li {
+	background: #F1F1F1;
+}
+
+#block-menu-block-1 li.expanded-mobile-menu{
+	background: url("/sites/all/themes/global/images/caret-up-blue.png") no-repeat;
+	background-position: 95% 10px;
+	background-size: auto, 20px;
+}
+
+/************************
+** Toggling Search Bar
+*************************/
+#zone-search {
+	display: none;
+}
+
+#region-top {
+	margin: 0px;
+	width: 100%;
+}
+
+#search-block-form .form-text {
+	font-family:"ITC Franklin Gothic LT W01DmCn",Arial,sans-serif;
+	font-size: 24px;
+	color: #5e5e5e;
+	background: none repeat scroll 0 0 white;
+    border: none;
+    padding: 5px;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0;
+    height: 50px;
+}
+       
+#search-block-form .form-text::-webkit-input-placeholder {
+   color: #002F6C;
+   opacity: 0.9;
+}
+#search-block-form .form-text:-moz-placeholder { /* Firefox 18- */
+   color: #002F6C; 
+   opacity: 0.9;
+}
+#search-block-form .form-text::-moz-placeholder {  /* Firefox 19+ */
+   color: #002F6C;
+   opacity: 0.9;
+}
+#search-block-form .form-text:-ms-input-placeholder {  
+   color: #002F6C;
+   opacity: 0.9;
+}
+
+#search-block-form .form-submit {
+	font-family: 'ITC Franklin GothicLTW01BkCnIt';
+	background-color: #E57200;
+	border: 1px solid #E57200;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 19px;
+	padding: 6px 10px;	
+	text-decoration:none;
+	text-shadow: 0px 1px 0px #b23e35;
+	letter-spacing: 1px;
+	width: 20%;
+	height: 50px;
+	float: right;
+}
+
+/*********************************************
+** Top User Bar
+*********************************************/
+#zone-user-wrapper .region-user-first p {
+  margin: 0;
+  padding: 0;
+}
+
+#zone-user-wrapper .region-user-first img {
+  max-width: 170px;
+}
+
+#zone-user-wrapper .region-user-first {
+  float: left;
+  width: 170px;
+  padding-top: 11px;
+}
+
+#zone-user-wrapper .region-user-second {
+  z-index: 10;
+  float: right;
+  width: 60px;
+  margin: 0px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+#search-toggle-button {
+  float:right;
+  border: none;
+  cursor: pointer;
+  color:#eb5f0c;
+  font-size: 17px;
+  height: 25px;
+  width: 25px;
+}
+
+#search-toggle-button p {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 900;
+    padding-top: 0.2em;
+    text-transform: uppercase;
+    display: none;
+}
+
+.search-close {
+	background: -moz-linear-gradient(left, rgba(0,47,108,1) 0%, rgba(0,47,108,1) 45%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,47,108,1)), color-stop(45%, rgba(0,47,108,1)), color-stop(45%, rgba(255,255,255,1)), color-stop(71%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(0,47,108,1) 0%, rgba(0,47,108,1) 45%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,47,108,1) 0%, rgba(0,47,108,1) 45%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,47,108,1) 0%, rgba(0,47,108,1) 45%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(0,47,108,1) 0%, rgba(0,47,108,1) 45%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f6c', endColorstr='#ffffff', GradientType=1 );
+	border-bottom: dotted 2px #002F6C;
+}
+
+.search-open-button {
+	background: rgba(0, 0, 0, 0) url("/sites/all/themes/global/images/2015-template/search-icon-dark-orange.png") no-repeat scroll right top;
+}
+
+.search-close-button {
+	background: rgba(0, 0, 0, 0) url("/sites/all/themes/global/images/2015-template/blue-cross.png") no-repeat scroll right top;
+}
+
+.search-close-button p {
+	display:none;	
+}
+
+/***********************
+** Banner Zone Branding
+************************/
+#zone-branding-wrapper {
+	background:#fff;
+}
+
+#zone-branding-wrapper #zone-branding .branding-data .site-name {
+  font-family:'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+  font-size: 30px;
+  text-transform:uppercase;
+  font-style:normal;
+  margin: 0;
+  padding: 8px;
+  padding-top: 0px;
+  color:#002F6C;
+  max-width:none;
+}
+
+#zone-branding-wrapper #zone-branding .branding-data .site-name a {
+  color: #002F6C;
+}
+
+#zone-branding-wrapper #zone-branding .branding-data .site-slogan {
+  color: #666666;
+  font-size: 1.3em;
+  margin: 0 0 0 0;
+  text-transform:uppercase;
+  padding-bottom: 10px;
+}
+
+#zone-branding-wrapper #zone-branding .social_media {
+  display: none;
+}
+
+/********************
+** Slideshow Styles
+*********************/
+#zone-header-wrapper #zone-header {
+	width:100%;
+	height:auto;
+	margin:0;
+}
+
+#zone-header-wrapper #zone-header #region-header-first {
+	width:100%;
+	height:auto;
+	margin:0;
+	overflow:hidden;
+}
+
+.slick-slider img,
+.slick img {
+	width: 100%;
+}
+
+.slick-initialized ~ .slick__arrow {
+	height: 100%;
+	display: none !important;
+}
+
+.slick-arrow {
+	top: 0%;
+	border-radius: 0%;
+	font-weight: bolder;
+}
+
+.slick-prev::before {
+	content: '<';
+}
+
+.slick-next::before {
+	content: '>';
+}
+
+.slick-prev, .slick-next {
+	background: rgba(255,255,255,0.7);
+	height: 101%;
+	width: 30px;
+}
+
+.slick-slider:hover, .slick-prev:hover, .slick-next:hover,
+.slick-prev:focus, .slick-next:focus {
+	background: white;
+}
+
+.slick-arrow::before {
+	font-size: 30px;
+	color: #002F6C;
+}
+
+.slick-arrow:hover::before {
+	color: #eb5f0c;
+}
+
+.slick .views-field-field-caption .field-content{
+	width: calc(100% - 60px);
+	margin: 0 auto;
+	color: black;
+}
+.slick .views-field-field-caption a {
+	text-decoration:underline;	
+}
+.slick .views-field-field-caption a:hover {
+	text-decoration:none;	
+}
+
+
+
+/*************************
+** Main Content
+**************************/
+#zone-content-wrapper #zone-content {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+#zone-content-wrapper #zone-content p {
+  font-size: 100%;
+  line-height: 170%;
+}
+
+#zone-content-wrapper #zone-content #region-content p a,
+#zone-content-wrapper #zone-content #region-content p a:link,
+#zone-content-wrapper #zone-content #region-content p a:visited {
+	text-decoration:underline;
+}
+#zone-content-wrapper #zone-content #region-content p a:hover {
+	text-decoration:none;
+}
+
+#breadcrumb {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family:'ITC Franklin GothicLTW01BkCnIt', Arial, sans-serif;
+	padding: 0 0 20px 5px;
+	color: #002F6C;
+}
+
+#breadcrumb a {
+	color: #666;
+}
+
+#zone-content-wrapper #zone-content ul {
+  line-height: 150%;
+  margin: 8px 0 15px 0;
+  padding-left: 18px;
+}
+
+#zone-content-wrapper #zone-content ul li {
+  list-style: none;
+  background: url("/sites/all/themes/global/images/2015-template/bullet_blue.png") 0 9px no-repeat;
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+#zone-content-wrapper #zone-content ul li ul li {
+  background: url("/sites/all/themes/global/images/2015-template/arrow-blue.png") 0 9px no-repeat;
+}
+
+#zone-content-wrapper #zone-content ul.tabs li {
+  background: none;
+  padding-left: 0;
+}
+
+#zone-content-wrapper #zone-content #region-content.grid-12 .field-name-body h2 {
+	margin-top: 1em;
+	text-transform: uppercase;
+}
+
+#zone-content-wrapper #zone-content #region-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+#zone-content-wrapper #zone-content #region-content blockquote.image-field-caption {
+	color:#666;
+	font-size:16px;
+	margin:0 0 2.5em 0;
+}
+
+body.front #zone-content-wrapper #zone-content #region-content blockquote.image-field-caption {
+	display:none;	
+}
+
+/*********************
+** Sidebar First
+**********************/
+#zone-content-wrapper #zone-content #region-sidebar-first {
+	margin:20px 0 20px 0px;
+	padding-left: 10px;
+	background:#efefef;
+}
+.page-node-158 #zone-content-wrapper #zone-content #region-sidebar-first {
+	background:none!important;
+}
+#zone-content-wrapper #zone-content .region-sidebar-first-inner {
+	padding-left: 5px;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .menu-block-wrapper {
+	display: none;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first h2 {
+	font-family:'ITC Franklin GothicLTW01DmCnIt', Arial, sans-serif;
+	font-size:20px;
+	color:#002F6C;
+	text-transform:uppercase;
+	background: url("/sites/all/themes/global/images/2015-template/orange-dot-menu.png") repeat-x,
+				url("/sites/all/themes/global/images/caret-down-blue.png") no-repeat;
+	background-position: bottom left, 95% 55%;
+	background-size: auto, 20px;
+	padding: 10px 0 5px 0;
+	margin-bottom:10px;
+	cursor: pointer;
+}
+#zone-content-wrapper #zone-content #region-sidebar-first h2 a {
+	color:#EB5F0C;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .expanded-secondary-menu{
+	background: url("/sites/all/themes/global/images/2015-template/orange-dot-menu.png") repeat-x,
+				url("/sites/all/themes/global/images/caret-up-blue.png") no-repeat;
+	background-position: bottom left, 95% 55%;
+	background-size: auto, 20px;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu {
+  	margin: 0;
+  	padding: 0;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu li {
+  	display: block;
+  	background: none;
+  	margin-bottom: 10px;
+  	margin-left: 0;
+  	padding: 0;
+  	line-height: 1.3em;
+  	text-transform:uppercase;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu li a {
+	font-family:'ITC Franklin GothicLTW01DmCnIt', Arial, sans-serif;
+	font-size:18px;
+	color:#002F6C;
+	padding-right:25px;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu li a:hover {
+	color:#EB5F0C;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu ul {
+	margin-top:5px;
+	margin-left:15px;	
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu li .active {
+  	color: #e57200;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first ul.menu li.active {
+  	background:url("/sites/all/themes/global/images/2015-template/submenu-nav-arrow-small.png") top 0px right 20px no-repeat;
+}
+
+/***********************
+** News Block
+************************/
+#zone-content-wrapper #zone-content #region-content .news {
+	margin-bottom: 0px;
+	/*float:left;*/
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .news h2.block-title, #block-views-news-block-1 h2.block-title, #block-views-news-block-3 h2.block-title {
+	text-transform: none;
+	background: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/green-dot.png") bottom left repeat-x;
+	padding-bottom: 10px;
+	font-family: 'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+font-size: 30px;
+color: #002F6C;
+}
+/*#block-views-news-block-1 {
+	margin-top: 100px;*/
+
+}
+#zone-content-wrapper #zone-content #region-sidebar-first .news .views-row {
+	overflow:hidden;
+	margin-bottom:5px;
+}
+
+#block-views-news-block-1 .views-row {
+	margin-top:15px;	
+}
+#zone-content-wrapper #zone-content #region-sidebar-first .news .views-field-field-image, #block-views-news-block-1 .views-field-field-image, #block-views-news-block-3 .views-field-field-image {
+	margin: 0px 10px 5px 0px;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .news .image-field-caption, #block-views-news-block-1 .image-field-caption, #block-views-news-block-3 .image-field-caption {
+	display:none;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .news .views-field-field-subtitle, #block-views-news-block-1 .views-field-field-subtitle. #block-views-news-block-3 .views-field-field-subtitle{
+	color:#EB5F0C;
+	padding-bottom:0;
+	font-weight:normal;
+	font-size:18px;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .news .views-field-title h3, #block-views-news-block-1 .views-field-title h3, #block-views-news-block-3 .views-field-title h3 {
+	margin-bottom:5px;
+	font-size: 19px;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first .news .views-field-title a, #block-views-news-block-1 .views-field-title a, #block-views-news-block-3 .views-field-title a {
+	color:#002F6C;
+	font-size:18px;
+}
+
+#zone-content-wrapper #zone-content #region-content .news .views-field-body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.2em;	
+}
+#block-views-news-block-1 .views-field-body, #block-views-news-block-3 .views-field-body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.2em;	
+	padding-bottom: 10px;
+}
+
+/*******************
+** News Node
+********************/
+.node-type-news #zone-content-wrapper #zone-content h1#page-title {
+	display:none;
+}
+body.node-type-news .field-name-field-subtitle, .views-field-field-subtitle h3 {
+	color: #EB5F0C;
+	font-size: 24px;
+	padding-bottom: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+body.node-type-news .field-name-field-image, .views-field-field-image {
+	margin-bottom: 50px;	
+}
+
+body.node-type-news #block-system-main, #block-views-news-block-2 {
+	width: 95%;
+	/*padding-right: 95px;*/
+	background-image: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/gray_dot.gif");
+	background-repeat: repeat-y;
+	background-position: right;
+
+} 
+body.node-type-news .node-news, .view-id-news .views-row-1 {
+	width: 95%;
+}
+
+
+
+/*******************
+** Sunburst Stats
+********************/
+#zone-content-wrapper #zone-content #region-content .sunburst-stats {
+	font-size: 24px;
+	font-family: 'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+	color: #002F6C;
+	text-transform: uppercase;
+	display: block;
+	margin: 15px auto;
+	overflow: hidden;
+	width: 90%;
+	font-weight: 100;
+}
+
+#zone-content-wrapper #zone-content #region-content .sunburst-stats span {
+	font-size: 110px;
+	font-family: 'BodoniW01-PosterItalic';
+	color: #002F6C;
+	display: block;
+	clear: both;
+	margin-bottom: 40px;
+}
+
+#zone-content-wrapper #zone-content #region-content .sunburst-stats ul.sunburst {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#zone-content-wrapper #zone-content #region-content .sunburst-stats ul.sunburst li {
+	background: url("/sites/all/themes/global/images/2015-template/sunburst.png") center top no-repeat;	
+	display: block;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	padding: 105px 0 50px;
+}
+
+/**********************
+** Large Orange Quote
+***********************/
+#zone-content-wrapper #zone-content #region-content .quote {
+	margin: 15px auto 30px;
+	padding: 0;
+	font-size: 30px;
+	font-family: 'BodoniW01-PosterItalic';
+	color: #EB5F0C;
+	text-align: center;	
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+#zone-content-wrapper #zone-content #region-content .quote p {
+	width: 80%;
+	margin: 0 auto;
+	line-height: 1.2em;	
+}
+
+#zone-content-wrapper #zone-content #region-content .quote-author {
+	font-family:'ITC Franklin Gothic LT W01 Bk', Arial, sans-serif;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+hr.blue-dotted {
+	background: url("/sites/all/themes/global/images/2015-template/blue-dot.png") center left repeat-x;	
+	height: 8px;
+	border: 0;
+}
+
+/*********************
+** Featured Articles
+**********************/
+#zone-content-wrapper #zone-content #region-content .view-featured-articles .views-row {
+	padding: 0 0 30px 0;
+	display: block;
+	clear: both;
+	margin: 0 0 50px 0;
+	overflow: hidden;
+	border-bottom: 1px solid #538335;
+	
+}
+
+#zone-content-wrapper #zone-content #region-content .view-featured-articles .views-row-last {
+	background: none;	
+}
+
+#zone-content-wrapper #zone-content #region-content .view-featured-articles img {
+	width: 100%;	
+	height: auto;
+	margin-bottom: 10px;
+}
+
+#zone-content-wrapper #zone-content #region-content .view-featured-articles .views-row .article-no-image {
+	margin: 0 10px;	
+}
+
+#zone-content-wrapper #zone-content #region-content .view-featured-articles .views-row .views-field-field-image p {
+	line-height: 1.7em;
+}
+
+
+/******************************
+** Article Node page
+*******************************/
+
+body.node-type-article .field-name-field-image {
+	margin-bottom:30px;
+}
+
+/******************************
+** Related Links Orange Boxes
+*******************************/
+#zone-content-wrapper #zone-content #region-content .section-links {
+	margin-bottom: 50px;
+}
+
+#zone-content-wrapper #zone-content #region-content .section-links h2.block-title {
+	margin-bottom: 35px;
+	padding-top: 40px;
+	text-transform: uppercase;
+}
+
+#zone-content-wrapper #zone-content #region-content .section-links .views-row {
+	overflow: hidden;
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+
+#zone-content-wrapper #zone-content #region-content .section-links .views-row .views-field-title {
+	background: #002F6C;
+	padding: 1.3em 0;
+	font-family: "ITC Franklin GothicLTW01DmCnIt",Arial,sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+#zone-content-wrapper #zone-content #region-content .section-links .views-row .views-field-title a {
+	color: #fff;
+}
+
+#zone-content-wrapper #zone-content #region-content .section-links .views-row .views-field-title:hover {
+	background:#002F6C;
+}
+
+/***********************************
+** Postscript - Call to Action block 
+***********************************/
+#zone-postscript-wrapper #zone-postscript #region-postscript-first {
+	margin-right: 0;
+	margin-left: 0;	
+	width:100%;
+}
+
+#zone-postscript-wrapper #zone-postscript {
+	margin-top: 10px;
+	width:100%;
+}
+
+
+/***********************************
+** Postscript - Subpage Articles block 
+***********************************/
+#zone-postscript-wrapper #zone-postscript .subpage-articles {
+	padding-top: 40px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#zone-postscript-wrapper #zone-postscript img {
+	margin-bottom: 10px;
+}
+
+#zone-postscript-wrapper #zone-postscript .subpage-articles h2.block-title {
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+#zone-postscript-wrapper #zone-postscript .subpage-articles .views-field-title h3 {
+	color: #002F6C;
+}
+#zone-postscript-wrapper #zone-postscript .subpage-articles .views-field-field-image .image-field-caption {
+	display:none;
+}
+/*****************
+** Webforms
+******************/
+.node-webform fieldset legend {
+	font-size: 22px;
+	font-family: 'ITC Franklin Gothic LT W01 Bk', Arial, sans-serif;
+	font-style: italic;
+}
+
+.node-webform input.webform-submit,
+.node-webform .form-submit {
+	background: #002F6C;
+	color: #fff;
+	padding: 10px 40px 8px;
+	border: 0 none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.node-webform .form-file {
+	padding: 10px 0;	
+}
+
+.node-webform input.webform-submit:hover {
+	background: #666;	
+}
+
+.node-webform .description {
+	font-style: italic;
+	font-size: 12px;	
+}
+
+.node-webform select {
+	font-size: 85%;	
+}
+.node-webform .marker, .node-webform .form-required {
+    color: #C10000;
+}
+
+/*********************
+** Footer Styles
+**********************/
+#zone-footer-wrapper {
+  background: #002359;
+  bottom: 0;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+#zone-footer-wrapper #zone-footer {
+  color: #fff;
+  font-size: 15px;
+  padding: 30px 0;
+}
+
+#zone-footer-wrapper #zone-footer .region-inner {
+	padding:0 20px;	
+}
+
+#zone-footer-wrapper #zone-footer p {
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+#zone-footer-wrapper #zone-footer a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#zone-footer-wrapper #zone-footer a:hover {
+	text-decoration: none;	
+}
+
+#zone-footer-wrapper #zone-footer #region-footer-first,
+#zone-footer-wrapper #zone-footer #region-footer-second .contact {
+	padding-bottom: 20px;
+}
+
+#zone-footer-wrapper #zone-footer #region-footer-second p.copyright {
+	clear: both;
+	display: block;
+	padding-top: 20px;
+	color: #9fbad9;
+	font-size: 14px;
+}
+
+#zone-footer-wrapper #zone-footer #region-footer-fourth img {
+	margin-right: 8px;
+}
+#zone-footer-wrapper #zone-footer #region-footer-fourth p {
+	line-height: 2em;	
+}
+
+/*********************
+** Front page styles
+**********************/
+body.front #zone-content-wrapper #zone-content .field-name-title h1,
+body.front #zone-content-wrapper #zone-content .block-breadcrumb,
+body.front #zone-content-wrapper #zone-content h1#page-title {
+  display: none;
+}
+
+body.front #zone-menu-wrapper #region-menu #nice-menu-1 li li.last {
+  display: block;
+}
+
+body.page-search #region-content form input.form-text {
+  width: 96%;
+}
+
+body.page-search #region-content form .form-submit {
+
+}
+
+/**************
+** To Top Button
+***************/
+#toTop {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+/*****************
+** Callout Styles
+******************/
+.callout {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	width: 100%;
+	webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.callout.pull-left {
+	margin: 5px 15px 5px 0px;
+}
+
+.callout.pull-right {
+	margin: 5px 0px 5px 15px;
+}
+
+.callout-header {
+	color: #002F6C;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: 'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+	text-align: center;
+	padding: 10px 15px;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.callout-body {
+	padding: 0px 15px;
+}
+
+/*****************
+** Button Styles
+******************/
+#section-content .btn,
+#section-content .form-submit {
+	margin-top: 0px;
+	display: inline-block;
+	padding: 6px 12px 3px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	color: #FFF;
+	background-color: #002F6C;
+	border-color: #2E6DA4;
+	border-radius: 3px;
+	font-style: normal;
+}
+
+#section-content .btn:hover, 
+#section-content .btn:focus, 
+#section-content .btn:active, 
+#section-content .btn.active,
+#section-content .form-submit:hover, 
+#section-content .form-submit:focus, 
+#section-content .form-submit:active, 
+#section-content .form-submit.active { 
+  color: #FFFFFF; 
+  background-color: #29679E; 
+  border-color: #2E6DA4; 
+} 
+ 
+#section-content .btn.disabled, 
+#section-content .btn[disabled], 
+#section-content .btn.disabled:hover, 
+#section-content .btn[disabled]:hover, 
+#section-content .btn.disabled:focus, 
+#section-content .btn[disabled]:focus,
+#section-content .btn.disabled:active, 
+#section-content .btn[disabled]:active,
+#section-content .btn.disabled.active, 
+#section-content .btn[disabled].active,
+#section-content .form-submit.disabled, 
+#section-content .form-submit[disabled], 
+#section-content .form-submit.disabled:hover, 
+#section-content .form-submit[disabled]:hover, 
+#section-content .form-submit.disabled:focus, 
+#section-content .form-submit[disabled]:focus,
+#section-content .form-submit.disabled:active, 
+#section-content .form-submit[disabled]:active,
+#section-content .form-submit.disabled.active, 
+#section-content .form-submit[disabled].active { 
+  background-color: #337AB7; 
+  border-color: #2E6DA4; 
+} 
+
+.btn {
+	cursor: pointer;
+}
+
+.btn.disabled,
+.btn[disabled]{
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+
+#zone-content-wrapper #zone-content #region-content p a.btn {
+	text-decoration: none;
+}
+
+/***************************
+** General Table Styles
+****************************/
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+table > thead > tr > th,
+table > thead > tr > td {
+  border-bottom-width: 2px;
+}
+table table {
+  background-color: #fff;
+}
+table > tbody > tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+/***********************
+** Events Styles
+************************/
+.front #block-views-events-block-1 {
+	margin-bottom: 0px;
+}
+
+.front #block-views-events-block-1 a {
+	color: #002F6C;
+}
+
+.front #block-views-events-block-1 .views-row {
+	margin: 0px 0px 25px 0px;
+}
+
+.front #block-views-events-block-1 .views-field-field-date {
+	color: white;
+	background-color: #EB5F0C;
+	margin: 0;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+.front #block-views-events-block-1 .views-field-field-date-1 {
+	color: white;
+	background-color: #002F6C;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.front #block-views-events-block-1 .views-field-title {
+	padding: 30px 10px;
+	font-size: 18px;
+	background-color: #F1F1EF;
+	min-height: 60px;
+}
+
+.context-events .view-events .view-content {
+	margin-bottom: 65px;
+	border-bottom: 1px solid #538335;
+}
+
+.context-events .view-events .views-row {
+	margin-bottom: 35px;
+	padding-top: 35px;
+	border-top: 1px dotted #538335;
+}
+
+/*Add to Cal button formatting*/
+.context-events .view-events .addtocal {
+	font-size: 16px;
+	color: #538335;
+	
+}
+
+.context-events .view-events .views-field-field-date h2 {
+	text-transform: none;
+	font-size: 26px;
+}
+
+.context-events .view-events .views-field-field-location h3 {
+	color: #087E8B;
+}
+
+.context-events .view-events .view-footer a {
+	background-color: #48184B;
+	color: white;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.context-events .view-events .view-footer a:hover {
+	text-decoration: underline;
+}
+
+/***********************
+** Staff Styles
+************************/
+.page-staff .view-content .views-row {
+	background-color: #F1F1EF;
+	padding: 15px;
+}
+
+.page-staff .view-display-id-page .view-content .views-row {
+	width: calc(100% - 30px);
+	float: left;
+}
+
+.page-staff .view-display-id-page .view-content .views-row:nth-child(n+3) {
+	margin-top: 15px;
+}
+
+.page-staff .view-content .views-row .views-field-field-photo {
+	float: left;
+	padding: 5px 5px 1px 5px;
+	margin: 0px 30px 20px 0px;
+	background-color: white;
+}
+.page-staff .views-field-nothing a {
+	text-decoration:underline;	
+}
+.page-staff .views-field-nothing a:hover {
+	text-decoration:none;	
+}
+
+/***********************
+** Generic Taxonomy Page
+************************/
+body.page-taxonomy .field-name-field-tags {
+	padding-bottom:20px;	
+}
+body.page-taxonomy #zone-content-wrapper #zone-content ul {
+	padding:0;
+	margin:0;	
+}
+body.page-taxonomy #zone-content-wrapper #zone-content ul.links li {
+	padding:0;
+	margin:0;
+	background:0;	
+}
+body.page-taxonomy article {
+	margin-bottom:30px;
+	padding-bottom:30px;
+	border-bottom:1px solid #efefef;	
+}
+body.page-taxonomy .node-readmore {
+	text-transform:uppercase;	
+}
+
+/**********************
+** Custom Header
+***********************/
+#zone-user-wrapper {
+	background-color: #002F6C;
+	margin-bottom: 10px;
+}
+
+#zone-branding-wrapper {
+
+}
+
+.logo-img {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.logo-img img {
+	max-width: 100%;
+}
+
+#zone-search h2.block-title {
+	display: none;
+}
+
+#zone-search #edit-type-wrapper {
+	display: none;
+}
+
+/********************
+** Home Top Styles
+*********************/
+#zone-content-wrapper #zone-content #region-sidebar-first #block-views-events-block-1 h2.block-title,
+#zone-content-wrapper #zone-content #region-sidebar-first #block-views-exp-content-page h2.block-title {
+	text-transform: none;
+	background: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/green-dot.png") bottom left repeat-x;
+padding-bottom: 10px;
+font-family: 'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+font-size: 30px;
+color: #002F6C;
+}
+
+#block-views-events-block-1 .views-field-nothing {
+	overflow: hidden;
+}
+
+#block-views-events-block-1 .date {
+	float: left;
+	width: calc(25% - 20px);
+	margin-right: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#block-views-events-block-1 h3.month {
+	background-color: #9AB488;
+	color: white;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+#block-views-events-block-1 h3.day {
+	background-color: #002F6C;
+	margin-top: 0px;
+	padding: 5px 0px;
+	color: white;
+}
+
+#block-views-events-block-1 .info {
+	float: left;
+	width: 75%;
+	overflow: hidden;
+} 
+
+#block-views-events-block-1 .info h3 {
+	margin-bottom: 5px;
+font-size: 19px;
+}
+
+#zone-content-wrapper #zone-content #block-views-events-block-1 .info p {
+	margin-bottom: 0px;
+	line-height: 1.4;
+}
+
+#block-views-exp-content-page #edit-title-wrapper,
+#block-views-exp-content-page #edit-type-wrapper {
+	/*float: none;*/
+}
+
+#block-views-exp-content-page #edit-title-wrapper {
+	width: 60%;
+}
+
+#block-views-exp-content-page #edit-type-wrapper {
+	margin: 15px 0 10px;
+}
+
+#block-views-exp-content-page .block-title {
+	display: none;
+}
+
+#block-views-exp-content-page #edit-title-wrapper input,
+#block-views-exp-content-page #edit-title-wrapper input {
+	width: 100%;
+	height: 39px;
+	font-size: 24px;
+	padding-top: 4px;
+}
+
+
+#block-views-exp-content-page #edit-type-wrapper .form-type-bef-checkbox,
+#block-views-exp-content-page #edit-type-wrapper .form-type-bef-checkbox {
+	margin-bottom: 5px;
+}
+
+#block-views-exp-content-page #edit-type-wrapper label,
+#block-views-exp-content-page #edit-type-wrapper label {
+	padding-left: 10px;
+	color: #002F6C;
+}
+
+#block-views-exp-content-page #edit-submit-content,
+#block-views-exp-content-page #edit-submit-content {
+	background-color: #9AB488;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 0;
+	width: 75px;
+	height:50px;
+	margin-top: 0px;
+	font-weight: bolder;
+}
+
+body.front #block-block-27 {
+	clear: right;
+	text-align: left;
+	font-style: normal;
+  	/*float: left;*/
+}
+
+body.front #block-block-27 h3 {
+	font-size: 28px;
+}
+
+body.front #block-block-27 h3.underline {
+	text-decoration: underline;
+}
+
+/******************************
+** Home Content Filter Styles
+*******************************/
+body.front #block-views-content-types-block .view-content {
+  display: flex;
+  margin: 0 auto;
+}
+
+body.front #block-views-content-types-block .view-content .views-row {
+/*  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;*/
+  margin: 10px 5px 0px 5px;
+  text-align: center;
+}
+
+body.front #block-views-content-types-block .view-content .views-row img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	width:170px;
+}
+body.front #block-views-content-types-block h2 {
+	background: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/green-dot.png") bottom left repeat-x;
+	padding-bottom: 10px;
+	text-transform: initial;
+
+}
+body.front #block-views-content-types-block .view-header p {
+width: 7%;
+float: left;
+margin-top: 9px;
+font-weight: 700;
+font-size: 16px;
+}
+/******************************
+** Home & Search Content Type Styles
+*******************************/
+body.front #block-views-content-block-1 {
+  	width: auto;
+ 	margin: 30px auto;
+}
+
+#block-system-main .view-id-people,
+#block-system-main .view-id-tools,
+#block-system-main .view-id-projects,
+#block-system-main .view-id-organizations,
+#block-system-main .view-id-resources {
+	width: auto;
+	margin: 0px auto;
+}
+
+body.front #block-views-content-block-1 .view-content,
+#block-system-main .view-id-people .view-content,
+#block-system-main .view-id-tools .view-content,
+#block-system-main .view-id-projects .view-content,
+#block-system-main .view-id-organizations .view-content,
+#block-system-main .view-id-resources .view-content {
+	margin-bottom: 30px;
+}
+
+body.front #block-views-content-block-1 .view-content .views-row,
+body.page-search #block-system-main .view-content .views-row,
+#block-system-main .view-id-people .view-content .views-row,
+#block-system-main .view-id-tools .view-content .views-row,
+#block-system-main .view-id-projects .view-content .views-row,
+#block-system-main .view-id-organizations .view-content .views-row,
+#block-system-main .view-id-resources .view-content .views-row {
+	width: 100%;
+}
+
+body.front #block-views-content-block-1 .view-content .views-row .body .featured-img,
+body.page-search #block-system-main .view-content .views-row .body .featured-img,
+#block-system-main .view-id-people .view-content .views-row .body .featured-img,
+#block-system-main .view-id-tools .view-content .views-row .body .featured-img,
+#block-system-main .view-id-projects .view-content .views-row .body .featured-img,
+#block-system-main .view-id-organizations .view-content .views-row .body .featured-img,
+#block-system-main .view-id-resources .view-content .views-row .body .featured-img {
+	text-align: center;
+}
+
+body.front #block-views-content-block-1 .view-content .views-row .body img,
+body.page-search #block-system-main .view-content .views-row .body img,
+#block-system-main .view-id-people .view-content .views-row .body img,
+#block-system-main .view-id-tools .view-content .views-row .body img,
+#block-system-main .view-id-projects .view-content .views-row .body img,
+#block-system-main .view-id-organizations .view-content .views-row .body img,
+#block-system-main .view-id-resources .view-content .views-row .body img {
+	max-width: 100%;
+	height: auto;
+}
+
+body.page-search #block-system-main {
+	margin-bottom: 50px;
+}
+
+body.front #block-views-content-block-1 h3.title, 
+body.page-search #block-system-main h3.title,
+#block-system-main .view-id-people h3.title,
+#block-system-main .view-id-tools h3.title,
+#block-system-main .view-id-projects h3.title,
+#block-system-main .view-id-organizations h3.title,
+#block-system-main .view-id-resources h3.title {
+	padding: 5px 35px 5px 10px;
+	background-position: right;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+
+body.front #block-views-content-block-1 div.body, 
+body.page-search #block-system-main div.body,
+#block-system-main .view-id-people div.body,
+#block-system-main .view-id-tools div.body,
+#block-system-main .view-id-projects div.body,
+#block-system-main .view-id-organizations div.body,
+#block-system-main .view-id-resources div.body {
+	padding: 0px 10px 10px 10px;
+}
+
+body.front #block-views-content-block-1 .people,
+body.page-search #block-system-main .people,
+#block-system-main .view-id-people .people {
+	border: 1px solid #6E984C;
+}
+
+body.front #block-views-content-block-1 .people h3.title,
+body.front #block-views-content-types-block .views-row.views-row-1 a,
+body.page-search #block-system-main .people h3.title,
+#block-system-main .view-id-people .people h3.title {
+	background-color: #6E984C;
+	background-image: url(../images/people-icon.jpg);
+}
+body.front #block-views-content-block-1 .tools,
+body.page-search #block-system-main .tools,
+#block-system-main .view-id-tools .tools {
+	border: 1px solid #012676;
+}
+
+body.front #block-views-content-block-1 .tools h3.title,
+body.front #block-views-content-types-block .views-row.views-row-2 a,
+body.page-search #block-system-main .tools h3.title,
+#block-system-main .view-id-tools .tools h3.title {
+	background-color: #012676;
+	background-image: url(../images/tools-icon.jpg);
+}
+
+body.front #block-views-content-block-1 .projects,
+body.page-search #block-system-main .projects,
+#block-system-main .view-id-projects .projects {
+	border: 1px solid #48194D;
+}
+
+body.front #block-views-content-block-1 .projects h3.title,
+body.front #block-views-content-types-block .views-row.views-row-3 a,
+body.page-search #block-system-main .projects h3.title,
+#block-system-main .view-id-projects .projects h3.title {
+		background-color: #48194D;
+	background-image: url(../images/projects-icon.jpg);
+}
+
+body.front #block-views-content-block-1 .organization,
+body.page-search #block-system-main .organization,
+#block-system-main .view-id-organizations .organization {
+	border: 1px solid #097F8B;
+}
+
+body.front #block-views-content-block-1 .organization h3.title,
+body.front #block-views-content-types-block .views-row.views-row-4 a,
+body.page-search #block-system-main .organization h3.title,
+#block-system-main .view-id-organizations .organization h3.title {
+	background-color: #097F8B;
+	/*background-image: url(../images/resources-icon.jpg);*/
+	background-image: url(../images/orgs-icon.png);
+	
+}
+body.front #block-views-content-block-1 .resources,
+body.page-search #block-system-main .resources,
+#block-system-main .view-id-resources .resources {
+	border: 1px solid #D14905;
+}
+
+body.front #block-views-content-block-1 .resources h3.title,
+body.front #block-views-content-types-block .views-row.views-row-5 a,
+body.page-search #block-system-main .resources h3.title,
+#block-system-main .view-id-resources .resources h3.title {
+	background-color: #D14905;
+	background-image: url(../images/resources_icon.gif);
+	
+}
+
+body.front #block-views-content-block-1 .practices,
+body.page-search #block-system-main .practices {
+	border: 1px solid #E4C763;
+}
+
+body.front #block-views-content-block-1 .practices h3.title,
+body.page-search #block-system-main .practices h3.title {
+	background-color: #E4C763;
+	background-image: url(../images/practices-icon.jpg);
+}
+
+
+
+body.front #block-views-content-block-1 h3.title a,
+body.page-search #block-system-main h3.title a,
+#block-system-main .view-id-people h3.title a,
+#block-system-main .view-id-tools h3.title a,
+#block-system-main .view-id-projects h3.title a,
+#block-system-main .view-id-organizations h3.title a,
+#block-system-main .view-id-resources h3.title a {
+	color: white;
+}
+
+.ajax-progress-throbber {display: none}
+
+a:focus {
+	outline: 0;
+}
+
+body.front #block-views-content-block-1 .more-link,
+body.page-search #block-system-main .more-link {
+	background-color: #9AB488;
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	float: none;
+}
+
+body.front #block-views-content-block-1 .more-link a,
+body.page-search #block-system-main .more-link a{
+	color: white;
+	font-size: 18px;
+}
+
+
+/**************************
+** Person Node
+***************************/
+body.node-type-people .field-name-field-email {
+	font-size: 18px;
+}
+
+body.node-type-people .field-name-field-featured-image {
+	float: left;
+	padding: 0px 15px 15px 0px;
+}
+
+body.node-type-people #block-system-main {
+	margin-bottom: 20px;
+}
+
+body.node-type-people .view-relationships .views-row {
+	margin-bottom: 10px;
+}
+/**************************
+** Relationship Node
+***************************/
+body.node-type-relationship .field {
+	padding-bottom: 20px;
+}
+
+body.node-type-relationship .field-label {
+	font-size: 18px;
+}
+/**************************
+** 403 Page
+***************************/
+#section-content .btn.login {
+    float: left;
+    margin: 10px 10px;
+    padding: 12px 24px 10px 24px;
+    overflow: hidden;
+}
+
+/***************************
+** Relationship Dashboard
+****************************/
+body.page-relationships-dashboard .views-submit-button {
+	margin-top: 9px;
+}
+
+body.page-relationships-dashboard .view-content {
+	padding-top: 35px;
+	margin-top: 5px;
+	border-top: 2px solid #666;
+}
+
+/******************
+** Home Slider
+********************/
+body.front #block-views-slideshows-block {
+text-align: center;
+	width: calc(33.3% - 34px);
+	float: left;
+}
+
+#zone-content-wrapper #zone-content #region-sidebar-first #block-block-27 h2, 
+#zone-content-wrapper #zone-content #region-sidebar-first #block-block-86 h2 {
+	text-align: left;
+	text-transform: none;
+background: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/green-dot.png") bottom left repeat-x;
+padding-bottom: 10px;
+text-transform: initial;
+font-family: 'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+font-size: 30px;
+color: #002F6C;
+}
+
+body.front #block-views-slideshows-block .views-field-field-caption {
+    position: absolute;
+    bottom: 5px;
+    padding: 0px 10px;
+    background: rgba(256,256,256,0.75);
+    font-weight: bold;
+}
+/*****************
+Menu Safari Fix
+******************/
+ul.nice-menu-down{
+	height:49px;
+}
+/******************
+** Events Calendar
+*******************/
+body.page-events-calendar .view-id-calendar .view-header {
+	display: none;
+}
+
+.view-id-events .views-field-body {
+	margin-bottom: 50px;
+}
+
+.view-id-events .views-field-body span {
+	display: none;
+}
+
+@media (min-width: 300px) and (max-width: 1219px) {
+	#block-views-content-types-block-1 {
+  display:block;
+}
+#block-views-content-types-block {
+  display:none;
+}
+#block-views-content-types-block-1 h2 {
+  text-transform: initial;
+  background: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/green-dot.png") bottom left repeat-x;
+padding-bottom: 10px;
+}
+
+body.front #block-views-content-types-block-1 .views-row, body.front #block-views-content-types-block-1 .view-header {
+  float:left;
+  margin-right:10px;
+  margin-top: 20px
+}
+#block-views-content-types-block-1 .views-row.views-row a {
+  color: #fff;
+padding-right: 50px;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none !important;
+padding: 5px 44px 5px 10px;
+background-position: right;
+background-size: 20px;
+background-repeat: no-repeat; 
+background-position-x: 95%;
+}
+#block-views-content-types-block-1 .views-row.views-row-1 a {
+  background-color: #6E984C;
+  background-image: url(../images/people-icon.jpg);
+}
+#block-views-content-types-block-1 .views-row.views-row-2 a  {
+background-color: #012676; 
+background-image: url(../images/tools-icon.jpg);
+}
+#block-views-content-types-block-1 .views-row.views-row-3 a  {
+background-color: #48194D;
+background-image: url(../images/projects-icon.jpg);
+}
+#block-views-content-types-block-1 .views-row.views-row-4 a  {
+background-color: #087F8C;
+  background-image: url(../images/orgs-icon.png);
+}
+#block-views-content-types-block-1 .views-row.views-row-5 a  {
+background-color: #D14905;
+background-image: url(../images/resources_icon.gif);
+}
+#zone-content-wrapper #zone-content #region-content .news .views-field-field-image img {
+    max-width: 100px;
+    height: auto;
+}
+}
+@media (min-width: 300px) and (max-width: 980px) {
+.front #block-views-events-block-1 .views-row {
+    width: 350px;
+     margin: 0 0 25px 0!important;
+}
+}
+@media (min-width: 380px) and (max-width: 739px) {
+.logo-img {
+    float: left;
+}
+.site-name {
+    font-size: 48px;
+    line-height: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    max-width: none;
+}
+hgroup.site-name-slogan {
+    margin-left: 10px;
+}
+.branding-data .site-name {
+    font-family: 'ITC Franklin Gothic LT W01DmCn', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+    padding: 8px;
+    padding-top: 0px;
+    color: #002F6C;
+    max-width: none;
+}
+#zone-content-wrapper #zone-content #region-content .news .views-field-field-image img {
+    max-width: 100px;
+    height: auto;
+}
+}
+
+/*********************
+Content Text Filters
+**********************/
+#block-views-content-types-block .views-row.views-row a {
+color: #fff;
+padding-right: 50px;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none !important;
+padding: 5px 44px 5px 10px;
+background-position: right;
+background-size: 20px;
+background-repeat: no-repeat; 
+background-position-x: 95%;
+}
+
+/*******************
+Dotted Line
+*******************/
+#block-views-relationships-block {
+background: url("/sites//digitalhumanities.virginia.edu/themes/uvatemplate2016_theme/images/green-dot.png") bottom left repeat-x;
+padding-bottom: 10px;
+text-transform: initial;
+padding-top: 10px;
+margin-bottom: 20px;
+}
+
+/****************
+Search Box
+****************/
+.page-tools .view-tools #edit-title, .page-projects .view-tools button, input  {
+	line-height:25px;
+}
+.page-organizations .form-submit {
+	margin-top: 18px!important;
+}
+
+/**************
+People Page
+**************/
+.page-node.node-type-people #block-views-relationships-block h3 {
+color:#4f673d!important;
+margin-top:20px;
+}
+
+@media (min-width: 300px) and (max-width: 740px) {
+.ds-3col > .group-left {
+  width:100%;
+}
+body.node-type-people .field-name-field-featured-image {
+  width:25%;
+  float:none;
+}
+body.node-type-people .field-name-field-email {
+margin-bottom: 20px;
+}
+.ds-3col > .group-middle {
+  width:100%;
+  float:left;
+  margin-top:40px;
+}
+}
+@media (min-width: 741px) and (max-width:  980px) {
+#block-views-relationships-block {
+	margin-left:50px;
+}
+}
+.page-connection-organization #section-content .btn, #section-content .form-submit {
+	margin-top:20px;
+}
+
+@media(min-width:980px) and (max-width: 1220px) {
+  #zone-content-wrapper #zone-content #region-sidebar-first #block-block-27 {
+    width: 28%;
+    margin-right:25px;
+}
+.page-node-158 .container-12 .grid-9  {
+width: 100% !important;
+}
+.page-node-158 #zone-content-wrapper #zone-content #region-sidebar-first {
+  width: 100%;
+}
+#zone-content-wrapper #zone-content #region-sidebar-first #block-views-news-block,
+#zone-content-wrapper #zone-content #region-sidebar-first #block-views-events-block-1 {
+  float: left;
+  width:30%;
+  padding-right: 40px;
+}
+}
+.views-widget-filter-field_mao_tid .views-submit-button {display:none;}
