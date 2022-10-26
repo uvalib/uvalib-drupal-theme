@@ -1,0 +1,75 @@
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
+
+/// Pre-footer
+#footer-container {
+  background-color: $uva-blue-alt-lightest;
+
+  .footer-container-inner .first-footer>div {
+    line-height: 1;
+    padding: 0 !important;
+  }
+
+  p {
+    background-color: $uva-blue-alt-lightest;
+    padding-block-end: 0rem;
+    text-align: center;
+    margin-top: -10px;
+
+    a {
+      &::after {
+        padding-left: 0.25rem;
+        @include svg-base;
+        content: $icon-external-link;
+      }
+    }
+  }
+
+}
+
+/// Main Footer
+#footer-menu {
+  background-color: $uva-blue-alt-darkest;
+}
+
+#footer-menu-inner {
+  li {
+    list-style: none;
+    padding-block-start: 0.5rem;
+  }
+
+  div {
+    display: flex;
+
+    section div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+      padding-inline-start: 2rem;
+      padding-block-start: 0.5rem;
+
+      ul,
+      p {
+        padding-left: 0;
+        text-align: left;
+      }
+
+      h2 {
+        @include h4;
+      }
+
+      h2,
+      p,
+      a {
+        color: #fff !important;
+      }
+
+      .contextual-links a {
+        color: $uva-text-color-dark !important;
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 @use '../base/breakpoints'as *;
 @use '../base/colors'as *;
+@use '../base/typography'as *;
 
-/// WHEN ADDING MIXINS, PLEASE ADD ALPHABETICALLY
+/// WHEN ADDING MIXINS, PLEASE ADD ALPHABETICALLY - BY CATEGORY
 /// When including a new mixin, if you think that
 /// and example of how to use would be helpful, please
 /// include a "USAGE" section after the code.
@@ -55,7 +56,7 @@
 //   }
 // }
 
-// END BREAKPOINTS
+/// END BREAKPOINTS
 
 /// FLEX
 @mixin flex-start {
@@ -65,6 +66,27 @@
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
+}
+
+/// HEADER SIZES (USED WHEN NEEDING TO RESIZE AN EXISTING HEADER, BUT NOT THE TAG)
+@mixin h2 {
+  font-size: map-get($alt-font-sizes, h2) !important;
+  font-weight: map-get($font-weights, demi) !important;
+}
+
+@mixin h3 {
+  font-size: map-get($alt-font-sizes, h3) !important;
+  font-weight: map-get($font-weights, demi) !important;
+}
+
+@mixin h4 {
+  font-size: map-get($alt-font-sizes, h4) !important;
+  font-weight: map-get($font-weights, demi) !important;
+}
+
+@mixin h5 {
+  font-size: map-get($alt-font-sizes, h5) !important;
+  font-weight: map-get($font-weights, demi) !important;
 }
 
 /// ICONS
