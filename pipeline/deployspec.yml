@@ -1,0 +1,41 @@
+#
+# deployspec.yml
+#
+
+version: 0.2
+
+env:
+  variables:
+    target_host: library-drupal-dev-0.internal.lib.virginia.edu
+    target_host_user: aws_deploy
+    target_host_key: aws_deploy
+    target_command: "docker exec drupal-0 /opt/checkout/scripts/pull-uvalib-drupal-theme"
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.x
+      python: 3.x
+#    commands:
+
+  pre_build:
+    commands:
+      # update
+      - apt-get update -y
+      - apt-get install -y ccrypt
+      # get the terraform repo and decrypt the access key
+      - git clone https://${GITLAB_USER}:${GITLAB_TOKEN}@gitlab.com/uvalib/terraform-infrastructure.git
+      - ${CODEBUILD_SRC_DIR/terraform-infrastructure/scripts/decrypt-key.ksh ${CODEBUILD_SRC_DIR}/terraform-infrastructure/global/private-keys/${target_host_key}.pem.cpt global/private-keys/${target_host_key}.pem
+      - PRIVATE_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/global/private-keys/${target_host_key}.pem
+      - chmod 600 ${PRIVATE_KEY}
+
+  build:
+    commands:
+      - ssh -i ${PRIVATE_KEY} ${target_host_user}@${target_host} "${target_command}"
+
+#  post_build:
+#    commands:
+
+#
+# end of file
+#
