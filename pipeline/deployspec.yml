@@ -31,7 +31,7 @@ phases:
 
   build:
     commands:
-      - echo "Executing as ${target_host_user}@${target_host} command: ${target_command}"
+      - echo "Executing as ${target_host_user} on ${target_host}, command \"${target_command}\""
       - ssh -oStrictHostKeyChecking=accept-new -i ${PRIVATE_KEY} ${target_host_user}@${target_host} ${target_command}
 
 #  post_build:
