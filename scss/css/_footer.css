@@ -1079,6 +1079,9 @@ ul li a:focus {
   background-color: #BFE7F7;
   width: 100%;
 }
+#footer-container .footer-container-inner .first-footer {
+  width: 100%;
+}
 #footer-container .footer-container-inner .first-footer > div {
   line-height: 1;
   padding: 0 !important;
@@ -1141,8 +1144,12 @@ ul li a:focus {
 .footer-box.third-footer {
   background-color: #141E3C;
   width: 100%;
-  padding-block-start: 1em;
+  padding-block: 1em;
   padding-inline-start: 1em;
+}
+.footer-box.third-footer section.w3-block div {
+  display: inline-flex;
+  gap: 1.5rem;
 }
 .footer-box.third-footer .post-footer p {
   color: #fff !important;

@@ -6,9 +6,13 @@
   background-color: $uva-blue-alt-lightest;
   width: 100%;
 
-  .footer-container-inner .first-footer>div {
-    line-height: 1;
-    padding: 0 !important;
+  .footer-container-inner .first-footer {
+    width: 100%;
+
+    &>div {
+      line-height: 1;
+      padding: 0 !important;
+    }
   }
 
   p {
@@ -76,12 +80,17 @@
 }
 
 /// Post-footer
-
 .footer-box.third-footer {
   background-color: $uva-blue-alt-darkest;
   width: 100%;
-  padding-block-start: 1em;
+  padding-block: 1em;
   padding-inline-start: 1em;
+
+  section.w3-block div {
+    display: inline-flex;
+    gap: 1.5rem;
+
+  }
 
   .post-footer {
     p {
@@ -89,27 +98,3 @@
     }
   }
 }
-
-// #footer-container {
-//   background-color: $uva-blue-alt-lightest;
-
-//   .footer-container-inner .first-footer>div {
-//     line-height: 1;
-//     padding: 0 !important;
-//   }
-
-//   p {
-//     background-color: $uva-blue-alt-lightest;
-//     padding-block-end: 0rem;
-//     text-align: center;
-//     margin-top: -10px;
-
-//     a {
-//       &::after {
-//         padding-left: 0.25rem;
-//         @include svg-base;
-//         content: $icon-external-link;
-//       }
-//     }
-//   }
-// }
