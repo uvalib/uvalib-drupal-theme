@@ -9,35 +9,6 @@
     @include flex-start;
   }
 
-  .utility-nav {
-    align-self: flex-end;
-
-    ul li {
-      &:last-child {
-        display: flex;
-
-        a {
-          padding-left: .35em;
-        }
-
-        &::before {
-          @include svg-base;
-          content: $icon-alert;
-        }
-      }
-    }
-  }
-
-  li.li-item.li-item-main.li-expanded.li-parent {
-    color: teal !important;
-
-    a {
-      &:hover {
-        background-color: $uva-grey-light;
-      }
-    }
-  }
-
   // this is the drupal login buttons
   .drupal-utility-nav ul li {
     background-color: $uva-teal-base;

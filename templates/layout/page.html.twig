@@ -299,15 +299,15 @@
 					</div>
 					<!-- End: Footer Second -->
 				{% endif %}
-				{% if page.footer_third %}
-					<!-- Start: Footer Third -->
-					<div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-						<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-							{{ page.footer_third }}
-						</div>
-					</div>
-					<!-- End: Footer Third -->
-				{% endif %}
+				{# {% if page.footer_third %} #}
+			<!-- Start: Footer Third -->
+				{# <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
+										<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+											{{ page.footer_third }}
+										</div>
+									</div> #}
+				<!-- End: Footer Third -->
+				{# {% endif %} #}
 			</div>
 		</div>
 		<!-- End: Footer -->
@@ -379,7 +379,15 @@
 		</div>
 		<!-- End: Footer Menu -->
 	{% endif %}
-
+	<!-- Putting Third Footer here to act as Post Footer -->
+	{% if page.footer_third %}
+		<div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
+			<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+				{{ page.footer_third }}
+			</div>
+		</div>
+	{% endif %}
+	<!-- End: Post-Footer Menu -->
 	{% if copyright_text or show_credit_link %}
 		<!-- Start: Copyright -->
 		<div id="copyright" class="w3-col w3-clear w3-theme-d5 {{ color_copyright }}">

@@ -52,10 +52,11 @@ regions:
   # bottom_second: 'Bottom Second Container'
   # bottom_third: 'Bottom Third Container'
   # bottom_forth: 'Bottom Forth Container'
-  # footer_first: 'Footer First Container'
+  # footer_first: 'Footer First Container' <-this is just a name change
+  footer_first: 'Pre-Footer'
   # footer_second: 'Footer Second Container'
-  # footer_third: 'Footer Third Container'
   # footer_menu: 'Footer Menu Container' <-this is just a name change
   footer_menu: 'Footer'
+  # footer_third: 'Footer Third Container' <-this is just a name change
+  footer_third: 'Post-Footer'
   auto_hidden_block: 'Auto Hidden Blocks'
-
