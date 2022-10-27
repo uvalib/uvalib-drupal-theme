@@ -31,8 +31,8 @@ phases:
 
   build:
     commands:
-      - echo "ssh -i ${PRIVATE_KEY} ${target_host_user}@${target_host} ${target_command}"
-      - ssh -i ${PRIVATE_KEY} ${target_host_user}@${target_host} ${target_command}
+      - echo "ssh -oStrictHostKeyChecking=accept-new -i ${PRIVATE_KEY} ${target_host_user}@${target_host} ${target_command}"
+      - ssh -oStrictHostKeyChecking=accept-new -i ${PRIVATE_KEY} ${target_host_user}@${target_host} ${target_command}
 
 #  post_build:
 #    commands:
