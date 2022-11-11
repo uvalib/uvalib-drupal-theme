@@ -1075,6 +1075,56 @@ ul li a:focus {
   z-index: 100000;
 }
 
+.uva-alert--sitewide h2,
+.uva-alert--sitewide p {
+  padding-left: 3.25rem;
+  margin: 0;
+  color: #2B2B2B !important;
+  padding-block-end: 0.25rem;
+}
+.uva-alert--sitewide .alert1 {
+  background-color: #FBCFDA;
+  border-left: 10px solid #B30000;
+}
+.uva-alert--sitewide .alert1 h2 {
+  margin-top: -2.75rem;
+}
+.uva-alert--sitewide .alert1::before {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  content: url(../assets/svg-icons/circle-exclamation-solid.svg);
+  margin: 0.55rem;
+}
+.uva-alert--sitewide .alert2 {
+  background-color: #FEF6C8;
+  border-left: 10px solid #ECC602;
+}
+.uva-alert--sitewide .alert2 h2 {
+  margin-top: -2.75rem;
+}
+.uva-alert--sitewide .alert2::before {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  content: url(../assets/svg-icons/triangle-exclamation-solid.svg);
+  margin: 0.55rem;
+}
+.uva-alert--sitewide .alert3 {
+  background-color: #BFE7F7;
+  border-left: 10px solid #007BAC;
+}
+.uva-alert--sitewide .alert3 h2 {
+  margin-top: -2.75rem;
+}
+.uva-alert--sitewide .alert3::before {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  content: url(../assets/svg-icons/circle-info-solid.svg);
+  margin: 0.55rem;
+}
+
 .uva-alert {
   font-size: 1.06rem;
   line-height: 1.5;
@@ -1093,7 +1143,7 @@ ul li a:focus {
   width: 1rem;
   height: 1rem;
   margin-top: 0.75em;
-  content: url(../assets/svg-icons/circle-exclamation.svg);
+  content: url(../assets/svg-icons/circle-exclamation-solid.svg);
   font-size: 1.5em;
   display: table-cell;
 }
@@ -1109,7 +1159,7 @@ ul li a:focus {
   width: 1rem;
   height: 1rem;
   margin-top: 0.75em;
-  content: url(../assets/svg-icons/triangle-exclamation.svg);
+  content: url(../assets/svg-icons/triangle-exclamation-solid.svg);
   font-size: 1.5em;
   display: table-cell;
 }
@@ -1125,7 +1175,7 @@ ul li a:focus {
   width: 1rem;
   height: 1rem;
   margin-top: 0.75em;
-  content: url(../assets/svg-icons/circle-info.svg);
+  content: url(../assets/svg-icons/circle-info-solid.svg);
   font-size: 1.5em;
   display: table-cell;
 }

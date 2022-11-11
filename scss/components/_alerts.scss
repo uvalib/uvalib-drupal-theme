@@ -1,6 +1,71 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
 
+.uva-alert--sitewide {
+
+  h2,
+  p {
+    padding-left: 3.25rem;
+    margin: 0;
+    color: $uva-text-color-dark !important;
+    padding-block-end: .25rem;
+  }
+
+  .alert1 {
+    background-color: $uva-red-lightest;
+    border-left: 10px solid $uva-red-darker;
+
+    h2 {
+      margin-top: -2.75rem;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      content: $icon-critical;
+      margin: .55rem;
+    }
+  }
+
+  .alert2 {
+    background-color: $uva-yellow-lightest;
+    border-left: 10px solid $uva-yellow-base;
+
+    h2 {
+      margin-top: -2.75rem;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      content: $icon-warning;
+      margin: .55rem;
+    }
+  }
+
+  .alert3 {
+    background-color: $uva-blue-alt-lightest;
+    border-left: 10px solid $uva-blue-alt-base;
+
+    h2 {
+      margin-top: -2.75rem;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      content: $icon-info;
+      margin: .55rem;
+    }
+
+  }
+}
+
+
+
 .uva-alert {
   font-size: 1.06rem;
   line-height: 1.5;
