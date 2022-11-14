@@ -62,94 +62,67 @@
     }
 
   }
-}
 
+  .alert4 {
+    background-color: $uva-teal-base;
+    text-align: center;
+    border-radius: 2rem;
 
+    h2.alert-title {
+      visibility: hidden;
+      display: flex;
+      height: 0;
+    }
 
-.uva-alert {
-  font-size: 1.06rem;
-  line-height: 1.5;
-  position: relative;
-  color: $uva-text-color-dark;
-}
+    .alert-body {
+      display: inline-block;
+      color: #000;
+      font-size: 1em;
 
-.uva-alert--a1 {
-  padding: .5em;
-  background-color: $uva-red-lightest;
-  border-left: 8px solid $uva-red-dark;
+      p {
+        padding-left: 0;
+      }
 
-  &::before {
-    @include svg-base;
-    content: $icon-critical;
-    // content: "\f06a";
-    // font-family: "Font Awesome 5 Pro";
-    // font-weight: 900;
-    font-size: 1.5em;
-    display: table-cell;
+      a {
+        color: $uva-blue-alt-darkest !important;
+      }
+    }
   }
 }
 
-.uva-alert--a2 {
-  padding: .5em;
-  background-color: $uva-yellow-lightest;
-  border-left: 8px solid $uva-yellow-base;
 
-  &::before {
-    @include svg-base;
-    content: $icon-warning;
-    // content: "\f071";
-    // font-family: "Font Awesome 5 Pro";
-    // font-weight: 900;
-    font-size: 1.5em;
-    display: table-cell;
-  }
-}
 
-.uva-alert--a3 {
-  padding: .5em;
-  background-color: $uva-blue-alt-lightest;
-  border-left: 8px solid $uva-blue-alt-base;
 
-  &::before {
-    @include svg-base;
-    content: $icon-info;
-    // content: "\f05a";
-    // font-family: "Font Awesome 5 Pro";
-    // font-weight: 900;
-    font-size: 1.5em;
-    display: table-cell;
-  }
-}
 
-.uva-alert--dismissible {
-  a.uva-alert--close {
-    font-size: 1.5em;
-    display: table-cell;
-    position: absolute;
-    top: .25em;
-    right: .45em;
-    text-decoration: none;
-    color: $uva-text-color-dark;
-  }
-}
+// .uva-alert--dismissible {
+//   a.uva-alert--close {
+//     font-size: 1.5em;
+//     display: table-cell;
+//     position: absolute;
+//     top: .25em;
+//     right: .45em;
+//     text-decoration: none;
+//     color: $uva-text-color-dark;
+//   }
+// }
 
-.uva-alert--r1 {
-  border: 0.2em solid var(--alert-border-color);
-  border-radius: 0.5em;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  background-color: $uva-yellow-lightest;
-  --alert-border-color: $uva-yellow-base;
-}
+// .uva-alert--r1 {
+//   border: 0.2em solid var(--alert-border-color);
+//   border-radius: 0.5em;
+//   padding: 0.75rem 1rem;
+//   margin-bottom: 1rem;
+//   background-color: $uva-yellow-lightest;
+//   --alert-border-color: $uva-yellow-base;
+// }
 
-.uva-alert--r2 {
-  border: 0.2em solid var(--alert-border-color);
-  border-radius: 0.5em;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  background-color: $uva-teal-lightest;
-  --alert-border-color: $uva-teal-base;
-}
+// .uva-alert--r2 {
+//   border: 0.2em solid var(--alert-border-color);
+//   border-radius: 0.5em;
+//   padding: 0.75rem 1rem;
+//   margin-bottom: 1rem;
+//   background-color: $uva-teal-lightest;
+//   --alert-border-color: $uva-teal-base;
+// }
 
 .uva-alert--error {
   margin: 0;
@@ -163,54 +136,26 @@
   color: $uva-green-dark;
 }
 
-.uva-alert__heading {
-  font-size: 1.33rem;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: .5rem;
-  margin-right: 1em;
-}
+// .uva-alert__heading {
+//   font-size: 1.33rem;
+//   line-height: 1.1;
+//   margin-top: 0;
+//   margin-bottom: .5rem;
+//   margin-right: 1em;
+// }
 
-.uva-alert__body {
-  padding-left: 1.25rem;
-  display: table-cell;
-  vertical-align: top;
-}
+// .uva-alert__body {
+//   padding-left: 1.25rem;
+//   display: table-cell;
+//   vertical-align: top;
+// }
 
-.uva-alert__text {
-  margin-bottom: 0;
-  margin-top: 0;
+// .uva-alert__text {
+//   margin-bottom: 0;
+//   margin-top: 0;
 
-  p {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-}
-
-.uva-alert--a4 {
-  background-color: $uva-teal-base;
-  text-align: center;
-  padding: .5em;
-
-  .uva-alert__body {
-    display: inline-block;
-    padding-left: 1.25rem;
-
-    .uva-alert__heading {
-      display: inline-block;
-      font-size: 1.15em;
-      font-weight: bold;
-      margin: 0;
-    }
-  }
-
-  .uva-alert__text {
-    display: inline-block;
-    color: #000;
-    font-size: 1em;
-
-    a {
-      color: $uva-blue-alt-darkest;
-    }
-  }
-}
+//   p {
+//     margin-bottom: 0;
+//     margin-top: 0;
+//   }
+// }
