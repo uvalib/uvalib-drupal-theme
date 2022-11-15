@@ -1,0 +1,48 @@
+.home-page {
+  h1 {
+    display: none;
+  }
+
+  .home-collections {
+    margin-top: -48px;
+    margin-bottom: 3rem;
+
+    .home-collections-image {
+      width: 100vw;
+      max-width: 1360px;
+      margin-inline-start: 50%;
+      transform: translateX(-50%);
+      position: relative;
+    }
+
+    .home-collection-virgo {
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      text-align: center;
+      z-index: 1000;
+
+      form {
+        margin-bottom: 1rem;
+        width: 100%;
+
+        input {
+          width: 80%;
+        }
+      }
+
+      div {
+        background-color: #fff;
+        padding: .5rem;
+      }
+    }
+
+    .home-collections-url {
+      text-align: right;
+      margin-right: 3vw;
+    }
+  }
+
+}
+
+// home-collections-image

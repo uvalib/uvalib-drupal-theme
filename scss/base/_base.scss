@@ -1,6 +1,9 @@
 @use '../abstracts'as *;
 @use 'colors'as *;
 
+html {
+  overflow-x: hidden;
+}
 
 html,
 body,
@@ -337,6 +340,8 @@ textarea {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 

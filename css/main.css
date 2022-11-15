@@ -114,6 +114,10 @@ h6,
   color: #4F4F4F !important;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body,
 button,
@@ -156,6 +160,8 @@ textarea {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -1327,4 +1333,41 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .footer-box.third-footer .post-footer p {
   color: #fff !important;
+}
+
+.home-page h1 {
+  display: none;
+}
+.home-page .home-collections {
+  margin-top: -48px;
+  margin-bottom: 3rem;
+}
+.home-page .home-collections .home-collections-image {
+  width: 100vw;
+  max-width: 1360px;
+  margin-inline-start: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+.home-page .home-collections .home-collection-virgo {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  text-align: center;
+  z-index: 1000;
+}
+.home-page .home-collections .home-collection-virgo form {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.home-page .home-collections .home-collection-virgo form input {
+  width: 80%;
+}
+.home-page .home-collections .home-collection-virgo div {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.home-page .home-collections .home-collections-url {
+  text-align: right;
+  margin-right: 3vw;
 }
