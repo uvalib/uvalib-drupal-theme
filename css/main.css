@@ -1341,13 +1341,13 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 .home-page .home-collections {
   margin-top: -48px;
   margin-bottom: 3rem;
+  position: relative;
 }
 .home-page .home-collections .home-collections-image {
   width: 100vw;
   max-width: 1360px;
   margin-inline-start: 50%;
   transform: translateX(-50%);
-  position: relative;
 }
 .home-page .home-collections .home-collection-virgo {
   position: absolute;
