@@ -43,6 +43,58 @@
     }
   }
 
+  // using the library section
+  .home-using-block {
+    padding: 2rem;
+
+    h2 {
+      grid-area: header;
+    }
+
+    .search-borrow-request,
+    .teaching-and-publication,
+    .using-spaces,
+    .equipment-tech {
+      padding: 1rem;
+      background-color: lightcoral;
+    }
+
+    .search-borrow-request {
+      grid-area: sbr;
+    }
+
+    .teaching-and-publication {
+      grid-area: tp;
+    }
+
+    .using-spaces {
+      grid-area: us;
+    }
+
+    .equipment-tech {
+      grid-area: et;
+    }
+
+    .utl-link {
+      grid-area: link;
+      justify-self: end;
+    }
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+    "sbr sbr sbr"
+    "tp us et"
+    ". . link";
+    grid-template-rows: auto;
+    gap: 1rem;
+
+
+    a:hover {
+      background-color: lightblue;
+    }
+  }
+
 }
 
 // home-collections-image

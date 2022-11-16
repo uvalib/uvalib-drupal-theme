@@ -1371,3 +1371,40 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   text-align: right;
   margin-right: 3vw;
 }
+.home-page .home-using-block {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "sbr sbr sbr" "tp us et" ". . link";
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.home-page .home-using-block h2 {
+  grid-area: header;
+}
+.home-page .home-using-block .search-borrow-request,
+.home-page .home-using-block .teaching-and-publication,
+.home-page .home-using-block .using-spaces,
+.home-page .home-using-block .equipment-tech {
+  padding: 1rem;
+  background-color: lightcoral;
+}
+.home-page .home-using-block .search-borrow-request {
+  grid-area: sbr;
+}
+.home-page .home-using-block .teaching-and-publication {
+  grid-area: tp;
+}
+.home-page .home-using-block .using-spaces {
+  grid-area: us;
+}
+.home-page .home-using-block .equipment-tech {
+  grid-area: et;
+}
+.home-page .home-using-block .utl-link {
+  grid-area: link;
+  justify-self: end;
+}
+.home-page .home-using-block a:hover {
+  background-color: lightblue;
+}
