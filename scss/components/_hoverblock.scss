@@ -1,0 +1,18 @@
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
+
+.hover-block {
+  background-color: #D6F3FF;
+  padding: 1rem;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  &:hover,
+  &:focus {
+    border-top: 0.5rem solid $uva-blue-alt-light;
+    text-decoration: underline !important;
+    padding-top: .5rem;
+  }
+}
