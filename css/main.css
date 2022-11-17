@@ -1419,3 +1419,10 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   grid-area: 4/3/5/4;
   justify-self: end;
 }
+.home-page .home-hour-date {
+  background-color: #E57200;
+  color: #2B2B2B;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-weight: 700;
+}

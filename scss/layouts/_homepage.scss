@@ -85,4 +85,12 @@
       justify-self: end;
     }
   }
+
+  .home-hour-date {
+    background-color: $uva-brand-orange-base;
+    color: $uva-text-color-dark;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    font-weight: map-get($font-weights, demi);
+  }
 }
