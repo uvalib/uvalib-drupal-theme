@@ -45,8 +45,9 @@ h6,
   font-weight: 700 !important;
 }
 
-* {
-  color: #4F4F4F !important;
+h3,
+.h3 {
+  line-height: 1.15;
 }
 
 h1.page-title {

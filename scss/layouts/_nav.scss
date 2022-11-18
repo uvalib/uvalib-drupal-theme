@@ -71,9 +71,13 @@
 }
 
 li.li-item.li-item-main.li-expanded.li-parent {
-  color: teal !important;
+  color: $uva-text-color-dark !important;
 
   a {
+    span {
+      color: $uva-text-color-dark !important;
+    }
+
     &:hover {
       background-color: $uva-grey-light;
     }

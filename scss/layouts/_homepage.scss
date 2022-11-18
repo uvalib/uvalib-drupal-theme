@@ -54,15 +54,20 @@
   .home-using-block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 6rem .5fr repeat(2, 1fr);
+    grid-template-rows: 6rem .5fr 1fr 1rem;
     gap: 1rem;
+    padding-right: 2rem;
+    border-right: 1px solid $uva-grey-light;
+
+    h3 {
+      padding-block-end: 1rem;
+    }
 
     .home-using-header {
       grid-area: 1 / 1 / 2 / 4;
       text-align: center;
     }
 
-    // .hover-block 
     .search-borrow-request {
       grid-area: 2 / 1 / 3 / 4;
       align-self: center;
@@ -86,11 +91,35 @@
     }
   }
 
-  .home-hour-date {
-    background-color: $uva-brand-orange-base;
-    color: $uva-text-color-dark;
-    padding-left: .4rem;
-    padding-right: .4rem;
-    font-weight: map-get($font-weights, demi);
+  .home-hours-block {
+    .home-hour-date {
+      background-color: $uva-brand-orange-base;
+      color: $uva-text-color-dark;
+      padding: 0.3rem 0.5rem;
+      font-weight: map-get($font-weights, demi);
+    }
+
+    .hour-head {
+      padding: 1rem 0;
+      font-weight: map-get($font-weights, demi);
+    }
+
+    dl {
+      &.dl--inline {
+        font-size: 0.95rem;
+        row-gap: normal;
+        grid-template-columns: 1fr;
+      }
+
+      a {
+        display: inline-flex;
+        justify-content: space-between;
+        gap: .5rem;
+      }
+    }
+
+    p a {
+      font-size: 0.95rem;
+    }
   }
 }

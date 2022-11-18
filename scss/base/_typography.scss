@@ -38,12 +38,9 @@ $value in $alt-font-sizes {
   .#{$size} {
     font-size: $value !important;
     font-weight: map-get($font-weights, demi) !important;
+    color: $uva-brand-blue-base !important;
+    line-height: 1.15;
   }
-}
-
-h3,
-.h3 {
-  line-height: 1.15;
 }
 
 // h1.page-title,
@@ -84,9 +81,9 @@ h3,
 
 
 // THIS ISN'T WORKING
-* {
-  color: $uva-text-color-base !important;
-}
+// * {
+//   color: $uva-text-color-base !important;
+// }
 
 
 // FranklinGothic URW Book

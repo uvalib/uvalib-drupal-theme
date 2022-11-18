@@ -52,7 +52,7 @@ base:
       # css/components/ui-dialog.css:
       #   weight: -10
   js:
-    js/test.js: { }
+    js/getdate.js: { }
   dependencies:
     - core/jquery
     - core/drupal.ajax
