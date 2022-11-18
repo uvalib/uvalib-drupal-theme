@@ -72,6 +72,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   padding-block-end: 1rem;
+  line-height: 1.4;
 }
 
 h1,
@@ -1461,4 +1462,16 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .home-page .home-hours-block p a {
   font-size: 0.95rem;
+}
+.home-page .home-news-featured,
+.home-page .home-news-feed {
+  margin-top: 2rem;
+}
+.home-page .news-title a {
+  text-decoration: none !important;
+  color: #2B2B2B;
+  font-weight: 700;
+}
+.home-page .news-title a:hover {
+  text-decoration: underline !important;
 }

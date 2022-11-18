@@ -91,6 +91,7 @@
     }
   }
 
+  // location hours block
   .home-hours-block {
     .home-hour-date {
       background-color: $uva-brand-orange-base;
@@ -120,6 +121,22 @@
 
     p a {
       font-size: 0.95rem;
+    }
+  }
+
+  //news and blog
+  .home-news-featured,
+  .home-news-feed {
+    margin-top: 2rem;
+  }
+
+  .news-title a {
+    text-decoration: none !important;
+    color: $uva-text-color-dark;
+    font-weight: map-get($font-weights, demi);
+
+    &:hover {
+      text-decoration: underline !important;
     }
   }
 }
