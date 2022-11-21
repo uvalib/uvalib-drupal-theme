@@ -41,6 +41,27 @@ textarea {
   background-color: white;
 }
 
+.layout {
+
+  &.layout--twocol-section+div {
+    // outline: red 1px solid;
+    margin: 2rem 0;
+
+    .layout__region--first {
+      padding: 0 2rem;
+      // outline: green 3px solid;
+    }
+
+    .layout__region--second {
+      // outline: blue 1px dotted;
+
+      h2 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
 // from w3.css
 //* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 // html {

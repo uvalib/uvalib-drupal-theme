@@ -23,32 +23,97 @@
       top: 20%;
       left: 30%;
       text-align: center;
-      z-index: 1000;
+      z-index: 100;
 
       form {
-        margin-bottom: 1rem;
-        width: 100%;
+        display: flex;
 
         input {
-          width: 80%;
+          flex: 1;
+          border: none;
+          outline: none;
+        }
+
+        button {
+          background-color: $uva-grey-100;
+          padding: 10px 50px;
+          color: $uva-text-color-dark;
+          letter-spacing: 1px;
+          cursor: pointer;
+          border: none;
+          outline: none;
+
+          &::before {
+            @include svg-base;
+            content: $icon-search;
+            margin-top: 0;
+            margin-right: 0.75rem;
+          }
         }
       }
 
-      div {
+      p {
+        padding: 0.25rem 0.5rem;
+        margin-top: 1rem;
         background-color: #fff;
-        padding: .5rem;
+        border-radius: 0.3rem;
       }
+
+      // form {
+      //   margin-bottom: 1rem;
+      //   width: 100%;
+
+      //   input {
+      //     width: 80%;
+      //   }
+
+      // width: 100%;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+
+      // form {
+      //   background-color: #fff;
+      //   width: 600px;
+      //   height: 55px;
+      //   display: flex;
+
+      //   input {
+      //     flex: 1;
+      //     border: none;
+      //     outline: none;
+      //   }
+
+      //   button {
+      //     background: orange;
+      //     padding: 10px 50px;
+      //     border: none;
+      //     outline: none;
+      //     color: #fff;
+      //     letter-spacing: 1px;
+      //     cursor: pointer;
+
+      //   }
+      // }
     }
 
-    .home-collections-url {
-      text-align: right;
-      margin-right: 3vw;
-    }
+    // div {
+    //   background-color: #fff;
+    //   padding: .5rem;
+    // }
   }
 
-  .layout {
-    padding-inline: 1rem;
+  .home-collections-url {
+    text-align: right;
+    margin-right: 3vw;
   }
+
+
+  // .layout__region--first:first {
+  //   padding-right: 2rem;
+  //   margin-top: -2rem;
+  // }
+
 
   // using the library section
   .home-using-block {
@@ -93,6 +158,12 @@
 
   // location hours block
   .home-hours-block {
+    padding-left: 2rem;
+
+    dd {
+      padding-left: 1rem;
+    }
+
     .home-hour-date {
       background-color: $uva-brand-orange-base;
       color: $uva-text-color-dark;
@@ -112,11 +183,11 @@
         grid-template-columns: 1fr;
       }
 
-      a {
-        display: inline-flex;
-        justify-content: space-between;
-        gap: .5rem;
-      }
+      // a {
+      //   display: inline-flex;
+      //   justify-content: space-between;
+      //   gap: .5rem;
+      // }
     }
 
     p a {
@@ -125,9 +196,26 @@
   }
 
   //news and blog
-  .home-news-featured,
-  .home-news-feed {
-    margin-top: 2rem;
+  .layout.layout--twocol-section+div .layout__region--first {
+    padding-left: 0;
+  }
+
+  .home-news-featured .views-row {
+    display: flex;
+    flex-direction: column;
+
+    .views-field-title {
+      margin-top: 1rem;
+    }
+
+    .views-field-title,
+    .views-field-body {
+      padding: 0 1rem;
+    }
+
+    img {
+      width: 45rem;
+    }
   }
 
   .news-title a {
@@ -139,4 +227,65 @@
       text-decoration: underline !important;
     }
   }
+
+  .layout__region--second {
+    .news-title {
+      display: block;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .news-body {
+      border-bottom: 1px solid $uva-grey-light;
+
+      // THIS ISN'T WORKING
+      &:where(section.views-row):last-child {
+        border: none;
+      }
+    }
+  }
+
+  //exhibits
+  .home-exhibits {
+    padding-right: 2rem;
+
+    .home-exhibit-title {
+      display: block;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+
+      a {
+        text-decoration: none !important;
+        color: $uva-text-color-dark;
+        font-weight: map-get($font-weights, demi);
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+
+  //next chapter
+  .campaign {
+    text-align: center;
+
+    h1 {
+      display: inherit;
+      font-weight: 200;
+      font-style: normal;
+      letter-spacing: 2px;
+      padding-top: 6px;
+    }
+
+    h2.h4 {
+      font-weight: 100 !important;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .campaign-sub-block {
+    text-align: center;
+  }
+
 }

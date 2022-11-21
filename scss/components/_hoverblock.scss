@@ -2,7 +2,8 @@
 @use '../base/index'as *;
 
 .hover-block {
-  background-color: #EBF9FF;
+  // background-color: #EBF9FF;
+  background-color: $uva-blue-alt-400;
   padding: 1rem;
 
   a {
@@ -11,7 +12,7 @@
 
   &:hover,
   &:focus {
-    border-top: 0.5rem solid $uva-blue-alt-light;
+    border-top: 0.5rem solid $uva-blue-alt;
     text-decoration: underline !important;
     padding-top: .5rem;
   }

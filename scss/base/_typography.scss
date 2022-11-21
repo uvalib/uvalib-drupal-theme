@@ -44,6 +44,10 @@ $value in $alt-font-sizes {
   }
 }
 
+.all-caps {
+  text-transform: uppercase;
+}
+
 // h1.page-title,
 // .h1 {
 //   font-size: map-get($alt-font-sizes, h1);
