@@ -1548,6 +1548,7 @@ a.site-logo img {
   height: 1rem;
   margin-top: 0.75em;
   content: url(../assets/svg-icons/bell.svg);
+  margin-left: 1rem;
 }
 .utility-nav ul li:nth-child(6) {
   display: flex;
@@ -1562,6 +1563,7 @@ a.site-logo img {
   height: 1rem;
   margin-top: 0.75em;
   content: url(../assets/svg-icons/magnifying-glass.svg);
+  margin-left: 1rem;
 }
 
 li.li-item.li-item-main.li-expanded.li-parent {
