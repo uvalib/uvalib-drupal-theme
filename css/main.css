@@ -1626,11 +1626,12 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 #footer-menu-inner div {
   display: flex;
+  flex-wrap: nowrap;
 }
 #footer-menu-inner div section div {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
@@ -1669,6 +1670,12 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   color: #fff !important;
 }
 
+@media (max-width: 900px) {
+  #footer-menu-inner div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .home-page h1 {
   display: none;
 }
@@ -1752,6 +1759,37 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 .home-page .home-using-block .utl-link {
   grid-area: 4/3/5/4;
   justify-self: end;
+}
+@media (max-width: 900px) {
+  .home-page .home-using-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem repeat(4, 1fr) 1rem;
+    gap: 1rem;
+    padding-right: 1rem;
+    border-right: none;
+  }
+  .home-page .home-using-block .home-using-header {
+    grid-area: 1/1/2/2;
+    text-align: center;
+  }
+  .home-page .home-using-block .search-borrow-request {
+    grid-area: 2/1/3/2;
+    align-self: center;
+  }
+  .home-page .home-using-block .teaching-and-publication {
+    grid-area: 3/1/4/2;
+  }
+  .home-page .home-using-block .using-spaces {
+    grid-area: 4/1/5/2;
+  }
+  .home-page .home-using-block .equipment-tech {
+    grid-area: 5/1/6/2;
+  }
+  .home-page .home-using-block .utl-link {
+    grid-area: 6/1/7/2;
+    justify-self: end;
+  }
 }
 .home-page .home-hours-block {
   padding-left: 2rem;
