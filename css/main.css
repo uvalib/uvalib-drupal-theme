@@ -1682,27 +1682,21 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .home-page .home-collections .home-collection-virgo form input {
   flex: 1;
-  border: none;
-  outline: none;
+  border: 1px solid #fff;
+  text-indent: 1rem;
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 .home-page .home-collections .home-collection-virgo form button {
-  background-color: #DADADA;
-  padding: 10px 50px;
-  color: #2B2B2B;
+  background-color: #007BAC;
+  padding: 10px 12px;
+  color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: none;
-  outline: none;
+  border: 1px solid #fff;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
-.home-page .home-collections .home-collection-virgo form button::before {
-  display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/magnifying-glass.svg);
-  margin-top: 0;
-  margin-right: 0.75rem;
+.home-page .home-collections .home-collection-virgo form button:hover {
+  background-color: #005679;
 }
 .home-page .home-collections .home-collection-virgo p {
   padding: 0.25rem 0.5rem;

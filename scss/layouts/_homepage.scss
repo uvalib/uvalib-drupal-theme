@@ -30,24 +30,23 @@
 
         input {
           flex: 1;
-          border: none;
-          outline: none;
+          border: 1px solid #fff;
+          text-indent: 1rem;
+          border-radius: 0.3rem 0 0 0.3rem;
+
         }
 
         button {
-          background-color: $uva-grey-100;
-          padding: 10px 50px;
-          color: $uva-text-color-dark;
+          background-color: $uva-blue-alt;
+          padding: 10px 12px;
+          color: #fff;
           letter-spacing: 1px;
           cursor: pointer;
-          border: none;
-          outline: none;
+          border: 1px solid #fff;
+          border-radius: 0 0.3rem 0.3rem 0;
 
-          &::before {
-            @include svg-base;
-            content: $icon-search;
-            margin-top: 0;
-            margin-right: 0.75rem;
+          &:hover {
+            background-color: $uva-blue-alt-A;
           }
         }
       }
@@ -58,62 +57,13 @@
         background-color: #fff;
         border-radius: 0.3rem;
       }
-
-      // form {
-      //   margin-bottom: 1rem;
-      //   width: 100%;
-
-      //   input {
-      //     width: 80%;
-      //   }
-
-      // width: 100%;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-
-      // form {
-      //   background-color: #fff;
-      //   width: 600px;
-      //   height: 55px;
-      //   display: flex;
-
-      //   input {
-      //     flex: 1;
-      //     border: none;
-      //     outline: none;
-      //   }
-
-      //   button {
-      //     background: orange;
-      //     padding: 10px 50px;
-      //     border: none;
-      //     outline: none;
-      //     color: #fff;
-      //     letter-spacing: 1px;
-      //     cursor: pointer;
-
-      //   }
-      // }
     }
-
-    // div {
-    //   background-color: #fff;
-    //   padding: .5rem;
-    // }
   }
 
   .home-collections-url {
     text-align: right;
     margin-right: 3vw;
   }
-
-
-  // .layout__region--first:first {
-  //   padding-right: 2rem;
-  //   margin-top: -2rem;
-  // }
-
 
   // using the library section
   .home-using-block {
@@ -182,12 +132,6 @@
         row-gap: normal;
         grid-template-columns: 1fr;
       }
-
-      // a {
-      //   display: inline-flex;
-      //   justify-content: space-between;
-      //   gap: .5rem;
-      // }
     }
 
     p a {
