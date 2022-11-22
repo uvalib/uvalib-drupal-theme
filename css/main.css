@@ -1576,6 +1576,19 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   background-color: #DADADA;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  nav.main-nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    display: block;
+  }
+}
 #footer-container {
   background-color: #BFE7F7;
   width: 100%;
