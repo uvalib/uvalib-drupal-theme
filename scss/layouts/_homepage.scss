@@ -16,12 +16,21 @@
       max-width: 1360px;
       margin-inline-start: 50%;
       transform: translateX(-50%);
+
+      img {
+        // height: 320px;
+        height: 280px;
+        width: 1360px;
+        object-fit: cover;
+
+      }
     }
 
     .home-collection-virgo {
       position: absolute;
-      top: 20%;
-      left: 30%;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       text-align: center;
       z-index: 100;
 
@@ -62,7 +71,7 @@
 
   .home-collections-url {
     text-align: right;
-    margin-right: 3vw;
+    // margin-right: 3vw;
   }
 
   // using the library section
@@ -106,44 +115,6 @@
     }
   }
 
-  @media (max-width:900px) {
-    .home-using-block {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1rem repeat(4, 1fr) 1rem;
-      gap: 1rem;
-      padding-right: 1rem;
-      border-right: none;
-
-      .home-using-header {
-        grid-area: 1 / 1 / 2 / 2;
-        text-align: center;
-      }
-
-      .search-borrow-request {
-        grid-area: 2 / 1 / 3 / 2;
-        align-self: center;
-      }
-
-      .teaching-and-publication {
-        grid-area: 3 / 1 / 4 / 2;
-      }
-
-      .using-spaces {
-        grid-area: 4 / 1 / 5 / 2;
-      }
-
-      .equipment-tech {
-        grid-area: 5 / 1 / 6 / 2;
-      }
-
-      .utl-link {
-        grid-area: 6 / 1 / 7 / 2;
-        justify-self: end;
-      }
-    }
-  }
-
   // location hours block
   .home-hours-block {
     padding-left: 2rem;
@@ -160,7 +131,7 @@
     }
 
     .hour-head {
-      padding: 1rem 0;
+      padding: 2rem 0.5rem;
       font-weight: map-get($font-weights, demi);
     }
 
@@ -270,4 +241,91 @@
     text-align: center;
   }
 
+  @media (max-width:992px) {
+
+    // mobile - virgo search block
+    .home-collections {
+      margin-top: -1.9rem;
+    }
+
+    .home-collection-virgo {
+      width: 100%;
+    }
+
+    // mobile - using the library block
+    .home-using-block {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4rem repeat(4, 1fr) 2rem;
+      gap: 1rem;
+      padding-right: 0;
+      border-right: none;
+
+      .home-using-header {
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+      }
+
+      .search-borrow-request {
+        grid-area: 2 / 1 / 3 / 2;
+        align-self: center;
+      }
+
+      .teaching-and-publication {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+
+      .using-spaces {
+        grid-area: 4 / 1 / 5 / 2;
+      }
+
+      .equipment-tech {
+        grid-area: 5 / 1 / 6 / 2;
+      }
+
+      .utl-link {
+        grid-area: 6 / 1 / 7 / 2;
+        justify-self: end;
+      }
+    }
+
+    // mobile - hours block
+    .home-hours-block {
+      padding-left: 0;
+      margin-top: 2rem;
+
+      dl {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      dt {
+        width: 43%;
+        text-align: right;
+      }
+
+      dd {
+        padding-left: 1rem;
+        width: 48%;
+        margin-bottom: 0;
+
+        &::before {
+          content: "-";
+          margin-left: -1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    // mobile - News
+    .layout.layout--twocol-section+div .layout__region--first {
+      padding: 0;
+    }
+
+    // mobile - Exhibits
+    .home-exhibits {
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+  }
 }

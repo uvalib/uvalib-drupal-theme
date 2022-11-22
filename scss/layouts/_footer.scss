@@ -100,11 +100,19 @@
   }
 }
 
-@media (max-width:900px) {
+@media (max-width:992px) {
   #footer-menu-inner {
     div {
       display: flex;
       flex-wrap: wrap;
     }
+  }
+
+  .footer-container-inner .first-footer {
+    margin-top: 1rem !important;
+  }
+
+  #footer-menu-inner div section div {
+    padding-inline-start: 0.5rem;
   }
 }

@@ -5,8 +5,13 @@
   background-color: #ffffff !important;
   border-bottom: 5px solid $uva-brand-blue-base;
 
+  .site-name-slogan {
+    display: none;
+  }
+
   .header-inner {
-    @include flex-start;
+    // @include flex-start;
+    margin: 0.5rem 0;
   }
 
   // this is the drupal login buttons
@@ -20,16 +25,24 @@
   //   color: $text-color-dark !important;
   //   background-color: green !important;
   // }
-}
 
-#block-uvalibrary-branding {
-  margin-top: -40px
-}
 
-a.site-logo {
-  text-decoration: none !important;
+  #block-uvalibrary-branding {
+    margin-top: -40px
+  }
 
-  img {
-    max-width: 225px;
+  a.site-logo {
+    text-decoration: none !important;
+
+    img {
+      max-width: 225px;
+    }
+  }
+
+  @media (max-width:992px) {
+    .header-inner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
