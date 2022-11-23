@@ -1754,6 +1754,10 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   }
 }
 
+.field--name-field-subnav ul li {
+  list-style: none;
+}
+
 .home-page h1 {
   display: none;
 }

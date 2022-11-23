@@ -5,3 +5,10 @@
     padding-left: inherit;
   }
 }
+
+// removing bullets from sub-nav lists
+.field--name-field-subnav {
+  ul li {
+    list-style: none;
+  }
+}
