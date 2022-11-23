@@ -1117,6 +1117,32 @@ dl.dl--inline dt {
   font-weight: 700;
 }
 
+.ckeditor-accordion-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.ckeditor-accordion-container > dl {
+  border: none;
+}
+.ckeditor-accordion-container > dl dt > a {
+  padding: 10px 15px 10px 50px;
+  background-color: #fff;
+  color: #2B2B2B;
+  border-bottom: none;
+}
+.ckeditor-accordion-container > dl dt > a:hover {
+  background-color: #BFE7F7;
+  border-radius: 0.3rem;
+}
+.ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:after {
+  background: #2B2B2B;
+}
+.ckeditor-accordion-container > dl dt.active > a {
+  background-color: #BFE7F7;
+  border-radius: 0.3rem;
+  color: #2B2B2B;
+}
+
 .uva-alert--sitewide h2,
 .uva-alert--sitewide p {
   padding-left: 3.25rem;
