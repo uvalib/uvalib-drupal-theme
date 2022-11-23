@@ -8,6 +8,20 @@
 /// include a "USAGE" section after the code.
 /// Please be sure to comment out ALL unnecessary code.
 
+// Accessibilty 
+// accessibility-outline-on-light-bg
+@mixin focus-dk {
+  outline-offset: 0.25em;
+  outline: 2px dotted $uva-blue-alt-A;
+}
+
+// accessibility-outline-on-dark-bg 
+@mixin focus-lt {
+  outline-offset: 0.25em;
+  outline: 2px dotted $uva-blue-alt-300;
+}
+
+
 ///BUTTONS - in header
 // @mixin menu-link-default {
 //   color: $text-color-dark !important;

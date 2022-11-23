@@ -1,4 +1,5 @@
 @use 'colors'as *;
+@use '../abstracts/mixins'as *;
 
 // a,
 // ul li a {
@@ -50,6 +51,16 @@ a {
   &:focus {
     text-decoration: none !important;
   }
+}
+
+// accessibility-outline-on-light-bg
+.accessibility-outline-on-light-bg {
+  @include focus-dk;
+}
+
+// accessibility-outline-on-dark-bg 
+.accessibility-outline-on-dark-bg {
+  @include focus-lt;
 }
 
 ul {

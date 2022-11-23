@@ -21,6 +21,10 @@
   border-radius: 5px;
   text-transform: uppercase;
   border-radius: 5px;
+
+  &:visited {
+    color: #fff;
+  }
 }
 
 a.uvalib_link--button {
@@ -30,10 +34,6 @@ a.uvalib_link--button {
   background-color: $uva-blue-alt;
   border-radius: 5px;
   text-decoration: underline;
-  color: #fff;
-}
-
-.uvalib-button:visited {
   color: #fff;
 }
 
@@ -60,14 +60,14 @@ a.uvalib_link--button--active {
 .uvalib-button:not([disabled]).uvalib-focus,
 a.uvalib_link--button:not([disabled]):focus,
 a.uvalib_link--button:not([disabled]).uvalib-focus {
-  @apply --accessibility-outline-for-light-bg;
+  @include focus-dk;
 }
 
 .uvalib-button--inverse:not([disabled]):focus,
 .uvalib-button--inverse:not([disabled]).uvalib-focus,
 a.uvalib_link--button--inverse:not([disabled]):focus,
 a.uvalib_link--button--inverse:not([disabled]).uvalib-focus {
-  @apply --accessibility-outline-for-dark-bg;
+  @include focus-lt;
 }
 
 a.uvalib_link--button i {
