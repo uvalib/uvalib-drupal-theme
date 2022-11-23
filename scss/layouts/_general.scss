@@ -1,0 +1,7 @@
+.layout__region--second {
+  padding-left: 2rem;
+
+  @media (max-width:992px) {
+    padding-left: inherit;
+  }
+}

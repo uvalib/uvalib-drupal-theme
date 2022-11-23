@@ -1733,6 +1733,15 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     padding-inline-start: 0.5rem;
   }
 }
+.layout__region--second {
+  padding-left: 2rem;
+}
+@media (max-width: 992px) {
+  .layout__region--second {
+    padding-left: inherit;
+  }
+}
+
 .home-page h1 {
   display: none;
 }
