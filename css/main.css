@@ -2043,3 +2043,29 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.bookplates .bookplate-entry .views-row {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  justify-content: start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 2rem;
+}
+.bookplates .bookplate-entry .views-row .entry-image {
+  max-width: 175px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .bookplates .views-row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .bookplates .views-row .entry-image {
+    max-width: 100% !important;
+  }
+  .bookplates .views-row .entry-image img {
+    object-fit: cover !important;
+  }
+}
