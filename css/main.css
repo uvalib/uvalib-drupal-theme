@@ -1040,31 +1040,52 @@ img {
   font-family: adobe-caslon-pro, serif !important;
 }
 
-a {
+a,
+span a {
   color: #005679;
-  text-decoration: underline !important;
-}
-a span {
   text-decoration: underline;
-  color: #0000FF;
 }
-a span:hover {
+a:hover, a:active, a:focus,
+span a:hover,
+span a:active,
+span a:focus {
   text-decoration: none;
 }
-a span:visited {
-  color: #660099;
-}
-a:link paper-button {
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h1 span a,
+h2 span a,
+h3 span a,
+h4 span a {
+  color: #232D4B;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: none !important;
-}
-a:active {
-  text-decoration: none !important;
-}
-a:focus {
-  text-decoration: none !important;
+h1 a:hover, h1 a:active, h1 a:focus,
+h2 a:hover,
+h2 a:active,
+h2 a:focus,
+h3 a:hover,
+h3 a:active,
+h3 a:focus,
+h4 a:hover,
+h4 a:active,
+h4 a:focus,
+h1 span a:hover,
+h1 span a:active,
+h1 span a:focus,
+h2 span a:hover,
+h2 span a:active,
+h2 span a:focus,
+h3 span a:hover,
+h3 span a:active,
+h3 span a:focus,
+h4 span a:hover,
+h4 span a:active,
+h4 span a:focus {
+  text-decoration: underline;
 }
 
 .accessibility-outline-on-light-bg {
@@ -2016,4 +2037,9 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     padding: 0;
     margin-bottom: 2rem;
   }
+}
+
+.news-page .views-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

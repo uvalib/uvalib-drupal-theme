@@ -14,44 +14,75 @@
 //   }
 // }
 
-a {
-  color: $uva-blue-alt-dark;
+a,
+span a {
+  color: $uva-blue-alt-A;
+  text-decoration: underline;
 
-  // link colors as specifed in the old guide
-  span {
-    text-decoration: underline;
-    color: #0000FF;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    &:visited {
-      color: #660099;
-    }
-  }
-
-  // this needs to go
-  &:link {
-    paper-button {
-      text-decoration: none;
-    }
-  }
-
-  text-decoration: underline !important;
-
-  &:hover {
-    text-decoration: none !important;
-  }
-
-  &:active {
-    text-decoration: none !important;
-  }
-
+  &:hover,
+  &:active,
   &:focus {
-    text-decoration: none !important;
+    text-decoration: none;
   }
 }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h1 span a,
+h2 span a,
+h3 span a,
+h4 span a {
+  color: $uva-brand-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+
+// a {
+//   color: $uva-blue-alt-dark;
+
+//   // link colors as specifed in the old guide
+//   span {
+//     text-decoration: underline;
+//     // color: #0000FF;
+
+//     &:hover {
+//       text-decoration: none;
+//     }
+
+//     // &:visited {
+//     //   color: #660099;
+//     // }
+//   }
+
+//   // this needs to go
+//   &:link {
+//     paper-button {
+//       text-decoration: none;
+//     }
+//   }
+
+//   text-decoration: underline !important;
+
+//   &:hover {
+//     text-decoration: none !important;
+//   }
+
+//   &:active {
+//     text-decoration: none !important;
+//   }
+
+//   &:focus {
+//     text-decoration: none !important;
+//   }
+// }
 
 // accessibility-outline-on-light-bg
 .accessibility-outline-on-light-bg {
