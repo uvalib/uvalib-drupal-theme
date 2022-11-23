@@ -1843,12 +1843,6 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   grid-area: 4/3/5/4;
   justify-self: end;
 }
-.home-page .home-hours-block {
-  padding-left: 2rem;
-}
-.home-page .home-hours-block dd {
-  padding-left: 1rem;
-}
 .home-page .home-hours-block .home-hour-date {
   background-color: #E57200;
   color: #2B2B2B;
@@ -1856,15 +1850,30 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   font-weight: 700;
 }
 .home-page .home-hours-block .hour-head {
-  padding: 2rem 0.5rem;
+  padding: 2rem 0.5rem 1.25rem 0.5rem;
   font-weight: 700;
+}
+.home-page .home-hours-block dl {
+  padding-left: 0.5rem;
 }
 .home-page .home-hours-block dl.dl--inline {
   font-size: 0.95rem;
   row-gap: normal;
   grid-template-columns: 1fr;
 }
-.home-page .home-hours-block p a {
+.home-page .home-hours-block dl dt {
+  border-bottom: 1px solid #DADADA;
+  width: 100%;
+}
+.home-page .home-hours-block dl dd {
+  padding-left: 1rem;
+  text-align: right;
+}
+.home-page .home-hours-block p.hours-see-all {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+.home-page .home-hours-block p.hours-see-all a {
   font-size: 0.95rem;
 }
 .home-page .layout.layout--twocol-section + div .layout__region--first {
@@ -1973,21 +1982,23 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     justify-self: end;
   }
   .home-page .home-hours-block {
-    padding-left: 0;
-    margin-top: 2rem;
+    padding-left: 0 !important;
+    margin-top: 2rem !important;
   }
   .home-page .home-hours-block dl {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex !important;
+    flex-flow: row wrap !important;
   }
   .home-page .home-hours-block dt {
-    width: 43%;
-    text-align: right;
+    width: 43% !important;
+    text-align: right !important;
+    border-bottom: none !important;
   }
   .home-page .home-hours-block dd {
-    padding-left: 1rem;
-    width: 48%;
-    margin-bottom: 0;
+    padding-left: 1rem !important;
+    width: 48% !important;
+    margin-bottom: 0 !important;
+    text-align: left !important;
   }
   .home-page .home-hours-block dd::before {
     content: "-";

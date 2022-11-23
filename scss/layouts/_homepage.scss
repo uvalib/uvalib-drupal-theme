@@ -117,11 +117,7 @@
 
   // location hours block
   .home-hours-block {
-    padding-left: 2rem;
-
-    dd {
-      padding-left: 1rem;
-    }
+    // padding-left: 2rem;
 
     .home-hour-date {
       background-color: $uva-brand-orange-base;
@@ -131,20 +127,37 @@
     }
 
     .hour-head {
-      padding: 2rem 0.5rem;
+      padding: 2rem 0.5rem 1.25rem 0.5rem;
       font-weight: map-get($font-weights, demi);
     }
 
     dl {
+      padding-left: 0.5rem;
+
       &.dl--inline {
         font-size: 0.95rem;
         row-gap: normal;
         grid-template-columns: 1fr;
       }
+
+      dt {
+        border-bottom: 1px solid $uva-grey-100;
+        width: 100%;
+      }
+
+      dd {
+        padding-left: 1rem;
+        text-align: right;
+      }
     }
 
-    p a {
-      font-size: 0.95rem;
+    p.hours-see-all {
+      margin-top: 1.5rem;
+      text-align: right;
+
+      a {
+        font-size: 0.95rem;
+      }
     }
   }
 
@@ -291,23 +304,25 @@
 
     // mobile - hours block
     .home-hours-block {
-      padding-left: 0;
-      margin-top: 2rem;
+      padding-left: 0 !important;
+      margin-top: 2rem !important;
 
       dl {
-        display: flex;
-        flex-flow: row wrap;
+        display: flex !important;
+        flex-flow: row wrap !important;
       }
 
       dt {
-        width: 43%;
-        text-align: right;
+        width: 43% !important;
+        text-align: right !important;
+        border-bottom: none !important;
       }
 
       dd {
-        padding-left: 1rem;
-        width: 48%;
-        margin-bottom: 0;
+        padding-left: 1rem !important;
+        width: 48% !important;
+        margin-bottom: 0 !important;
+        text-align: left !important;
 
         &::before {
           content: "-";
