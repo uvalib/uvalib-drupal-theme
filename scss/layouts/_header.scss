@@ -3,7 +3,6 @@
 
 #header {
   background-color: #ffffff !important;
-  border-bottom: 5px solid $uva-brand-blue-base;
 
   .site-name-slogan {
     display: none;
@@ -12,6 +11,7 @@
   .header-inner {
     // @include flex-start;
     margin: 0.5rem 0;
+    border-bottom: 5px solid $uva-brand-blue-base;
   }
 
   // this is the drupal login buttons

@@ -38,7 +38,8 @@
 }
 
 .utility-nav {
-  align-self: flex-end;
+  display: flex;
+  justify-content: end;
 
   ul li {
     &:nth-child(5) {
