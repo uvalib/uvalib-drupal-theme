@@ -185,6 +185,7 @@
     .using-top {
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 1fr 1.5fr 1.25fr !important;
       grid-row-gap: 1.5rem;
 
       .u-f-n,
@@ -193,6 +194,39 @@
       .u-s-j,
       .u-m-r {
         grid-area: auto;
+      }
+    }
+
+    .neighborhood-teaser {
+      grid-template-columns: 1fr !important;
+      margin-bottom: 3rem !important;
+
+      // temporary image height 
+      .n-t-img {
+        height: 276px;
+      }
+
+      .n-t-frame {
+        grid-template-rows: max-content;
+
+        .n-t-title {
+          padding-top: 1rem !important;
+          padding-left: 1rem !important;
+          padding-right: 0.5rem !important;
+        }
+
+        .n-t-contents {
+          padding: 2rem 1rem !important;
+          grid-template-columns: 1fr !important;
+          grid-template-rows: 1fr 1fr 0.25fr !important;
+        }
+
+        div:last-of-type {
+          a {
+            align-self: center !important;
+            justify-self: center !important;
+          }
+        }
       }
     }
   }
