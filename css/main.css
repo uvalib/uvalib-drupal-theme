@@ -2260,3 +2260,12 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     justify-self: center !important;
   }
 }
+
+.exhibitions img.align-right {
+  padding-left: 2rem;
+}
+.exhibitions .current .views-row {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr;
+  margin-bottom: 2rem;
+}

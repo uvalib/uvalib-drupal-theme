@@ -1,0 +1,18 @@
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
+
+.exhibitions {
+  img.align-right {
+    padding-left: 2rem;
+  }
+
+  .current .views-row {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr;
+    margin-bottom: 2rem;
+  }
+
+  .permanent {}
+
+  @media (max-width:992px) {}
+}
