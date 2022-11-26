@@ -2,6 +2,10 @@
 @use '../base/index'as *;
 
 .special-collections {
+  .sc-sidenav {
+    margin-top: 2rem;
+  }
+
   .sc-top {
     img {
       width: 100%;

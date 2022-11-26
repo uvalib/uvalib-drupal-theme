@@ -2269,6 +2269,9 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   grid-template-columns: 0.75fr 2fr;
   margin-bottom: 2rem;
 }
+.special-collections .sc-sidenav {
+  margin-top: 2rem;
+}
 .special-collections .sc-top img {
   width: 100%;
   height: auto;
