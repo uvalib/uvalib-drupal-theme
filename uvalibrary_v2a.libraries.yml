@@ -53,6 +53,7 @@ base:
       #   weight: -10
   js:
     js/getdate.js: { }
+    js/sc-virgo-search.js: { }
   dependencies:
     - core/jquery
     - core/drupal.ajax

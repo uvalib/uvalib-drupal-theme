@@ -1,6 +1,10 @@
 @use '../abstracts'as *;
 @use 'colors'as *;
 
+
+// This is also used to clear out code from the original theme
+
+
 html {
   overflow-x: hidden;
 }
@@ -61,6 +65,10 @@ textarea {
     }
   }
 }
+
+// .node--view-mode-full .field--type-entity-reference .field__item:first-child a {
+//   padding-left: inherit;
+// }
 
 // from w3.css
 //* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */

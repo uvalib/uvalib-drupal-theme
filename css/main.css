@@ -2269,3 +2269,93 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   grid-template-columns: 0.75fr 2fr;
   margin-bottom: 2rem;
 }
+.special-collections .sc-top img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.special-collections .sc-horz-menu {
+  text-align: center;
+}
+.special-collections .sc-horz-menu li {
+  display: inline-block;
+  list-style-type: none;
+}
+.special-collections .sc-horz-menu li::after {
+  content: "|";
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-decoration: none;
+}
+.special-collections .sc-horz-menu li:last-child::after {
+  content: " ";
+}
+.special-collections .sc-find {
+  margin: 4rem 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+}
+.special-collections .sc-find h2 {
+  margin-bottom: 1.5rem;
+}
+.special-collections .sc-find form {
+  display: flex;
+}
+.special-collections .sc-find form input {
+  flex: 1;
+  border: 1px solid #fff;
+  text-indent: 1rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.special-collections .sc-find form button {
+  background-color: #007BAC;
+  padding: 10px 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.special-collections .sc-find form button:hover {
+  background-color: #005679;
+}
+.special-collections .sc-finding-aids {
+  margin-bottom: 2rem;
+}
+.special-collections .sc-finding-aids .sc-fa-uva,
+.special-collections .sc-finding-aids .sc-fa-sarv {
+  border: 1px solid #DADADA;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .special-collections .sc-horz-menu li {
+    display: block;
+    list-style-type: none;
+  }
+  .special-collections .sc-horz-menu li::after {
+    content: " ";
+  }
+  .special-collections .sc-find input {
+    width: 100%;
+  }
+  .special-collections .sc-fa-uva,
+.special-collections .sc-fa-sarv {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+}
