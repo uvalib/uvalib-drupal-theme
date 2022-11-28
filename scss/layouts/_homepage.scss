@@ -6,8 +6,15 @@
     display: none;
   }
 
+  .main-container-inner .w3css-content {
+    margin-top: 0 !important;
+
+    &>div {
+      padding-top: 0 !important;
+    }
+  }
+
   .home-collections {
-    margin-top: -48px;
     margin-bottom: 3rem;
     position: relative;
 
@@ -224,12 +231,6 @@
   }
 
   @media (max-width:992px) {
-
-    // mobile - virgo search block
-    .home-collections {
-      margin-top: -2rem;
-    }
-
     .home-collection-virgo {
       width: 100%;
     }

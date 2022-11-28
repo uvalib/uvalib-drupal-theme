@@ -1534,12 +1534,18 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   padding: 1rem;
 }
 .hover-block a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .hover-block:hover, .hover-block:focus {
   border-top: 0.5rem solid #007BAC;
-  text-decoration: underline !important;
+  text-decoration: underline;
   padding-top: 0.5rem;
+}
+.hover-block:hover p, .hover-block:focus p {
+  text-decoration: none !important;
+}
+.hover-block p {
+  color: #2B2B2B;
 }
 
 #header {
@@ -1782,8 +1788,13 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 .home-page h1 {
   display: none;
 }
+.home-page .main-container-inner .w3css-content {
+  margin-top: 0 !important;
+}
+.home-page .main-container-inner .w3css-content > div {
+  padding-top: 0 !important;
+}
 .home-page .home-collections {
-  margin-top: -48px;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -1971,9 +1982,6 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   text-align: center;
 }
 @media (max-width: 992px) {
-  .home-page .home-collections {
-    margin-top: -2rem;
-  }
   .home-page .home-collection-virgo {
     width: 100%;
   }
@@ -2194,12 +2202,10 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   height: 2rem;
   align-self: end;
   justify-self: end;
-  content: url(../assets/svg-icons/circle-arrow-right.svg);
+  content: url(../assets/svg-icons/circle-arrow-right-link.svg);
 }
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents div:last-of-type a:hover {
-  background-color: #55C4EC;
-  border-radius: 50%;
-  transition: none;
+  content: url(../assets/svg-icons/circle-arrow-right-solid-hover.svg);
 }
 @media (max-width: 992px) {
   .rp-using .virgo-search-header {

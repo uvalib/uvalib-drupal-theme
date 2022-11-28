@@ -33,6 +33,7 @@ stylesheets-remove:
   - themes/d8w3css/css/w3-css/w3.css
   - themes/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
   - themes/d8w3css/css/components/default-node.css
+  - themes/d8w3css/css/theme/a-image.css
 
 #Regions
 regions:
