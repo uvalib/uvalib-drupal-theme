@@ -1,6 +1,7 @@
 @use '../base/breakpoints'as *;
 @use '../base/colors'as *;
 @use '../base/typography'as *;
+@use '../base/svg_icons'as *;
 
 /// WHEN ADDING MIXINS, PLEASE ADD ALPHABETICALLY - BY CATEGORY
 /// When including a new mixin, if you think that
@@ -121,9 +122,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 100;
+  width: 100%;
 
   form {
     display: flex;
+    max-width: 70%;
+    margin: 0 auto;
 
     input {
       flex: 1;
@@ -141,6 +145,13 @@
       cursor: pointer;
       border: 1px solid #fff;
       border-radius: 0 0.3rem 0.3rem 0;
+
+      &::before {
+        content: $icon-search--white;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+      }
 
       &:hover {
         background-color: $uva-blue-alt-A;

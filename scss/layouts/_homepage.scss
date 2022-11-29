@@ -38,7 +38,8 @@
 
       p {
         padding: 0.25rem 0.5rem;
-        margin-top: 1rem;
+        margin: 1rem auto;
+        max-width: fit-content;
         background-color: #fff;
         border-radius: 0.3rem;
       }
@@ -234,6 +235,10 @@
   @media (max-width:992px) {
     .home-collection-virgo {
       width: 100%;
+
+      form {
+        max-width: 100% !important;
+      }
     }
 
     // mobile - using the library block
