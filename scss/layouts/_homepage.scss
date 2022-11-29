@@ -178,7 +178,8 @@
     }
 
     .news-body {
-      border-bottom: 1px solid $uva-grey-light;
+      // border-bottom: 1px solid $uva-grey-light;
+      border-bottom: 1px solid $uva-brand-orange;
 
       // THIS ISN'T WORKING
       &:where(section.views-row):last-child {
