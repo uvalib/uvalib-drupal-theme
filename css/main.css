@@ -182,6 +182,10 @@ textarea {
   margin-bottom: 2rem;
 }
 
+ul li {
+  margin-bottom: 0.75rem;
+}
+
 .w3-image {
   max-width: 100%;
   height: auto;
