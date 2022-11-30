@@ -1,0 +1,160 @@
+@use '../../abstracts/index'as *;
+@use '../../base/index'as *;
+
+.equipment-and-tech {
+  .anchor-nav {
+    margin-bottom: 3rem;
+    text-align: center;
+
+    ul li {
+      display: inline-flex;
+      list-style: none;
+      @extend h5;
+
+      &::after {
+        padding: 0 1rem;
+        @extend h6;
+        content: "|";
+      }
+
+      &:last-of-type::after {
+        content: inherit;
+        padding-right: 0;
+      }
+
+
+      a {
+        text-decoration: none !important;
+
+        &:hover {
+          text-decoration: none !important;
+          // border-bottom: 4px solid $uva-brand-orange;
+          // box-shadow: 0 4px 0 $uva-brand-orange inset;
+          box-shadow: 0 1.15rem 0px -0.5rem $uva-brand-orange;
+        }
+      }
+    }
+  }
+
+  .et-top-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 256px);
+    gap: 2rem;
+    max-width: 80%;
+    margin: 3rem auto;
+
+    .et-block {
+      .et-url {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        align-items: center;
+        border: 1px solid $uva-grey-100;
+        padding: 1.5rem;
+        text-decoration: none;
+        height: 256px;
+        justify-content: space-between;
+        text-align: center;
+
+        &:hover h3 {
+          text-decoration: underline;
+        }
+
+        &:hover,
+        &:focus {
+          div {
+            transform: rotate(90deg);
+            background-color: $uva-blue-alt-A;
+
+            &.et-icon {
+              svg {
+                fill: white;
+                transform: rotate(-90deg);
+              }
+            }
+          }
+        }
+      }
+
+      div {
+        display: block;
+        height: 56px;
+        width: 56px;
+        background-color: $uva-blue-alt-300;
+        padding-top: 0.678rem;
+        border-radius: 0.3rem;
+        transform: rotate(45deg);
+
+        &.et-icon {
+          svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $uva-blue-alt-A;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      .et-title {
+        @extend h5;
+        margin-top: 1rem;
+      }
+
+      // .et-copy {}
+
+      p {
+        color: $uva-text-color-base;
+        display: inline-block;
+        text-decoration: none !important;
+
+        &:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+
+  //mid sections
+  .et-mid-section,
+  .et-bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  #Equipmentandtechnology-Software {
+    margin-top: 3rem;
+  }
+
+  .et-has-header {
+    margin-top: 1rem;
+  }
+
+  .et-events {
+    h3 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .et-bottom-section {
+
+    h4,
+    h5 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+
+@media (max-width:992px) {
+
+  .et-top-container,
+  .et-mid-section,
+  .et-bottom-section {
+    grid-template-columns: 1fr;
+  }
+}
