@@ -107,7 +107,7 @@ h4,
   line-height: 1.15;
 }
 
-h5,
+h5, .event-container .event .event-title,
 .h5 {
   font-size: 1.2rem !important;
   font-weight: 700 !important;
@@ -1556,6 +1556,39 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   text-decoration: none !important;
 }
 
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+.event-container .event .event-url {
+  display: block;
+  background-color: #F1F1F1;
+  padding: 1.5rem;
+  text-decoration: none;
+}
+.event-container .event .event-url:hover h4 {
+  text-decoration: underline;
+}
+.event-container .event p {
+  display: inline-block;
+  text-decoration: none !important;
+}
+.event-container .event p:hover {
+  text-decoration: none !important;
+}
+
+.event-see-all {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  float: right;
+}
+
+@media (max-width: 992px) {
+  .event-container {
+    grid-template-columns: 1fr;
+  }
+}
 #header {
   background-color: #ffffff !important;
 }
@@ -1937,15 +1970,21 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   display: flex;
   flex-direction: column;
 }
+.home-page .home-news-featured .views-row .field--name-field-media-image {
+  height: 27.3rem;
+  max-width: 42.5rem;
+  overflow: hidden;
+}
+.home-page .home-news-featured .views-row .field--name-field-media-image img {
+  width: 100%;
+  height: auto;
+}
 .home-page .home-news-featured .views-row .views-field-title {
   margin-top: 1rem;
 }
 .home-page .home-news-featured .views-row .views-field-title,
 .home-page .home-news-featured .views-row .views-field-body {
   padding: 0 1rem;
-}
-.home-page .home-news-featured .views-row img {
-  width: 45rem;
 }
 .home-page .news-title a {
   text-decoration: none !important;
@@ -2061,6 +2100,11 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   }
   .home-page .layout.layout--twocol-section + div .layout__region--first {
     padding: 0;
+  }
+  .home-page .field--name-field-media-image {
+    height: auto;
+    width: 100%;
+    overflow: inherit;
   }
   .home-page .home-exhibits {
     padding: 0;

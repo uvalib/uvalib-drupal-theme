@@ -1,0 +1,52 @@
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
+
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+
+  .event {
+    .event-url {
+      display: block;
+      background-color: $uva-grey-200;
+      padding: 1.5rem;
+      text-decoration: none;
+
+      &:hover h4 {
+        text-decoration: underline;
+      }
+    }
+
+    .event-title {
+      @extend h5;
+    }
+
+    // .event-date {}
+
+    // .event-time {}
+
+    p {
+      display: inline-block;
+      text-decoration: none !important;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+
+  }
+}
+
+.event-see-all {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  float: right;
+}
+
+@media (max-width:992px) {
+  .event-container {
+    grid-template-columns: 1fr;
+  }
+}
