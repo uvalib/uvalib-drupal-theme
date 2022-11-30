@@ -127,12 +127,6 @@ h6,
   text-transform: uppercase;
 }
 
-h2,
-h3,
-h4 {
-  margin-bottom: 1rem;
-}
-
 html {
   overflow-x: hidden;
 }
@@ -1539,20 +1533,25 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
     width: auto;
   }
 }
-.hover-block {
+.hover-block .hb-contents {
+  display: block;
+}
+.hover-block .hb-contents .hb-url {
+  display: block;
   background-color: #F1F1F1;
-  padding: 1rem;
-}
-.hover-block a {
+  padding: 1.5rem;
   text-decoration: none;
+  height: max-content;
 }
-.hover-block p {
-  color: #2B2B2B;
-}
-.hover-block:hover, .hover-block:focus {
+.hover-block .hb-contents .hb-url:hover h3, .hover-block .hb-contents .hb-url:hover h4 {
   text-decoration: underline;
 }
-.hover-block:hover p, .hover-block:focus p {
+.hover-block .hb-contents p {
+  color: #4F4F4F;
+  display: inline-block;
+  text-decoration: none !important;
+}
+.hover-block .hb-contents p:hover {
   text-decoration: none !important;
 }
 
@@ -1908,6 +1907,11 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .home-page .home-using-block h3 {
   padding-block-end: 1rem;
+}
+.home-page .home-using-block .teaching-and-publication .hb-url,
+.home-page .home-using-block .using-spaces .hb-url,
+.home-page .home-using-block .equipment-tech .hb-url {
+  height: 16rem;
 }
 .home-page .home-using-block .home-using-header {
   grid-area: 1/1/2/4;
