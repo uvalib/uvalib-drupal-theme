@@ -1974,21 +1974,23 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   display: flex;
   flex-direction: column;
 }
-.home-page .home-news-featured .views-row .field--name-field-media-image {
+.home-page .home-news-featured .views-row .field--name-field-media-image .field__item {
   height: 27.3rem;
   max-width: 42.5rem;
-  overflow: hidden;
 }
-.home-page .home-news-featured .views-row .field--name-field-media-image img {
+.home-page .home-news-featured .views-row .field--name-field-media-image .field__item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 .home-page .home-news-featured .views-row .views-field-title {
   margin-top: 1rem;
 }
 .home-page .home-news-featured .views-row .views-field-title,
 .home-page .home-news-featured .views-row .views-field-body {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
+  max-width: 42.5rem;
 }
 .home-page .news-title a {
   text-decoration: none !important;
@@ -2027,6 +2029,10 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .home-page .home-exhibits .home-exhibit-title a:hover {
   text-decoration: underline !important;
+}
+.home-page .home-exhibits .home-exhibit-title,
+.home-page .home-exhibits .home-exhibit-body {
+  padding-left: 0.5rem;
 }
 .home-page .campaign {
   text-align: center;
@@ -2108,10 +2114,18 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   .home-page .layout.layout--twocol-section + div .layout__region--first {
     padding: 0;
   }
-  .home-page .field--name-field-media-image {
-    height: auto;
-    width: 100%;
-    overflow: inherit;
+  .home-page .home-news-featured .views-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-page .home-news-featured .views-row .field--name-field-media-image .field__item {
+    height: 14rem;
+    max-width: 42.5rem;
+  }
+  .home-page .home-news-featured .views-row .views-field-title,
+.home-page .home-news-featured .views-row .views-field-body {
+    padding: 0 0.5rem;
+    max-width: 42.5rem;
   }
   .home-page .home-exhibits {
     padding: 0;

@@ -155,16 +155,16 @@
     display: flex;
     flex-direction: column;
 
-    .field--name-field-media-image {
+    .field--name-field-media-image .field__item {
       height: 27.3rem;
       max-width: 42.5rem;
-      overflow: hidden;
 
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
       }
-
     }
 
     .views-field-title {
@@ -173,12 +173,9 @@
 
     .views-field-title,
     .views-field-body {
-      padding: 0 1rem;
+      padding: 0 0.5rem;
+      max-width: 42.5rem;
     }
-
-    // img {
-    //   width: 45rem;
-    // }
   }
 
   .news-title a {
@@ -233,6 +230,11 @@
         }
       }
     }
+
+    .home-exhibit-title,
+    .home-exhibit-body {
+      padding-left: 0.5rem;
+    }
   }
 
   //next chapter
@@ -256,6 +258,10 @@
   .campaign-sub-block {
     text-align: center;
   }
+
+  //////////////////////////
+  /// MOBILE BREAKPOINTS ///
+  //////////////////////////
 
   @media (max-width:992px) {
     .home-collection-virgo {
@@ -338,10 +344,25 @@
       padding: 0;
     }
 
-    .field--name-field-media-image {
-      height: auto;
-      width: 100%;
-      overflow: inherit;
+    // .field--name-field-media-image {
+    //   height: auto;
+    //   width: 100%;
+    //   overflow: inherit;
+    // }
+    .home-news-featured .views-row {
+      display: flex;
+      flex-direction: column;
+
+      .field--name-field-media-image .field__item {
+        height: 14rem;
+        max-width: 42.5rem;
+      }
+
+      .views-field-title,
+      .views-field-body {
+        padding: 0 0.5rem;
+        max-width: 42.5rem;
+      }
     }
 
     // mobile - Exhibits
