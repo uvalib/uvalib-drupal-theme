@@ -147,6 +147,18 @@
     display: flex;
     flex-direction: column;
 
+    .field--name-field-media-image {
+      height: 27.3rem;
+      max-width: 42.5rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
     .views-field-title {
       margin-top: 1rem;
     }
@@ -156,9 +168,9 @@
       padding: 0 1rem;
     }
 
-    img {
-      width: 45rem;
-    }
+    // img {
+    //   width: 45rem;
+    // }
   }
 
   .news-title a {
@@ -311,6 +323,12 @@
     // mobile - News
     .layout.layout--twocol-section+div .layout__region--first {
       padding: 0;
+    }
+
+    .field--name-field-media-image {
+      height: auto;
+      width: 100%;
+      overflow: inherit;
     }
 
     // mobile - Exhibits

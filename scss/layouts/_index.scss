@@ -3,11 +3,11 @@
 @forward 'footer';
 @forward 'general';
 @forward 'homepage';
-@forward 'accessibility-services';
-@forward 'news-page';
-@forward 'bookplates';
+@forward './specialty-pages/accessibility-services';
+@forward './specialty-pages/news-page';
+@forward './specialty-pages/bookplates';
 @forward './regional-pages/using-the-library';
-@forward 'exhibitions';
-@forward 'special-collections';
+@forward './specialty-pages/exhibitions';
+@forward './specialty-pages/special-collections';
 @forward './exhibits/mitford';
 @forward './specialty-pages/rmc';
