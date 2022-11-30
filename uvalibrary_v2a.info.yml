@@ -27,6 +27,8 @@ stylesheets-remove:
   - themes/contrib/d8w3css/css/theme/sitename-animation.css
   - themes/contrib/d8w3css/css/w3-css/w3.css
   - themes/contrib/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
+  - themes/contrib/d8w3css/css/components/default-node.css
+  - themes/contrib/d8w3css/css/theme/a-image.css
   - themes/d8w3css/css/base/base.css
   - themes/d8w3css/css/theme/border-animation.css
   - themes/d8w3css/css/theme/sitename-animation.css
