@@ -2009,6 +2009,9 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 .home-page .layout__region--second .news-body:where(section.views-row):last-child {
   border: none;
 }
+.home-page .event-container {
+  margin-top: 1.5rem;
+}
 .home-page .home-exhibits {
   padding-right: 2rem;
 }
