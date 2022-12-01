@@ -2371,24 +2371,65 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   align-content: flex-start;
   align-items: center;
   border: 1px solid #DADADA;
-  padding: 1.5rem;
   text-decoration: none;
   height: 256px;
-  justify-content: space-between;
-  text-align: center;
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover h3 {
   text-decoration: underline;
 }
-.equipment-and-tech .et-top-container .et-block .et-url:hover div, .equipment-and-tech .et-top-container .et-block .et-url:focus div {
+.equipment-and-tech .et-top-container .et-block .et-url:hover, .equipment-and-tech .et-top-container .et-block .et-url:focus {
+  box-shadow: 0px 0.5rem 0px 0px #005679 inset;
+  background-size: cover;
+  background-position: 4rem 3rem;
+  background-repeat: no-repeat;
+  background-color: #e6f2f7;
+  background-clip: content-box;
+  background-blend-mode: soft-light;
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-electronics, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-electronics {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/gear-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-3D-print, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-3D-print {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scribble-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-textile, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-textile {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/reel-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-audio, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-audio {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/headphones-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-video, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-video {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/video-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-3D-scan, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-3D-scan {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/viewfinder-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-vr, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-vr {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/vr-cardboard-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover.et-doc, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-doc {
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scanner-hover.svg");
+}
+.equipment-and-tech .et-top-container .et-block .et-url:hover .et-icon, .equipment-and-tech .et-top-container .et-block .et-url:focus .et-icon {
   transform: rotate(90deg);
   background-color: #005679;
 }
-.equipment-and-tech .et-top-container .et-block .et-url:hover div.et-icon svg, .equipment-and-tech .et-top-container .et-block .et-url:focus div.et-icon svg {
+.equipment-and-tech .et-top-container .et-block .et-url:hover .et-icon svg, .equipment-and-tech .et-top-container .et-block .et-url:focus .et-icon svg {
   fill: white;
   transform: rotate(-90deg);
 }
-.equipment-and-tech .et-top-container .et-block div {
+.equipment-and-tech .et-top-container .et-block .et-block-contents {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+.equipment-and-tech .et-top-container .et-block .et-block-contents div {
   display: block;
   height: 56px;
   width: 56px;
@@ -2396,12 +2437,14 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   padding-top: 0.678rem;
   border-radius: 0.3rem;
   transform: rotate(45deg);
+  transition: transform 0.7s ease-in-out;
 }
-.equipment-and-tech .et-top-container .et-block div.et-icon svg {
+.equipment-and-tech .et-top-container .et-block .et-block-contents div.et-icon svg {
   width: 2rem;
   height: 2rem;
   fill: #005679;
   transform: rotate(-45deg);
+  transition: transform 0.7s ease-in-out;
 }
 .equipment-and-tech .et-top-container .et-block .et-title {
   margin-top: 1rem;
