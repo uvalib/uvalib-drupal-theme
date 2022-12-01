@@ -59,9 +59,9 @@
 
         &:hover,
         &:focus {
-          box-shadow: 0px 0.5rem 0px 0px $uva-blue-alt-A inset;
+          box-shadow: 0px 0.75rem 0px 0px $uva-blue-alt-A inset;
           background-size: 72%;
-          background-position: 5rem 1rem;
+          background-position: 5rem 1.75rem;
           background-repeat: no-repeat;
           // background-color: $uva-blue-alt-400;
           background-clip: content-box;
@@ -113,7 +113,7 @@
       }
 
       .et-block-contents {
-        padding: 1.5rem;
+        padding: 2.5rem 1.5rem 0.5rem 1.5rem;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
