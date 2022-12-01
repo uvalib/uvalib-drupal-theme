@@ -26,7 +26,8 @@
         text-decoration: none !important;
         padding-bottom: 0.25rem;
 
-        &:hover {
+        &:hover,
+        &:focus {
           text-decoration: none !important;
           box-shadow: 0 4px 0px 0px $uva-brand-orange;
         }

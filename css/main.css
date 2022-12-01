@@ -2353,7 +2353,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   text-decoration: none !important;
   padding-bottom: 0.25rem;
 }
-.equipment-and-tech .anchor-nav ul li a:hover {
+.equipment-and-tech .anchor-nav ul li a:hover, .equipment-and-tech .anchor-nav ul li a:focus {
   text-decoration: none !important;
   box-shadow: 0 4px 0px 0px #E57200;
 }
