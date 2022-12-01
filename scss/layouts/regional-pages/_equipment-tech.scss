@@ -25,12 +25,11 @@
 
       a {
         text-decoration: none !important;
+        padding-bottom: 0.25rem;
 
         &:hover {
           text-decoration: none !important;
-          // border-bottom: 4px solid $uva-brand-orange;
-          // box-shadow: 0 4px 0 $uva-brand-orange inset;
-          box-shadow: 0 1.15rem 0px -0.5rem $uva-brand-orange;
+          box-shadow: 0 4px 0px 0px $uva-brand-orange;
         }
       }
     }
@@ -204,9 +203,42 @@
 
 @media (max-width:992px) {
 
+  .anchor-nav {
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-flex;
+        list-style: none;
+
+        &::after {
+          padding: 0 !important;
+          content: " " !important;
+        }
+
+        a {
+          text-decoration: underline !important;
+          font-weight: 500 !important;
+          // a hack to bring back the underline
+          box-shadow: 0 2px 0px 0px $uva-blue-alt-A;
+
+          &:hover {
+            text-decoration: none !important;
+            box-shadow: 0 0rem 0px 0rem #fff;
+          }
+        }
+      }
+    }
+  }
+
   .et-top-container,
   .et-mid-section,
   .et-bottom-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+  }
+
+  .et-top-container {
+    max-width: 100% !important;
   }
 }

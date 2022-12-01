@@ -2351,10 +2351,11 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .equipment-and-tech .anchor-nav ul li a {
   text-decoration: none !important;
+  padding-bottom: 0.25rem;
 }
 .equipment-and-tech .anchor-nav ul li a:hover {
   text-decoration: none !important;
-  box-shadow: 0 1.15rem 0px -0.5rem #E57200;
+  box-shadow: 0 4px 0px 0px #E57200;
 }
 .equipment-and-tech .et-top-container {
   display: grid;
@@ -2485,10 +2486,36 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 
 @media (max-width: 992px) {
+  .anchor-nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  .anchor-nav ul li {
+    display: inline-flex;
+    list-style: none;
+  }
+  .anchor-nav ul li::after {
+    padding: 0 !important;
+    content: " " !important;
+  }
+  .anchor-nav ul li a {
+    text-decoration: underline !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 0px 0px #005679;
+  }
+  .anchor-nav ul li a:hover {
+    text-decoration: none !important;
+    box-shadow: 0 0rem 0px 0rem #fff;
+  }
+
   .et-top-container,
 .et-mid-section,
 .et-bottom-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+  }
+
+  .et-top-container {
+    max-width: 100% !important;
   }
 }
 .news-page .views-row {
