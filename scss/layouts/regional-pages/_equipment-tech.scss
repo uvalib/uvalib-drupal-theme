@@ -22,7 +22,6 @@
         padding-right: 0;
       }
 
-
       a {
         text-decoration: none !important;
         padding-bottom: 0.25rem;
@@ -53,8 +52,6 @@
         border: 1px solid $uva-grey-100;
         text-decoration: none;
         height: 256px;
-        // justify-content: space-between;
-        // text-align: center;
 
         &:hover h3 {
           text-decoration: underline;
@@ -63,43 +60,43 @@
         &:hover,
         &:focus {
           box-shadow: 0px 0.5rem 0px 0px $uva-blue-alt-A inset;
-          background-size: cover;
-          background-position: 4rem 3rem;
+          background-size: 72%;
+          background-position: 5rem 1rem;
           background-repeat: no-repeat;
-          background-color: $uva-blue-alt-400;
+          // background-color: $uva-blue-alt-400;
           background-clip: content-box;
-          background-blend-mode: soft-light;
+          // background-blend-mode: soft-light;
 
           &.et-electronics {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/gear-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/gear--uva-blue-alt-400.svg');
           }
 
           &.et-3D-print {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/scribble-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/scribble--uva-blue-alt-400.svg');
           }
 
           &.et-textile {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/reel-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/reel--uva-blue-alt-400.svg');
           }
 
           &.et-audio {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/headphones-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/headphones--uva-blue-alt-400.svg');
           }
 
           &.et-video {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/video-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/video--uva-blue-alt-400.svg');
           }
 
           &.et-3D-scan {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/viewfinder-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/viewfinder--uva-blue-alt-400.svg');
           }
 
           &.et-vr {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/vr-cardboard-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/vr-cardboard--uva-blue-alt-400.svg');
           }
 
           &.et-doc {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/scanner-hover.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/scanner--uva-blue-alt-400.svg');
           }
 
           .et-icon {

@@ -2380,36 +2380,34 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover, .equipment-and-tech .et-top-container .et-block .et-url:focus {
   box-shadow: 0px 0.5rem 0px 0px #005679 inset;
-  background-size: cover;
-  background-position: 4rem 3rem;
+  background-size: 72%;
+  background-position: 5rem 1rem;
   background-repeat: no-repeat;
-  background-color: #e6f2f7;
   background-clip: content-box;
-  background-blend-mode: soft-light;
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-electronics, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-electronics {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/gear-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/gear--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-3D-print, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-3D-print {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scribble-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scribble--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-textile, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-textile {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/reel-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/reel--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-audio, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-audio {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/headphones-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/headphones--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-video, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-video {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/video-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/video--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-3D-scan, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-3D-scan {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/viewfinder-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/viewfinder--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-vr, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-vr {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/vr-cardboard-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/vr-cardboard--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-doc, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-doc {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scanner-hover.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scanner--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover .et-icon, .equipment-and-tech .et-top-container .et-block .et-url:focus .et-icon {
   transform: rotate(90deg);
