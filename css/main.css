@@ -2359,7 +2359,8 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     width: 100%;
   }
   .rp-using .virgo-search form {
-    width: 100%;
+    width: 100% !important;
+    max-width: none !important;
     height: 55px;
     display: flex;
     margin-bottom: 1rem;
@@ -2809,6 +2810,111 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 .r-m-c .mid-section,
 .r-m-c .equip-section {
     grid-template-columns: 1fr;
+  }
+}
+
+.libra h2 {
+  margin-bottom: 2.5rem;
+}
+.libra h3 {
+  margin-top: 2rem;
+}
+.libra .libra-search {
+  margin: 4rem 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
+}
+.libra .libra-search form {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.libra .libra-search form input {
+  flex: 1;
+  border: 1px solid #fff;
+  text-indent: 1rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.libra .libra-search form button {
+  background-color: #007BAC;
+  padding: 10px 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.libra .libra-search form button::before {
+  content: url(../assets/svg-icons/magnifying-glass--white.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.libra .libra-search form button:hover {
+  background-color: #005679;
+}
+.libra .libra-submit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+.libra .libra-submit .libra-card {
+  border: 1px solid #DADADA;
+  border-top: 0.5rem solid #808080;
+  padding: 1.5rem;
+  display: inline-grid;
+  align-content: space-between;
+  gap: 1rem;
+}
+.libra .libra-submit .libra-card h3 {
+  text-align: center;
+  margin-top: inherit;
+}
+.libra .libra-submit .libra-card .uvalib_link--button {
+  width: fit-content;
+  margin: 0 auto;
+}
+.libra .libra-submit .libra-card:first-of-type {
+  border-top: 0.5rem solid #232D4B;
+}
+.libra .libra-submit .libra-card:last-of-type {
+  border-top: 0.5rem solid #E57200;
+}
+@media (max-width: 992px) {
+  .libra .libra-submit {
+    grid-template-columns: 1fr;
+    width: 100% !important;
+    margin: 0;
+  }
+  .libra .libra-search {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+  }
+  .libra .libra-search form {
+    width: 100% !important;
+    max-width: none !important;
+    height: 55px;
+    display: flex;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .libra .libra-search form button {
+    padding: 10px 0.5rem;
   }
 }
 

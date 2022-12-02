@@ -188,7 +188,8 @@
       width: 100%;
 
       form {
-        width: 100%;
+        width: 100% !important;
+        max-width: none !important;
         height: 55px;
         display: flex;
         margin-bottom: 1rem;
