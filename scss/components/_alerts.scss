@@ -12,8 +12,8 @@
   }
 
   .alert1 {
-    background-color: $uva-red-lightest;
-    border-left: 10px solid $uva-red-darker;
+    background-color: $uva-red-100; 
+    border-left: 10px solid $uva-red-B;
 
     h2 {
       margin-top: -2.75rem;
@@ -29,8 +29,8 @@
   }
 
   .alert2 {
-    background-color: $uva-yellow-lightest;
-    border-left: 10px solid $uva-yellow-base;
+    background-color: $uva-yellow-100;
+    border-left: 10px solid $uva-yellow;
 
     h2 {
       margin-top: -2.75rem;
@@ -46,8 +46,8 @@
   }
 
   .alert3 {
-    background-color: $uva-blue-alt-lightest;
-    border-left: 10px solid $uva-blue-alt-base;
+    background-color: $uva-blue-alt-300;
+    border-left: 10px solid $uva-blue-alt;
 
     h2 {
       margin-top: -2.75rem;
@@ -64,7 +64,7 @@
   }
 
   .alert4 {
-    background-color: $uva-teal-base;
+    background-color: $uva-teal;
     text-align: center;
     border-radius: 2rem;
 
@@ -84,7 +84,7 @@
       }
 
       a {
-        color: $uva-blue-alt-darkest !important;
+        color: $uva-blue-alt-B !important;
       }
     }
   }
@@ -109,33 +109,31 @@
 // }
 
 .uva-alert--r1 {
-  border: 0.2em solid var(--alert-border-color);
+  border: 0.2em solid $uva-yellow;
   border-radius: 0.5em;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
-  background-color: $uva-yellow-lightest;
-  --alert-border-color: $uva-yellow-base;
+  background-color: $uva-yellow-100;
 }
 
 .uva-alert--r2 {
-  border: 0.2em solid var(--alert-border-color);
+  border: 0.2em solid $uva-teal;
   border-radius: 0.5em;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
-  background-color: $uva-teal-lightest;
-  --alert-border-color: $uva-teal-base;
+  background-color: $uva-teal-200;
 }
 
 .uva-alert--error {
   margin: 0;
   padding: 0;
-  color: $uva-red-darker;
+  color: $uva-red-B;
 }
 
 .uva-alert--confirmation {
   margin: 0;
   padding: 0;
-  color: $uva-green-dark;
+  color: $uva-green-A;
 }
 
 .uva-alert__heading {

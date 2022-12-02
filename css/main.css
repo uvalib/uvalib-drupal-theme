@@ -1278,21 +1278,19 @@ dl.dl--inline dt {
 }
 
 .uva-alert--r1 {
-  border: 0.2em solid var(--alert-border-color);
+  border: 0.2em solid #ECC602;
   border-radius: 0.5em;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   background-color: #FEF6C8;
-  --alert-border-color: $uva-yellow-base;
 }
 
 .uva-alert--r2 {
-  border: 0.2em solid var(--alert-border-color);
+  border: 0.2em solid #25CAD3;
   border-radius: 0.5em;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   background-color: #C8F2F4;
-  --alert-border-color: $uva-teal-base;
 }
 
 .uva-alert--error {
