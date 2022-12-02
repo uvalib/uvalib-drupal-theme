@@ -6,7 +6,8 @@ body {
 p {
   font-size: 1rem;
   font-weight: 400;
-  padding-block-end: 1rem;
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
   line-height: 1.4;
 }
 
@@ -60,6 +61,14 @@ h6,
 
 .all-caps {
   text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1.page-title {

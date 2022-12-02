@@ -1,0 +1,92 @@
+@use '../../abstracts/index'as *;
+@use '../../base/index'as *;
+
+.uvalib-bento-search {
+  ul, li {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .bs-header {
+    h2 {
+      @extend h3;
+      font-weight: 500 !important;
+      .bs-search-term {
+        font-style: italic;
+      }
+    }
+    p {
+      @extend h3;
+      margin: 2rem 0 1rem 0;
+    }
+  }
+  .bs-results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    .bs-results--block {
+      border: 1px solid $uva-grey-100;
+      border-top: none;
+
+      .bs-results--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $uva-grey-100;
+        padding: 0.5rem 1rem;
+
+        h3 {
+          @extend h5;
+          text-transform: uppercase;
+        }
+        button {
+          text-transform: inherit;
+        }
+      }
+      .bs-results--body {
+        padding: 1rem;
+        ol.bs-results--list {
+          margin-bottom: 1rem;
+          padding-left: 1rem;
+          .bs-results--list--entry {
+            border-bottom: 1px solid $uva-grey-100;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+
+            &:last-child {
+              border-bottom: none;
+            }
+            .bs-results--title {
+              font-weight: 700;
+             }
+            ul {
+              li {
+                list-style-type: none;
+                margin-bottom: 0px !important;
+              }
+              // .bs-results--author {
+              //   color: green;
+              // }
+              ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                  list-style: none;
+                }
+                // .bs-results--date {
+                //   text-transform: uppercase;
+                // }
+                //grab the area-label to set the icon
+                // .bs-results--format::after {
+                //   content: ""
+                // } 
+              }
+              .bs-results--teaser {
+                padding: 0.5rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
