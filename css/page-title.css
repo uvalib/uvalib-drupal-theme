@@ -6,8 +6,7 @@ body {
 p {
   font-size: 1rem;
   font-weight: 400;
-  -webkit-padding-after: 1rem;
-          padding-block-end: 1rem;
+  padding-block-end: 1rem;
   line-height: 1.4;
 }
 
