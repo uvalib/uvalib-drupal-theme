@@ -2407,7 +2407,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   background-image: url("/themes/custom/uvalibrary/assets/svg-icons/gear--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-3D-print, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-3D-print {
-  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/scribble--uva-blue-alt-400.svg");
+  background-image: url("/themes/custom/uvalibrary/assets/svg-icons/cube--uva-blue-alt-400.svg");
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover.et-textile, .equipment-and-tech .et-top-container .et-block .et-url:focus.et-textile {
   background-image: url("/themes/custom/uvalibrary/assets/svg-icons/reel--uva-blue-alt-400.svg");
@@ -2459,7 +2459,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 .equipment-and-tech .et-top-container .et-block .et-block-contents div.et-icon svg {
   width: 2rem;
   height: 2rem;
-  fill: #005679;
+  fill: #232D4B;
   transform: rotate(-45deg);
   transition: transform 0.7s ease-in-out;
 }

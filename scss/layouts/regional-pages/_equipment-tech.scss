@@ -73,7 +73,7 @@
           }
 
           &.et-3D-print {
-            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/scribble--uva-blue-alt-400.svg');
+            background-image: url('/themes/custom/uvalibrary/assets/svg-icons/cube--uva-blue-alt-400.svg');
           }
 
           &.et-textile {
@@ -129,6 +129,7 @@
           height: 56px;
           width: 56px;
           background-color: $uva-blue-alt-300;
+          // background-color: $uva-yellow;
           padding-top: 0.678rem;
           border-radius: 0.3rem;
           transform: rotate(45deg);
@@ -138,7 +139,8 @@
             svg {
               width: 2rem;
               height: 2rem;
-              fill: $uva-blue-alt-A;
+              // fill: $uva-blue-alt-A;
+              fill: $uva-brand-blue;
               transform: rotate(-45deg);
               transition: transform .7s ease-in-out;
             }
