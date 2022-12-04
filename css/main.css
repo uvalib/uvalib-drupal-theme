@@ -3056,3 +3056,99 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     grid-area: 5/1/6/2 !important;
   }
 }
+
+.status-dashboard .s-jump {
+  margin-bottom: 2rem;
+}
+.status-dashboard .s-data {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.status-dashboard h2 {
+  margin-bottom: 1rem;
+}
+.status-dashboard .s-row {
+  display: grid;
+  grid-template-columns: 0.15fr 1fr 0.15fr;
+  border-top: 1px solid #F1F1F1;
+}
+.status-dashboard .s-row:last-child {
+  border-bottom: 1px solid #F1F1F1;
+  margin-bottom: 2rem;
+}
+.status-dashboard .s-row > p, .status-dashboard .s-row > div {
+  padding: 1rem !important;
+  border-left: 1px solid #F1F1F1;
+}
+.status-dashboard .s-row p {
+  padding: 0.25em;
+  margin: 0;
+}
+.status-dashboard .s-row p:last-child {
+  text-align: center;
+}
+.status-dashboard .s-row p.service-title {
+  font-weight: bold;
+}
+.status-dashboard .s-row div.service-status.s-available {
+  border-right: 5px solid #25CAD3;
+}
+.status-dashboard .s-row div.service-status.s-available .svg--available {
+  text-align: center;
+}
+.status-dashboard .s-row div.service-status.s-available .svg--available svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #25CAD3;
+}
+.status-dashboard .s-row div.service-status.s-available .svg--modified,
+.status-dashboard .s-row div.service-status.s-available .svg--not-available {
+  display: none;
+}
+.status-dashboard .s-row div.service-status.s-modified {
+  border-right: 5px solid #ECC602;
+}
+.status-dashboard .s-row div.service-status.s-modified .svg--modified {
+  text-align: center;
+}
+.status-dashboard .s-row div.service-status.s-modified .svg--modified svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #ECC602;
+}
+.status-dashboard .s-row div.service-status.s-modified .svg--available,
+.status-dashboard .s-row div.service-status.s-modified .svg--not-available {
+  display: none;
+}
+.status-dashboard .s-row div.service-status.s-not-available {
+  border-right: 5px solid #B30000;
+}
+.status-dashboard .s-row div.service-status.s-not-available .svg--not-available {
+  text-align: center;
+}
+.status-dashboard .s-row div.service-status.s-not-available .svg--not-available svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #B30000;
+}
+.status-dashboard .s-row div.service-status.s-not-available .svg--available,
+.status-dashboard .s-row div.service-status.s-not-available .svg--modified {
+  display: none;
+}
+.status-dashboard .s-row div p {
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .status-dashboard .s-row {
+    grid-template-columns: 1fr !important;
+  }
+  .status-dashboard .s-row div.service-status.s-available {
+    border: 5px solid #25CAD3 !important;
+  }
+  .status-dashboard .s-row div.service-status.s-modified {
+    border: 5px solid #ECC602 !important;
+  }
+  .status-dashboard .s-row div.service-status.s-not-available {
+    border: 5px solid #B30000 !important;
+  }
+}
