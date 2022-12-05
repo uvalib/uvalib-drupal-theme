@@ -1614,10 +1614,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   margin: 0.5rem 0;
   border-bottom: 5px solid #232D4B;
 }
-#header .drupal-utility-nav ul li {
-  background-color: #25CAD3;
-  color: black;
-}
 #header #block-uvalibrary-branding {
   margin-top: -40px;
 }
@@ -1962,6 +1958,42 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     grid-template-columns: 1fr;
   }
 }
+#drupal_custom_header {
+  border-bottom: 4px solid #16777C;
+}
+#drupal_custom_header .tabs {
+  margin-left: 1rem;
+}
+#drupal_custom_header .tabs li {
+  border: 1px solid #808080 !important;
+}
+
+.drupal-utility-nav ul {
+  margin: 0.7rem;
+}
+.drupal-utility-nav ul li {
+  border: 1px solid #25CAD3;
+  background-color: #C8F2F4;
+  color: black;
+}
+
+.drupal-status-messages {
+  outline: 1px solid #4E9737;
+}
+
+.drupal-help {
+  outline: 1px solid purple;
+}
+
+.drupal-tabs {
+  width: fit-content;
+  margin: 17px 0;
+}
+
+div[data-drupal-messages] .messages {
+  display: inline-block;
+}
+
 .home-page h1 {
   display: none;
 }

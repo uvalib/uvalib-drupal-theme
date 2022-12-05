@@ -1,0 +1,44 @@
+ @use '../abstracts/index'as *;
+ @use '../base/index'as *;
+ 
+#drupal_custom_header {
+  border-bottom: 4px solid $uva-teal-B;
+
+  .tabs {
+    margin-left: 1rem;
+    li {
+      border: 1px solid $uva-grey !important;
+      // background-color: $uva-grey-200;
+    }
+  }
+}
+
+ // this is the drupal login buttons
+  .drupal-utility-nav { 
+    ul {
+      margin: 0.7rem;
+      li {
+        border: 1px solid $uva-teal-base;
+        background-color: $uva-teal-200;
+        color: black;
+      }
+    }
+  }
+
+  .drupal-status-messages {
+    outline: 1px solid $uva-green-A;
+
+  }
+
+  .drupal-help {
+    outline: 1px solid purple;
+
+  }
+
+  .drupal-tabs {
+    width: fit-content;
+    margin: 17px 0;
+  }
+  div[data-drupal-messages] .messages {
+    display: inline-block;
+  }
