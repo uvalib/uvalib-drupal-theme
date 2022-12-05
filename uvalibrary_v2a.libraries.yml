@@ -4,7 +4,7 @@ base:
     component:
       https://use.typekit.net/oym8nvz.css: { }
       css/main.css: { }
-      css/page-title.css: { }
+      # css/page-title.css: { }
       # css/components/action-links.css:
       #   weight: -10
       # css/components/breadcrumb.css:
