@@ -1,0 +1,16 @@
+@use '../../abstracts/index'as *;
+@use '../../base/index'as *;
+
+.library-help {
+  .two-col, .three-col {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    @include h5;
+    margin-bottom: 1rem;
+  }
+  h3 + ul, h3 + p {
+    margin-bottom: 2rem;
+  }
+}

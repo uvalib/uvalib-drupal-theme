@@ -1,0 +1,66 @@
+@use '../abstracts/index'as *;
+@use '../base/index'as *;
+.anchor-nav, .jump-nav {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  ul li {
+    display: inline-flex;
+    list-style: none;
+    @extend h5;
+
+    &::after {
+      padding: 0 1rem;
+      @extend h6;
+      content: "|";
+    }
+
+    &:last-of-type::after {
+      content: inherit;
+      padding-right: 0;
+    }
+
+    a {
+      text-decoration: none !important;
+      padding-bottom: 0.25rem;
+
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+        box-shadow: 0 4px 0px 0px $uva-brand-orange;
+      }
+    }
+  }
+}
+
+@media (max-width:992px) {
+
+  .anchor-nav, .jump-nav {
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-flex;
+        list-style: none;
+
+        &::after {
+          padding: 0 !important;
+          content: " " !important;
+        }
+
+        a {
+          text-decoration: underline !important;
+          font-weight: 500 !important;
+          // a hack to bring back the underline
+          box-shadow: 0 2px 0px 0px $uva-blue-alt-A;
+
+          &:hover {
+            text-decoration: none !important;
+            box-shadow: 0 0rem 0px 0rem #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,56 +1,53 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
 
-// .hover-block {
-//   background-color: $uva-grey-200;
-//   padding: 1rem;
-
-//   a {
-//     text-decoration: none;
-//   }
-
-//   p {
-//     color: $uva-text-color-dark;
-//   }
-
-//   &:hover,
-//   &:focus {
-//     // border-top: 0.5rem solid $uva-blue-alt;
-//     text-decoration: underline;
-//     // padding-top: .5rem;
-
-//     p {
-//       text-decoration: none !important;
-//     }
-//   }
-// }
-
 .hover-block {
-  .hb-contents {
-    display: block;
+  background-color: $uva-grey-200;
+  padding: 1rem;
+  text-decoration: none;
 
-    .hb-url {
-      display: block;
-      background-color: $uva-grey-200;
-      padding: 1.5rem;
-      text-decoration: none;
-      height: max-content;
-
-      &:hover h3,
-      &:hover h4 {
-        text-decoration: underline;
-      }
+    &:hover h3,
+    &:hover h4 {
+      text-decoration: underline;
     }
 
     p {
       color: $uva-text-color-base;
-      display: inline-block;
       text-decoration: none !important;
 
       &:hover {
         text-decoration: none !important;
       }
     }
-
-  }
 }
+
+
+// .hover-block {
+//   .hb-contents {
+//     display: block;
+
+//     .hb-url {
+//       display: block;
+//       background-color: $uva-grey-200;
+//       padding: 1.5rem;
+//       text-decoration: none;
+//       height: max-content;
+
+//       &:hover h3,
+//       &:hover h4 {
+//         text-decoration: underline;
+//       }
+//     }
+
+//     p {
+//       color: $uva-text-color-base;
+//       display: inline-block;
+//       text-decoration: none !important;
+
+//       &:hover {
+//         text-decoration: none !important;
+//       }
+//     }
+
+//   }
+// }
