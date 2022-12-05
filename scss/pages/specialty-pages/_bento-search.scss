@@ -1,7 +1,25 @@
 @use '../../abstracts/index'as *;
 @use '../../base/index'as *;
 
+
 .uvalib-bento-search {
+
+.bento-search-bar {
+  margin: 4rem 0;
+  @include virgo-search;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
+  p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+
   ul, li {
     margin-left: 0px;
     padding-left: 0px;

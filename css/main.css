@@ -3033,6 +3033,55 @@ div[data-drupal-messages] .messages {
   }
 }
 
+.uvalib-bento-search .bento-search-bar {
+  margin: 4rem 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
+}
+.uvalib-bento-search .bento-search-bar form {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.uvalib-bento-search .bento-search-bar form input {
+  flex: 1;
+  border: 1px solid #fff;
+  text-indent: 1rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.uvalib-bento-search .bento-search-bar form button {
+  background-color: #007BAC;
+  padding: 10px 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.uvalib-bento-search .bento-search-bar form button::before {
+  content: url(../assets/svg-icons/color/magnifying-glass--white.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.uvalib-bento-search .bento-search-bar form button:hover {
+  background-color: #005679;
+}
+.uvalib-bento-search .bento-search-bar p {
+  text-align: center;
+  margin-top: 1rem;
+}
 .uvalib-bento-search ul, .uvalib-bento-search li {
   margin-left: 0px;
   padding-left: 0px;
