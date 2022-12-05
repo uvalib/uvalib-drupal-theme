@@ -1,5 +1,6 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
+@use '../components/buttons'as *;
 
 .main-nav {
   background-color: #ffffff !important;
@@ -87,7 +88,8 @@ li.li-item.li-item-main.li-expanded.li-parent {
   }
 }
 
-.mobile-nav {
+.mobile-nav,
+.open-nav-inner {
   display: none;
 }
 
@@ -100,6 +102,45 @@ li.li-item.li-item-main.li-expanded.li-parent {
     display: none;
   }
 
+  .open-nav-inner { 
+    display: inline-block !important;
+  }
+
+  .main-navigation-wrapper.w3-sidebar {
+    right: 0;
+  }
+
+  #main-navigation-v {
+    #close-nav {
+      justify-content: end;
+    }
+
+    .ul-parent {
+      display: block;
+      text-align: center;
+      li:nth-child(8) {
+        border-bottom: 3px solid $uva-grey-100;
+        margin-bottom: 1rem;
+      }
+      li:not(.li-expanded) {
+        margin: 0.1rem;
+        padding: 0.2rem;
+        border-radius: 5px;
+        text-decoration: underline;
+        background-color: $uva-blue-alt-300;
+        color: $uva-grey-A;
+        box-shadow: inset 0 0 0 2px $uva-blue-alt;
+
+        min-width: initial;
+        float: none !important;
+        width: fit-content;
+      }
+      .li-parent ul li {
+        box-shadow: none;
+      }
+    }
+  }
+
   nav.mobile-nav {
     display: block;
     margin-bottom: 1rem;
@@ -108,13 +149,6 @@ li.li-item.li-item-main.li-expanded.li-parent {
 
     .ul-parent {
       li {
-
-        &:nth-last-child(-n+6) {
-          background-color: $uva-blue-alt-400;
-          width: max-content;
-          float: initial;
-        }
-
         .dropdown-arrow {
           color: $uva-text-color-dark;
         }
