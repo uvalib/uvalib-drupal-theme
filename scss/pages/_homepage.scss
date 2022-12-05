@@ -112,8 +112,9 @@
     }
 
     .hour-head {
+      @extend .h6;
       padding: 2rem 0.5rem 1.25rem 0.5rem;
-      font-weight: map-get($font-weights, demi);
+      // font-weight: map-get($font-weights, demi);
     }
 
     dl {

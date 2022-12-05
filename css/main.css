@@ -122,6 +122,7 @@ h5,
 
 h6,
 .h6,
+.home-page .home-hours-block .hour-head,
 .event-container .event .event-title,
 .anchor-nav ul li::after,
 .jump-nav ul li::after {
@@ -2148,7 +2149,6 @@ div[data-drupal-messages] .messages {
 }
 .home-page .home-hours-block .hour-head {
   padding: 2rem 0.5rem 1.25rem 0.5rem;
-  font-weight: 700;
 }
 .home-page .home-hours-block dl {
   padding-left: 0.5rem;
