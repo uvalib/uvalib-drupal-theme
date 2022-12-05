@@ -85,23 +85,28 @@
 
 /// HEADER SIZES (USED WHEN NEEDING TO RESIZE AN EXISTING HEADER, BUT NOT THE TAG)
 @mixin h2 {
-  font-size: map-get($alt-font-sizes, h2) !important;
+  font-size: map-get($font-sizes, h2) !important;
   font-weight: map-get($font-weights, demi) !important;
 }
 
 @mixin h3 {
-  font-size: map-get($alt-font-sizes, h3) !important;
-  font-weight: map-get($font-weights, demi) !important;
+  font-size: map-get($font-sizes, h3) !important;
+  font-weight: map-get($font-weights, medium) !important;
 }
 
 @mixin h4 {
-  font-size: map-get($alt-font-sizes, h4) !important;
-  font-weight: map-get($font-weights, demi) !important;
+  font-size: map-get($font-sizes, h4) !important;
+  font-weight: map-get($font-weights, medium) !important;
 }
 
 @mixin h5 {
-  font-size: map-get($alt-font-sizes, h5) !important;
-  font-weight: map-get($font-weights, demi) !important;
+  font-size: map-get($font-sizes, h5) !important;
+  font-weight: map-get($font-weights, medium) !important;
+}
+
+@mixin h6 {
+  font-size: map-get($font-sizes, h6) !important;
+  font-weight: map-get($font-weights, medium) !important;
 }
 
 /// ICONS

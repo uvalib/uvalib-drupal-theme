@@ -16,6 +16,7 @@
       padding: 1.5rem;
       text-decoration: none;
       height: 12rem;
+      text-align: center;
 
       &:hover h4 {
         text-decoration: underline;
@@ -57,7 +58,7 @@
   }
 }
 
-.event-see-all {
+.events-see-all {
   margin-top: 2rem;
   margin-bottom: 2rem;
   float: right;
