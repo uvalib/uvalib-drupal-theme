@@ -1630,6 +1630,10 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   }
 }
 
+.library-breadcrumbs {
+  margin-left: 1rem;
+}
+
 .main-nav {
   background-color: #ffffff !important;
   font-weight: 500;
