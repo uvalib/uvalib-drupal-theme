@@ -9,10 +9,13 @@
 
   .event {
     .event-url {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-color: $uva-grey-200;
       padding: 1.5rem;
       text-decoration: none;
+      height: 12rem;
 
       &:hover h4 {
         text-decoration: underline;
@@ -20,12 +23,27 @@
     }
 
     .event-title {
-      @extend h5;
+      @extend .h6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+      order: 1;
     }
 
-    // .event-date {}
+    .event-date, 
+    .event-time {
+      font-size: 0.95rem;
+      padding-bottom: 0.5rem;
+    }
 
-    // .event-time {}
+    .event-time {
+      order: 2;
+    }
+    .event-date {
+      order: 3;
+    }
 
     p {
       display: inline-block;

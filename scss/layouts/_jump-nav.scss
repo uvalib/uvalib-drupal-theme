@@ -7,11 +7,11 @@
   ul li {
     display: inline-flex;
     list-style: none;
-    @extend h5;
+    @extend .h5;
 
     &::after {
       padding: 0 1rem;
-      @extend h6;
+      @extend .h6;
       content: "|";
     }
 

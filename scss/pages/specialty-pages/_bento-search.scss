@@ -8,14 +8,14 @@
   }
   .bs-header {
     h2 {
-      @extend h3;
+      @extend .h3;
       font-weight: 500 !important;
       .bs-search-term {
         font-style: italic;
       }
     }
     p {
-      @extend h3;
+      @extend .h3;
       margin: 2rem 0 1rem 0;
     }
   }
@@ -35,7 +35,7 @@
         padding: 0.5rem 1rem;
 
         h3 {
-          @extend h5;
+          @extend .h5;
           text-transform: uppercase;
         }
         button {

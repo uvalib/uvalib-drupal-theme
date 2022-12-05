@@ -8,8 +8,6 @@ body,
 h1,
 h2,
 h3,
-.uvalib-bento-search .bs-header h2,
-.uvalib-bento-search .bs-header p,
 h4,
 p,
 figure,
@@ -93,8 +91,10 @@ h2,
   line-height: 1.15;
 }
 
-h3, .uvalib-bento-search .bs-header h2, .uvalib-bento-search .bs-header p,
-.h3 {
+h3,
+.h3,
+.uvalib-bento-search .bs-header h2,
+.uvalib-bento-search .bs-header p {
   font-size: 1.728rem !important;
   font-weight: 700 !important;
   color: #232D4B !important;
@@ -109,16 +109,22 @@ h4,
   line-height: 1.15;
 }
 
-h5, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header .bs-header h2, .uvalib-bento-search .bs-header .bs-results-container .bs-results--block .bs-results--header h2, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header .bs-header p, .uvalib-bento-search .bs-header .bs-results-container .bs-results--block .bs-results--header p, .anchor-nav ul li, .jump-nav ul li, .event-container .event .event-title,
-.h5 {
+h5,
+.h5,
+.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
+.anchor-nav ul li,
+.jump-nav ul li {
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   color: #232D4B !important;
   line-height: 1.15;
 }
 
-h6, .anchor-nav ul li::after, .jump-nav ul li::after,
-.h6 {
+h6,
+.h6,
+.event-container .event .event-title,
+.anchor-nav ul li::after,
+.jump-nav ul li::after {
   font-size: 1rem !important;
   font-weight: 700 !important;
   color: #232D4B !important;
@@ -131,18 +137,8 @@ h6, .anchor-nav ul li::after, .jump-nav ul li::after,
 
 h2,
 h3,
-.uvalib-bento-search .bs-header h2,
-.uvalib-bento-search .bs-header p,
 h4,
-h5,
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header .bs-header h2,
-.uvalib-bento-search .bs-header .bs-results-container .bs-results--block .bs-results--header h2,
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header .bs-header p,
-.uvalib-bento-search .bs-header .bs-results-container .bs-results--block .bs-results--header p,
-.anchor-nav ul li,
-.jump-nav ul li,
-.event-container .event .event-title {
+h5 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1079,8 +1075,6 @@ span a:focus {
 h1 a,
 h2 a,
 h3 a,
-.uvalib-bento-search .bs-header h2 a,
-.uvalib-bento-search .bs-header p a,
 h4 a,
 h1 span a,
 h2 span a,
@@ -1094,14 +1088,8 @@ h2 a:hover,
 h2 a:active,
 h2 a:focus,
 h3 a:hover,
-.uvalib-bento-search .bs-header h2 a:hover,
-.uvalib-bento-search .bs-header p a:hover,
 h3 a:active,
-.uvalib-bento-search .bs-header h2 a:active,
-.uvalib-bento-search .bs-header p a:active,
 h3 a:focus,
-.uvalib-bento-search .bs-header h2 a:focus,
-.uvalib-bento-search .bs-header p a:focus,
 h4 a:hover,
 h4 a:active,
 h4 a:focus,
@@ -1616,39 +1604,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   text-decoration: none !important;
 }
 
-.event-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
-}
-.event-container .event .event-url {
-  display: block;
-  background-color: #F1F1F1;
-  padding: 1.5rem;
-  text-decoration: none;
-}
-.event-container .event .event-url:hover h4 {
-  text-decoration: underline;
-}
-.event-container .event p {
-  display: inline-block;
-  text-decoration: none !important;
-}
-.event-container .event p:hover {
-  text-decoration: none !important;
-}
-
-.event-see-all {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  float: right;
-}
-
-@media (max-width: 992px) {
-  .event-container {
-    grid-template-columns: 1fr;
-  }
-}
 #header {
   background-color: #ffffff !important;
 }
@@ -1950,6 +1905,61 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   .two-col,
 .three-col {
     grid-template-columns: 1fr !important;
+  }
+}
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+.event-container .event .event-url {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F1F1F1;
+  padding: 1.5rem;
+  text-decoration: none;
+  height: 12rem;
+}
+.event-container .event .event-url:hover h4 {
+  text-decoration: underline;
+}
+.event-container .event .event-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  order: 1;
+}
+.event-container .event .event-date,
+.event-container .event .event-time {
+  font-size: 0.95rem;
+  padding-bottom: 0.5rem;
+}
+.event-container .event .event-time {
+  order: 2;
+}
+.event-container .event .event-date {
+  order: 3;
+}
+.event-container .event p {
+  display: inline-block;
+  text-decoration: none !important;
+}
+.event-container .event p:hover {
+  text-decoration: none !important;
+}
+
+.event-see-all {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  float: right;
+}
+
+@media (max-width: 992px) {
+  .event-container {
+    grid-template-columns: 1fr;
   }
 }
 .home-page h1 {
@@ -2977,7 +2987,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   background-color: #DADADA;
   padding: 0.5rem 1rem;
 }
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header .bs-header h2, .uvalib-bento-search .bs-header .bs-results-container .bs-results--block .bs-results--header h2, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header .bs-header p, .uvalib-bento-search .bs-header .bs-results-container .bs-results--block .bs-results--header p {
+.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3 {
   text-transform: uppercase;
 }
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header button {
