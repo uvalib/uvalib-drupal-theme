@@ -54,7 +54,7 @@
  * @see html.html.twig
  */
 #}
-{% if is_front and page.drupal_custom_header %}
+{% if page.drupal_custom_header %}
 	<!-- Start: Drupal Specific Blocks -->
 	<div id="drupal_custom_header" class="w3-col w3-clear w3-theme-l5 {{ color_drupal_custom_header }}">
 		<div id="drupal_custom_header-inner" class="w3-row drupal_custom_header-inner {{ website_width }}">
@@ -311,10 +311,10 @@
 				{# {% if page.footer_third %} #}
 			<!-- Start: Footer Third -->
 				{# <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-																		<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-																			{{ page.footer_third }}
-																		</div>
-																	</div> #}
+																						<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+																							{{ page.footer_third }}
+																						</div>
+																					</div> #}
 				<!-- End: Footer Third -->
 				{# {% endif %} #}
 			</div>
