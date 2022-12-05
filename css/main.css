@@ -1695,7 +1695,8 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   background-color: #DADADA;
 }
 
-.mobile-nav {
+.mobile-nav,
+.open-nav-inner {
   display: none;
 }
 
@@ -1957,9 +1958,6 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   .event-container {
     grid-template-columns: 1fr;
   }
-}
-#drupal_custom_header {
-  border-bottom: 4px solid #16777C;
 }
 #drupal_custom_header .tabs {
   margin-left: 1rem;
