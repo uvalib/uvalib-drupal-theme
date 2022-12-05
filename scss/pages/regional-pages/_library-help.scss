@@ -2,6 +2,9 @@
 @use '../../base/index'as *;
 
 .library-help {
+  .hover-block {
+    text-align: center;
+  }
   .two-col, .three-col {
     margin-top: 2rem;
     margin-bottom: 2rem;
