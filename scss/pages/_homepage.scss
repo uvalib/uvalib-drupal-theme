@@ -266,12 +266,25 @@
   @media (max-width:992px) {
     .home-collection-virgo {
       width: 100%;
+      order: 1;
 
       form {
         max-width: 100% !important;
       }
     }
-
+    .layout.layout--twocol-section--75-25 {
+      display: flex;
+      flex-direction: column;
+      .layout__region--first {
+        order: 2;
+      }
+      .layout__region--second {
+        order: 1;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+      }
+    
+    }
     // mobile - using the library block
     .home-using-block {
       display: grid;
@@ -280,6 +293,7 @@
       gap: 1rem;
       padding-right: 0;
       border-right: none;
+      order: 3;
 
       .home-using-header {
         grid-area: 1 / 1 / 2 / 2;
@@ -313,6 +327,7 @@
     .home-hours-block {
       padding-left: 0 !important;
       margin-top: 2rem !important;
+      order: 2;
 
       dl {
         display: flex !important;

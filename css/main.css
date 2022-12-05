@@ -2191,9 +2191,22 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
 @media (max-width: 992px) {
   .home-page .home-collection-virgo {
     width: 100%;
+    order: 1;
   }
   .home-page .home-collection-virgo form {
     max-width: 100% !important;
+  }
+  .home-page .layout.layout--twocol-section--75-25 {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-page .layout.layout--twocol-section--75-25 .layout__region--first {
+    order: 2;
+  }
+  .home-page .layout.layout--twocol-section--75-25 .layout__region--second {
+    order: 1;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
   }
   .home-page .home-using-block {
     display: grid;
@@ -2202,6 +2215,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     gap: 1rem;
     padding-right: 0;
     border-right: none;
+    order: 3;
   }
   .home-page .home-using-block .home-using-header {
     grid-area: 1/1/2/2;
@@ -2227,6 +2241,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   .home-page .home-hours-block {
     padding-left: 0 !important;
     margin-top: 2rem !important;
+    order: 2;
   }
   .home-page .home-hours-block dl {
     display: flex !important;
