@@ -1696,6 +1696,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 
 li.li-item.li-item-main.li-expanded.li-parent {
   color: #232D4B !important;
+  margin-left: 2px;
 }
 li.li-item.li-item-main.li-expanded.li-parent a span {
   color: #232D4B !important;
