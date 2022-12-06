@@ -95,6 +95,15 @@ li.li-item.li-item-main.li-expanded.li-parent {
 }
 
 @media (max-width:992px) {
+  body {
+    position: relative;
+  }
+  #main-navigation-v {
+    height: fit-content;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
   nav.main-nav {
     display: none;
   }
@@ -120,22 +129,27 @@ li.li-item.li-item-main.li-expanded.li-parent {
       display: block;
       text-align: center;
       li:nth-child(9) {
-        border-bottom: 3px solid $uva-grey-100;
-        margin-bottom: 1rem;
+        border-bottom: 3px solid $uva-brand-blue;
+        // margin-bottom: 1rem; 
       }
       li:not(.li-expanded) {
-        margin: 0.1rem;
-        padding: 0.2rem;
-        border-radius: 5px;
+        // margin: 0.1rem;
+        // padding: 0.2rem;
+        // border-radius: 5px;
         text-decoration: underline;
-        background-color: $uva-blue-alt-300;
         color: $uva-grey-A;
-        box-shadow: inset 0 0 0 2px $uva-blue-alt;
+        // box-shadow: inset 0 0 0 2px $uva-blue-alt;
 
-        min-width: initial;
-        float: right !important;
-        width: fit-content;
-        margin-right: 1rem;
+        // min-width: initial;
+        // float: right !important;
+        // width: fit-content;
+        // margin-right: 1rem;
+        &:nth-child(n+6) {
+          background-color: $uva-blue-alt-300;
+          a {
+            padding: 0.25rem 1rem;
+          }
+        }
         &:first-child {
           background-color: #fff;
           float: left !important;
