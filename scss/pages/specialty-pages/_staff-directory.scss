@@ -1,0 +1,27 @@
+@use '../../abstracts/index'as *;
+@use '../../base/index'as *;
+
+/// NOTE - THE WAY DRUPAL CLASSES HAVE BEEN APPLIED,
+/// THE STAFF DIRECTORY HAS BOTH "STAFF-DIRECTORY" AND
+/// "STAFF-BIO" CLASSES. THE STAFF BIO PAGES, ONLY HAVE
+/// THE "STAFF-BIO" CLASS.
+/// 
+/// CLASSES APPLIED TO STAFF-BIO MAY NEED TO BE CLEARED
+/// OUT IN "STAFF DIRECTORY", THEREFORE IT SHOULD APPEAR
+/// FIRST IN THE ORDER.
+
+.staff-bio {
+
+}
+
+.staff-directory {
+  tr {
+    td {
+      padding: 0.5rem;
+      &:nth-child(n+3){
+        text-align: center;
+      }
+    }
+  }
+
+}

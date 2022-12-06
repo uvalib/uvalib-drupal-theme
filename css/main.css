@@ -3348,3 +3348,10 @@ div[data-drupal-messages] .messages {
     border: 5px solid #B30000 !important;
   }
 }
+
+.staff-directory tr td {
+  padding: 0.5rem;
+}
+.staff-directory tr td:nth-child(n+3) {
+  text-align: center;
+}
