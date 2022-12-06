@@ -1735,7 +1735,7 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     display: block;
     text-align: center;
   }
-  #main-navigation-v .ul-parent li:nth-child(8) {
+  #main-navigation-v .ul-parent li:nth-child(9) {
     border-bottom: 3px solid #DADADA;
     margin-bottom: 1rem;
   }
@@ -1748,8 +1748,19 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     color: #4F4F4F;
     box-shadow: inset 0 0 0 2px #007BAC;
     min-width: initial;
-    float: none !important;
+    float: right !important;
     width: fit-content;
+    margin-right: 1rem;
+  }
+  #main-navigation-v .ul-parent li:not(.li-expanded):first-child {
+    background-color: #fff;
+    float: left !important;
+    padding: initial;
+    border: none;
+  }
+  #main-navigation-v .ul-parent li:not(.li-expanded):first-child a {
+    padding: 0 0.75rem;
+    color: #2B2B2B;
   }
   #main-navigation-v .ul-parent .li-parent ul li {
     box-shadow: none;

@@ -119,7 +119,7 @@ li.li-item.li-item-main.li-expanded.li-parent {
     .ul-parent {
       display: block;
       text-align: center;
-      li:nth-child(8) {
+      li:nth-child(9) {
         border-bottom: 3px solid $uva-grey-100;
         margin-bottom: 1rem;
       }
@@ -133,8 +133,20 @@ li.li-item.li-item-main.li-expanded.li-parent {
         box-shadow: inset 0 0 0 2px $uva-blue-alt;
 
         min-width: initial;
-        float: none !important;
+        float: right !important;
         width: fit-content;
+        margin-right: 1rem;
+        &:first-child {
+          background-color: #fff;
+          float: left !important;
+          padding: initial;
+          border: none;
+          a {
+            padding: 0 0.75rem;
+            color: $uva-grey-B;
+          }
+
+        }
       }
       .li-parent ul li {
         box-shadow: none;
