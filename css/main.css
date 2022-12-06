@@ -112,6 +112,7 @@ h4,
 h5,
 .h5,
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
+.rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
 .anchor-nav ul li,
 .jump-nav ul li {
   font-size: 1.2rem !important;
@@ -2423,7 +2424,7 @@ div[data-drupal-messages] .messages {
 .rp-using .using-top {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr;
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
 }
@@ -2454,7 +2455,10 @@ div[data-drupal-messages] .messages {
   grid-area: 1/2/2/3;
 }
 .rp-using .using-top .u-d-j {
-  grid-area: 2/1/3/3;
+  grid-area: 2/2/3/3;
+}
+.rp-using .using-top .u-m-r {
+  grid-area: 2/1/3/2;
 }
 .rp-using .using-top .u-s-j {
   grid-area: 1/3/3/4;
@@ -2462,8 +2466,9 @@ div[data-drupal-messages] .messages {
 .rp-using .using-top .u-s-j h4 {
   margin-top: 1.5rem;
 }
-.rp-using .using-top .u-m-r {
-  grid-area: 3/1/4/4;
+.rp-using .using-top .u-s-j p:last-of-type {
+  margin-top: 2rem;
+  text-align: right;
 }
 .rp-using .n-t-header {
   margin-top: 2.5rem;
@@ -2471,7 +2476,8 @@ div[data-drupal-messages] .messages {
 }
 .rp-using .neighborhood-teaser {
   display: grid;
-  grid-template-columns: 0.6fr 1fr;
+  grid-template-columns: 325px 1fr;
+  gap: 4rem;
   margin-bottom: 3rem;
   border: 1px solid #DADADA;
 }
@@ -2497,7 +2503,7 @@ div[data-drupal-messages] .messages {
 }
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.25fr;
+  grid-template-columns: 300px 300px 1fr;
   gap: 2rem;
   padding-right: 2rem;
 }
