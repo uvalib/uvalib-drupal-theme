@@ -4,10 +4,15 @@
 .library-help {
   .hover-block {
     text-align: center;
+    background-color: #fff;
+    border: 1px solid $uva-grey-100;
   }
   .two-col, .three-col {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .three-col {
+    grid-template-rows: 7.5rem;
   }
   h3 {
     @include h5;

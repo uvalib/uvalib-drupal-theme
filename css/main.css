@@ -2725,10 +2725,15 @@ div[data-drupal-messages] .messages {
 }
 .library-help .hover-block {
   text-align: center;
+  background-color: #fff;
+  border: 1px solid #DADADA;
 }
 .library-help .two-col, .library-help .three-col {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.library-help .three-col {
+  grid-template-rows: 7.5rem;
 }
 .library-help h3 {
   font-size: 1.2rem !important;
@@ -3349,6 +3354,51 @@ div[data-drupal-messages] .messages {
   }
 }
 
+.staff-directory .staff-search-bar {
+  margin: 4rem 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
+}
+.staff-directory .staff-search-bar form {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.staff-directory .staff-search-bar form input {
+  flex: 1;
+  border: 1px solid #fff;
+  text-indent: 1rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.staff-directory .staff-search-bar form button {
+  background-color: #007BAC;
+  padding: 10px 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.staff-directory .staff-search-bar form button::before {
+  content: url(../assets/svg-icons/color/magnifying-glass--white.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.staff-directory .staff-search-bar form button:hover {
+  background-color: #005679;
+}
 .staff-directory tr td {
   padding: 0.5rem;
 }
