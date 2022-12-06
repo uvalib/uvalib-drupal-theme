@@ -2108,7 +2108,7 @@ div[data-drupal-messages] .messages {
 .home-page .home-using-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 6rem 0.5fr 1fr 1rem;
+  grid-template-rows: 6rem 0.5fr 1fr 0.5fr 1.5rem;
   gap: 1rem;
   padding-right: 2rem;
   border-right: 1px solid #DADADA;
@@ -2138,8 +2138,11 @@ div[data-drupal-messages] .messages {
 .home-page .home-using-block .equipment-tech {
   grid-area: 3/3/4/4;
 }
+.home-page .home-using-block .using-help {
+  grid-area: 4/1/5/4;
+}
 .home-page .home-using-block .utl-link {
-  grid-area: 4/3/5/4;
+  grid-area: 5/3/6/4;
   justify-self: end;
 }
 .home-page .home-hours-block .home-hour-date {
@@ -2304,8 +2307,11 @@ div[data-drupal-messages] .messages {
   .home-page .home-using-block .equipment-tech {
     grid-area: 5/1/6/2;
   }
-  .home-page .home-using-block .utl-link {
+  .home-page .home-using-block .using-help {
     grid-area: 6/1/7/2;
+  }
+  .home-page .home-using-block .utl-link {
+    grid-area: 7/1/8/2;
     justify-self: end;
   }
   .home-page .home-hours-block {
