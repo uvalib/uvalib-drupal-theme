@@ -2617,7 +2617,7 @@ div[data-drupal-messages] .messages {
 }
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents {
   display: grid;
-  grid-template-columns: 300px 300px 1fr;
+  grid-template-columns: 1fr 1fr 2.2rem;
   gap: 2rem;
   padding-right: 2rem;
 }
