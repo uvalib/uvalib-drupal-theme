@@ -10,7 +10,7 @@
 
 .main-nav {
   background-color: #ffffff !important;
-  font-weight: 500;
+  font-weight: map-get($font-weights, medium);
 
   ul {
     li {
@@ -26,7 +26,7 @@
 
 
     &[class~="ul-child"] li {
-      font-weight: 400;
+      font-weight: map-get($font-weights, book);
 
       a {
         text-decoration: underline !important;
@@ -162,7 +162,7 @@ li.li-item.li-item-main.li-expanded.li-parent {
     display: block;
     margin-bottom: 1rem;
     width: 100%;
-    font-weight: 500;
+    font-weight: map-get($font-weights, medium);
 
     .ul-parent {
       li {
@@ -177,7 +177,7 @@ li.li-item.li-item-main.li-expanded.li-parent {
         outline: none !important;
         width: 100% !important;
         background-color: #fff !important;
-        font-weight: 100 !important;
+        font-weight: map-get($font-weights, book) !important;
       }
     }
   }
@@ -197,7 +197,7 @@ nav {
 
       ul {
         background-color: #fff;
-        border: 1px solid $uva-brand-blue;
+        // border: 1px solid $uva-brand-blue;
         border-top-width: 5px;
         border-radius: 0 0 4px 4px;
         display: block;
@@ -208,6 +208,8 @@ nav {
         position: absolute;
         top: 100%;
         z-index: 1000;
+        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+        
 
         a {
           border: 0;
@@ -216,16 +218,17 @@ nav {
           margin: 0;
           padding: 0.5em 1em;
           text-decoration: underline;
+          font-weight: map-get($font-weights, book);
 
           &:focus {
-            outline: 5px solid rgb(0 90 156 / 75%);
+            outline: 2px solid rgb(0 90 156 / 75%);
             position: relative;
           }
         }
       }
 
       li:not(.li-1) {
-        margin: 0 2.5px;
+        margin: 0 1px;
       }
 
       &>li {
@@ -237,8 +240,8 @@ nav {
         border: none;
         &::after {
           content: "";
-          border-bottom: 1px solid $uva-text-color-dark;
-          border-right: 1px solid $uva-text-color-dark;
+          border-bottom: 1px solid $uva-brand-blue;
+          border-right: 1px solid $uva-brand-blue;
           height: 0.5em;
           margin-left: 0.75em;
           width: 0.5em;
@@ -258,24 +261,26 @@ nav {
       align-items: center;
       background-color: transparent;
       display: flex;
-      padding: 0.8rem;
+      padding: 11.5px 1rem;
     }
 
     .mainlibrary-nav button:focus {
       border-color: $uva-brand-blue;
-      outline: 5px solid rgb(0 90 156 / 75%);
+      outline: 2px solid rgb(0 90 156 / 75%);
       position: relative;
     }
 
     .mainlibrary-nav button:hover,
     .mainlibrary-nav button[aria-expanded="true"] {
-      background-color: $uva-brand-blue;
-      color: #fff;
+      // background-color: $uva-brand-blue;
+      // color: #fff;
+      background-color: $uva-grey-100;
+      color: $uva-brand-blue;
     }
 
     .mainlibrary-nav button:hover::after,
     .mainlibrary-nav button[aria-expanded="true"]::after {
-      border-color: #fff;
+      border-color: $uva-brand-blue;
     }
   }
 }
