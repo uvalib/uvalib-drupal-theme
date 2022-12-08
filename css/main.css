@@ -1860,7 +1860,7 @@ nav #uvalibrary-nav .mainlibrary-nav button::after {
 }
 nav #uvalibrary-nav .mainlibrary-nav ul a:hover,
 nav #uvalibrary-nav .mainlibrary-nav ul a:focus {
-  background-color: #ddd;
+  background-color: #DADADA;
   margin-bottom: 0;
   text-decoration: none;
 }
