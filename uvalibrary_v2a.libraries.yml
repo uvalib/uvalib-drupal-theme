@@ -54,6 +54,7 @@ base:
   js:
     js/getdate.js: { }
     js/sc-virgo-search.js: { }
+    js/menu-accessibilty.js: { }
   dependencies:
     - core/jquery
     - core/drupal.ajax

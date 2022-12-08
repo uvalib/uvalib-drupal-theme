@@ -2,6 +2,12 @@
 @use '../base/index'as *;
 @use '../components/buttons'as *;
 
+.main-navigation-wrapper {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  border-bottom: 5px solid $uva-brand-blue-base;
+}
+
 .main-nav {
   background-color: #ffffff !important;
   font-weight: 500;
@@ -13,11 +19,6 @@
     }
 
     li[class~="li-parent"] {
-      // &:hover::after {
-      //   content: 'test';
-      //   color: teal !important;
-      // }
-
       a {
         text-decoration: none !important;
       }
@@ -39,12 +40,11 @@
 }
 
 .utility-nav {
-  display: flex;
-  justify-content: end;
+  // display: flex;
+  justify-self: end;
 
   ul li {
     &:nth-child(5) {
-      // &:last-child {
       display: flex;
 
       a {
@@ -130,20 +130,10 @@ li.li-item.li-item-main.li-expanded.li-parent {
       text-align: center;
       li:nth-child(9) {
         border-bottom: 3px solid $uva-brand-blue;
-        // margin-bottom: 1rem; 
       }
       li:not(.li-expanded) {
-        // margin: 0.1rem;
-        // padding: 0.2rem;
-        // border-radius: 5px;
         text-decoration: underline;
         color: $uva-grey-A;
-        // box-shadow: inset 0 0 0 2px $uva-blue-alt;
-
-        // min-width: initial;
-        // float: right !important;
-        // width: fit-content;
-        // margin-right: 1rem;
         &:nth-child(n+6) {
           background-color: $uva-blue-alt-300;
           a {
@@ -193,4 +183,99 @@ li.li-item.li-item-main.li-expanded.li-parent {
   }
 
 
+}
+
+
+nav {
+  #uvalibrary-nav {
+    .mainlibrary-nav {
+      background-color: #fff;
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      ul {
+        background-color: #fff;
+        border: 1px solid $uva-brand-blue;
+        border-top-width: 5px;
+        border-radius: 0 0 4px 4px;
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        min-width: 200px;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        z-index: 1000;
+
+        a {
+          border: 0;
+          color: $uva-brand-blue;
+          display: block;
+          margin: 0;
+          padding: 0.5em 1em;
+          text-decoration: underline;
+
+          &:focus {
+            outline: 5px solid rgb(0 90 156 / 75%);
+            position: relative;
+          }
+        }
+      }
+
+      li:not(.li-1) {
+        margin: 0 2.5px;
+      }
+
+      &>li {
+        display: flex;
+        position: relative;
+      }
+
+      button {
+        border: none;
+        &::after {
+          content: "";
+          border-bottom: 1px solid $uva-text-color-dark;
+          border-right: 1px solid $uva-text-color-dark;
+          height: 0.5em;
+          margin-left: 0.75em;
+          width: 0.5em;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .mainlibrary-nav ul a:hover,
+    .mainlibrary-nav ul a:focus {
+      background-color: #ddd;
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+
+    .mainlibrary-nav button {
+      align-items: center;
+      background-color: transparent;
+      display: flex;
+      padding: 0.8rem;
+    }
+
+    .mainlibrary-nav button:focus {
+      border-color: $uva-brand-blue;
+      outline: 5px solid rgb(0 90 156 / 75%);
+      position: relative;
+    }
+
+    .mainlibrary-nav button:hover,
+    .mainlibrary-nav button[aria-expanded="true"] {
+      background-color: $uva-brand-blue;
+      color: #fff;
+    }
+
+    .mainlibrary-nav button:hover::after,
+    .mainlibrary-nav button[aria-expanded="true"]::after {
+      border-color: #fff;
+    }
+  }
 }

@@ -3,15 +3,10 @@
 
 #header {
   background-color: #ffffff !important;
+  padding: 0.5rem 0;
 
   .site-name-slogan {
     display: none;
-  }
-
-  .header-inner {
-    // @include flex-start;
-    margin: 0.5rem 0;
-    border-bottom: 5px solid $uva-brand-blue-base;
   }
 
   #block-uvalibrary-branding {
@@ -26,7 +21,22 @@
     }
   }
 
+  #header-inner {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    .block-system-branding-block {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .utility-nav {
+      grid-area: 1 / 2 / 2/ 3;
+    }
+  }
+
   @media (max-width:992px) {
+    #header-inner {
+      display: initial;
+      grid-template-columns: none;
+    }
     .header-inner {
       flex-direction: row;
       justify-content: space-between;

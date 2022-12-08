@@ -1612,13 +1612,10 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 
 #header {
   background-color: #ffffff !important;
+  padding: 0.5rem 0;
 }
 #header .site-name-slogan {
   display: none;
-}
-#header .header-inner {
-  margin: 0.5rem 0;
-  border-bottom: 5px solid #232D4B;
 }
 #header #block-uvalibrary-branding {
   margin-top: -40px;
@@ -1629,7 +1626,21 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 #header a.site-logo img {
   max-width: 225px;
 }
+#header #header-inner {
+  display: grid;
+  grid-template-columns: 225px 1fr;
+}
+#header #header-inner .block-system-branding-block {
+  grid-area: 1/1/2/2;
+}
+#header #header-inner .utility-nav {
+  grid-area: 1/2/2/3;
+}
 @media (max-width: 992px) {
+  #header #header-inner {
+    display: initial;
+    grid-template-columns: none;
+  }
   #header .header-inner {
     flex-direction: row;
     justify-content: space-between;
@@ -1638,6 +1649,12 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 
 .library-breadcrumbs {
   margin-left: 1rem;
+}
+
+.main-navigation-wrapper {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  border-bottom: 5px solid #232D4B;
 }
 
 .main-nav {
@@ -1661,8 +1678,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 }
 
 .utility-nav {
-  display: flex;
-  justify-content: end;
+  justify-self: end;
 }
 .utility-nav ul li:nth-child(5) {
   display: flex;
@@ -1789,6 +1805,85 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     font-weight: 100 !important;
   }
 }
+nav #uvalibrary-nav .mainlibrary-nav {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav #uvalibrary-nav .mainlibrary-nav ul {
+  background-color: #fff;
+  border: 1px solid #232D4B;
+  border-top-width: 5px;
+  border-radius: 0 0 4px 4px;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  min-width: 200px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+}
+nav #uvalibrary-nav .mainlibrary-nav ul a {
+  border: 0;
+  color: #232D4B;
+  display: block;
+  margin: 0;
+  padding: 0.5em 1em;
+  text-decoration: underline;
+}
+nav #uvalibrary-nav .mainlibrary-nav ul a:focus {
+  outline: 5px solid rgba(0, 90, 156, 0.75);
+  position: relative;
+}
+nav #uvalibrary-nav .mainlibrary-nav li:not(.li-1) {
+  margin: 0 2.5px;
+}
+nav #uvalibrary-nav .mainlibrary-nav > li {
+  display: flex;
+  position: relative;
+}
+nav #uvalibrary-nav .mainlibrary-nav button {
+  border: none;
+}
+nav #uvalibrary-nav .mainlibrary-nav button::after {
+  content: "";
+  border-bottom: 1px solid #2B2B2B;
+  border-right: 1px solid #2B2B2B;
+  height: 0.5em;
+  margin-left: 0.75em;
+  width: 0.5em;
+  transform: rotate(45deg);
+}
+nav #uvalibrary-nav .mainlibrary-nav ul a:hover,
+nav #uvalibrary-nav .mainlibrary-nav ul a:focus {
+  background-color: #ddd;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+nav #uvalibrary-nav .mainlibrary-nav button {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  padding: 0.8rem;
+}
+nav #uvalibrary-nav .mainlibrary-nav button:focus {
+  border-color: #232D4B;
+  outline: 5px solid rgba(0, 90, 156, 0.75);
+  position: relative;
+}
+nav #uvalibrary-nav .mainlibrary-nav button:hover,
+nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true] {
+  background-color: #232D4B;
+  color: #fff;
+}
+nav #uvalibrary-nav .mainlibrary-nav button:hover::after,
+nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
+  border-color: #fff;
+}
+
 .anchor-nav, .jump-nav {
   margin-bottom: 3rem;
   text-align: center;
