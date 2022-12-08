@@ -112,6 +112,7 @@ h4,
 h5,
 .h5,
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
+.uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
 .anchor-nav ul li,
 .jump-nav ul li {
@@ -1610,6 +1611,20 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   text-decoration: none !important;
 }
 
+.hover-block-img {
+  text-decoration: none;
+}
+.hover-block-img:hover h3, .hover-block-img:hover h4 {
+  text-decoration: underline;
+}
+.hover-block-img p {
+  color: #4F4F4F;
+  text-decoration: none !important;
+}
+.hover-block-img p:hover {
+  text-decoration: none !important;
+}
+
 #header {
   background-color: #ffffff !important;
   padding: 0.5rem 0;
@@ -2890,6 +2905,39 @@ div[data-drupal-messages] .messages {
   .library-help .two-col ul:last-child {
     margin-top: -2rem;
   }
+}
+
+.uvalibrary-spaces h3 {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.uvalibrary-spaces h2:last-of-type {
+  margin-top: 3rem;
+}
+.uvalibrary-spaces .rerserve-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.uvalibrary-spaces .rerserve-container .reserve-location {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  width: 330px;
+}
+.uvalibrary-spaces .rerserve-container .reserve-location h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.uvalibrary-spaces .rerserve-container .reserve-location img {
+  height: 186px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .news-page .views-row {
