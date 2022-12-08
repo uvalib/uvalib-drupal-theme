@@ -21,4 +21,41 @@
   h3 + ul, h3 + p {
     margin-bottom: 2rem;
   }
+  .s-consult-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    .s-consult-block {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      width: 330px;
+      h3 {
+        margin-top: 1.5rem;
+      }
+      img {
+        height: 186px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  @media (max-width:992px) {
+    .s-consult {
+      margin-bottom: 2rem !important;
+    }
+    .two-col {
+      ul {
+        margin: 0;
+      }
+      ul:last-child {
+        margin-top: -2rem;
+      }
+    }
+  }
 }

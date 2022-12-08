@@ -2857,6 +2857,40 @@ div[data-drupal-messages] .messages {
 .library-help h3 + ul, .library-help h3 + p {
   margin-bottom: 2rem;
 }
+.library-help .s-consult-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.library-help .s-consult-container .s-consult-block {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  width: 330px;
+}
+.library-help .s-consult-container .s-consult-block h3 {
+  margin-top: 1.5rem;
+}
+.library-help .s-consult-container .s-consult-block img {
+  height: 186px;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .library-help .s-consult {
+    margin-bottom: 2rem !important;
+  }
+  .library-help .two-col ul {
+    margin: 0;
+  }
+  .library-help .two-col ul:last-child {
+    margin-top: -2rem;
+  }
+}
 
 .news-page .views-row {
   margin-top: 2rem;
