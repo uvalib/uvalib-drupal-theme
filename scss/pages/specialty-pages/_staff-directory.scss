@@ -11,7 +11,42 @@
 /// FIRST IN THE ORDER.
 
 .staff-bio {
+  .field--name-field-uva-ldap-title {
+    @extend .h3;
+    margin: .5rem 0;
 
+    .field__item:last-child {
+      @extend .h5;
+    }
+  }
+  
+  .field--name-field-uva-ldap-phone,
+  .field--type-telephone,
+  .field--name-field-uva-ldap-email,
+  .field--type-email {
+    margin: 1rem 0;
+  }
+
+
+  .layout__region--second {
+    h2 {
+      @extend .h3;
+    }
+
+    section {
+      margin-top: 2rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .field--name-field-professional-profile {
+        p {
+          padding-bottom: 0.25rem;
+        }
+      }
+    }
+  }
 }
 
 .staff-directory {
@@ -29,7 +64,8 @@
   tr {
     td {
       padding: 0.5rem;
-      &:nth-child(n+3){
+
+      &:nth-child(n+3) {
         text-align: center;
       }
     }
