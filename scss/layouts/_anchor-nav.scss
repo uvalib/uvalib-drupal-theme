@@ -1,8 +1,16 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
-.anchor-nav, .jump-nav {
+.anchor-nav {
   margin-bottom: 3rem;
   text-align: center;
+  
+  // &::after {
+  //   border-bottom: 1px solid green;
+  //   content: " ";
+  //   margin-left: -1000px;
+  //   margin-right: -1000px;
+  //   display: flex;
+  // }
 
   ul li {
     display: inline-flex;
@@ -35,8 +43,17 @@
 
 @media (max-width:992px) {
 
-  .anchor-nav, .jump-nav {
+  .anchor-nav {
+    // &::after {
+    //   // border-bottom: 1px solid green;
+    //   margin-left: 0px;
+    //   margin-right: 0px;
+    //   display: inherit;
+    // }
     ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
       padding: 0;
       margin: 0;
 
@@ -53,7 +70,7 @@
           text-decoration: underline !important;
           font-weight: 500 !important;
           // a hack to bring back the underline
-          box-shadow: 0 2px 0px 0px $uva-blue-alt-A;
+          box-shadow: none;
 
           &:hover {
             text-decoration: none !important;

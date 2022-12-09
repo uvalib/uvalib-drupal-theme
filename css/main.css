@@ -114,8 +114,7 @@ h5,
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
 .uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
-.anchor-nav ul li,
-.jump-nav ul li {
+.anchor-nav ul li {
   font-size: 1.2rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -126,8 +125,7 @@ h6,
 .h6,
 .home-page .home-hours-block .hour-head,
 .event-container .event .event-title,
-.anchor-nav ul li::after,
-.jump-nav ul li::after {
+.anchor-nav ul li::after {
   font-size: 1rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -152,6 +150,10 @@ h5 {
 
 html {
   overflow-x: hidden;
+}
+
+body {
+  overflow: auto;
 }
 
 html,
@@ -1900,50 +1902,53 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   border-color: #232D4B;
 }
 
-.anchor-nav, .jump-nav {
+.anchor-nav {
   margin-bottom: 3rem;
   text-align: center;
 }
-.anchor-nav ul li, .jump-nav ul li {
+.anchor-nav ul li {
   display: inline-flex;
   list-style: none;
 }
-.anchor-nav ul li::after, .jump-nav ul li::after {
+.anchor-nav ul li::after {
   padding: 0 1rem;
   content: "|";
 }
-.anchor-nav ul li:last-of-type::after, .jump-nav ul li:last-of-type::after {
+.anchor-nav ul li:last-of-type::after {
   content: inherit;
   padding-right: 0;
 }
-.anchor-nav ul li a, .jump-nav ul li a {
+.anchor-nav ul li a {
   text-decoration: none !important;
   padding-bottom: 0.25rem;
 }
-.anchor-nav ul li a:hover, .anchor-nav ul li a:focus, .jump-nav ul li a:hover, .jump-nav ul li a:focus {
+.anchor-nav ul li a:hover, .anchor-nav ul li a:focus {
   text-decoration: none !important;
   box-shadow: 0 4px 0px 0px #E57200;
 }
 
 @media (max-width: 992px) {
-  .anchor-nav ul, .jump-nav ul {
+  .anchor-nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     padding: 0;
     margin: 0;
   }
-  .anchor-nav ul li, .jump-nav ul li {
+  .anchor-nav ul li {
     display: inline-flex;
     list-style: none;
   }
-  .anchor-nav ul li::after, .jump-nav ul li::after {
+  .anchor-nav ul li::after {
     padding: 0 !important;
     content: " " !important;
   }
-  .anchor-nav ul li a, .jump-nav ul li a {
+  .anchor-nav ul li a {
     text-decoration: underline !important;
     font-weight: 500 !important;
-    box-shadow: 0 2px 0px 0px #005679;
+    box-shadow: none;
   }
-  .anchor-nav ul li a:hover, .jump-nav ul li a:hover {
+  .anchor-nav ul li a:hover {
     text-decoration: none !important;
     box-shadow: 0 0rem 0px 0rem #fff;
   }
