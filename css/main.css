@@ -3127,6 +3127,12 @@ div[data-drupal-messages] .messages {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+.r-m-c .mid-section .mid-content-block .event-container,
+.r-m-c .equip-section .mid-content-block .event-container {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 .r-m-c .line {
   width: 100%;
   text-align: center;
@@ -3157,6 +3163,9 @@ div[data-drupal-messages] .messages {
   .r-m-c .top-section,
 .r-m-c .mid-section,
 .r-m-c .equip-section {
+    grid-template-columns: 1fr;
+  }
+  .r-m-c .mid-content-block .event-container {
     grid-template-columns: 1fr;
   }
 }
