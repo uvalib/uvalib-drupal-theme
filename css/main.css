@@ -1213,7 +1213,7 @@ dl.dl--inline dt {
   border-left: 10px solid #B30000;
 }
 .uva-alert--sitewide .alert1 h2 {
-  margin-top: -2.75rem;
+  margin-top: -2.75rem !important;
 }
 .uva-alert--sitewide .alert1::before {
   display: inline-block;
@@ -1227,7 +1227,7 @@ dl.dl--inline dt {
   border-left: 10px solid #ECC602;
 }
 .uva-alert--sitewide .alert2 h2 {
-  margin-top: -2.75rem;
+  margin-top: -2.75rem !important;
 }
 .uva-alert--sitewide .alert2::before {
   display: inline-block;
@@ -1241,7 +1241,7 @@ dl.dl--inline dt {
   border-left: 10px solid #007BAC;
 }
 .uva-alert--sitewide .alert3 h2 {
-  margin-top: -2.75rem;
+  margin-top: -2.75rem !important;
 }
 .uva-alert--sitewide .alert3::before {
   display: inline-block;

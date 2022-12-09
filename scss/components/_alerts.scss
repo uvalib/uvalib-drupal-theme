@@ -16,7 +16,7 @@
     border-left: 10px solid $uva-red-B;
 
     h2 {
-      margin-top: -2.75rem;
+      margin-top: -2.75rem !important;
     }
 
     &::before {
@@ -33,7 +33,7 @@
     border-left: 10px solid $uva-yellow;
 
     h2 {
-      margin-top: -2.75rem;
+      margin-top: -2.75rem !important;
     }
 
     &::before {
@@ -50,7 +50,7 @@
     border-left: 10px solid $uva-blue-alt;
 
     h2 {
-      margin-top: -2.75rem;
+      margin-top: -2.75rem !important;
     }
 
     &::before {
