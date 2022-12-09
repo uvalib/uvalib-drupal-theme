@@ -2945,6 +2945,10 @@ div[data-drupal-messages] .messages {
   object-fit: cover;
 }
 
+.teaching-and-writing .main-box h2 {
+  margin-top: 2rem;
+}
+
 .news-page .views-row {
   margin-top: 2rem;
   margin-bottom: 2rem;
