@@ -94,7 +94,8 @@ h2,
 h3,
 .h3,
 .uvalib-bento-search .bs-header h2,
-.uvalib-bento-search .bs-header p {
+.uvalib-bento-search .bs-header p,
+.exhibitions .current .view-content .views-field-title {
   font-size: 1.728rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -112,6 +113,8 @@ h4,
 h5,
 .h5,
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
+.exhibitions .permanent .view-content .views-row .views-field-title,
+.exhibitions .view-exhibitions-past .view-content .views-row .views-field-title,
 .uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
 .anchor-nav ul li {
@@ -2983,14 +2986,125 @@ div[data-drupal-messages] .messages {
   }
 }
 
+.exhibitions h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.exhibitions h2 h2:first-of-type {
+  margin-top: inherit;
+}
 .exhibitions img.align-right {
   padding-left: 2rem;
 }
-.exhibitions .current .views-row {
-  display: grid;
-  grid-template-columns: 0.75fr 2fr;
+.exhibitions .current {
   margin-bottom: 2rem;
 }
+.exhibitions .current .view-content .views-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr repeat(3, 0.25fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 0.5rem;
+}
+.exhibitions .current .view-content .views-field-field-image {
+  grid-area: 1/1/3/2;
+  border: 1px solid #DADADA;
+  display: flex;
+  justify-self: end;
+  align-self: start;
+}
+.exhibitions .current .view-content .views-field-title {
+  grid-area: 1/2/2/3;
+}
+.exhibitions .current .view-content .views-field-body {
+  grid-area: 2/2/3/3;
+}
+.exhibitions .current .view-content .views-field-field-further-location-informati {
+  grid-area: 3/2/4/3;
+}
+.exhibitions .current .view-content .views-field-field-further-location-informati span {
+  font-weight: 500;
+}
+.exhibitions .current .view-content .views-field-field-start-date {
+  grid-area: 4/2/5/3;
+}
+.exhibitions .current .view-content .views-field-field-start-date span {
+  font-weight: 500;
+}
+.exhibitions .current .view-content .views-field-field-end-date-1 {
+  grid-area: 5/2/6/3;
+}
+.exhibitions .current .view-content .views-field-field-end-date-1 span {
+  font-weight: 500;
+}
+.exhibitions .permanent .view-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.exhibitions .permanent .view-content .views-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.exhibitions .view-exhibitions-past .view-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.exhibitions .view-exhibitions-past .view-content .views-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+@media (max-width: 992px) {
+  .exhibitions img.align-right {
+    margin: 0.25rem auto;
+    padding-left: 0 !important;
+  }
+  .exhibitions .current .views-row {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    grid-template-columns: initial !important;
+    grid-template-rows: initial;
+  }
+  .exhibitions .current .views-row .views-field-field-image {
+    grid-area: initial;
+  }
+  .exhibitions .current .views-row .views-field-title {
+    grid-area: initial;
+  }
+  .exhibitions .current .views-row .views-field-body {
+    grid-area: initial;
+  }
+  .exhibitions .current .views-row .views-field-field-further-location-informati {
+    grid-area: initial;
+  }
+  .exhibitions .current .views-row .views-field-field-start-date {
+    grid-area: initial;
+  }
+  .exhibitions .current .views-row .views-field-field-end-date-1 {
+    grid-area: initial;
+  }
+  .exhibitions .permanent .view-content,
+.exhibitions .view-exhibitions-past .view-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .special-collections .sc-sidenav {
   margin-top: 2rem;
 }
