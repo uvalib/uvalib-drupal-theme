@@ -3755,3 +3755,8 @@ div[data-drupal-messages] .messages {
 .staff-directory tr td:nth-child(n+3) {
   text-align: center;
 }
+
+body.maintenance-page {
+  background-color: white !important;
+  padding: 40px;
+}
