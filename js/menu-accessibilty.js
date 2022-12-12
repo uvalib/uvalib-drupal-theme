@@ -1,251 +1,157 @@
-// var menuItems = document.querySelectorAll("li.li-parent");
-// Array.prototype.forEach.call(menuItems, function (el, i) {
-// 	el.querySelector("a").addEventListener("click", function (event) {
-// 		if (this.parentNode.className == "li-parent") {
-// 			this.parentNode.className = "li-parent open";
-// 			this.setAttribute("aria-expanded", "true");
-// 		} else {
-// 			this.parentNode.className = "li-parent";
-// 			this.setAttribute("aria-expanded", "false");
-// 		}
-// 		event.preventDefault();
-// 		return false;
-// 	});
-// });
+var appsMenuItems = document.querySelectorAll("#uvalibrary-nav > li");
+var subMenuItems = document.querySelectorAll("#uvalibrary-nav > li li");
+var keys = {
+	tab: 9,
+	enter: 13,
+	esc: 27,
+	space: 32,
+	left: 37,
+	up: 38,
+	right: 39,
+	down: 40,
+};
+var currentIndex, subIndex;
 
-// var menuItems = document.querySelectorAll("li-0.has-submenu");
-// Array.prototype.forEach.call(menuItems, function (el, i) {
-// 	el.querySelector("a").addEventListener("click", function (event) {
-// 		if (this.parentNode.className == "has-submenu") {
-// 			this.parentNode.className = "has-submenu open";
-// 			this.setAttribute("aria-expanded", "true");
-// 		} else {
-// 			this.parentNode.className = "has-submenu";
-// 			this.setAttribute("aria-expanded", "false");
-// 		}
-// 		event.preventDefault();
-// 		return false;
-// 	});
-// });
+var gotoIndex = function (idx) {
+	if (idx == appsMenuItems.length) {
+		idx = 0;
+	} else if (idx < 0) {
+		idx = appsMenuItems.length - 1;
+	}
+	appsMenuItems[idx].focus();
+	currentIndex = idx;
+};
 
-"use strict";
+var gotoSubIndex = function (menu, idx) {
+	var items = menu.querySelectorAll("li");
+	if (idx == items.length) {
+		idx = 0;
+	} else if (idx < 0) {
+		idx = items.length - 1;
+	}
+	items[idx].focus();
+	subIndex = idx;
+};
 
-class mainlibraryNav {
-	constructor(domNode) {
-		this.rootNode = domNode;
-		this.controlledNodes = [];
-		this.openIndex = null;
-		this.useArrowKeys = true;
-		this.topLevelNodes = [
-			...this.rootNode.querySelectorAll(
-				".main-link, button[aria-expanded][aria-controls]"
-			),
-		];
-
-		this.topLevelNodes.forEach((node) => {
-			// handle button + menu
-			if (
-				node.tagName.toLowerCase() === "button" &&
-				node.hasAttribute("aria-controls")
-			) {
-				const menu = node.parentNode.querySelector("ul");
-				if (menu) {
-					// save ref controlled menu
-					this.controlledNodes.push(menu);
-
-					// collapse menus
-					node.setAttribute("aria-expanded", "false");
-					this.toggleMenu(menu, false);
-
-					// attach event listeners
-					menu.addEventListener("keydown", this.onMenuKeyDown.bind(this));
-					node.addEventListener("click", this.onButtonClick.bind(this));
-					node.addEventListener("keydown", this.onButtonKeyDown.bind(this));
-				}
-			}
-			// handle links
-			else {
-				this.controlledNodes.push(null);
-				node.addEventListener("keydown", this.onLinkKeyDown.bind(this));
-			}
+Array.prototype.forEach.call(appsMenuItems, function (el, i) {
+	if (0 == i) {
+		el.setAttribute("tabindex", "0");
+		el.addEventListener("focus", function () {
+			currentIndex = 0;
 		});
-
-		this.rootNode.addEventListener("focusout", this.onBlur.bind(this));
+	} else {
+		el.setAttribute("tabindex", "-1");
 	}
-
-	controlFocusByKey(keyboardEvent, nodeList, currentIndex) {
-		switch (keyboardEvent.key) {
-			case "ArrowUp":
-			case "ArrowLeft":
-				keyboardEvent.preventDefault();
-				if (currentIndex > -1) {
-					var prevIndex = Math.max(0, currentIndex - 1);
-					nodeList[prevIndex].focus();
-				}
-				break;
-			case "ArrowDown":
-			case "ArrowRight":
-				keyboardEvent.preventDefault();
-				if (currentIndex > -1) {
-					var nextIndex = Math.min(nodeList.length - 1, currentIndex + 1);
-					nodeList[nextIndex].focus();
-				}
-				break;
-			case "Home":
-				keyboardEvent.preventDefault();
-				nodeList[0].focus();
-				break;
-			case "End":
-				keyboardEvent.preventDefault();
-				nodeList[nodeList.length - 1].focus();
-				break;
-		}
-	}
-
-	// public function to close open menu
-	close() {
-		this.toggleExpand(this.openIndex, false);
-	}
-
-	onBlur(event) {
-		var menuContainsFocus = this.rootNode.contains(event.relatedTarget);
-		if (!menuContainsFocus && this.openIndex !== null) {
-			this.toggleExpand(this.openIndex, false);
-		}
-	}
-
-	onButtonClick(event) {
-		var button = event.target;
-		var buttonIndex = this.topLevelNodes.indexOf(button);
-		var buttonExpanded = button.getAttribute("aria-expanded") === "true";
-		this.toggleExpand(buttonIndex, !buttonExpanded);
-	}
-
-	onButtonKeyDown(event) {
-		var targetButtonIndex = this.topLevelNodes.indexOf(document.activeElement);
-
-		// close on escape
-		if (event.key === "Escape") {
-			this.toggleExpand(this.openIndex, false);
-		}
-
-		// move focus into the open menu if the current menu is open
-		else if (
-			this.useArrowKeys &&
-			this.openIndex === targetButtonIndex &&
-			event.key === "ArrowDown"
+	el.addEventListener("focus", function () {
+		subIndex = 0;
+		Array.prototype.forEach.call(appsMenuItems, function (el, i) {
+			el.setAttribute("aria-expanded", "false");
+		});
+	});
+	el.addEventListener("click", function (event) {
+		if (
+			this.getAttribute("aria-expanded") == "false" ||
+			this.getAttribute("aria-expanded") == null
 		) {
-			event.preventDefault();
-			this.controlledNodes[this.openIndex].querySelector("a").focus();
+			this.setAttribute("aria-expanded", "true");
+		} else {
+			this.setAttribute("aria-expanded", "false");
 		}
-
-		// handle arrow key navigation between top-level buttons, if set
-		else if (this.useArrowKeys) {
-			this.controlFocusByKey(event, this.topLevelNodes, targetButtonIndex);
-		}
-	}
-
-	onLinkKeyDown(event) {
-		var targetLinkIndex = this.topLevelNodes.indexOf(document.activeElement);
-
-		// handle arrow key navigation between top-level buttons, if set
-		if (this.useArrowKeys) {
-			this.controlFocusByKey(event, this.topLevelNodes, targetLinkIndex);
-		}
-	}
-
-	onMenuKeyDown(event) {
-		if (this.openIndex === null) {
-			return;
-		}
-
-		var menuLinks = Array.prototype.slice.call(
-			this.controlledNodes[this.openIndex].querySelectorAll("a")
-		);
-		var currentIndex = menuLinks.indexOf(document.activeElement);
-
-		// close on escape
-		if (event.key === "Escape") {
-			this.topLevelNodes[this.openIndex].focus();
-			this.toggleExpand(this.openIndex, false);
-		}
-
-		// handle arrow key navigation within menu links, if set
-		else if (this.useArrowKeys) {
-			this.controlFocusByKey(event, menuLinks, currentIndex);
-		}
-	}
-
-	toggleExpand(index, expanded) {
-		// close open menu, if applicable
-		if (this.openIndex !== index) {
-			this.toggleExpand(this.openIndex, false);
-		}
-
-		// handle menu at called index
-		if (this.topLevelNodes[index]) {
-			this.openIndex = expanded ? index : null;
-			this.topLevelNodes[index].setAttribute("aria-expanded", expanded);
-			this.toggleMenu(this.controlledNodes[index], expanded);
-		}
-	}
-
-	toggleMenu(domNode, show) {
-		if (domNode) {
-			domNode.style.display = show ? "block" : "none";
-		}
-	}
-
-	updateKeyControls(useArrowKeys) {
-		this.useArrowKeys = useArrowKeys;
-	}
-}
-
-/* Initialize mainlibrary Menus */
-
-window.addEventListener(
-	"load",
-	function () {
-		var menus = document.querySelectorAll(".mainlibrary-nav");
-		var mainlibraryMenus = [];
-
-		for (var i = 0; i < menus.length; i++) {
-			mainlibraryMenus[i] = new mainlibraryNav(menus[i]);
-		}
-
-		// listen to arrow key checkbox
-		var arrowKeySwitch = document.getElementById("arrow-behavior-switch");
-		if (arrowKeySwitch) {
-			arrowKeySwitch.addEventListener("change", function () {
-				var checked = arrowKeySwitch.checked;
-				for (var i = 0; i < mainlibraryMenus.length; i++) {
-					mainlibraryMenus[i].updateKeyControls(checked);
+		event.preventDefault();
+		return false;
+	});
+	el.addEventListener("keydown", function (event) {
+		var prevdef = false;
+		switch (event.keyCode) {
+			case keys.right:
+				gotoIndex(currentIndex + 1);
+				prevdef = true;
+				break;
+			case keys.left:
+				gotoIndex(currentIndex - 1);
+				prevdef = true;
+				break;
+			case keys.tab:
+				if (event.shiftKey) {
+					gotoIndex(currentIndex - 1);
+				} else {
+					gotoIndex(currentIndex + 1);
 				}
-			});
+				prevdef = true;
+				break;
+			case keys.enter:
+			case keys.down:
+				this.click();
+				subindex = 0;
+				gotoSubIndex(this.querySelector("ul"), 0);
+				prevdef = true;
+				break;
+			case keys.up:
+				this.click();
+				var submenu = this.querySelector("ul");
+				subindex = submenu.querySelectorAll("li").length - 1;
+				gotoSubIndex(submenu, subindex);
+				prevdef = true;
+				break;
+			case keys.esc:
+				document.querySelector("#escape").setAttribute("tabindex", "-1");
+				document.querySelector("#escape").focus();
+				prevdef = true;
 		}
+		if (prevdef) {
+			event.preventDefault();
+		}
+	});
+});
 
-		// fake link behavior
-		mainlibraryMenus.forEach((mainlibraryNav, i) => {
-			var links = menus[i].querySelectorAll('[href="#mythical-page-content"]');
-			var examplePageHeading = document.getElementById("mythical-page-heading");
-			for (var k = 0; k < links.length; k++) {
-				// The codepen export script updates the internal link href with a full URL
-				// we're just manually fixing that behavior here
-				links[k].href = "#mythical-page-content";
-
-				links[k].addEventListener("click", (event) => {
-					// change the heading text to fake a page change
-					var pageTitle = event.target.innerText;
-					examplePageHeading.innerText = pageTitle;
-
-					// handle aria-current
-					for (var n = 0; n < links.length; n++) {
-						links[n].removeAttribute("aria-current");
-					}
-					event.target.setAttribute("aria-current", "page");
-				});
-			}
-		});
-	},
-	false
-);
+Array.prototype.forEach.call(subMenuItems, function (el, i) {
+	el.setAttribute("tabindex", "-1");
+	el.addEventListener("keydown", function (event) {
+		switch (event.keyCode) {
+			case keys.tab:
+				if (event.shiftKey) {
+					gotoIndex(currentIndex - 1);
+				} else {
+					gotoIndex(currentIndex + 1);
+				}
+				prevdef = true;
+				break;
+			case keys.right:
+				gotoIndex(currentIndex + 1);
+				prevdef = true;
+				break;
+			case keys.left:
+				gotoIndex(currentIndex - 1);
+				prevdef = true;
+				break;
+			case keys.esc:
+				gotoIndex(currentIndex);
+				prevdef = true;
+				break;
+			case keys.down:
+				gotoSubIndex(this.parentNode, subIndex + 1);
+				prevdef = true;
+				break;
+			case keys.up:
+				gotoSubIndex(this.parentNode, subIndex - 1);
+				prevdef = true;
+				break;
+			case keys.enter:
+			case keys.space:
+				alert(this.innerText);
+				prevdef = true;
+				break;
+		}
+		if (prevdef) {
+			event.preventDefault();
+			event.stopPropagation();
+		}
+		return false;
+	});
+	el.addEventListener("click", function (event) {
+		alert(this.innerHTML);
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	});
+});

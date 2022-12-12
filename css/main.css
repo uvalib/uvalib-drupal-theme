@@ -1680,24 +1680,74 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   border-bottom: 5px solid #232D4B;
 }
 
-.main-nav {
-  background-color: #ffffff !important;
+#uvalibrary-nav {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: #232D4B;
   font-weight: 500;
 }
-.main-nav ul li {
-  background-color: white;
+
+#uvalibrary-nav li {
+  white-space: nowrap;
+  display: block;
+  padding: 11.5px 1rem;
+  margin: 0;
 }
-.main-nav ul li[class~=li-parent] a {
-  text-decoration: none !important;
+
+#uvalibrary-nav > li {
+  float: left;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
 }
-.main-nav ul[class~=ul-child] li {
+#uvalibrary-nav > li span::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 1px solid #232D4B;
+  border-right: 1px solid #232D4B;
+  height: 0.5em;
+  margin-left: 0.75em;
+  width: 0.5em;
+  transform: rotate(45deg);
+}
+
+#uvalibrary-nav li:hover,
+#uvalibrary-nav li:focus {
+  background-color: #DADADA;
+  color: #232D4B;
+  text-decoration: underline;
+}
+
+#uvalibrary-nav > li > ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  width: max-content;
+  text-align: left;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #232D4B;
   font-weight: 400;
 }
-.main-nav ul[class~=ul-child] li a {
-  text-decoration: underline !important;
+#uvalibrary-nav > li > ul a {
+  color: #232D4B;
 }
-.main-nav ul[class~=ul-child] li a:hover {
-  text-decoration: none !important;
+#uvalibrary-nav > li > ul li:focus,
+#uvalibrary-nav > li > ul li:hover {
+  background-color: #DADADA;
+}
+
+#uvalibrary-nav > li[aria-expanded=true] > ul {
+  display: block;
+  z-index: 1000;
 }
 
 .utility-nav {
@@ -1732,17 +1782,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   margin-top: 0.75em;
   content: url(../assets/svg-icons/magnifying-glass.svg);
   margin-left: 1rem;
-}
-
-li.li-item.li-item-main.li-expanded.li-parent {
-  color: #232D4B !important;
-  margin-left: 2px;
-}
-li.li-item.li-item-main.li-expanded.li-parent a span {
-  color: #232D4B !important;
-}
-li.li-item.li-item-main.li-expanded.li-parent a:hover {
-  background-color: #DADADA;
 }
 
 .mobile-nav,
@@ -1828,86 +1867,6 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
     font-weight: 400 !important;
   }
 }
-nav #uvalibrary-nav .mainlibrary-nav {
-  background-color: #fff;
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-nav #uvalibrary-nav .mainlibrary-nav ul {
-  background-color: #fff;
-  border-top-width: 5px;
-  border-radius: 0 0 4px 4px;
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  min-width: 200px;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  z-index: 1000;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-nav #uvalibrary-nav .mainlibrary-nav ul a {
-  border: 0;
-  color: #232D4B;
-  display: block;
-  margin: 0;
-  padding: 0.5em 1em;
-  text-decoration: underline;
-  font-weight: 400;
-}
-nav #uvalibrary-nav .mainlibrary-nav ul a:focus {
-  outline: 2px solid rgba(0, 90, 156, 0.75);
-  position: relative;
-}
-nav #uvalibrary-nav .mainlibrary-nav li:not(.li-1) {
-  margin: 0 1px;
-}
-nav #uvalibrary-nav .mainlibrary-nav > li {
-  display: flex;
-  position: relative;
-}
-nav #uvalibrary-nav .mainlibrary-nav button {
-  border: none;
-}
-nav #uvalibrary-nav .mainlibrary-nav button::after {
-  content: "";
-  border-bottom: 1px solid #232D4B;
-  border-right: 1px solid #232D4B;
-  height: 0.5em;
-  margin-left: 0.75em;
-  width: 0.5em;
-  transform: rotate(45deg);
-}
-nav #uvalibrary-nav .mainlibrary-nav ul a:hover,
-nav #uvalibrary-nav .mainlibrary-nav ul a:focus {
-  background-color: #DADADA;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-nav #uvalibrary-nav .mainlibrary-nav button {
-  align-items: center;
-  background-color: transparent;
-  display: flex;
-  padding: 11.5px 1rem;
-}
-nav #uvalibrary-nav .mainlibrary-nav button:focus {
-  border-color: #232D4B;
-  outline: 2px solid rgba(0, 90, 156, 0.75);
-  position: relative;
-}
-nav #uvalibrary-nav .mainlibrary-nav button:hover,
-nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true] {
-  background-color: #DADADA;
-  color: #232D4B;
-}
-nav #uvalibrary-nav .mainlibrary-nav button:hover::after,
-nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
-  border-color: #232D4B;
-}
-
 .anchor-nav {
   margin-bottom: 3rem;
   text-align: center;
