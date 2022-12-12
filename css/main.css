@@ -1123,6 +1123,25 @@ h4 span a:focus {
   text-decoration: underline;
 }
 
+mark::before,
+mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+mark::before {
+  content: " [highlight start] ";
+}
+
+mark::after {
+  content: " [highlight end] ";
+}
+
 .accessibility-outline-on-light-bg {
   outline-offset: 0.25em;
   outline: 2px dotted #005679;
