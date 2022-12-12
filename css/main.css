@@ -114,6 +114,8 @@ h4,
 
 h5,
 .h5,
+.how-do-i-main .view-content .item-list ul li a,
+.how-do-i-detail .view-content h2,
 .staff-bio .field--name-field-uva-ldap-title .field__item:last-child,
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
 .exhibitions .permanent .view-content .views-row .views-field-title,
@@ -3784,6 +3786,29 @@ div[data-drupal-messages] .messages {
   text-align: center;
 }
 
+.how-do-i-main .view-content .item-list {
+  margin-top: 3rem;
+}
+.how-do-i-main .view-content .item-list h3 {
+  border-bottom: 1px solid #DADADA;
+}
+.how-do-i-main .view-content .item-list ul {
+  list-style-type: none;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+}
+.how-do-i-main .view-content .item-list ul li p a {
+  font-weight: inherit;
+  font-size: 1rem !important;
+}
+
+.how-do-i-detail .view-content {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+}
 body.maintenance-page {
   background-color: white !important;
   padding: 40px;
