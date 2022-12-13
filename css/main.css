@@ -93,6 +93,7 @@ h2,
 
 h3,
 .h3,
+.library-locations .view-content .views-row h2,
 .staff-bio .field--name-field-uva-ldap-title,
 .staff-bio .layout__region--second h2,
 .uvalib-bento-search .bs-header h2,
@@ -3889,6 +3890,32 @@ div[data-drupal-messages] .messages {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
+.library-locations .view-content {
+  display: grid;
+  gap: 2rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  margin-top: 2rem;
+}
+.library-locations .view-content .views-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.library-locations .view-content .views-row h2 {
+  margin-bottom: 0.25rem;
+}
+.library-locations .view-content .views-row .views-field-field-body {
+  margin-top: 1.5rem;
+}
+.library-locations .view-content .views-row .views-field-field-email-address span,
+.library-locations .view-content .views-row .views-field-field-phone-number span {
+  font-weight: 500;
+}
+
 body.maintenance-page {
   background-color: white !important;
   padding: 40px;
