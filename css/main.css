@@ -3695,6 +3695,20 @@ div[data-drupal-messages] .messages {
   }
 }
 
+.assessment .dashboard-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.assessment .survey-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .status-dashboard .s-jump {
   margin-bottom: 2rem;
 }
