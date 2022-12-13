@@ -2235,7 +2235,10 @@ div[data-drupal-messages] .messages {
 }
 .home-page .home-collections .home-collection-virgo form input {
   flex: 1;
-  border: 1px solid #fff;
+  border-left: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  border-top: 1px solid #DADADA;
+  border-right: 0px;
   text-indent: 1rem;
   border-radius: 0.3rem 0 0 0.3rem;
 }
@@ -2245,7 +2248,10 @@ div[data-drupal-messages] .messages {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border-left: 0px;
+  border-right: 1px solid #007BAC;
+  border-bottom: 1px solid #007BAC;
+  border-top: 1px solid #007BAC;
   border-radius: 0 0.3rem 0.3rem 0;
 }
 .home-page .home-collections .home-collection-virgo form button::before {
@@ -2553,7 +2559,10 @@ div[data-drupal-messages] .messages {
 }
 .rp-using .virgo-search form input {
   flex: 1;
-  border: 1px solid #fff;
+  border-left: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  border-top: 1px solid #DADADA;
+  border-right: 0px;
   text-indent: 1rem;
   border-radius: 0.3rem 0 0 0.3rem;
 }
@@ -2563,7 +2572,10 @@ div[data-drupal-messages] .messages {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border-left: 0px;
+  border-right: 1px solid #007BAC;
+  border-bottom: 1px solid #007BAC;
+  border-top: 1px solid #007BAC;
   border-radius: 0 0.3rem 0.3rem 0;
 }
 .rp-using .virgo-search form button::before {
@@ -3179,7 +3191,10 @@ div[data-drupal-messages] .messages {
 }
 .special-collections .sc-find form input {
   flex: 1;
-  border: 1px solid #fff;
+  border-left: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  border-top: 1px solid #DADADA;
+  border-right: 0px;
   text-indent: 1rem;
   border-radius: 0.3rem 0 0 0.3rem;
 }
@@ -3189,7 +3204,10 @@ div[data-drupal-messages] .messages {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border-left: 0px;
+  border-right: 1px solid #007BAC;
+  border-bottom: 1px solid #007BAC;
+  border-top: 1px solid #007BAC;
   border-radius: 0 0.3rem 0.3rem 0;
 }
 .special-collections .sc-find form button::before {
@@ -3355,7 +3373,10 @@ div[data-drupal-messages] .messages {
 }
 .libra .libra-search form input {
   flex: 1;
-  border: 1px solid #fff;
+  border-left: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  border-top: 1px solid #DADADA;
+  border-right: 0px;
   text-indent: 1rem;
   border-radius: 0.3rem 0 0 0.3rem;
 }
@@ -3365,7 +3386,10 @@ div[data-drupal-messages] .messages {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border-left: 0px;
+  border-right: 1px solid #007BAC;
+  border-bottom: 1px solid #007BAC;
+  border-top: 1px solid #007BAC;
   border-radius: 0 0.3rem 0.3rem 0;
 }
 .libra .libra-search form button::before {
@@ -3454,7 +3478,10 @@ div[data-drupal-messages] .messages {
 }
 .uvalib-bento-search .bento-search-bar form input {
   flex: 1;
-  border: 1px solid #fff;
+  border-left: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  border-top: 1px solid #DADADA;
+  border-right: 0px;
   text-indent: 1rem;
   border-radius: 0.3rem 0 0 0.3rem;
 }
@@ -3464,7 +3491,10 @@ div[data-drupal-messages] .messages {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border-left: 0px;
+  border-right: 1px solid #007BAC;
+  border-bottom: 1px solid #007BAC;
+  border-top: 1px solid #007BAC;
   border-radius: 0 0.3rem 0.3rem 0;
 }
 .uvalib-bento-search .bento-search-bar form button::before {
@@ -3757,7 +3787,10 @@ div[data-drupal-messages] .messages {
 }
 .staff-directory .staff-search-bar form input {
   flex: 1;
-  border: 1px solid #fff;
+  border-left: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  border-top: 1px solid #DADADA;
+  border-right: 0px;
   text-indent: 1rem;
   border-radius: 0.3rem 0 0 0.3rem;
 }
@@ -3767,7 +3800,10 @@ div[data-drupal-messages] .messages {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border-left: 0px;
+  border-right: 1px solid #007BAC;
+  border-bottom: 1px solid #007BAC;
+  border-top: 1px solid #007BAC;
   border-radius: 0 0.3rem 0.3rem 0;
 }
 .staff-directory .staff-search-bar form button::before {
