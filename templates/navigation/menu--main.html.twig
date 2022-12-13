@@ -18,7 +18,9 @@
 			{% if menu_level == 0 %}
 				<ul {{ attributes.addClass(menu_classes) }} foo="MAIN-UL-CONTAINTER">
 				{% else %}
-					<ul id="id_menu" class="nav__list" hidden foo="SUB-MENU-CONTAINER">
+					<ul
+						class="nav__list" hidden foo="SUB-MENU-CONTAINER">
+					{# <ul id="id_menu" class="nav__list" hidden foo="SUB-MENU-CONTAINER"> #}
 					{% endif %}
 					{% for item in items %}
 						{% if menu_level == 0 and item.is_expanded %}
