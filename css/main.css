@@ -3496,6 +3496,9 @@ div[data-drupal-messages] .messages {
   }
 }
 
+.uvalib-bento-search h1 {
+  margin-bottom: 2rem;
+}
 .uvalib-bento-search .bento-search-bar {
   margin: 4rem 0;
   position: absolute;

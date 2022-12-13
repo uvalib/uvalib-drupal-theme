@@ -3,7 +3,9 @@
 
 
 .uvalib-bento-search {
-
+  h1 {
+    margin-bottom: 2rem;
+  }
 .bento-search-bar {
   margin: 4rem 0;
   @include virgo-search;
