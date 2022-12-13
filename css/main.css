@@ -106,7 +106,8 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+.sustainable-scholarship .sustainable-links a {
   font-size: 1.44rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -3914,6 +3915,64 @@ div[data-drupal-messages] .messages {
 .library-locations .view-content .views-row .views-field-field-email-address span,
 .library-locations .view-content .views-row .views-field-field-phone-number span {
   font-weight: 500;
+}
+
+.sustainable-scholarship .intro-block-half {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  grid-gap: 1.5em;
+  margin-top: 2rem;
+}
+.sustainable-scholarship .intro-block-half img {
+  border-radius: 50%;
+  width: 28vw;
+}
+.sustainable-scholarship .sustainable-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.sustainable-scholarship .sustainable-links a {
+  text-align: center;
+  border: 1px solid #DADADA;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  padding: 3rem;
+}
+.sustainable-scholarship .sustainable-links a:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.06), 0 3px 5px rgba(0, 0, 0, 0.12);
+}
+.sustainable-scholarship .sustainable-mid {
+  margin: 1.75em -1000px 1.75em -1000px;
+  padding: 1rem 1000px 1rem 1000px;
+  background-color: #232D4B;
+  background-image: url(https://drupal.lib.virginia.edu/sites/default/files/2020-09/blue_library_image.png);
+  background-size: contain;
+  height: 4em;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1;
+  display: grid;
+}
+.sustainable-scholarship .sustainable-mid p {
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .sustainable-scholarship .intro-block-half img {
+    border-radius: 50%;
+    width: 90vw;
+  }
+  .sustainable-scholarship .intro-block-half {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+  }
+  .sustainable-scholarship .sustainable-links {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
+  }
 }
 
 body.maintenance-page {
