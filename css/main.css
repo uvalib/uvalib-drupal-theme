@@ -3709,6 +3709,7 @@ div[data-drupal-messages] .messages {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .status-dashboard .s-jump {
   margin-bottom: 2rem;
 }
@@ -3987,6 +3988,25 @@ div[data-drupal-messages] .messages {
     grid-template-columns: 1fr;
     margin-top: 2.5rem;
   }
+}
+
+.honor-roll .legend {
+  width: max-content;
+  margin-top: 1rem;
+  border: 1px solid #DADADA;
+  padding: 2rem;
+  font-weight: 500;
+}
+.honor-roll .legend ul {
+  margin: 0;
+  padding: 0;
+}
+.honor-roll .legend ul li:last-child {
+  margin-bottom: 0 !important;
+}
+.honor-roll ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 body.maintenance-page {
