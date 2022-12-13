@@ -1721,38 +1721,46 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   text-decoration: none !important;
 }
 
-.utility-nav {
-  justify-self: end;
+#utility-nav {
+  float: right;
 }
-.utility-nav ul li:nth-child(5) {
+#utility-nav ul:first-of-type {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+#utility-nav a {
+  color: #232D4B !important;
+}
+#utility-nav ul li:nth-child(5) {
   display: flex;
 }
-.utility-nav ul li:nth-child(5) a {
+#utility-nav ul li:nth-child(5) a {
   padding-left: 0.35em;
 }
-.utility-nav ul li:nth-child(5)::before {
+#utility-nav ul li:nth-child(5)::before {
   display: inline-block;
   content: "";
   width: 1rem;
   height: 1rem;
   margin-top: 0.75em;
   content: url(../assets/svg-icons/bell.svg);
-  margin-left: 1rem;
+  margin-top: 0.25rem;
 }
-.utility-nav ul li:nth-child(6) {
+#utility-nav ul li:nth-child(6) {
   display: flex;
 }
-.utility-nav ul li:nth-child(6) a {
+#utility-nav ul li:nth-child(6) a {
   padding-left: 0.35em;
 }
-.utility-nav ul li:nth-child(6)::before {
+#utility-nav ul li:nth-child(6)::before {
   display: inline-block;
   content: "";
   width: 1rem;
   height: 1rem;
   margin-top: 0.75em;
   content: url(../assets/svg-icons/magnifying-glass.svg);
-  margin-left: 1rem;
+  margin-top: 0.25rem;
 }
 
 li.li-item.li-item-main.li-expanded.li-parent {

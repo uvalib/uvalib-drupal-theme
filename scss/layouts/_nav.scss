@@ -39,10 +39,18 @@
   }
 }
 
-.utility-nav {
+#utility-nav {
   // display: flex;
-  justify-self: end;
-
+  // justify-self: end;
+  float: right;
+  ul:first-of-type {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+  a {
+    color: $uva-brand-blue !important;
+  }
   ul li {
     &:nth-child(5) {
       display: flex;
@@ -54,7 +62,8 @@
       &::before {
         @include svg-base;
         content: $icon-alert;
-        margin-left: 1rem;
+        // margin-left: 1rem;
+        margin-top: 0.25rem;
       }
     }
 
@@ -68,7 +77,8 @@
       &::before {
         @include svg-base;
         content: $icon-search;
-        margin-left: 1rem;
+        // margin-left: 1rem;
+        margin-top: 0.25rem;
       }
     }
   }
