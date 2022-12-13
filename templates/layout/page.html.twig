@@ -216,7 +216,7 @@
 				{% endif %}
 				{% if page.content %}
 					<!-- Start: Main Content -->
-					<div class="{{ content_w3css }} main-box {{ main_region ? 'main-region' }} w3css-content" role="main">
+					<div id="main-content" class="{{ content_w3css }} main-box {{ main_region ? 'main-region' }} w3css-content" role="main">
 						<div class="d8-fade w3-mobile {{ color_content }}">
 							{{ page.content }}
 						</div>
@@ -311,10 +311,10 @@
 				{# {% if page.footer_third %} #}
 			<!-- Start: Footer Third -->
 				{# <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-																						<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-																							{{ page.footer_third }}
-																						</div>
-																					</div> #}
+																										<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+																											{{ page.footer_third }}
+																										</div>
+																									</div> #}
 				<!-- End: Footer Third -->
 				{# {% endif %} #}
 			</div>
