@@ -43,6 +43,9 @@ h4 span a {
     text-decoration: underline;
   }
 }
+mark {
+  background-color: $uva-brand-orange-200;
+}
 
 mark::before,
 mark::after {
