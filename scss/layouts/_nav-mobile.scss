@@ -1,8 +1,17 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
 
-@media (max-width:992px) {
+#openmobilemenu {
+  display: none;
+}
 
+@media (max-width:992px) {
+  #openmobilemenu {
+    display: block;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
   #mobilemenumodal {
     background-color: rgb(255, 255, 255);
   }
