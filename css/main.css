@@ -1814,84 +1814,6 @@ li.li-item.li-item-main.li-expanded.li-parent a:hover {
   display: none;
 }
 
-@media (max-width: 992px) {
-  body {
-    position: relative;
-  }
-
-  #main-navigation-v {
-    height: fit-content;
-    position: absolute !important;
-    right: 0;
-    top: 0;
-  }
-
-  nav.main-nav {
-    display: none;
-  }
-
-  .utility-nav {
-    display: none;
-  }
-
-  .open-nav-inner {
-    display: inline-block !important;
-  }
-
-  .main-navigation-wrapper.w3-sidebar {
-    right: 0;
-  }
-
-  #main-navigation-v #close-nav {
-    justify-content: end;
-  }
-  #main-navigation-v .ul-parent {
-    display: block;
-    text-align: center;
-  }
-  #main-navigation-v .ul-parent li:nth-child(9) {
-    border-bottom: 3px solid #232D4B;
-  }
-  #main-navigation-v .ul-parent li:not(.li-expanded) {
-    text-decoration: underline;
-    color: #4F4F4F;
-  }
-  #main-navigation-v .ul-parent li:not(.li-expanded):nth-child(n+6) {
-    background-color: #BFE7F7;
-  }
-  #main-navigation-v .ul-parent li:not(.li-expanded):nth-child(n+6) a {
-    padding: 0.25rem 1rem;
-  }
-  #main-navigation-v .ul-parent li:not(.li-expanded):first-child {
-    background-color: #fff;
-    float: left !important;
-    padding: initial;
-    border: none;
-  }
-  #main-navigation-v .ul-parent li:not(.li-expanded):first-child a {
-    padding: 0 0.75rem;
-    color: #2B2B2B;
-  }
-  #main-navigation-v .ul-parent .li-parent ul li {
-    box-shadow: none;
-  }
-
-  nav.mobile-nav {
-    display: block;
-    margin-bottom: 1rem;
-    width: 100%;
-    font-weight: 500;
-  }
-  nav.mobile-nav .ul-parent li .dropdown-arrow {
-    color: #232D4B;
-  }
-  nav.mobile-nav ul.ul-child li {
-    outline: none !important;
-    width: 100% !important;
-    background-color: #fff !important;
-    font-weight: 400 !important;
-  }
-}
 nav #uvalibrary-nav .mainlibrary-nav {
   background-color: #fff;
   display: flex;
@@ -1972,6 +1894,96 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   border-color: #232D4B;
 }
 
+@media (max-width: 992px) {
+  body {
+    position: relative;
+  }
+
+  #main-navigation-v {
+    height: fit-content;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
+
+  nav.main-nav {
+    display: none;
+  }
+
+  .utility-nav {
+    display: none;
+  }
+
+  .open-nav-inner {
+    display: inline-block !important;
+  }
+
+  .main-navigation-wrapper.w3-sidebar {
+    right: 0;
+  }
+
+  #main-navigation-v {
+    border-top: 2px solid #DADADA;
+    border-left: 2px solid #DADADA;
+    border-bottom: 2px solid #DADADA;
+    padding: 0 1rem;
+  }
+  #main-navigation-v #close-nav {
+    justify-content: end;
+  }
+  #main-navigation-v .mainlibrary-nav {
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+  }
+  #main-navigation-v .mainlibrary-nav li:last-child {
+    margin-bottom: 0;
+  }
+  #main-navigation-v .mainlibrary-nav li:nth-child(5) {
+    border-bottom: 3px solid #232D4B;
+  }
+  #main-navigation-v .mainlibrary-nav li:not(.li-expanded) {
+    text-decoration: underline;
+    color: #4F4F4F;
+  }
+  #main-navigation-v .mainlibrary-nav li:not(.li-expanded):nth-child(n+6) {
+    background-color: #BFE7F7;
+    padding: 0.25rem 0.75rem;
+  }
+  #main-navigation-v .mainlibrary-nav li:not(.li-expanded):first-child {
+    display: contents;
+    float: left !important;
+    padding: initial;
+    border: none;
+  }
+  #main-navigation-v .mainlibrary-nav li:not(.li-expanded):first-child a {
+    color: #232D4B;
+  }
+  #main-navigation-v .mainlibrary-nav .menu-list-parent ul li {
+    box-shadow: none;
+  }
+
+  nav.mobile-nav {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 500;
+  }
+  nav.mobile-nav .mainlibrary-nav li .dropdown-arrow {
+    color: #232D4B;
+  }
+  nav.mobile-nav ul.sub-menu-container {
+    border-bottom: 0px;
+    list-style-type: none;
+    padding: 0;
+  }
+  nav.mobile-nav ul.sub-menu-container li {
+    outline: none !important;
+    width: 100% !important;
+    background-color: #fff !important;
+    font-weight: 400 !important;
+  }
+}
 .anchor-nav {
   margin-bottom: 3rem;
   text-align: center;

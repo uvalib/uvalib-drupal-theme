@@ -1,5 +1,4 @@
-<div class="ul-responsive-v">
-
+<span id="uvalibrary-nav">
 	{% import _self as menus %}
 	{{ menus.menu_links(items, attributes, 0, menu_name) }}
 	{% macro menu_links(items, attributes, menu_level, menu_name) %}
@@ -7,7 +6,6 @@
 		{%
     set menu_classes = [
       'mainlibrary-nav ul-' ~ menu_name|clean_class,
-
   ]
   %}
 		{%
@@ -52,4 +50,4 @@
 					</ul>
 				{% endif %}
 			{% endmacro %}
-		</div>
+		</span>
