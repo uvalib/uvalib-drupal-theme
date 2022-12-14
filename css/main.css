@@ -1895,6 +1895,24 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
 }
 
 @media (max-width: 992px) {
+  #mobilemenumodal {
+    background-color: white;
+  }
+
+  #mobilemenumodal[open]:not(:focus-within) {
+    background-color: #fffffe;
+    transition: background-color 0.01s ease;
+  }
+
+  /* Polyfill for Dialog on FF, Safari etc */
+  .no-dialog dialog {
+    display: none;
+  }
+
+  .no-dialog dialog[open] {
+    display: block;
+  }
+
   body {
     position: relative;
   }

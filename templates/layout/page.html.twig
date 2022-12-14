@@ -88,15 +88,15 @@
 		{# PLACEHOLDER FOR PRE-HEADER <div>above</div> #}
 		<div id="header-inner" class="w3-container header-inner {{ website_width }}">
 			{% if page.primary_menu_vertical %}
-				<div
-					id="open-nav-inner" role="button" tabindex="0" class="open-nav-inner w3-opacity w3-hover-opacity-off w3-right w3-button w3-right-align w3-large w3-theme {{ color_primary_menu }}">
-					{# <i class="fa fa-bars"></i> #}
-					<svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
-						<line x1="3" y1="12" x2="21" y2="12"></line>
-						<line x1="3" y1="6" x2="21" y2="6"></line>
-						<line x1="3" y1="18" x2="21" y2="18"></line>
-					</svg>
-				</div>
+				{# <div
+																					id="open-nav-inner" role="button" tabindex="0" class="open-nav-inner w3-opacity w3-hover-opacity-off w3-right w3-button w3-right-align w3-large w3-theme {{ color_primary_menu }}"> #}
+				{# <i class="fa fa-bars"></i> #}
+				{# <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
+																						<line x1="3" y1="12" x2="21" y2="12"></line>
+																						<line x1="3" y1="6" x2="21" y2="6"></line>
+																						<line x1="3" y1="18" x2="21" y2="18"></line>
+																					</svg>
+																				</div> #}<button id="openmobilemenu"> Open</button>
 			{% endif %}
 			{% if page.header %}
 				{{ page.header }}
@@ -311,10 +311,10 @@
 				{# {% if page.footer_third %} #}
 			<!-- Start: Footer Third -->
 				{# <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-																																										<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-																																											{{ page.footer_third }}
-																																										</div>
-																																									</div> #}
+																																																										<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+																																																											{{ page.footer_third }}
+																																																										</div>
+																																																									</div> #}
 				<!-- End: Footer Third -->
 				{# {% endif %} #}
 			</div>

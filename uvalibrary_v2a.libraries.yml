@@ -55,6 +55,7 @@ base:
     js/getdate.js: { }
     js/sc-virgo-search.js: { }
     js/menu-accessibilty.js: { }
+    js/mobile-menu-focus.js: { }
     js/phone-format.js: { }
   dependencies:
     - core/jquery
