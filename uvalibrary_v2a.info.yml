@@ -30,6 +30,7 @@ stylesheets-remove:
   - themes/contrib/d8w3css/css/components/default-node.css
   - themes/contrib/d8w3css/css/components/page-title.css
   - themes/contrib/d8w3css/css/theme/a-image.css
+  - themes/contrib/d8w3css/fonts/css/d8w3css-open-sans.css
   - themes/d8w3css/css/base/base.css
   - themes/d8w3css/css/theme/border-animation.css
   - themes/d8w3css/css/theme/sitename-animation.css
@@ -38,6 +39,7 @@ stylesheets-remove:
   - themes/d8w3css/css/components/default-node.css
   - themes/d8w3css/css/components/page-title.css
   - themes/d8w3css/css/theme/a-image.css
+  - themes/d8w3css/fonts/css/d8w3css-open-sans.css
 
 #Regions
 regions:
