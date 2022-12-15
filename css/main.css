@@ -1877,13 +1877,12 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   border-color: #232D4B;
 }
 
-#openmobilemenu,
-#main-navigation-vTEST {
+.open-mobile-menu {
   display: none;
 }
 
 @media (max-width: 992px) {
-  #openmobilemenu {
+  .open-mobile-menu {
     display: block;
     float: right;
     margin-top: 1rem;
@@ -1894,7 +1893,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     background-color: #fff;
     cursor: pointer;
   }
-  #openmobilemenu:hover {
+  .open-mobile-menu:hover, .open-mobile-menu:focus {
     color: #E57200;
   }
 
@@ -1915,7 +1914,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     display: none;
   }
 
-  #mobilemenumodal > ul {
+  .mobile-menu-modal > ul {
     display: grid;
     margin-top: 2.5rem;
   }
@@ -1940,8 +1939,8 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     right: 0;
   }
 
-  #main-navigation-vTEST {
-    display: none;
+  .mobile-nav-menu-2 {
+    background-color: #fff;
     height: fit-content;
     position: absolute !important;
     right: 0;
@@ -1951,43 +1950,43 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     border-bottom: 2px solid #DADADA;
     padding: 0 1rem;
     width: 340px;
-    z-index: 3000;
+    z-index: 1000;
   }
-  #main-navigation-vTEST #close-nav {
+  .mobile-nav-menu-2 .close-nav {
     display: block;
     position: absolute;
     top: 10px;
     right: 0;
   }
-  #main-navigation-vTEST .mainlibrary-nav {
+  .mobile-nav-menu-2 .mainlibrary-nav {
     flex-direction: column;
     list-style-type: none;
     padding: 0;
   }
-  #main-navigation-vTEST .mainlibrary-nav li:last-child {
+  .mobile-nav-menu-2 .mainlibrary-nav li:last-child {
     margin-bottom: 0;
   }
-  #main-navigation-vTEST .mainlibrary-nav li:nth-child(5) {
+  .mobile-nav-menu-2 .mainlibrary-nav li:nth-child(5) {
     border-bottom: 3px solid #232D4B;
   }
-  #main-navigation-vTEST .mainlibrary-nav li:not(.li-expanded) {
+  .mobile-nav-menu-2 .mainlibrary-nav li:not(.li-expanded) {
     text-decoration: underline;
     color: #4F4F4F;
   }
-  #main-navigation-vTEST .mainlibrary-nav li:not(.li-expanded):nth-child(n+6) {
+  .mobile-nav-menu-2 .mainlibrary-nav li:not(.li-expanded):nth-child(n+6) {
     background-color: #BFE7F7;
     padding: 0.25rem 0.75rem;
   }
-  #main-navigation-vTEST .mainlibrary-nav li:not(.li-expanded):first-child {
+  .mobile-nav-menu-2 .mainlibrary-nav li:not(.li-expanded):first-child {
     display: contents;
     float: left !important;
     padding: initial;
     border: none;
   }
-  #main-navigation-vTEST .mainlibrary-nav li:not(.li-expanded):first-child a {
+  .mobile-nav-menu-2 .mainlibrary-nav li:not(.li-expanded):first-child a {
     color: #232D4B;
   }
-  #main-navigation-vTEST .mainlibrary-nav .menu-list-parent ul li {
+  .mobile-nav-menu-2 .mainlibrary-nav .menu-list-parent ul li {
     box-shadow: none;
   }
 

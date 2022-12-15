@@ -1,14 +1,18 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
 
-#openmobilemenu,
-#main-navigation-vTEST {
-  display: none;
+// .open-mobile-menu,
+// .main-navigation-vTEST-class {
+//   display: none;
+// }
+
+.open-mobile-menu{
+    display: none;
 }
 
 @media (max-width:992px) {
 
-  #openmobilemenu {
+  .open-mobile-menu {
     display: block;
     float: right;
     margin-top: 1rem;
@@ -18,7 +22,7 @@
     border: none;
     background-color: #fff;
     cursor: pointer;
-    &:hover {
+    &:hover, &:focus {
       color: $uva-brand-orange;
     }
   }
@@ -40,7 +44,7 @@
       display: none;
     }
   
-    #mobilemenumodal {
+    .mobile-menu-modal {
       &>ul {
         display: grid;
         margin-top: 2.5rem;
@@ -92,8 +96,8 @@
     right: 0;
   }
 
-  #main-navigation-vTEST {
-    display: none;
+  .mobile-nav-menu-2 {
+    background-color: #fff;
     height: fit-content;
     position: absolute !important;
     right: 0;
@@ -103,9 +107,9 @@
     border-bottom: 2px solid $uva-grey-100;
     padding: 0 1rem;
     width: 340px;
-    z-index: 3000;
+    z-index: 1000;
 
-    #close-nav {
+    .close-nav {
       display: block;
       position: absolute;
       top: 10px;
@@ -135,9 +139,9 @@
           background-color: $uva-blue-alt-300;
           padding: 0.25rem 0.75rem;
 
-          a {
-            // padding: 0.25rem 1rem;
-          }
+          // a {
+          //   // padding: 0.25rem 1rem;
+          // }
         }
 
         &:first-child {

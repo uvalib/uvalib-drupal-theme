@@ -65,8 +65,8 @@
 {% endif %}
 {% if page.primary_menu_vertical %}
 	<!-- Start: Main Navigation - Vertical -->
-	<div id="main-navigation-vTEST" class="main-navigation-wrapper w3-sidebar w3-bar-block w3-animate-left w3-theme {{ color_primary_menu }}" role="navigation" aria-label="{{ 'Navigation (vertical)'|t }}">
-		<div id="main-navigation-inner-v" class="main-navigation-inner-v">
+	<div id="main-navigation-vTEST" class="main-navigation-vTEST-class hidden main-navigation-wrapper w3-sidebar w3-bar-block w3-animate-left w3-theme {{ color_primary_menu }}" role="dialog" aria-label="{{ 'Navigation (vertical)'|t }}">
+		<div id="main-navigation-inner-v" class="mobile-nav-menu-2 main-navigation-inner-v">
 			<div id="close-nav" role="button" tabindex="0" class="close-nav w3-button w3-bar-block w3-large w3-theme {{ color_primary_menu }}">
 				<svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
 					<line x1="18" y1="6" x2="6" y2="18"></line>
@@ -99,7 +99,8 @@
 			{% if page.primary_menu_vertical %}
 				{# <div id="open-nav-inner" role="button" tabindex="0" class="open-nav-inner w3-opacity w3-hover-opacity-off w3-right w3-button w3-right-align w3-large w3-theme {{ color_primary_menu }}"> #}
 				{# <i class="fa fa-bars"></i> #}
-					<button id="openmobilemenu" tabindex="0" aria-label="open menu"> <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
+					<button id="openmobilemenu" tabindex="0" class="open-mobile-menu" aria-label="open menu"> <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel">
+
 						<line x1="3" y1="12" x2="21" y2="12"></line>
 						<line x1="3" y1="6" x2="21" y2="6"></line>
 						<line x1="3" y1="18" x2="21" y2="18"></line>
@@ -321,10 +322,10 @@
 				{# {% if page.footer_third %} #}
 			<!-- Start: Footer Third -->
 				{# <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-																																																																																																																																																		<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-																																																																																																																																																			{{ page.footer_third }}
-																																																																																																																																																		</div>
-																																																																																																																																																	</div> #}
+																																																																																																																																																																																																		<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+																																																																																																																																																																																																			{{ page.footer_third }}
+																																																																																																																																																																																																		</div>
+																																																																																																																																																																																																	</div> #}
 				<!-- End: Footer Third -->
 				{# {% endif %} #}
 			</div>
