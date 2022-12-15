@@ -2,25 +2,42 @@
 // hamburger menu located in page.html.twig line 102 - #openmobilemenu
 // close menu located in page.html.twig line 70 - #close-nav
 
-const targetDivOpen = document.getElementById("main-navigation-vTEST");
-const btnOpen = document.querySelectorAll("#openmobilemenu");
-btnOpen.onclick = function () {
-	if (targetDivOpen.style.display !== "none") {
-		targetDivOpen.style.display = "none";
-	} else {
-		targetDivOpen.style.display = "block";
-	}
-};
+document
+	.getElementById("openmobilemenu")
+	.addEventListener(
+		"click",
+		(e) =>
+			(document.getElementById("main-navigation-vTEST").style.display = "block")
+	);
+undefined;
 
-const targetDivClose = document.getElementById("main-navigation-vTEST");
-const btnClose = document.querySelectorAll("#close-nav");
-btnClose.onclick = function () {
-	if (targetDivClose.style.display !== "none") {
-		targetDivClose.style.display = "none";
-	} else {
-		targetDivClose.style.display = "block";
-	}
-};
+document
+	.getElementById("close-nav")
+	.addEventListener(
+		"click",
+		(e) =>
+			(document.getElementById("main-navigation-vTEST").style.display = "none")
+	);
+
+// const targetDivOpen = document.getElementById("main-navigation-vTEST");
+// const btnOpen = document.querySelectorAll("#openmobilemenu");
+// btnOpen.onclick = function () {
+// 	if (targetDivOpen.style.display !== "none") {
+// 		targetDivOpen.style.display = "none";
+// 	} else {
+// 		targetDivOpen.style.display = "block";
+// 	}
+// };
+
+// const targetDivClose = document.getElementById("main-navigation-vTEST");
+// const btnClose = document.querySelectorAll("#close-nav");
+// btnClose.onclick = function () {
+// 	if (targetDivClose.style.display !== "none") {
+// 		targetDivClose.style.display = "none";
+// 	} else {
+// 		targetDivClose.style.display = "block";
+// 	}
+// };
 
 // var isDialogSupported = true;
 // if (!window.HTMLDialogElement) {
