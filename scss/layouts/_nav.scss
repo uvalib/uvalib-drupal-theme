@@ -8,36 +8,36 @@
   border-bottom: 5px solid $uva-brand-blue-base;
 }
 
-.main-nav {
-  background-color: #ffffff !important;
-  font-weight: map-get($font-weights, medium);
+// .main-nav {
+//   background-color: #ffffff !important;
+//   font-weight: map-get($font-weights, medium);
 
-  ul {
-    li {
-      //dropdown nav background
-      background-color: white;
-    }
+//   ul {
+//     li {
+//       //dropdown nav background
+//       background-color: white;
+//     }
 
-    li[class~="li-parent"] {
-      a {
-        text-decoration: none !important;
-      }
-    }
+//     li[class~="li-parent"] {
+//       a {
+//         text-decoration: none !important;
+//       }
+//     }
 
 
-    &[class~="ul-child"] li {
-      font-weight: map-get($font-weights, book);
+//     &[class~="ul-child"] li {
+//       font-weight: map-get($font-weights, book);
 
-      a {
-        text-decoration: underline !important;
+//       a {
+//         text-decoration: underline !important;
 
-        &:hover {
-          text-decoration: none !important;
-        }
-      }
-    }
-  }
-}
+//         &:hover {
+//           text-decoration: none !important;
+//         }
+//       }
+//     }
+//   }
+// }
 
 #utility-nav {
   // display: flex;
@@ -106,7 +106,7 @@ li.li-item.li-item-main.li-expanded.li-parent {
 
 ///  mobile nav code moved to _nav-mobile.scss
 
-
+// current desktop nav styling
 nav {
   #uvalibrary-nav {
     .mainlibrary-nav {

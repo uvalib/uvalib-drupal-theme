@@ -1,47 +1,79 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
 
-#openmobilemenu {
+#openmobilemenu,
+#main-navigation-vTEST {
   display: none;
 }
 
 @media (max-width:992px) {
+
   #openmobilemenu {
     display: block;
     float: right;
     margin-top: 1rem;
     margin-right: 1rem;
-  }
-  #mobilemenumodal {
-    background-color: rgb(255, 255, 255);
-  }
-
-  #mobilemenumodal[open]:not(:focus-within) {
-    background-color: rgb(255, 255, 254);
-    transition: background-color 0.01s ease;
-  }
-
-  /* Polyfill for Dialog on FF, Safari etc */
-  .no-dialog dialog {
-    display: none;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: $uva-brand-orange;
+    }
   }
 
-  .no-dialog dialog[open] {
-    display: block;
-  }
+    .overlayTest {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(3px);
+      z-index: -1;
+    }
+
+    .hidden {
+      display: none;
+    }
+  
+    #mobilemenumodal {
+      &>ul {
+        display: grid;
+        margin-top: 2.5rem;
+      }
+    }
+
+
+
+  // #mobilemenumodal {
+  //   // background-color: rgb(255, 255, 255);
+  //   background-color: red;
+  // }
+
+  // #mobilemenumodal[open]:not(:focus-within) {
+  //   // background-color: rgb(255, 255, 254);
+  //   background-color: blue;
+  //   transition: background-color 0.01s ease;
+  // }
+
+  // /* Polyfill for Dialog on FF, Safari etc */
+  // .no-dialog dialog {
+  //   display: none;
+  // }
+
+  // .no-dialog dialog[open] {
+  //   display: block;
+  // }
 
 
 
 
   body {
     position: relative;
-  }
-
-  #main-navigation-v {
-    height: fit-content;
-    position: absolute !important;
-    right: 0;
-    top: 0;
   }
 
   nav.main-nav {
@@ -60,14 +92,24 @@
     right: 0;
   }
 
-  #main-navigation-v {
+  #main-navigation-vTEST {
+    display: block;
+    height: fit-content;
+    position: absolute !important;
+    right: 0;
+    top: 0;
     border-top: 2px solid $uva-grey-100;
     border-left: 2px solid $uva-grey-100;
     border-bottom: 2px solid $uva-grey-100;
     padding: 0 1rem;
+    width: 340px;
+    z-index: 3000;
 
     #close-nav {
-      justify-content: end;
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 0;
     }
 
     .mainlibrary-nav {
@@ -118,6 +160,10 @@
       }
     }
   }
+
+  // .ul-parent-mobile-main-nav {
+  //   display: -ms-inline-grid !important;
+  // }
 
   nav.mobile-nav {
     display: block;

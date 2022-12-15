@@ -26,6 +26,7 @@
     grid-template-columns: 225px 1fr;
     .block-system-branding-block {
       grid-area: 1 / 1 / 2 / 2;
+      width: max-content;
     }
     .utility-nav {
       grid-area: 1 / 2 / 2/ 3;
@@ -33,6 +34,9 @@
   }
 
   @media (max-width:992px) {
+    a.site-logo img {
+      margin-left: 1rem;
+    }
     #header-inner {
       display: initial;
       grid-template-columns: none;
