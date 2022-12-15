@@ -42,6 +42,7 @@ stylesheets-remove:
 #Regions
 regions:
   drupal_custom_header: 'Drupal Specific Blocks'
+  pre_header: 'Pre-Header'
   header: 'Header'
   primary_menu_vertical: 'Primary Menu Vertical'
   primary_menu: 'Primary Menu'

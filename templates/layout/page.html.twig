@@ -78,9 +78,18 @@
 	</div>
 	<!-- End: Main Navigation - Vertical -->
 {% endif %}
+
 <!-- Start: Page Wrapper -->
-<div
-	class="page-wrapper w3-col w3-clear w3-animate-opacity w3-text-theme {{ color_page_wrapper }}">
+<div class="page-wrapper w3-col w3-clear w3-animate-opacity w3-text-theme {{ color_page_wrapper }}">
+	{% if page.pre_header %}
+		<!-- Start: Pre-Header -->
+		<div id="pre_header" class="w3-col w3-clear w3-theme-l5 {{ color_pre_header }}">
+			<div id="pre_header-inner" class="w3-row pre_header-inner {{ website_width }}">
+				{{ page.pre_header }}
+			</div>
+		</div>
+		<!-- End: Pre-Header -->
+	{% endif %}
 
 	<!-- Start: Header -->
 	<header
@@ -312,10 +321,10 @@
 				{# {% if page.footer_third %} #}
 			<!-- Start: Footer Third -->
 				{# <div class="{{ footer_w3css }} footer-box {{ footer_region ? 'footer-region' }} third-footer">
-																																																																																																																																		<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
-																																																																																																																																			{{ page.footer_third }}
-																																																																																																																																		</div>
-																																																																																																																																	</div> #}
+																																																																																																																																																		<div class="d8-fade w3-mobile {{ border_animation ? 'animate-border' }} w3-theme-l4 {{ color_footer_third }}">
+																																																																																																																																																			{{ page.footer_third }}
+																																																																																																																																																		</div>
+																																																																																																																																																	</div> #}
 				<!-- End: Footer Third -->
 				{# {% endif %} #}
 			</div>
