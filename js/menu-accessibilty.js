@@ -1,33 +1,3 @@
-// var menuItems = document.querySelectorAll("li.li-parent");
-// Array.prototype.forEach.call(menuItems, function (el, i) {
-// 	el.querySelector("a").addEventListener("click", function (event) {
-// 		if (this.parentNode.className == "li-parent") {
-// 			this.parentNode.className = "li-parent open";
-// 			this.setAttribute("aria-expanded", "true");
-// 		} else {
-// 			this.parentNode.className = "li-parent";
-// 			this.setAttribute("aria-expanded", "false");
-// 		}
-// 		event.preventDefault();
-// 		return false;
-// 	});
-// });
-
-// var menuItems = document.querySelectorAll("li-0.has-submenu");
-// Array.prototype.forEach.call(menuItems, function (el, i) {
-// 	el.querySelector("a").addEventListener("click", function (event) {
-// 		if (this.parentNode.className == "has-submenu") {
-// 			this.parentNode.className = "has-submenu open";
-// 			this.setAttribute("aria-expanded", "true");
-// 		} else {
-// 			this.parentNode.className = "has-submenu";
-// 			this.setAttribute("aria-expanded", "false");
-// 		}
-// 		event.preventDefault();
-// 		return false;
-// 	});
-// });
-
 "use strict";
 
 class mainlibraryNav {
@@ -192,7 +162,7 @@ class mainlibraryNav {
 
 	toggleMenu(domNode, show) {
 		if (domNode) {
-			domNode.style.display = show ? "block" : "none";
+			domNode.hidden = !show;
 		}
 	}
 

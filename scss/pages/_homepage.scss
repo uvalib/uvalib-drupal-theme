@@ -48,7 +48,13 @@
 
   .home-collections-url {
     text-align: right;
-    // margin-right: 3vw;
+    a {  
+      &::after {
+        padding-left: 0.25rem;
+        @include svg-base;
+        content: $icon-external-link;
+      }
+    }
   }
 
   // using the library section
@@ -287,7 +293,10 @@
         margin-top: -3rem;
         margin-bottom: 3rem;
       }
-    
+    }
+    .home-collections-url {
+      line-height: 0.5;
+      margin-top: 0.75rem;
     }
     // mobile - using the library block
     .home-using-block {

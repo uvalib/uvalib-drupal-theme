@@ -74,6 +74,11 @@ textarea {
   margin-bottom: 0.75rem;
 }
 
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
 // .node--view-mode-full .field--type-entity-reference .field__item:first-child a {
 //   padding-left: inherit;
 // }

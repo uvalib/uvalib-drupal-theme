@@ -215,6 +215,11 @@ textarea {
   margin-bottom: 0.75rem;
 }
 
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
 .w3-image {
   max-width: 100%;
   height: auto;
@@ -1918,10 +1923,6 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     z-index: -1;
   }
 
-  .hidden {
-    display: none;
-  }
-
   .mobile-menu-modal > ul {
     display: grid;
     margin-top: 2.5rem;
@@ -2363,6 +2364,15 @@ div[data-drupal-messages] .messages {
 .home-page .home-collections-url {
   text-align: right;
 }
+.home-page .home-collections-url a::after {
+  padding-left: 0.25rem;
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.75em;
+  content: url(../assets/svg-icons/arrow-up-right-from-square.svg);
+}
 .home-page .home-using-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2538,6 +2548,10 @@ div[data-drupal-messages] .messages {
     order: 1;
     margin-top: -3rem;
     margin-bottom: 3rem;
+  }
+  .home-page .home-collections-url {
+    line-height: 0.5;
+    margin-top: 0.75rem;
   }
   .home-page .home-using-block {
     display: grid;
