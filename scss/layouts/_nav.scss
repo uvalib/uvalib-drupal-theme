@@ -8,40 +8,7 @@
   border-bottom: 5px solid $uva-brand-blue-base;
 }
 
-// .main-nav {
-//   background-color: #ffffff !important;
-//   font-weight: map-get($font-weights, medium);
-
-//   ul {
-//     li {
-//       //dropdown nav background
-//       background-color: white;
-//     }
-
-//     li[class~="li-parent"] {
-//       a {
-//         text-decoration: none !important;
-//       }
-//     }
-
-
-//     &[class~="ul-child"] li {
-//       font-weight: map-get($font-weights, book);
-
-//       a {
-//         text-decoration: underline !important;
-
-//         &:hover {
-//           text-decoration: none !important;
-//         }
-//       }
-//     }
-//   }
-// }
-
 #utility-nav {
-  // display: flex;
-  // justify-self: end;
   float: right;
   ul:first-of-type {
     display: flex;
@@ -62,7 +29,6 @@
       &::before {
         @include svg-base;
         content: $icon-alert;
-        // margin-left: 1rem;
         margin-top: 0.25rem;
       }
     }
@@ -84,27 +50,31 @@
   }
 }
 
-li.li-item.li-item-main.li-expanded.li-parent {
-  color: $uva-brand-blue !important;
-  margin-left: 2px;
+// li.li-item.li-item-main.li-expanded.li-parent {
+//   color: $uva-brand-blue !important;
+//   margin-left: 2px;
 
-  a {
-    span {
-      color: $uva-brand-blue !important;
-    }
+//   a {
+//     span {
+//       color: $uva-brand-blue !important;
+//     }
 
-    &:hover {
-      background-color: $uva-grey-light;
-    }
-  }
-}
+//     &:hover {
+//       background-color: $uva-grey-light;
+//     }
+//   }
+// }
 
 .mobile-nav,
 .open-nav-inner {
   display: none;
 }
 
-///  mobile nav code moved to _nav-mobile.scss
+
+//////////////////////////////////////////////////
+///  mobile nav code moved to _nav-mobile.scss ///
+//////////////////////////////////////////////////
+ 
 
 // current desktop nav styling
 nav {
@@ -118,7 +88,6 @@ nav {
 
       ul {
         background-color: #fff;
-        // border: 1px solid $uva-brand-blue;
         border-top-width: 5px;
         border-radius: 0 0 4px 4px;
         display: block;
@@ -130,7 +99,6 @@ nav {
         top: 100%;
         z-index: 1000;
         box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
-        
 
         a {
           border: 0;
@@ -159,6 +127,7 @@ nav {
 
       button {
         border: none;
+        font-weight: map-get($font-weights, medium);
         &::after {
           content: "";
           border-bottom: 1px solid $uva-brand-blue;
@@ -193,8 +162,6 @@ nav {
 
     .mainlibrary-nav button:hover,
     .mainlibrary-nav button[aria-expanded="true"] {
-      // background-color: $uva-brand-blue;
-      // color: #fff;
       background-color: $uva-grey-100;
       color: $uva-brand-blue;
     }
@@ -205,3 +172,34 @@ nav {
     }
   }
 }
+
+// .main-nav {
+//   background-color: #ffffff !important;
+//   font-weight: map-get($font-weights, medium);
+
+//   ul {
+//     li {
+//       //dropdown nav background
+//       background-color: white;
+//     }
+
+//     li[class~="li-parent"] {
+//       a {
+//         text-decoration: none !important;
+//       }
+//     }
+
+
+//     &[class~="ul-child"] li {
+//       font-weight: map-get($font-weights, book);
+
+//       a {
+//         text-decoration: underline !important;
+
+//         &:hover {
+//           text-decoration: none !important;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1799,17 +1799,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   margin-top: 0.25rem;
 }
 
-li.li-item.li-item-main.li-expanded.li-parent {
-  color: #232D4B !important;
-  margin-left: 2px;
-}
-li.li-item.li-item-main.li-expanded.li-parent a span {
-  color: #232D4B !important;
-}
-li.li-item.li-item-main.li-expanded.li-parent a:hover {
-  background-color: #DADADA;
-}
-
 .mobile-nav,
 .open-nav-inner {
   display: none;
@@ -1858,6 +1847,7 @@ nav #uvalibrary-nav .mainlibrary-nav > li {
 }
 nav #uvalibrary-nav .mainlibrary-nav button {
   border: none;
+  font-weight: 500;
 }
 nav #uvalibrary-nav .mainlibrary-nav button::after {
   content: "";
