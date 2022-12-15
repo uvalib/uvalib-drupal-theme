@@ -1250,6 +1250,9 @@ dl.dl--inline dt {
 .uva-alert--sitewide .alert1 h2 {
   margin-top: -2.75rem !important;
 }
+.uva-alert--sitewide .alert1 h2, .uva-alert--sitewide .alert1 p {
+  padding-right: 0.5rem;
+}
 .uva-alert--sitewide .alert1::before {
   display: inline-block;
   width: 2rem;
@@ -1263,6 +1266,10 @@ dl.dl--inline dt {
 }
 .uva-alert--sitewide .alert2 h2 {
   margin-top: -2.75rem !important;
+}
+.uva-alert--sitewide .alert2 h2,
+.uva-alert--sitewide .alert2 p {
+  padding-right: 0.5rem;
 }
 .uva-alert--sitewide .alert2::before {
   display: inline-block;
@@ -1278,6 +1285,10 @@ dl.dl--inline dt {
 .uva-alert--sitewide .alert3 h2 {
   margin-top: -2.75rem !important;
 }
+.uva-alert--sitewide .alert3 h2,
+.uva-alert--sitewide .alert3 p {
+  padding-right: 0.5rem;
+}
 .uva-alert--sitewide .alert3::before {
   display: inline-block;
   width: 2rem;
@@ -1288,6 +1299,8 @@ dl.dl--inline dt {
 .uva-alert--sitewide .alert4 {
   background-color: #25CAD3;
   text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .uva-alert--sitewide .alert4 h2.alert-title {
   visibility: hidden;
@@ -1659,6 +1672,11 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   text-decoration: none !important;
 }
 
+@media (max-width: 992px) {
+  #backtotop {
+    display: none !important;
+  }
+}
 #backtotop {
   border: 0;
   bottom: 20px;

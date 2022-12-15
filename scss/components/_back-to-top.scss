@@ -1,6 +1,12 @@
 @use '../abstracts/index'as *;
 @use '../base/index'as *;
 
+
+@media (max-width:992px) {
+  #backtotop {
+    display: none !important;
+  }
+}
 #backtotop {
   // background: url(../backtotop.png) no-repeat center center;
   border: 0;
