@@ -3638,6 +3638,7 @@ div[data-drupal-messages] .messages {
 .uvalib-bento-search .bs-results-container .bs-results--block {
   border: 1px solid #DADADA;
   border-top: none;
+  overflow: auto;
 }
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header {
   display: flex;
@@ -3670,19 +3671,32 @@ div[data-drupal-messages] .messages {
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry .bs-results--title {
   font-weight: 700;
 }
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul li {
+.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul.ul-0 li {
   list-style-type: none;
   margin-bottom: 0px !important;
 }
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul ul {
+.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul.ul-0 ul.ul-1 {
   display: flex;
   justify-content: space-between;
 }
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul ul li {
+.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul.ul-0 ul.ul-1 li {
   list-style: none;
 }
-.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul .bs-results--teaser {
+.uvalib-bento-search .bs-results-container .bs-results--block .bs-results--body ol.bs-results--list .bs-results--list--entry ul.ul-0 .bs-results--teaser {
   padding: 0.5rem 0;
+}
+@media (max-width: 992px) {
+  .uvalib-bento-search .bs-results-container {
+    grid-template-columns: 1fr !important;
+  }
+  .uvalib-bento-search .bs-results-container .bs-results--header {
+    flex-direction: column;
+    justify-content: inherit !important;
+  }
+  .uvalib-bento-search .bs-results-container .bs-results--list--entry ul.ul-1 {
+    flex-direction: column;
+    justify-content: inherit !important;
+  }
 }
 
 .about-uva-library .top-section {
