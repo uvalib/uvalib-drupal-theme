@@ -1382,7 +1382,7 @@ dl.dl--inline dt {
   border: 1px solid orange !important;
 }
 
-.uvalib-button {
+.uvalib-button, .drupal-login-page .user-login-form .form-actions input {
   font-size: 1em;
   appearance: none;
   border: 0;
@@ -1399,7 +1399,7 @@ dl.dl--inline dt {
   text-transform: uppercase;
   border-radius: 5px;
 }
-.uvalib-button:visited {
+.uvalib-button:visited, .drupal-login-page .user-login-form .form-actions input:visited {
   color: #fff;
 }
 
@@ -1413,8 +1413,9 @@ a.uvalib_link--button {
   color: #fff;
 }
 
-.uvalib-button:hover,
+.uvalib-button:hover, .drupal-login-page .user-login-form .form-actions input:hover,
 .uvalib-button.uvalib-button--hover,
+.drupal-login-page .user-login-form .form-actions input.uvalib-button--hover,
 a.uvalib_link--button:hover,
 a.uvalib_link--button.uvalib_link--button--hover {
   background-color: #005679;
@@ -1425,15 +1426,17 @@ a.uvalib_link--button.uvalib_link--button--hover {
   text-decoration: none;
 }
 
-.uvalib-button:active,
+.uvalib-button:active, .drupal-login-page .user-login-form .form-actions input:active,
 .uvalib-button.uvalib-button--active,
+.drupal-login-page .user-login-form .form-actions input.uvalib-button--active,
 a.uvalib_link--button:active,
 a.uvalib_link--button--active {
   background-color: #232D4B;
 }
 
-.uvalib-button:not([disabled]):focus,
+.uvalib-button:not([disabled]):focus, .drupal-login-page .user-login-form .form-actions input:not([disabled]):focus,
 .uvalib-button:not([disabled]).uvalib-focus,
+.drupal-login-page .user-login-form .form-actions input:not([disabled]).uvalib-focus,
 a.uvalib_link--button:not([disabled]):focus,
 a.uvalib_link--button:not([disabled]).uvalib-focus {
   outline-offset: 0.25em;
@@ -1458,7 +1461,7 @@ a.uvalib_link--button:hover i {
 }
 
 /* Disabled Buttons */
-.uvalib-button:disabled,
+.uvalib-button:disabled, .drupal-login-page .user-login-form .form-actions input:disabled,
 .uvalib-button.uvalib-button--subtle:disabled,
 a.uvalib_link--button--disabled,
 a.uvalib_link--button.uvalib_link--button--subtle.uvalib_link--button--disabled,
@@ -1645,7 +1648,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 
 /* buttons for mobile */
 @media (min-width: 30em) {
-  .uvalib-button,
+  .uvalib-button, .drupal-login-page .user-login-form .form-actions input,
 .uvalib_link--button {
     width: auto;
   }
@@ -2289,6 +2292,24 @@ div[data-drupal-messages] .messages {
   display: inline-block;
 }
 
+.drupal-login-page .user-login-form {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+  width: fit-content;
+}
+.drupal-login-page .user-login-form label {
+  font-weight: 500;
+}
+.drupal-login-page .user-login-form .description {
+  text-align: right;
+}
+.drupal-login-page .user-login-form .form-actions {
+  text-align: right;
+}
+.drupal-login-page .user-login-form .form-actions .w3-border {
+  border: none !important;
+}
 .home-page h1 {
   display: none;
 }
