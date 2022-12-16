@@ -25,4 +25,12 @@
       }
     }
   }
+
+  @media (max-width:992px) {
+    .user-login-form {
+      .form-text {
+        max-width: 286px !important;
+      }
+    }
+  }
 }

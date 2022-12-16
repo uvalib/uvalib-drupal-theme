@@ -1750,6 +1750,13 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 .drupal-login-page .user-login-form .form-actions .w3-border {
   border: none !important;
 }
+@media (max-width: 992px) {
+  .path-user-login .user-login-form .form-text,
+.drupal-login-page .user-login-form .form-text {
+    max-width: 286px !important;
+  }
+}
+
 #drupal_custom_header .drupal_custom_header-inner {
   width: auto;
   margin: 0 auto;
