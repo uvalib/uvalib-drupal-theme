@@ -1302,6 +1302,9 @@ dl.dl--inline dt {
   margin: 0.55rem;
 }
 .uva-alert--sitewide .alert4 {
+  display: grid;
+  place-self: center;
+  width: 100vw;
   background-color: #25CAD3;
   text-align: center;
   padding-left: 0.5rem;
