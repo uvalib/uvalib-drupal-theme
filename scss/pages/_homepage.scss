@@ -1,5 +1,6 @@
-@use '../abstracts/index'as *;
 @use '../base/index'as *;
+@use '../mixins/index'as *; 
+
 
 .home-page {
   h1 {
