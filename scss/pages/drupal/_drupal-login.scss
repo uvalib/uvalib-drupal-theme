@@ -1,6 +1,7 @@
 @use '../../base/index'as *;
 @use '../../components/index'as *;
 
+.path-user-login,
 .drupal-login-page {
   .user-login-form {
     display: grid;
