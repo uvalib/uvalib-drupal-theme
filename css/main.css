@@ -1727,6 +1727,77 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
     background-size: 70px 70px;
   }
 }
+.path-user-login .user-login-form,
+.drupal-login-page .user-login-form {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+  width: fit-content;
+}
+.path-user-login .user-login-form label,
+.drupal-login-page .user-login-form label {
+  font-weight: 500;
+}
+.path-user-login .user-login-form .description,
+.drupal-login-page .user-login-form .description {
+  text-align: right;
+}
+.path-user-login .user-login-form .form-actions,
+.drupal-login-page .user-login-form .form-actions {
+  text-align: right;
+}
+.path-user-login .user-login-form .form-actions .w3-border,
+.drupal-login-page .user-login-form .form-actions .w3-border {
+  border: none !important;
+}
+#drupal_custom_header {
+  padding: 0.5rem;
+}
+#drupal_custom_header .drupal_custom_header-inner {
+  width: auto;
+  margin: 0 auto;
+  border: 2px dotted #DADADA;
+  border-radius: 1rem;
+}
+#drupal_custom_header .drupal_custom_header-inner .tabs {
+  margin-left: 0.5rem !important;
+}
+#drupal_custom_header .drupal_custom_header-inner .tabs li {
+  border: 1px solid #808080 !important;
+  margin-left: 2px;
+}
+#drupal_custom_header .drupal_custom_header-inner .tabs ul.primary {
+  border-bottom: none;
+}
+#drupal_custom_header .drupal_custom_header-inner .drupal-utility-nav .ul-parent-account {
+  margin: 11px 1rem 0 0;
+}
+#drupal_custom_header .drupal_custom_header-inner .drupal-utility-nav .ul-parent-account .li-item-account {
+  border: 1px solid #25CAD3;
+  background-color: #C8F2F4;
+  color: black;
+}
+#drupal_custom_header .drupal_custom_header-inner .drupal-utility-nav .ul-parent-account .li-item-account .li-link-account {
+  padding: 8px 16px;
+}
+
+.drupal-status-messages {
+  outline: 1px solid #4E9737;
+}
+
+.drupal-help {
+  outline: 1px solid purple;
+}
+
+.drupal-tabs {
+  width: fit-content;
+  margin: 17px 0;
+}
+
+div[data-drupal-messages] .messages {
+  display: inline-block;
+}
+
 #header {
   background-color: #ffffff !important;
   padding: 0.5rem 0;
@@ -2268,62 +2339,6 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   .event-container {
     grid-template-columns: 1fr;
   }
-}
-#drupal_custom_header .tabs {
-  margin-left: 1rem;
-}
-#drupal_custom_header .tabs li {
-  border: 1px solid #808080 !important;
-}
-
-.drupal-utility-nav ul {
-  margin: 0.7rem;
-}
-.drupal-utility-nav ul li {
-  border: 1px solid #25CAD3;
-  background-color: #C8F2F4;
-  color: black;
-}
-
-.drupal-status-messages {
-  outline: 1px solid #4E9737;
-}
-
-.drupal-help {
-  outline: 1px solid purple;
-}
-
-.drupal-tabs {
-  width: fit-content;
-  margin: 17px 0;
-}
-
-div[data-drupal-messages] .messages {
-  display: inline-block;
-}
-
-.path-user-login .user-login-form,
-.drupal-login-page .user-login-form {
-  display: grid;
-  gap: 3rem;
-  margin-top: 2rem;
-  width: fit-content;
-}
-.path-user-login .user-login-form label,
-.drupal-login-page .user-login-form label {
-  font-weight: 500;
-}
-.path-user-login .user-login-form .description,
-.drupal-login-page .user-login-form .description {
-  text-align: right;
-}
-.path-user-login .user-login-form .form-actions,
-.drupal-login-page .user-login-form .form-actions {
-  text-align: right;
-}
-.path-user-login .user-login-form .form-actions .w3-border,
-.drupal-login-page .user-login-form .form-actions .w3-border {
-  border: none !important;
 }
 .home-page h1 {
   display: none;
