@@ -1756,8 +1756,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 #drupal_custom_header .drupal_custom_header-inner {
   width: auto;
   margin: 0 auto;
-  border: 2px dotted #DADADA;
-  border-radius: 1rem;
 }
 #drupal_custom_header .drupal_custom_header-inner .tabs {
   margin-left: 0.5rem !important;
