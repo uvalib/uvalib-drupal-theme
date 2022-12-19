@@ -1737,6 +1737,28 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   content: url(../assets/svg-icons/arrow-up-right-from-square.svg);
 }
 
+.uvalib_link--button.icon-new-tab::after {
+  padding-left: 0.25rem;
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.75em;
+  margin-top: 0px;
+  content: url(../assets/svg-icons/color/arrow-up-right-from-square-fff.svg);
+}
+
+.uvalib_link--button.uvalib_link--button--subtle.icon-new-tab::after {
+  padding-left: 0.25rem;
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.75em;
+  margin-top: 0px;
+  content: url(../assets/svg-icons/arrow-up-right-from-square.svg);
+}
+
 .path-user-login .user-login-form,
 .drupal-login-page .user-login-form {
   display: grid;
