@@ -21,9 +21,9 @@
 <section id="mobilemenumodal" class="mobile-menu-modal ul-responsive-v-TEST" role="navigation">
 	{% import _self as menus %}
 	{#
-																	  We call a macro which calls itself to render the full tree.
-																	  @see http://twig.sensiolabs.org/doc/tags/macro.html
-																	#}
+																		  We call a macro which calls itself to render the full tree.
+																		  @see http://twig.sensiolabs.org/doc/tags/macro.html
+																		#}
 	{{ menus.menu_links(items, attributes, 0, menu_name) }}
 	{% macro menu_links(items, attributes, menu_level, menu_name) %}
 		{% import _self as menus %}
@@ -104,8 +104,7 @@
           link(
             item.title,
             item.url,
-            item.attributes.removeClass(item_classes).addClass(link_classes),
-            item.attributes.setAttribute("role", "menuitem")
+            item.attributes.removeClass(item_classes).addClass(link_classes)
           )
         }}
 										{% endif %}
