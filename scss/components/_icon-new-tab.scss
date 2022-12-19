@@ -1,0 +1,10 @@
+@use '../base/index'as *;
+@use '../mixins/index'as *;
+
+.icon-new-tab {
+  &::after {
+    padding-left: 0.25rem;
+    @include svg-base;
+    content: $icon-new-tab;
+  }
+}

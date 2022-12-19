@@ -1727,6 +1727,16 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
     background-size: 70px 70px;
   }
 }
+.icon-new-tab::after {
+  padding-left: 0.25rem;
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.75em;
+  content: url(../assets/svg-icons/arrow-up-right-from-square.svg);
+}
+
 .path-user-login .user-login-form,
 .drupal-login-page .user-login-form {
   display: grid;
