@@ -4,15 +4,18 @@
 	var options = { weekday: "long", month: "long", day: "numeric" };
 	var prnDt = " " + new Date().toLocaleDateString("en-us", options);
 	$("#homehoursdate").html(prnDt);
+
+	var getYear = new Date().getFullYear();
+	$(".currentYear").html(getYear);
 })(jQuery);
 
 /*{ 
   EVENTS STYLING FOR DATE
   <div>
-    <span id="homehoursMon"></span><br>
+    <span id="homehoursMonth"></span><br>
     <span id="homehoursDay"></span><br> 
     <span id="homehoursWeekDay"></span>
-</div>
+	</div>
 
 
 (function ($) {
@@ -24,6 +27,6 @@
 	var prnMon = " " + new Date().toLocaleDateString("en-us", optionsmonth);
 	var prnWkDay = " " + new Date().toLocaleDateString("en-us", optionswkday);
 	$("#homehoursDay").html(prnDay);
-	$("#homehoursMon").html(prnMon);
+	$("#homehoursMonth").html(prnMon);
 	$("#homehoursWeekDay").html(prnWkDay);
 })(jQuery); }*/

@@ -32,13 +32,16 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
+<div{{attributes.addClass(classes)}}>
+	{{ title_prefix }}
+	{% if label %}
+		<h2{{title_attributes}}>{{ label }}</h2>
+	{% endif %}
+	{{ title_suffix }}
+	{% block content %}
+		{# surrounding div added for Layout Builder Component Attributes module #}
+		<div{{content_attributes.addClass('content')}}>
+			{{ content }}
+		</div>
+	{% endblock %}
 </div>

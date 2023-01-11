@@ -2,97 +2,74 @@
 @use '../base/index'as *;
 
 /// Pre-footer
-#footer-container {
-  background-color: $uva-blue-alt-lightest;
+.footer--pre {
+  display: inline-block;
+  background-color: $uva-blue-alt-300;
   width: 100%;
-
-  .footer-container-inner .first-footer {
-    width: 100%;
-
-    &>div {
-      line-height: 1;
-      padding: 0 !important;
-    }
-  }
-
   p {
-    background-color: $uva-blue-alt-lightest;
-    padding-block-end: 0rem;
     text-align: center;
-    margin-top: -10px;
-
-    a {
-      &::after {
-        padding-left: 0.25rem;
-        @include svg-base;
-        content: $icon-new-tab;
-      }
-    }
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
   }
-
 }
 
 /// Main Footer
-#footer-menu {
-  background-color: $uva-brand-blue-base;
-}
-
-#footer-menu-inner {
-  li {
-    list-style: none;
-    padding-block-start: 0.5rem;
+.footer--main {
+  background-color: $uva-brand-blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  
+  &>div {
+    width: 300px;
   }
-
-  div {
+  .field__item * {
+    color: #fff !important;
+  }
+  .content {
     display: flex;
-    flex-wrap: nowrap;
-
-    section div {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-content: stretch;
-      align-items: flex-start;
-      padding-inline-start: 2rem;
-      padding-block-start: 0.5rem;
-
-      ul,
-      p {
-        padding-left: 0;
-        text-align: left;
-      }
-
-      h2 {
-        @include h4;
-      }
-
-      h2,
-      p,
-      a {
+    justify-content: space-around;
+    h2 {
+      @extend h4;
+      &:last-of-type {
         color: #fff !important;
       }
-
-      .contextual-links a {
-        color: $uva-text-color-dark !important;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .social-media {
+      display: flex;
+      a {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        fill: #fff;
+        &:hover,
+        &:focus {
+          fill: $uva-brand-orange;
+        }
       }
     }
   }
 }
 
 /// Post-footer
-.footer-box.third-footer {
-  background-color: $uva-blue-alt-darkest;
-  width: 100%;
-  padding-block: 1em;
-  padding-inline-start: 1em;
+.footer--post {
+    background-color: $uva-blue-alt-B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 1rem 2rem;
+  
 
-  section.w3-block div {
+  .field--name-body {
     display: inline-flex;
     gap: 1.5rem;
-
   }
-
   .post-footer {
     p {
       color: #fff !important;
@@ -101,18 +78,12 @@
 }
 
 @media (max-width:992px) {
-  #footer-menu-inner {
-    div {
+  .footer--main {
+    .content {
       display: flex;
-      flex-wrap: wrap;
+      justify-content:left !important;
+      padding: 1rem;
     }
   }
 
-  .footer-container-inner .first-footer {
-    margin-top: 1rem !important;
-  }
-
-  #footer-menu-inner div section div {
-    padding-inline-start: 0.5rem;
-  }
 }

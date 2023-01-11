@@ -9,6 +9,7 @@ h1,
 h2,
 h3,
 h4,
+.footer--main .content h2,
 p,
 figure,
 blockquote,
@@ -105,7 +106,7 @@ h3,
   line-height: 1.15;
 }
 
-h4,
+h4, .footer--main .content h2,
 .h4,
 .sustainable-scholarship .sustainable-links a {
   font-size: 1.44rem !important;
@@ -149,6 +150,7 @@ h1, h2, .h1, .h2 {
 h2,
 h3,
 h4,
+.footer--main .content h2,
 h5 {
   margin-top: 0;
   margin-bottom: 0;
@@ -1100,6 +1102,7 @@ h1 a,
 h2 a,
 h3 a,
 h4 a,
+.footer--main .content h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
@@ -1115,8 +1118,11 @@ h3 a:hover,
 h3 a:active,
 h3 a:focus,
 h4 a:hover,
+.footer--main .content h2 a:hover,
 h4 a:active,
+.footer--main .content h2 a:active,
 h4 a:focus,
+.footer--main .content h2 a:focus,
 h1 span a:hover,
 h1 span a:active,
 h1 span a:focus,
@@ -2207,99 +2213,75 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     box-shadow: 0 0rem 0px 0rem #fff;
   }
 }
-#footer-container {
-  background-color: #BFE7F7;
-  width: 100%;
-}
-#footer-container .footer-container-inner .first-footer {
-  width: 100%;
-}
-#footer-container .footer-container-inner .first-footer > div {
-  line-height: 1;
-  padding: 0 !important;
-}
-#footer-container p {
-  background-color: #BFE7F7;
-  padding-block-end: 0rem;
-  text-align: center;
-  margin-top: -10px;
-}
-#footer-container p a::after {
-  padding-left: 0.25rem;
+.footer--pre {
   display: inline-block;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.75em;
-  content: url(../assets/svg-icons/arrow-up-right-from-square.svg);
+  background-color: #BFE7F7;
+  width: 100%;
+}
+.footer--pre p {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-#footer-menu {
+.footer--main {
   background-color: #232D4B;
-}
-
-#footer-menu-inner li {
-  list-style: none;
-  padding-block-start: 0.5rem;
-}
-#footer-menu-inner div {
   display: flex;
-  flex-wrap: nowrap;
-}
-#footer-menu-inner div section div {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
-  padding-inline-start: 2rem;
-  padding-block-start: 0.5rem;
+  justify-content: center;
+  padding-top: 2rem;
 }
-#footer-menu-inner div section div ul,
-#footer-menu-inner div section div p {
-  padding-left: 0;
-  text-align: left;
+.footer--main > div {
+  width: 300px;
 }
-#footer-menu-inner div section div h2 {
-  font-size: 1.44rem !important;
-  font-weight: 500 !important;
-}
-#footer-menu-inner div section div h2,
-#footer-menu-inner div section div p,
-#footer-menu-inner div section div a {
+.footer--main .field__item * {
   color: #fff !important;
 }
-#footer-menu-inner div section div .contextual-links a {
-  color: #2B2B2B !important;
+.footer--main .content {
+  display: flex;
+  justify-content: space-around;
+}
+.footer--main .content h2:last-of-type {
+  color: #fff !important;
+}
+.footer--main .content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer--main .content .social-media {
+  display: flex;
+}
+.footer--main .content .social-media a {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  fill: #fff;
+}
+.footer--main .content .social-media a:hover, .footer--main .content .social-media a:focus {
+  fill: #E57200;
 }
 
-.footer-box.third-footer {
+.footer--post {
   background-color: #141E3C;
-  width: 100%;
-  padding-block: 1em;
-  padding-inline-start: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 1rem 2rem;
 }
-.footer-box.third-footer section.w3-block div {
+.footer--post .field--name-body {
   display: inline-flex;
   gap: 1.5rem;
 }
-.footer-box.third-footer .post-footer p {
+.footer--post .post-footer p {
   color: #fff !important;
 }
 
 @media (max-width: 992px) {
-  #footer-menu-inner div {
+  .footer--main .content {
     display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer-container-inner .first-footer {
-    margin-top: 1rem !important;
-  }
-
-  #footer-menu-inner div section div {
-    padding-inline-start: 0.5rem;
+    justify-content: left !important;
+    padding: 1rem;
   }
 }
 .layout__region--second {
