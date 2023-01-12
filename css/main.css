@@ -2268,6 +2268,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   flex-wrap: wrap;
   justify-content: start;
   padding: 1rem 2rem;
+  outline: 1px solid #141E3C;
 }
 .footer--post .field--name-body {
   display: inline-flex;

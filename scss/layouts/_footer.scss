@@ -64,7 +64,7 @@
     flex-wrap: wrap;
     justify-content: start;
     padding: 1rem 2rem;
-  
+    outline: 1px solid $uva-blue-alt-B;
 
   .field--name-body {
     display: inline-flex;
@@ -85,5 +85,4 @@
       padding: 1rem;
     }
   }
-
 }
