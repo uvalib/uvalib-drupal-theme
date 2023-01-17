@@ -40,7 +40,7 @@
 	{{ title_suffix }}
 	{% block content %}
 		{# surrounding div added for Layout Builder Component Attributes module #}
-		<div{{content_attributes.addClass('content')}}>
+		<div{{content_attributes.addClass('content')}} foo="test">
 			{{ content }}
 		</div>
 	{% endblock %}

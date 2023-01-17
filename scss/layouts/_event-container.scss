@@ -46,6 +46,8 @@
       order: 3;
     }
 
+
+
     p {
       display: inline-block;
       text-decoration: none !important;
@@ -63,6 +65,23 @@
   margin-bottom: 2rem;
   float: right;
 }
+
+
+
+// temp styling for date
+// .events-date {
+//   .event--month {
+//     color: red !important;
+//   }
+
+//   .event--day {
+//     color: blue;
+//   }
+
+//   .event--wkday {
+//     color: green;
+//   }
+// }
 
 @media (max-width:992px) {
   .event-container {
