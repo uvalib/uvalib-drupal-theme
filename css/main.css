@@ -8,8 +8,9 @@ body,
 h1,
 h2,
 h3,
+.event-container .event-url .event-date .event--day,
 h4,
-.footer--main .content h2,
+.footer--main .block h2,
 p,
 figure,
 blockquote,
@@ -92,7 +93,7 @@ h2,
   line-height: 1.15;
 }
 
-h3,
+h3, .event-container .event-url .event-date .event--day,
 .h3,
 .library-locations .view-content .views-row h2,
 .staff-bio .field--name-field-uva-ldap-title,
@@ -106,7 +107,7 @@ h3,
   line-height: 1.15;
 }
 
-h4, .footer--main .content h2,
+h4, .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a {
   font-size: 1.44rem !important;
@@ -115,7 +116,7 @@ h4, .footer--main .content h2,
   line-height: 1.15;
 }
 
-h5,
+h5, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday,
 .h5,
 .how-do-i-main .view-content .item-list ul li a,
 .how-do-i-detail .view-content h2,
@@ -135,7 +136,7 @@ h5,
 h6,
 .h6,
 .home-page .home-hours-block .hour-head,
-.event-container .event .event-title,
+.event-container .event-url .event-title,
 .anchor-nav ul li::after {
   font-size: 1rem !important;
   font-weight: 500;
@@ -149,9 +150,12 @@ h1, h2, .h1, .h2 {
 
 h2,
 h3,
+.event-container .event-url .event-date .event--day,
 h4,
-.footer--main .content h2,
-h5 {
+.footer--main .block h2,
+h5,
+.event-container .event-url .event-date .event--month,
+.event-container .event-url .event-date .event--wkday {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1101,8 +1105,9 @@ span a:focus {
 h1 a,
 h2 a,
 h3 a,
+.event-container .event-url .event-date .event--day a,
 h4 a,
-.footer--main .content h2 a,
+.footer--main .block h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
@@ -1115,14 +1120,17 @@ h2 a:hover,
 h2 a:active,
 h2 a:focus,
 h3 a:hover,
+.event-container .event-url .event-date .event--day a:hover,
 h3 a:active,
+.event-container .event-url .event-date .event--day a:active,
 h3 a:focus,
+.event-container .event-url .event-date .event--day a:focus,
 h4 a:hover,
-.footer--main .content h2 a:hover,
+.footer--main .block h2 a:hover,
 h4 a:active,
-.footer--main .content h2 a:active,
+.footer--main .block h2 a:active,
 h4 a:focus,
-.footer--main .content h2 a:focus,
+.footer--main .block h2 a:focus,
 h1 span a:hover,
 h1 span a:active,
 h1 span a:focus,
@@ -2237,28 +2245,28 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
 .footer--main .field__item * {
   color: #fff !important;
 }
-.footer--main .content {
+.footer--main .block {
   display: flex;
   justify-content: space-around;
 }
-.footer--main .content h2:last-of-type {
+.footer--main .block h2:last-of-type {
   color: #fff !important;
 }
-.footer--main .content ul {
+.footer--main .block ul {
   list-style-type: none;
   padding-left: 0;
 }
-.footer--main .content .social-media {
+.footer--main .block .social-media {
   display: flex;
 }
-.footer--main .content .social-media a {
+.footer--main .block .social-media a {
   display: inline-block;
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
   fill: #fff;
 }
-.footer--main .content .social-media a:hover, .footer--main .content .social-media a:focus {
+.footer--main .block .social-media a:hover, .footer--main .block .social-media a:focus {
   fill: #E57200;
 }
 
@@ -2318,46 +2326,60 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
 }
 .event-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
-.event-container .event .event-url {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #F1F1F1;
-  padding: 1.5rem;
+.event-container .event-url {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 1rem;
+  outline: 1px solid #DADADA;
   text-decoration: none;
-  height: 12rem;
-  text-align: center;
+  height: 8rem;
 }
-.event-container .event .event-url:hover h4 {
+.event-container .event-url:hover h4 {
   text-decoration: underline;
 }
-.event-container .event .event-title {
+.event-container .event-url .event-date {
+  grid-area: 1/1/3/2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-content: start;
+  align-items: center;
+  text-align: center;
+  background-color: #E57200;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.event-container .event-url .event-date .event--day,
+.event-container .event-url .event-date .event--month,
+.event-container .event-url .event-date .event--wkday {
+  color: #fff !important;
+}
+.event-container .event-url .event-date .event--month {
+  padding-top: 1rem;
+}
+.event-container .event-url .event-title {
+  grid-area: 1/2/2/3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
   overflow: hidden;
-  margin-bottom: 0.75rem;
-  order: 1;
+  padding: 1rem 1rem 0 0;
 }
-.event-container .event .event-date,
-.event-container .event .event-time {
-  font-size: 0.95rem;
-  padding-bottom: 0.5rem;
+.event-container .event-url .event-time {
+  grid-area: 2/2/3/3;
+  padding: 0 1rem 1rem 0;
 }
-.event-container .event .event-time {
-  order: 2;
-}
-.event-container .event .event-date {
-  order: 3;
-}
-.event-container .event p {
+.event-container p {
   display: inline-block;
   text-decoration: none !important;
 }
-.event-container .event p:hover {
+.event-container p:hover {
   text-decoration: none !important;
 }
 
