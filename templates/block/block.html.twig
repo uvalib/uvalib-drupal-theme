@@ -39,9 +39,6 @@
 	{% endif %}
 	{{ title_suffix }}
 	{% block content %}
-		{# surrounding div added for Layout Builder Component Attributes module #}
-		<div{{content_attributes.addClass('content')}} foo="test">
-			{{ content }}
-		</div>
+		{{ content }}
 	{% endblock %}
 </div>
