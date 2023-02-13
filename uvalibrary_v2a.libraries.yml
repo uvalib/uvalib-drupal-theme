@@ -57,8 +57,8 @@ base:
     js/menu-accessibilty.js: { }
     js/mobile-menu-v2.js: { }
     js/phone-format.js: { }
-    https://www.w3.org/WAI/ARIA/apg/example-index/js/utils.js: { type: external }
-    https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/js/dialog.js: { type: external }
+    js/utils.js: { }
+    js/dialog.js: { }
   dependencies:
     - core/jquery
     - core/drupal.ajax
