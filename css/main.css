@@ -126,7 +126,7 @@ h5, .event-container .event-url .event-date .event--month, .event-container .eve
 .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title,
 .uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
-.anchor-nav ul li {
+.jumpmenu ul li {
   font-size: 1.2rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -137,7 +137,7 @@ h6,
 .h6,
 .home-page .home-hours-block .hour-head,
 .event-container .event-url .event-title,
-.anchor-nav ul li::after {
+.jumpmenu ul li::after {
   font-size: 1rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -2170,57 +2170,50 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     font-weight: 400 !important;
   }
 }
-.anchor-nav {
+.jumpmenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   text-align: center;
 }
-.anchor-nav ul li {
-  display: inline-flex;
-  list-style: none;
+.jumpmenu ul {
+  margin: 0;
+  padding: 0;
 }
-.anchor-nav ul li::after {
+.jumpmenu ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px !important;
+}
+.jumpmenu ul li::after {
   padding: 0 1rem;
   content: "|";
 }
-.anchor-nav ul li:last-of-type::after {
+.jumpmenu ul li:last-of-type::after {
   content: inherit;
   padding-right: 0;
 }
-.anchor-nav ul li a {
+.jumpmenu ul li a {
   text-decoration: none !important;
   padding-bottom: 0.25rem;
 }
-.anchor-nav ul li a:hover, .anchor-nav ul li a:focus {
+.jumpmenu ul li a:hover, .jumpmenu ul li a:focus {
   text-decoration: none !important;
   box-shadow: 0 4px 0px 0px #E57200;
 }
 
-@media (max-width: 992px) {
-  .anchor-nav ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  .anchor-nav ul li {
-    display: inline-flex;
-    list-style: none;
-  }
-  .anchor-nav ul li::after {
-    padding: 0 !important;
-    content: " " !important;
-  }
-  .anchor-nav ul li a {
-    text-decoration: underline !important;
-    font-weight: 500 !important;
-    box-shadow: none;
-  }
-  .anchor-nav ul li a:hover {
-    text-decoration: none !important;
-    box-shadow: 0 0rem 0px 0rem #fff;
-  }
+.jump-mobile {
+  background-color: #F1F1F1;
 }
+.jump-mobile .ckeditor-accordion-container > dl dt > a {
+  background-color: #F1F1F1;
+}
+
 .footer--pre {
   display: inline-block;
   background-color: #BFE7F7;
@@ -2306,6 +2299,46 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   list-style: none;
 }
 
+@media screen and (min-width: 1024px) {
+  /* Styles for desktop screens go here */
+  .not-mobile {
+    display: inherit;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* Styles for tablet screens go here */
+  .not-mobile {
+    display: inherit;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Styles for mobile screens go here */
+  .not-mobile {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inherit;
+  }
+}
+.bg--full-width {
+  background-color: #F1F1F1;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2318,7 +2351,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   gap: 2rem;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .two-col,
 .three-col {
     grid-template-columns: 1fr !important;
@@ -3208,10 +3241,32 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   object-fit: cover;
 }
 
-.teaching-and-writing .main-box h2 {
-  margin-top: 2rem;
+.teaching-and-writing .t-w--writing,
+.teaching-and-writing .t-w--planning {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.teaching-and-writing .t-w--writing:last-child,
+.teaching-and-writing .t-w--planning:last-child {
+  margin-bottom: 4rem;
 }
 
+@media screen and (max-width: 767px) {
+  .t-w--writing,
+.t-w--planning {
+    grid-template-columns: 1fr !important;
+  }
+  .t-w--writing div:first-of-type,
+.t-w--planning div:first-of-type {
+    grid-area: 2/1/3/2;
+  }
+  .t-w--writing div:last-of-type,
+.t-w--planning div:last-of-type {
+    grid-area: 1/1/2/2;
+  }
+}
 .news-page .views-row {
   margin-top: 2rem;
   margin-bottom: 2rem;

@@ -6,8 +6,10 @@
 @forward 'breadcrumbs';
 @forward 'nav';
 @forward 'nav-mobile';
-@forward 'anchor-nav';
+@forward 'jump-nav';
 @forward 'footer';
 @forward 'general';
+
+@forward './layout-mixins/backgrounds';
 @forward './layout-mixins/grid-layout';
 @forward 'event-container';
