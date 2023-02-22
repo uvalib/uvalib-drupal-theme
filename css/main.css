@@ -133,7 +133,7 @@ h5, .event-container .event-url .event-date .event--month, .event-container .eve
   line-height: 1.15;
 }
 
-h6,
+h6, .uva-alert--sitewide .alert4 h2.alert-title,
 .h6,
 .home-page .home-hours-block .hour-head,
 .event-container .event-url .event-title,
@@ -1316,18 +1316,26 @@ dl.dl--inline dt {
   margin: 0.55rem;
 }
 .uva-alert--sitewide .alert4 {
-  display: grid;
-  place-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   width: 100vw;
   background-color: #25CAD3;
   text-align: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 0.15rem;
 }
 .uva-alert--sitewide .alert4 h2.alert-title {
-  visibility: hidden;
-  display: flex;
-  height: 0;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+.uva-alert--sitewide .alert4 h2.alert-title::after {
+  content: ":";
+  margin-right: 0.5rem;
 }
 .uva-alert--sitewide .alert4 .alert-body {
   display: inline-block;

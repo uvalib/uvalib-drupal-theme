@@ -78,18 +78,28 @@
   }
 
   .alert4 {
-    display: grid;
-    place-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     width: 100vw;
     background-color: $uva-teal;
     text-align: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-top: 0.15rem;
 
     h2.alert-title {
-      visibility: hidden;
-      display: flex;
-      height: 0;
+      @extend h6;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+
+      &::after {
+        content: ":";
+        margin-right: 0.5rem;
+      }
     }
 
     .alert-body {
@@ -112,19 +122,6 @@
 //////////////////////////////
 /// REGIONAL ALERTS //////////
 //////////////////////////////
-
-
-// .uva-alert--dismissible {
-//   a.uva-alert--close {
-//     font-size: 1.5em;
-//     display: table-cell;
-//     position: absolute;
-//     top: .25em;
-//     right: .45em;
-//     text-decoration: none;
-//     color: $uva-text-color-dark;
-//   }
-// }
 
 .uva-alert--r1 {
   border: 0.2em solid $uva-yellow;
