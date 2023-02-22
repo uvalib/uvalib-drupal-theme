@@ -1343,7 +1343,7 @@ dl.dl--inline dt {
   font-size: 1em;
 }
 .uva-alert--sitewide .alert4 .alert-body p {
-  padding-left: 0;
+  padding: 0;
 }
 .uva-alert--sitewide .alert4 .alert-body a {
   color: #141E3C !important;
