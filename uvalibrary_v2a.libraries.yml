@@ -2,8 +2,8 @@ base:
   version: VERSION
   css:
     component:
-      https://use.typekit.net/oym8nvz.css: { }
-      css/main.css: { }
+      https://use.typekit.net/oym8nvz.css: {}
+      css/main.css: {}
       # css/page-title.css: { }
       # css/components/action-links.css:
       #   weight: -10
@@ -52,13 +52,14 @@ base:
       # css/components/ui-dialog.css:
       #   weight: -10
   js:
-    js/getdate.js: { }
-    js/sc-virgo-search.js: { }
-    js/menu-accessibilty.js: { }
-    js/mobile-menu-v2.js: { }
-    js/phone-format.js: { }
-    js/utils.js: { }
-    js/dialog.js: { }
+    js/scroll-to-top.js: {}
+    js/getdate.js: {}
+    js/sc-virgo-search.js: {}
+    js/menu-accessibilty.js: {}
+    js/mobile-menu-v2.js: {}
+    js/phone-format.js: {}
+    js/utils.js: {}
+    js/dialog.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax
