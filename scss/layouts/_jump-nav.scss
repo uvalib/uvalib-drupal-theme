@@ -53,4 +53,16 @@
   .ckeditor-accordion-container>dl dt>a {
     background-color: $uva-grey-200;
   }
+  .ckeditor-accordion-container {
+    dd {
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+
 }

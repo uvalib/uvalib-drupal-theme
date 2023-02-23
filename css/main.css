@@ -1343,7 +1343,7 @@ dl.dl--inline dt {
   font-size: 1em;
 }
 .uva-alert--sitewide .alert4 .alert-body p {
-  padding: 0;
+  padding: 0 !important;
 }
 .uva-alert--sitewide .alert4 .alert-body a {
   color: #141E3C !important;
@@ -2220,6 +2220,13 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
 }
 .jump-mobile .ckeditor-accordion-container > dl dt > a {
   background-color: #F1F1F1;
+}
+.jump-mobile .ckeditor-accordion-container dd ul {
+  list-style: none;
+  padding: 0;
+}
+.jump-mobile .ckeditor-accordion-container dd ul li {
+  text-align: center;
 }
 
 .footer--pre {
