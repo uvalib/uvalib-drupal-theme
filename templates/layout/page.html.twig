@@ -249,17 +249,11 @@
 	</div>
 	<!-- End: Main -->
 
-	<footer>
-		<div class="footer--pre">
-			{{ page.footer_first }}
-		</div>
-
-		<div class="footer--main">
-			{{ page.footer_menu }}
-		</div>
-
-		<div class="footer--post">
-			{{ page.footer_third }}
+	<footer class="w3-col w3-clear">
+		<div class="w3-row {{ website_width }}">
+			<div class="footer--pre">{{ page.footer_first }}</div>
+			<div class="footer--main">{{ page.footer_menu }}</div>
+			<div class="footer--post">{{ page.footer_post }}</div>
 		</div>
 	</footer>
 	<button onclick="topFunction()" id="scrollTop" title="Scroll to top">Top</button>

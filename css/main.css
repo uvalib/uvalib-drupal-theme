@@ -10,7 +10,7 @@ h2,
 h3,
 .event-container .event-url .event-date .event--day,
 h4,
-.footer--main .block h2,
+footer .footer--main .block h2,
 p,
 figure,
 blockquote,
@@ -107,7 +107,7 @@ h3, .event-container .event-url .event-date .event--day,
   line-height: 1.15;
 }
 
-h4, .footer--main .block h2,
+h4, footer .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a {
   font-size: 1.44rem !important;
@@ -152,7 +152,7 @@ h2,
 h3,
 .event-container .event-url .event-date .event--day,
 h4,
-.footer--main .block h2,
+footer .footer--main .block h2,
 h5,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday {
@@ -1107,7 +1107,7 @@ h2 a,
 h3 a,
 .event-container .event-url .event-date .event--day a,
 h4 a,
-.footer--main .block h2 a,
+footer .footer--main .block h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
@@ -1126,11 +1126,11 @@ h3 a:active,
 h3 a:focus,
 .event-container .event-url .event-date .event--day a:focus,
 h4 a:hover,
-.footer--main .block h2 a:hover,
+footer .footer--main .block h2 a:hover,
 h4 a:active,
-.footer--main .block h2 a:active,
+footer .footer--main .block h2 a:active,
 h4 a:focus,
-.footer--main .block h2 a:focus,
+footer .footer--main .block h2 a:focus,
 h1 span a:hover,
 h1 span a:active,
 h1 span a:focus,
@@ -2252,73 +2252,100 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   text-align: center;
 }
 
-.footer--pre {
-  display: inline-block;
-  background-color: #BFE7F7;
-  width: 100%;
+.bg--full-width {
+  background-color: #F1F1F1;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
-.footer--pre p {
+
+footer .w3-width-1360 {
+  margin: 0 auto;
+}
+footer .footer--pre {
+  background-color: #F1F1F1;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #BFE7F7;
+}
+footer .footer--pre p {
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
-.footer--main {
+footer .footer--main {
+  background-color: #F1F1F1;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background-color: #232D4B;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 2rem;
 }
-.footer--main > div {
+footer .footer--main > div {
   width: 300px;
 }
-.footer--main .field__item * {
+footer .footer--main .field__item * {
   color: #fff !important;
 }
-.footer--main .block {
+footer .footer--main .block {
   display: flex;
   justify-content: space-around;
 }
-.footer--main .block h2:last-of-type {
+footer .footer--main .block h2:last-of-type {
   color: #fff !important;
 }
-.footer--main .block ul {
+footer .footer--main .block ul {
   list-style-type: none;
   padding-left: 0;
 }
-.footer--main .block .social-media {
+footer .footer--main .block .social-media {
   display: flex;
 }
-.footer--main .block .social-media a {
+footer .footer--main .block .social-media a {
   display: inline-block;
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
   fill: #fff;
 }
-.footer--main .block .social-media a:hover, .footer--main .block .social-media a:focus {
+footer .footer--main .block .social-media a:hover, footer .footer--main .block .social-media a:focus {
   fill: #E57200;
 }
-
-.footer--post {
+footer .footer--post {
+  background-color: #F1F1F1;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background-color: #141E3C;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
   padding: 1rem 2rem;
-  outline: 1px solid #141E3C;
 }
-.footer--post .field--name-body {
-  display: inline-flex;
+footer .footer--post .post-footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
-}
-.footer--post .post-footer p {
   color: #fff !important;
+  margin: 0 auto;
 }
 
 @media (max-width: 992px) {
-  .footer--main .content {
+  footer .footer--main .content {
     display: flex;
     justify-content: left !important;
     padding: 1rem;
@@ -2367,16 +2394,6 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     display: inherit;
   }
 }
-.bg--full-width {
-  background-color: #F1F1F1;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
