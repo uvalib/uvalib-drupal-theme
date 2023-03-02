@@ -63,7 +63,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 6rem 0.5fr 1fr 0.5fr 1.5rem;
-    gap: 1rem;
+    gap: 2rem;
     padding-right: 2rem;
     border-right: 1px solid $uva-grey-light;
 
@@ -87,22 +87,80 @@
     .search-borrow-request {
       grid-area: 2 / 1 / 3 / 4;
       align-self: center;
+      background-color: white;
+      border: 1px solid $uva-grey-100;
+      border-left: 0.25rem solid $uva-brand-orange;
+      padding: 2rem;
+
+      &:hover,
+      &:focus {
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 0 20px 0 $uva-grey-100;
+        z-index: 2;
+      }
     }
+
+    // .search-borrow-request-base {
+    //   grid-area: 2 / 1 / 3 / 4;
+    //   align-self: center;
+    //   z-index: 1;
+    //   border: 2px dashed $uva-brand-orange-base;
+    // }
 
     .teaching-and-publication {
       grid-area: 3 / 1 / 4 / 2;
+      background-color: white;
+      border: 1px solid $uva-grey-100;
+      border-left: 0.25rem solid $uva-brand-orange;
+
+      &:hover,
+      &:focus {
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 0 20px 0 $uva-grey-100;
+        z-index: 2;
+      }
     }
 
     .using-spaces {
       grid-area: 3 / 2 / 4 / 3;
+      background-color: white;
+      border: 1px solid $uva-grey-100;
+      border-left: 0.25rem solid $uva-brand-orange;
+
+      &:hover,
+      &:focus {
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 0 20px 0 $uva-grey-100;
+        z-index: 2;
+      }
     }
 
     .equipment-tech {
       grid-area: 3 / 3 / 4 / 4;
+      background-color: white;
+      border: 1px solid $uva-grey-100;
+      border-left: 0.25rem solid $uva-brand-orange;
+
+      &:hover,
+      &:focus {
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 0 20px 0 $uva-grey-100;
+        z-index: 2;
+      }
     }
 
     .using-help {
       grid-area: 4 / 1 / 5 / 4;
+      background-color: white;
+      border: 1px solid $uva-grey-100;
+      border-left: 0.25rem solid $uva-brand-orange;
+      padding: 2rem;
+
+      &:hover {
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 0 20px 0 $uva-grey-100;
+        z-index: 2;
+      }
     }
     .utl-link {
       grid-area: 5 / 3 / 6 / 4;
