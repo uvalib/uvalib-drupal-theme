@@ -3,12 +3,15 @@
 @use '../layouts/layout-mixins/backgrounds'as *;
 
 footer {
+  display: inline-flex;
+  flex-direction: column;
+  width: inherit;
   .w3-width-1360 {
     margin: 0 auto;
   }
   /// Pre-footer
   .footer--pre {
-    @include bg--full-width;
+    // @include bg--full-width;
     background-color: $uva-blue-alt-300;
 
     p {
@@ -20,7 +23,7 @@ footer {
 
   /// Main Footer
   .footer--main {
-    @include bg--full-width;
+    // @include bg--full-width;
     background-color: $uva-brand-blue;
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +69,7 @@ footer {
 
   /// Post-footer
   .footer--post {
-    @include bg--full-width;
+    // @include bg--full-width;
     background-color: $uva-blue-alt-B;
     padding: 1rem 2rem;
 
@@ -83,12 +86,12 @@ footer {
   }
 }
 
-@media (max-width:992px) {
+@media screen and (max-width: #{$mobile}) {
   footer {
     .footer--main {
-      .content {
+      .block {
         display: flex;
-        justify-content:left !important;
+        justify-content: start !important;
         padding: 1rem;
       }
     }

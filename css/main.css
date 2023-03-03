@@ -2254,25 +2254,17 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
 
 .bg--full-width {
   background-color: #F1F1F1;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
+footer {
+  display: inline-flex;
+  flex-direction: column;
+  width: inherit;
+}
 footer .w3-width-1360 {
   margin: 0 auto;
 }
 footer .footer--pre {
-  background-color: #F1F1F1;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   background-color: #BFE7F7;
 }
 footer .footer--pre p {
@@ -2281,13 +2273,6 @@ footer .footer--pre p {
   padding-bottom: 0.5rem;
 }
 footer .footer--main {
-  background-color: #F1F1F1;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   background-color: #232D4B;
   display: flex;
   flex-wrap: wrap;
@@ -2325,13 +2310,6 @@ footer .footer--main .block .social-media a:hover, footer .footer--main .block .
   fill: #E57200;
 }
 footer .footer--post {
-  background-color: #F1F1F1;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   background-color: #141E3C;
   padding: 1rem 2rem;
 }
@@ -2344,10 +2322,10 @@ footer .footer--post .post-footer div {
   margin: 0 auto;
 }
 
-@media (max-width: 992px) {
-  footer .footer--main .content {
+@media screen and (max-width: 767px) {
+  footer .footer--main .block {
     display: flex;
-    justify-content: left !important;
+    justify-content: start !important;
     padding: 1rem;
   }
 }

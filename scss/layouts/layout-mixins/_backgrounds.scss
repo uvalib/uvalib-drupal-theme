@@ -2,12 +2,12 @@
 
 @mixin bg--full-width {
   background-color: $uva-grey-200;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  // position: relative;
+  // width: 100vw;
+  // left: 50%;
+  // right: 50%;
+  // margin-left: -50vw;
+  // margin-right: -50vw;
 }
 
 .bg--full-width {
