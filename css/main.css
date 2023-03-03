@@ -1686,12 +1686,16 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   }
 }
 .hover-block {
-  background-color: #F1F1F1;
-  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #DADADA;
+  border-left: 0.25rem solid #E57200;
+  padding: 2rem;
   text-decoration: none;
 }
-.hover-block:hover h3, .hover-block:hover h4 {
-  text-decoration: underline;
+.hover-block:hover, .hover-block:focus {
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 0 20px 0 #DADADA;
+  z-index: 2;
 }
 .hover-block p {
   color: #4F4F4F;
@@ -2475,13 +2479,12 @@ footer .footer--post .post-footer div {
 }
 .home-page .home-collections .home-collections-image {
   width: 100vw;
-  max-width: 1360px;
+  max-width: 1600px;
   margin-inline-start: 50%;
   transform: translateX(-50%);
 }
 .home-page .home-collections .home-collections-image img {
-  height: 280px;
-  width: 1360px;
+  min-height: 230px;
   object-fit: cover;
 }
 .home-page .home-collections .home-collection-virgo {
@@ -2551,7 +2554,7 @@ footer .footer--post .post-footer div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 6rem 0.5fr 1fr 0.5fr 1.5rem;
-  gap: 1rem;
+  gap: 2rem;
   padding-right: 2rem;
   border-right: 1px solid #DADADA;
 }
@@ -2709,7 +2712,7 @@ footer .footer--post .post-footer div {
 .home-page .campaign-sub-block {
   text-align: center;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 1023px), (max-width: 767px) {
   .home-page .home-collection-virgo {
     width: 100%;
     order: 1;
@@ -2888,16 +2891,18 @@ footer .footer--post .post-footer div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 0.5fr;
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 .rp-using .using-top .u-f-n,
 .rp-using .using-top .u-c-r,
 .rp-using .using-top .u-d-j,
 .rp-using .using-top .u-s-j,
 .rp-using .using-top .u-m-r {
-  background-color: #e6f2f7;
-  padding: 1.25rem;
+  background-color: white;
+  border: 1px solid #DADADA;
+  border-top: 0.25rem solid #E57200;
+  padding: 2.5rem;
 }
 .rp-using .using-top .u-f-n h3,
 .rp-using .using-top .u-f-n h4,

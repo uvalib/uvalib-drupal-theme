@@ -21,16 +21,13 @@
 
     .home-collections-image {
       width: 100vw;
-      max-width: 1360px;
+      max-width: 1600px;
       margin-inline-start: 50%;
       transform: translateX(-50%);
 
       img {
-        // height: 320px;
-        height: 280px;
-        width: 1360px;
+        min-height: 230px;
         object-fit: cover;
-
       }
     }
 
@@ -63,7 +60,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 6rem 0.5fr 1fr 0.5fr 1.5rem;
-    gap: 1rem;
+    gap: 2rem;
     padding-right: 2rem;
     border-right: 1px solid $uva-grey-light;
 
@@ -279,11 +276,11 @@
   }
 
 
-  //////////////////////////
-  /// MOBILE BREAKPOINTS ///
-  //////////////////////////
-
-  @media (max-width:992px) {
+  ///////////////////
+  /// BREAKPOINTS ///
+  ///////////////////
+// @media screen and (max-width: #{$tablet}) { }
+@media screen and (max-width: #{$tablet}), (max-width: #{$mobile}) {
     .home-collection-virgo {
       width: 100%;
       order: 1;

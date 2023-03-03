@@ -37,16 +37,18 @@
     grid-template-columns: repeat(3, 1fr);
     // grid-template-rows: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr 0.5fr;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
 
     .u-f-n,
     .u-c-r,
     .u-d-j,
     .u-s-j,
     .u-m-r {
-      background-color: $uva-blue-alt-400;
-      padding: 1.25rem;
+      background-color: white;
+      border: 1px solid $uva-grey-100;
+      border-top: 0.25rem solid $uva-brand-orange;
+      padding: 2.5rem;
 
       h3,
       h4 {
