@@ -281,10 +281,10 @@
   ///////////////////
 @media screen and (max-width: #{$tablet}) {
   .home-news-featured .views-row {
-    margin-right: 3rem;
+    margin-right: 3rem !important;
   }
   .home-feature-container {
-    margin-left: 3rem;
+    margin-left: 3rem !important;
   }
  }
 
