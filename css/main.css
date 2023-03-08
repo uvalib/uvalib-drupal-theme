@@ -2743,7 +2743,7 @@ footer .footer--post .post-footer div {
     margin-right: 3rem;
   }
   .home-page .home-feature-container {
-    margin-right: 3rem;
+    margin-left: 3rem;
   }
 }
 @media screen and (max-width: 1023px), (max-width: 767px) {
@@ -2859,11 +2859,11 @@ footer .footer--post .post-footer div {
 
 @media screen and (max-width: 767px) {
   .home-news-featured .views-row {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
   .home-feature-container {
-    margin-right: 0;
+    margin-left: 0 !important;
   }
 }
 .rp-using h2 em {
