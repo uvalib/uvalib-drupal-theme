@@ -1400,6 +1400,17 @@ dl.dl--inline dt {
   margin-top: 0;
 }
 
+blockquote {
+  padding: 0 0.5rem;
+  border-left: 1px solid #E57200;
+  margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+  font-style: italic;
+}
+blockquote p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .w3-border {
   border: 1px solid orange !important;
 }
@@ -1685,6 +1696,20 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
     width: auto;
   }
 }
+figure {
+  margin: 1.5rem;
+}
+figure.align-right {
+  margin-right: 0;
+}
+figure.align-left {
+  margin-left: 0;
+}
+figure figcaption {
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
 .hover-block {
   background-color: #fff;
   border: 1px solid #DADADA;
