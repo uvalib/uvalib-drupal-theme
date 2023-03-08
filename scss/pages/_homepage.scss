@@ -287,6 +287,7 @@
     margin-right: 3rem;
   }
  }
+
 @media screen and (max-width: #{$tablet}), (max-width: #{$mobile}) {
     .home-collection-virgo {
       width: 100%;
@@ -411,13 +412,19 @@
       }
     }
 
-    .home-feature-container {
-      margin-right: 0;
-    }
     // mobile - Exhibits
     .home-exhibits {
       padding: 0;
       margin-bottom: 2rem;
     }
+  }
+}
+@media screen and (max-width: #{$mobile}) {
+  .home-news-featured .views-row {
+    margin-right: 0;
+  }
+
+  .home-feature-container {
+    margin-right: 0;
   }
 }

@@ -2851,15 +2851,21 @@ footer .footer--post .post-footer div {
     padding: 0 0.5rem;
     max-width: 42.5rem;
   }
-  .home-page .home-feature-container {
-    margin-right: 0;
-  }
   .home-page .home-exhibits {
     padding: 0;
     margin-bottom: 2rem;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .home-news-featured .views-row {
+    margin-right: 0;
+  }
+
+  .home-feature-container {
+    margin-right: 0;
+  }
+}
 .rp-using h2 em {
   font-size: 16px;
   padding: 2rem 0;
