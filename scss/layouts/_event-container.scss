@@ -14,7 +14,7 @@
      gap: 1rem;
      outline: 1px solid $uva-grey-100;
      text-decoration: none;
-     height: 8rem;
+     min-height: 8.15rem;
      &:hover h4 {
         text-decoration: underline;
       }
@@ -49,11 +49,11 @@
      .event-title {
         grid-area: 1 / 2 / 2 / 3;
         @extend .h6;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        // -webkit-box-orient: vertical;
+        // text-overflow: ellipsis;
+        // overflow: hidden;
         padding: 1rem 1rem 0 0;
      }
      .event-time {

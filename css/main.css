@@ -2406,7 +2406,7 @@ footer .footer--post .post-footer div {
   gap: 1rem;
   outline: 1px solid #DADADA;
   text-decoration: none;
-  height: 8rem;
+  min-height: 8.15rem;
 }
 .event-container .event-url:hover h4 {
   text-decoration: underline;
@@ -2434,11 +2434,6 @@ footer .footer--post .post-footer div {
 }
 .event-container .event-url .event-title {
   grid-area: 1/2/2/3;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
   padding: 1rem 1rem 0 0;
 }
 .event-container .event-url .event-time {
