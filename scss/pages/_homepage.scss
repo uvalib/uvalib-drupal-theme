@@ -279,7 +279,14 @@
   ///////////////////
   /// BREAKPOINTS ///
   ///////////////////
-// @media screen and (max-width: #{$tablet}) { }
+@media screen and (max-width: #{$tablet}) {
+  .home-news-featured .views-row {
+    margin-right: 3rem;
+  }
+  .home-feature-container {
+    margin-right: 3rem;
+  }
+ }
 @media screen and (max-width: #{$tablet}), (max-width: #{$mobile}) {
     .home-collection-virgo {
       width: 100%;
@@ -391,6 +398,7 @@
     .home-news-featured .views-row {
       display: flex;
       flex-direction: column;
+      margin-right: 0;
 
       .field--name-field-media-image .field__item {
         height: 14rem;
@@ -403,6 +411,9 @@
       }
     }
 
+    .home-feature-container {
+      margin-right: 0;
+    }
     // mobile - Exhibits
     .home-exhibits {
       padding: 0;

@@ -1,7 +1,7 @@
 @use '../../mixins/index'as *;
 @use '../../base/index'as *;
 
-.library-locations {
+.view-library-locations {
   .view-content {
     display: grid;
     gap: 2rem 3rem;

@@ -97,7 +97,7 @@ h2,
 
 h3, .event-container .event-url .event-date .event--day,
 .h3,
-.library-locations .view-content .views-row h2,
+.view-library-locations .view-content .views-row h2,
 .staff-bio .field--name-field-uva-ldap-title,
 .staff-bio .layout__region--second h2,
 .uvalib-bento-search .bs-header h2,
@@ -2738,6 +2738,14 @@ footer .footer--post .post-footer div {
 .home-page .campaign-sub-block {
   text-align: center;
 }
+@media screen and (max-width: 1023px) {
+  .home-page .home-news-featured .views-row {
+    margin-right: 3rem;
+  }
+  .home-page .home-feature-container {
+    margin-right: 3rem;
+  }
+}
 @media screen and (max-width: 1023px), (max-width: 767px) {
   .home-page .home-collection-virgo {
     width: 100%;
@@ -2832,6 +2840,7 @@ footer .footer--post .post-footer div {
   .home-page .home-news-featured .views-row {
     display: flex;
     flex-direction: column;
+    margin-right: 0;
   }
   .home-page .home-news-featured .views-row .field--name-field-media-image .field__item {
     height: 14rem;
@@ -2841,6 +2850,9 @@ footer .footer--post .post-footer div {
 .home-page .home-news-featured .views-row .views-field-body {
     padding: 0 0.5rem;
     max-width: 42.5rem;
+  }
+  .home-page .home-feature-container {
+    margin-right: 0;
   }
   .home-page .home-exhibits {
     padding: 0;
@@ -4243,13 +4255,13 @@ footer .footer--post .post-footer div {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
-.library-locations .view-content {
+.view-library-locations .view-content {
   display: grid;
   gap: 2rem 3rem;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   margin-top: 2rem;
 }
-.library-locations .view-content .views-row {
+.view-library-locations .view-content .views-row {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -4258,14 +4270,14 @@ footer .footer--post .post-footer div {
   align-items: flex-start;
   gap: 0.5rem;
 }
-.library-locations .view-content .views-row h2 {
+.view-library-locations .view-content .views-row h2 {
   margin-bottom: 0.25rem;
 }
-.library-locations .view-content .views-row .views-field-field-body {
+.view-library-locations .view-content .views-row .views-field-field-body {
   margin-top: 1.5rem;
 }
-.library-locations .view-content .views-row .views-field-field-email-address span,
-.library-locations .view-content .views-row .views-field-field-phone-number span {
+.view-library-locations .view-content .views-row .views-field-field-email-address span,
+.view-library-locations .view-content .views-row .views-field-field-phone-number span {
   font-weight: 500;
 }
 
