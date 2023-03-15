@@ -121,7 +121,7 @@ h4, footer .footer--main .block h2,
   line-height: 1.15;
 }
 
-h5, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday,
+h5, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .field--name-field-subnav nav ul li,
 .h5,
 .how-do-i-main .view-content .item-list ul li a,
 .how-do-i-detail .view-content h2,
@@ -161,7 +161,8 @@ h4,
 footer .footer--main .block h2,
 h5,
 .event-container .event-url .event-date .event--month,
-.event-container .event-url .event-date .event--wkday {
+.event-container .event-url .event-date .event--wkday,
+.field--name-field-subnav nav ul li {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1854,6 +1855,44 @@ figure figcaption {
     display: none !important;
   }
 }
+.field--name-field-subnav h4 {
+  padding-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.field--name-field-subnav h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #232D4B 50px, #DADADA 20px) repeat-x, repeating-linear-gradient(to right, #232D4B 0, #232D4B 5px, transparent 2px, transparent 7px) repeat-x;
+}
+.field--name-field-subnav nav ul {
+  padding-left: 0;
+}
+.field--name-field-subnav nav ul li ul {
+  padding: 1rem 0;
+  margin: 0;
+}
+.field--name-field-subnav nav ul li ul li {
+  font-size: 1rem !important;
+  font-weight: normal;
+  padding: 0.5rem 0.7rem;
+  border-left: 4px solid #E57200;
+  outline: inherit;
+  margin: 0 !important;
+}
+.field--name-field-subnav nav ul li ul li:first-child {
+  padding-top: 0;
+}
+.field--name-field-subnav nav ul li ul li:last-child {
+  padding-bottom: 0;
+}
+
 .path-user-login .user-login-form,
 .drupal-login-page .user-login-form {
   display: grid;
