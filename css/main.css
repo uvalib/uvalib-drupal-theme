@@ -1855,22 +1855,6 @@ figure figcaption {
     display: none !important;
   }
 }
-.field--name-field-subnav h4 {
-  padding-bottom: 1rem;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 20px;
-}
-.field--name-field-subnav h4::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #232D4B 50px, #DADADA 20px) repeat-x, repeating-linear-gradient(to right, #232D4B 0, #232D4B 5px, transparent 2px, transparent 7px) repeat-x;
-}
 .field--name-field-subnav nav ul {
   padding-left: 0;
 }
@@ -1891,6 +1875,24 @@ figure figcaption {
 }
 .field--name-field-subnav nav ul li ul li:last-child {
   padding-bottom: 0;
+}
+
+.hr--custom {
+  border: none;
+  border-top: 1px dashed #808080;
+  overflow: visible;
+  text-align: left;
+  height: 4px;
+}
+.hr--custom::after {
+  content: "";
+  padding: 0 4px;
+  position: relative;
+  top: -2px;
+  display: block;
+  background: linear-gradient(to right, #E57200 65px, #fff 10px) repeat-x, repeating-linear-gradient(to right, #E57200 0, #E57200 5px, transparent 2px, transparent 7px) repeat-x;
+  width: 75px;
+  height: 4px;
 }
 
 .path-user-login .user-login-form,
