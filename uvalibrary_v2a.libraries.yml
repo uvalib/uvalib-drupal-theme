@@ -60,6 +60,7 @@ base:
     js/phone-format.js: {}
     js/utils.js: {}
     js/dialog.js: {}
+    js/staff-bio.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax

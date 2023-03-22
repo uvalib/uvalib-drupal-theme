@@ -10,44 +10,44 @@
 /// OUT IN "STAFF DIRECTORY", THEREFORE IT SHOULD APPEAR
 /// FIRST IN THE ORDER.
 
-.staff-bio {
-  .field--name-field-uva-ldap-title {
-    @extend .h3;
-    margin: .5rem 0;
+// .staff-bio {
+//   .field--name-field-uva-ldap-title {
+//     @extend .h3;
+//     margin: .5rem 0;
 
-    .field__item:last-child {
-      @extend .h5;
-    }
-  }
+//     .field__item:last-child {
+//       @extend .h5;
+//     }
+//   }
   
-  .field--name-field-uva-ldap-phone,
-  .field--type-telephone,
-  .field--name-field-uva-ldap-email,
-  .field--type-email {
-    margin: 1rem 0;
-  }
+//   .field--name-field-uva-ldap-phone,
+//   .field--type-telephone,
+//   .field--name-field-uva-ldap-email,
+//   .field--type-email {
+//     margin: 1rem 0;
+//   }
 
 
-  .layout__region--second {
-    h2 {
-      @extend .h3;
-    }
+//   .layout__region--second {
+//     h2 {
+//       @extend .h3;
+//     }
 
-    section {
-      margin-top: 2rem;
+//     section {
+//       margin-top: 2rem;
 
-      &:first-child {
-        margin-top: 0;
-      }
+//       &:first-child {
+//         margin-top: 0;
+//       }
 
-      .field--name-field-professional-profile {
-        p {
-          padding-bottom: 0.25rem;
-        }
-      }
-    }
-  }
-}
+//       .field--name-field-professional-profile {
+//         p {
+//           padding-bottom: 0.25rem;
+//         }
+//       }
+//     }
+//   }
+// }
 
 .staff-directory {
   .staff-search-bar {
@@ -61,14 +61,90 @@
     margin-bottom: 3rem;
   }
 
-  tr {
-    td {
-      padding: 0.5rem;
-
-      &:nth-child(n+3) {
-        text-align: center;
-      }
+  table {
+    thead tr {
+      // display: grid;
+      // grid-template-columns: 150px repeat(2, 1fr);
+      text-align: left;
     }
   }
 
+  .staff-directory-row {
+    display: grid;
+    grid-template-columns: 110px repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(50px, auto));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    .staff-directory-image {
+      grid-area: 1 / 1 / 3 / 2;
+      img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+
+    .staff-directory-name {
+      grid-area: 1 / 2 / 2 / 3;
+      align-self: end;
+      @extend h4;
+      padding-left: 1rem;
+    }
+
+    .staff-directory-title {
+      grid-area: 2 / 2 / 3 / 3;
+      padding-left: 1rem;
+    }
+
+    .staff-directory-email {
+      grid-area: 1 / 3 / 2 / 4;
+      align-self: end;
+    }
+
+    .staff-directory-phone {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+  }
+}
+
+@media screen and (max-width: #{$mobile}) {
+  .staff-directory {
+    .staff-directory-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-column-gap: 1rem;
+      grid-row-gap: 0px;
+
+      .staff-directory-image {
+        grid-area: 1 / 1 / 4 / 2;
+        // padding-right: 1rem;
+      }
+
+      .staff-directory-name {
+        grid-area: 1 / 2 / 2 / 3;
+        padding-left: 0rem;
+        align-self: start;
+      }
+
+      .staff-directory-title {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-left: 0rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .staff-directory-email {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      .staff-directory-phone {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+    }
+  }
 }

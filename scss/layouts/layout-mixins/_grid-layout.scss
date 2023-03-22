@@ -20,6 +20,13 @@
   @include three-col;
 }
 
+.section--grid {
+  .layout__region--content {
+    display: grid;
+    @extend .two-col;
+  }
+}
+
 
 @media screen and (max-width: #{$mobile}) {
 
