@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -2917,6 +2918,137 @@ footer .footer--post .post-footer div {
     margin-left: 0 !important;
   }
 }
+/******JAN KARON EXHIBIT*******/
+.mitford .container_column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1em;
+  grid-gap: 1em;
+}
+.mitford .container_column--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.mitford .column_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mitford .container_column--1-3 {
+  grid-template-columns: 1fr 3fr;
+}
+.mitford .auto-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 0.75em;
+}
+.mitford .exhibit_JK--header {
+  color: #18635B;
+}
+.mitford .exhibit_JK--text {
+  color: #212121;
+}
+.mitford .exhibit_JK--caption {
+  color: #595959;
+}
+.mitford .exhibit_JK--accent {
+  color: #A9675A;
+}
+.mitford .exhibit_JK {
+  font-family: "Montserrat", "Times New Roman", serif;
+  color: #212121;
+}
+.mitford .exhibit_JK h1,
+.mitford .exhibit_JK h2,
+.mitford .exhibit_JK h3,
+.mitford .exhibit_JK h4,
+.mitford .exhibit_JK .h5 {
+  font-family: "Crimson Pro", sans-serif;
+  /* font-family: adobe-caslon-pro, serif; */
+  font-weight: 600;
+  font-style: normal;
+  color: #18635B;
+  text-transform: uppercase;
+}
+.mitford .exhibit_JK p:first-child {
+  margin-top: 0;
+}
+.mitford .exhibit_JK .shady {
+  background-color: #EBEAE5;
+}
+.mitford .exhibit_JK .container_column {
+  margin: 0;
+}
+.mitford .exhibit_JK--caption {
+  color: #595959;
+}
+.mitford .exhibit_JK blockquote {
+  border-left: none;
+  font-size: 1.15em;
+  line-height: 1;
+  font-style: normal;
+}
+.mitford .quotation {
+  quotes: "“" "”" "‘" "’";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+.mitford .quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 12px;
+  color: #A9675A;
+  font-size: 3em;
+}
+.mitford .quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 40px;
+  color: #A9675A;
+  font-size: 3em;
+}
+.mitford blockquote footer {
+  margin: 0;
+  text-align: right;
+  font-size: 1em;
+  font-style: italic;
+}
+.mitford .exhibit_section-block--content:hover,
+.mitford .exhibit_JK uvalib-image:hover,
+.mitford .exhibit_section-block--content:focus,
+.mitford .exhibit_JK uvalib-image:focus {
+  outline: 2px solid #A9675A;
+  outline-offset: 2px;
+}
+.mitford .exhibit_JK-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 2.5em;
+}
+@media screen and (max-width: 1023px), (max-width: 767px) {
+  .mitford .exhibit_JK .container_column,
+.mitford .exhibit_JK .auto-column {
+    grid-template-columns: 1fr;
+  }
+  .mitford .column_swap-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+}
+
 .rp-using h2 em {
   font-size: 16px;
   padding: 2rem 0;
@@ -4400,6 +4532,7 @@ footer .footer--post .post-footer div {
   height: 100px;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 10px;
 }
 .staff-directory .staff-directory-row .staff-directory-name {
   grid-area: 1/2/2/3;
