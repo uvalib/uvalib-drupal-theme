@@ -4533,7 +4533,6 @@ footer .footer--post .post-footer div {
   object-fit: cover;
   overflow: hidden;
   border-radius: 10px;
-  outline: 1px solid #232D4B;
 }
 .staff-directory .staff-directory-row .staff-directory-name {
   grid-area: 1/2/2/3;
