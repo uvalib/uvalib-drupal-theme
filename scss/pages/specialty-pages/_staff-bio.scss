@@ -67,7 +67,7 @@
       width: 14px;
       height: 14px;
       display: inline-block;
-      background-color: #E57200;
+      background-color: $uva-brand-orange;
       transform: rotate(45deg);
       margin-right: 1rem;
     }
@@ -114,7 +114,6 @@
   // Media Query
   @media screen and (max-width: #{$mobile}) {
     .bio-head .layout__region--content {
-      // display: grid;
       grid-template-columns: 1fr !important;
       grid-template-rows: auto !important;
       grid-column-gap: inherit;
