@@ -113,6 +113,7 @@ h3, .event-container .event-url .event-date .event--day,
 h4, .staff-directory .staff-directory-row .staff-directory-name, footer .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a,
+.staff-bio h2,
 .staff-bio .field__label,
 .news-page .views-row h2,
 .view-news-full-feed-of-blog-articlces .views-row h2,
@@ -4393,6 +4394,7 @@ footer .footer--post .post-footer div {
 .staff-bio .field--spacing .layout__region--content div.block:nth-of-type(2) {
   margin-top: 2rem;
 }
+.staff-bio h2::before,
 .staff-bio .field__label::before {
   content: " ";
   width: 14px;
