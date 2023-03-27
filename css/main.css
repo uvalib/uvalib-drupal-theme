@@ -11,7 +11,6 @@ h2,
 h3,
 .event-container .event-url .event-date .event--day,
 h4,
-.staff-directory .staff-directory-row .staff-directory-name,
 footer .footer--main .block h2,
 p,
 figure,
@@ -100,7 +99,6 @@ h2,
 h3, .event-container .event-url .event-date .event--day,
 .h3,
 .view-library-locations .view-content .views-row h2,
-.staff-bio .field--name-field-uva-ldap-title,
 .uvalib-bento-search .bs-header h2,
 .uvalib-bento-search .bs-header p,
 .exhibitions .current .view-content .views-field-title {
@@ -110,11 +108,9 @@ h3, .event-container .event-url .event-date .event--day,
   line-height: 1.15;
 }
 
-h4, .staff-directory .staff-directory-row .staff-directory-name, footer .footer--main .block h2,
+h4, footer .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a,
-.staff-bio h2,
-.staff-bio .field__label,
 .news-page .views-row h2,
 .view-news-full-feed-of-blog-articlces .views-row h2,
 .block-field-blocknodearticlebody h2 {
@@ -128,7 +124,6 @@ h5, .event-container .event-url .event-date .event--month, .event-container .eve
 .h5,
 .how-do-i-main .view-content .item-list ul li a,
 .how-do-i-detail .view-content h2,
-.staff-bio .field--name-field-uva-ldap-title .field__item:last-child,
 .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3,
 .exhibitions .permanent .view-content .views-row .views-field-title,
 .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title,
@@ -161,7 +156,6 @@ h2,
 h3,
 .event-container .event-url .event-date .event--day,
 h4,
-.staff-directory .staff-directory-row .staff-directory-name,
 footer .footer--main .block h2,
 h5,
 .event-container .event-url .event-date .event--month,
@@ -1118,7 +1112,6 @@ h2 a,
 h3 a,
 .event-container .event-url .event-date .event--day a,
 h4 a,
-.staff-directory .staff-directory-row .staff-directory-name a,
 footer .footer--main .block h2 a,
 h1 span a,
 h2 span a,
@@ -1138,13 +1131,10 @@ h3 a:active,
 h3 a:focus,
 .event-container .event-url .event-date .event--day a:focus,
 h4 a:hover,
-.staff-directory .staff-directory-row .staff-directory-name a:hover,
 footer .footer--main .block h2 a:hover,
 h4 a:active,
-.staff-directory .staff-directory-row .staff-directory-name a:active,
 footer .footer--main .block h2 a:active,
 h4 a:focus,
-.staff-directory .staff-directory-row .staff-directory-name a:focus,
 footer .footer--main .block h2 a:focus,
 h1 span a:hover,
 h1 span a:active,
@@ -4400,242 +4390,6 @@ footer .footer--post .post-footer div {
   }
 }
 
-.staff-bio .bio-head .layout__region--content {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 2.488rem 8px 1fr;
-  grid-column-gap: 4rem;
-  grid-row-gap: 1rem;
-  margin-bottom: 4rem;
-}
-.staff-bio .bio-head .layout__region--content .block-field-blocknodepersonfield-image {
-  grid-area: 1/1/4/2;
-}
-.staff-bio .bio-head .layout__region--content .block-field-blocknodepersonfield-image img {
-  border-radius: 10px;
-  margin: 0 auto;
-}
-.staff-bio .bio-head .layout__region--content h1 {
-  grid-area: 1/2/2/3;
-}
-.staff-bio .bio-head .layout__region--content .hr--custom {
-  grid-area: 2/2/3/3;
-  width: 100%;
-}
-.staff-bio .bio-head .layout__region--content .bio-title-container {
-  grid-area: 3/2/4/3;
-}
-.staff-bio .bio-title-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
-  gap: 1rem;
-}
-.staff-bio .bio-head-no-image {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
-  margin-bottom: 4rem;
-}
-.staff-bio .section--grid {
-  margin-top: 4rem;
-}
-.staff-bio .field--spacing .layout__region--content div.block:nth-of-type(2) {
-  margin-top: 2rem;
-}
-.staff-bio h2::before,
-.staff-bio .field__label::before {
-  content: " ";
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  background-color: #E57200;
-  transform: rotate(45deg);
-  margin-right: 1rem;
-}
-.staff-bio .field--name-field-uva-ldap-title {
-  margin: 0.75rem 0 !important;
-  padding-left: 0 !important;
-}
-.staff-bio .field--name-field-preferred-pronouns::before {
-  content: "Pronouns:";
-  font-weight: bold;
-}
-.staff-bio .field--name-field-uva-ldap-email::before {
-  content: "Email:";
-  font-weight: bold;
-}
-.staff-bio .field--name-field-uva-ldap-phone::before {
-  content: "Phone:";
-  font-weight: bold;
-}
-.staff-bio .field--name-field-primary-office-location::before {
-  content: "Office location:";
-  font-weight: bold;
-}
-.staff-bio .field--name-field-uva-ldap-email,
-.staff-bio .field--name-field-uva-ldap-phone,
-.staff-bio .field--name-field-preferred-pronouns,
-.staff-bio .field--name-field-primary-office-location {
-  display: flex;
-  gap: 1rem;
-}
-.staff-bio .field--name-field-uva-ldap-email .field__label::before,
-.staff-bio .field--name-field-uva-ldap-phone .field__label::before,
-.staff-bio .field--name-field-preferred-pronouns .field__label::before,
-.staff-bio .field--name-field-primary-office-location .field__label::before {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .staff-bio .bio-head .layout__region--content {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto !important;
-    grid-column-gap: inherit;
-    grid-row-gap: 1rem;
-    margin-bottom: 4rem;
-  }
-  .staff-bio .bio-head .layout__region--content .block-field-blocknodepersonfield-image {
-    grid-area: inherit;
-  }
-  .staff-bio .bio-head .layout__region--content h1 {
-    grid-area: inherit;
-  }
-  .staff-bio .bio-head .layout__region--content .hr--custom {
-    grid-area: inherit;
-  }
-  .staff-bio .bio-head .layout__region--content .bio-title-container {
-    grid-area: inherit;
-  }
-  .staff-bio .section--grid {
-    margin-top: 2rem;
-  }
-}
-
-.staff-directory .staff-search-bar {
-  margin: 4rem 0;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 100;
-  width: 100%;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  transform: inherit;
-  text-align: inherit;
-  margin-bottom: 3rem;
-}
-.staff-directory .staff-search-bar form {
-  display: flex;
-  max-width: 70%;
-  margin: 0 auto;
-}
-.staff-directory .staff-search-bar form input {
-  flex: 1;
-  border-left: 1px solid #DADADA;
-  border-bottom: 1px solid #DADADA;
-  border-top: 1px solid #DADADA;
-  border-right: 0px;
-  text-indent: 1rem;
-  border-radius: 0.3rem 0 0 0.3rem;
-}
-.staff-directory .staff-search-bar form button {
-  background-color: #007BAC;
-  padding: 10px 12px;
-  color: #fff;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border-left: 0px;
-  border-right: 1px solid #007BAC;
-  border-bottom: 1px solid #007BAC;
-  border-top: 1px solid #007BAC;
-  border-radius: 0 0.3rem 0.3rem 0;
-}
-.staff-directory .staff-search-bar form button::before {
-  content: url(../assets/svg-icons/color/magnifying-glass--white.svg);
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
-}
-.staff-directory .staff-search-bar form button:hover {
-  background-color: #005679;
-}
-.staff-directory table thead tr {
-  text-align: left;
-}
-.staff-directory .staff-directory-row {
-  display: grid;
-  grid-template-columns: 110px repeat(2, 1fr);
-  grid-template-rows: repeat(2, minmax(50px, auto));
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 0px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.staff-directory .staff-directory-row .staff-directory-image {
-  grid-area: 1/1/3/2;
-}
-.staff-directory .staff-directory-row .staff-directory-image img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.staff-directory .staff-directory-row .staff-directory-name {
-  grid-area: 1/2/2/3;
-  align-self: end;
-  padding-left: 1rem;
-}
-.staff-directory .staff-directory-row .staff-directory-title {
-  grid-area: 2/2/3/3;
-  padding-left: 1rem;
-}
-.staff-directory .staff-directory-row .staff-directory-email {
-  grid-area: 1/3/2/4;
-  align-self: end;
-}
-.staff-directory .staff-directory-row .staff-directory-phone {
-  grid-area: 2/3/3/4;
-}
-
-@media screen and (max-width: 767px) {
-  .staff-directory .staff-directory-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-column-gap: 1rem;
-    grid-row-gap: 0px;
-  }
-  .staff-directory .staff-directory-row .staff-directory-image {
-    grid-area: 1/1/4/2;
-  }
-  .staff-directory .staff-directory-row .staff-directory-name {
-    grid-area: 1/2/2/3;
-    padding-left: 0rem;
-    align-self: start;
-  }
-  .staff-directory .staff-directory-row .staff-directory-title {
-    grid-area: 2/2/3/3;
-    padding-left: 0rem;
-    padding-bottom: 1.5rem;
-  }
-  .staff-directory .staff-directory-row .staff-directory-email {
-    grid-area: 3/2/4/3;
-  }
-  .staff-directory .staff-directory-row .staff-directory-phone {
-    grid-area: 4/2/5/3;
-  }
-}
 .how-do-i-main .view-content .item-list {
   margin-top: 3rem;
 }
