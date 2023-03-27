@@ -121,7 +121,7 @@ emailLink.textContent = emailURL;
 emailDiv.innerHTML = "";
 emailDiv.appendChild(emailLink);
 
-// Add the appropriate class to change "schedule a consultation" link into a button.
+// Add the appropriate class to change "schedule a consultation" link into a button
 document.addEventListener("DOMContentLoaded", function () {
 	var parentDiv = document.querySelector(
 		".block-field-blocknodepersonfield-schedule"
