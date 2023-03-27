@@ -4480,7 +4480,7 @@ footer .footer--post .post-footer div {
   font-weight: bold;
 }
 .staff-bio .block-field-blocknodepersonfield-schedule h2 {
-  display: hidden;
+  display: none;
 }
 .staff-bio .field--name-field-uva-ldap-email,
 .staff-bio .field--name-field-uva-ldap-phone,
