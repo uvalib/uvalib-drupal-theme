@@ -120,3 +120,13 @@ emailLink.textContent = emailURL;
 // Replace the email div's contents with the anchor element
 emailDiv.innerHTML = "";
 emailDiv.appendChild(emailLink);
+
+// Add the appropriate class to change "schedule a consultation" link into a button.
+document.addEventListener("DOMContentLoaded", function () {
+	var parentDiv = document.querySelector(
+		".block-field-blocknodepersonfield-schedule"
+	);
+	var childLink = parentDiv.querySelector("a");
+	childLink.classList.add("uvalib_link--button");
+	childLink.innerHTML = "Schedule a Consultation";
+});

@@ -4479,6 +4479,9 @@ footer .footer--post .post-footer div {
   content: "Office location:";
   font-weight: bold;
 }
+.staff-bio .block-field-blocknodepersonfield-schedule h2 {
+  display: hidden;
+}
 .staff-bio .field--name-field-uva-ldap-email,
 .staff-bio .field--name-field-uva-ldap-phone,
 .staff-bio .field--name-field-preferred-pronouns,
