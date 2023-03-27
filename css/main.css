@@ -2998,7 +2998,8 @@ footer .footer--post .post-footer div {
 .mitford .exhibit_JK h2,
 .mitford .exhibit_JK h3,
 .mitford .exhibit_JK h4,
-.mitford .exhibit_JK .h5 .jk-list li a {
+.mitford .exhibit_JK .h5,
+.mitford .jk-list li a {
   font-family: "Crimson Pro", sans-serif !important;
   font-weight: 600 !important;
   font-style: normal !important;
