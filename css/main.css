@@ -2456,6 +2456,24 @@ footer .footer--post .post-footer div {
     display: inherit;
   }
 }
+.flex-basic-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.flex-basic-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
 .two-col, .section--grid .layout__region--content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4432,7 +4450,7 @@ footer .footer--post .post-footer div {
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .staff-bio .bio-head-no-image {
   display: flex;
