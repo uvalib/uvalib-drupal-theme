@@ -58,6 +58,13 @@ if (primaryOfficeLocation) {
 	div.appendChild(primaryOfficeLocation);
 }
 
+const scheduleConsultation = document.querySelector(
+	".block-field-blocknodepersonfield-schedule"
+);
+if (scheduleConsultation) {
+	div.appendChild(scheduleConsultation);
+}
+
 /// CHECK TO SEE IF THE BIO HAS AN IMAGE. IF NOT, REPLACE THE PARENT CLASS
 document.addEventListener("DOMContentLoaded", function () {
 	// get the bio-head element

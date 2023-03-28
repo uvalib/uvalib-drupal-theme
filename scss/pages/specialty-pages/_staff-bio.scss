@@ -31,6 +31,9 @@
     }
   }
 
+  /// THIS CLASS IS APPLIED BY STAFF-BIO.JS TO PUT A CLASS ON THE CHILD DIVS
+  /// if other elements are added / removed from this block, be sure to edit
+  /// the staff-bio.js file
   .bio-title-container {
     display: flex;
     flex-direction: column;
@@ -41,6 +44,7 @@
     gap: 1rem;
   }
 
+  // THIS CLASS IS APPLIED BY STAFF-BIO.JS IF NO IMAGE IS PRESENT
   .bio-head-no-image {
     display: flex;
     flex-direction: column;

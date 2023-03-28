@@ -11,5 +11,6 @@
 @forward 'general';
 
 @forward './layout-mixins/backgrounds';
+@forward './layout-mixins/flex-layout';
 @forward './layout-mixins/grid-layout';
 @forward 'event-container';
