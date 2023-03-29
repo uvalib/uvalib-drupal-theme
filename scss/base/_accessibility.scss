@@ -1,19 +1,6 @@
 @use 'colors'as *;
 @use '../mixins/index'as *;
 
-// a,
-// ul li a {
-//   text-decoration: underline !important;
-//   // outline: none;
-
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     text-decoration: none !important;
-//     // outline: none;
-//   }
-// }
-
 a,
 span a {
   color: $uva-blue-alt-A;
@@ -23,6 +10,9 @@ span a {
   &:active,
   &:focus {
     text-decoration: none;
+  }
+  &:focus {
+    @include focus;
   }
 }
 
@@ -66,44 +56,9 @@ mark::after {
   content: " [highlight end] ";
 }
 
-// a {
-//   color: $uva-blue-alt-dark;
+// TWO TONE FOCUS STATE
 
-//   // link colors as specifed in the old guide
-//   span {
-//     text-decoration: underline;
-//     // color: #0000FF;
 
-//     &:hover {
-//       text-decoration: none;
-//     }
-
-//     // &:visited {
-//     //   color: #660099;
-//     // }
-//   }
-
-//   // this needs to go
-//   &:link {
-//     paper-button {
-//       text-decoration: none;
-//     }
-//   }
-
-//   text-decoration: underline !important;
-
-//   &:hover {
-//     text-decoration: none !important;
-//   }
-
-//   &:active {
-//     text-decoration: none !important;
-//   }
-
-//   &:focus {
-//     text-decoration: none !important;
-//   }
-// }
 
 // accessibility-outline-on-light-bg
 .accessibility-outline-on-light-bg {

@@ -56,19 +56,19 @@ a.uvalib_link--button--active {
   background-color: $uva-brand-blue;
 }
 
-.uvalib-button:not([disabled]):focus,
-.uvalib-button:not([disabled]).uvalib-focus,
-a.uvalib_link--button:not([disabled]):focus,
-a.uvalib_link--button:not([disabled]).uvalib-focus {
-  @include focus-dk;
-}
+// .uvalib-button:not([disabled]):focus,
+// .uvalib-button:not([disabled]).uvalib-focus,
+// a.uvalib_link--button:not([disabled]):focus,
+// a.uvalib_link--button:not([disabled]).uvalib-focus {
+//   @include focus-dk;
+// }
 
-.uvalib-button--inverse:not([disabled]):focus,
-.uvalib-button--inverse:not([disabled]).uvalib-focus,
-a.uvalib_link--button--inverse:not([disabled]):focus,
-a.uvalib_link--button--inverse:not([disabled]).uvalib-focus {
-  @include focus-lt;
-}
+// .uvalib-button--inverse:not([disabled]):focus,
+// .uvalib-button--inverse:not([disabled]).uvalib-focus,
+// a.uvalib_link--button--inverse:not([disabled]):focus,
+// a.uvalib_link--button--inverse:not([disabled]).uvalib-focus {
+//   @include focus-lt;
+// }
 
 a.uvalib_link--button i {
   padding: 2px 4px;

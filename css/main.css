@@ -1112,6 +1112,12 @@ span a:active,
 span a:focus {
   text-decoration: none;
 }
+a:focus,
+span a:focus {
+  outline: 2px solid #005679;
+  outline-offset: 0.25rem;
+  box-shadow: 0px 0px 0px 2px white;
+}
 
 h1 a,
 h2 a,
@@ -1182,16 +1188,6 @@ mark::before {
 
 mark::after {
   content: " [highlight end] ";
-}
-
-.accessibility-outline-on-light-bg {
-  outline-offset: 0.25em;
-  outline: 2px dotted #005679;
-}
-
-.accessibility-outline-on-dark-bg {
-  outline-offset: 0.25em;
-  outline: 2px dotted #BFE7F7;
 }
 
 ul li a {
@@ -1486,25 +1482,6 @@ a.uvalib_link--button.uvalib_link--button--hover {
 a.uvalib_link--button:active,
 a.uvalib_link--button--active {
   background-color: #232D4B;
-}
-
-.uvalib-button:not([disabled]):focus, .path-user-login .user-login-form .form-actions input:not([disabled]):focus,
-.drupal-login-page .user-login-form .form-actions input:not([disabled]):focus,
-.uvalib-button:not([disabled]).uvalib-focus,
-.path-user-login .user-login-form .form-actions input:not([disabled]).uvalib-focus,
-.drupal-login-page .user-login-form .form-actions input:not([disabled]).uvalib-focus,
-a.uvalib_link--button:not([disabled]):focus,
-a.uvalib_link--button:not([disabled]).uvalib-focus {
-  outline-offset: 0.25em;
-  outline: 2px dotted #005679;
-}
-
-.uvalib-button--inverse:not([disabled]):focus,
-.uvalib-button--inverse:not([disabled]).uvalib-focus,
-a.uvalib_link--button--inverse:not([disabled]):focus,
-a.uvalib_link--button--inverse:not([disabled]).uvalib-focus {
-  outline-offset: 0.25em;
-  outline: 2px dotted #BFE7F7;
 }
 
 a.uvalib_link--button i {
@@ -2105,7 +2082,10 @@ nav #uvalibrary-nav .mainlibrary-nav ul a {
   font-weight: 400;
 }
 nav #uvalibrary-nav .mainlibrary-nav ul a:focus {
-  outline: 2px solid rgba(0, 90, 156, 0.75);
+  outline: 2px solid #005679;
+  outline-offset: 0.25rem;
+  box-shadow: 0px 0px 0px 2px white;
+  outline-offset: -0.25rem;
   position: relative;
 }
 nav #uvalibrary-nav .mainlibrary-nav li:not(.li-1) {
@@ -2141,8 +2121,10 @@ nav #uvalibrary-nav .mainlibrary-nav button {
   padding: 11.5px 1rem;
 }
 nav #uvalibrary-nav .mainlibrary-nav button:focus {
-  border-color: #232D4B;
-  outline: 2px solid rgba(0, 90, 156, 0.75);
+  outline: 2px solid #005679;
+  outline-offset: 0.25rem;
+  box-shadow: 0px 0px 0px 2px white;
+  outline-offset: -0.25rem;
   position: relative;
 }
 nav #uvalibrary-nav .mainlibrary-nav button:hover,
