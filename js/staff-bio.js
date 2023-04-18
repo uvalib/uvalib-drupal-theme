@@ -135,5 +135,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 	var childLink = parentDiv.querySelector("a");
 	childLink.classList.add("uvalib_link--button");
-	childLink.innerHTML = "Schedule a Consultation";
+	childLink.innerHTML = "Schedule a consultation";
 });
