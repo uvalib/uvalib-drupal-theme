@@ -68,6 +68,19 @@ if (document.querySelector("body.staff-bio")) {
 		div.appendChild(scheduleConsultation);
 	}
 
+	/// IF NO TITLE IS PRESENT, HIDE ENTIRE ROW
+	document.addEventListener("DOMContentLoaded", function () {
+		const rowList = document.querySelectorAll(".staff-directory-row");
+		rowList.forEach((row) => {
+			const title = row.querySelector(
+				".block-field-blocknodepersonfield-uva-ldap-title"
+			);
+			if (!title) {
+				row.style.display = "none";
+			}
+		});
+	});
+
 	/// CHECK TO SEE IF THE BIO HAS AN IMAGE. IF NOT, REPLACE THE PARENT CLASS
 	document.addEventListener("DOMContentLoaded", function () {
 		// get the bio-head element
