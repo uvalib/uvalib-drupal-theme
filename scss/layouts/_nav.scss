@@ -110,7 +110,7 @@ nav {
           font-weight: map-get($font-weights, book);
 
           &:focus {
-            @include focus;
+            // @include focus;
             outline-offset: -0.25rem;
             // outline: 2px solid rgb(0 90 156 / 75%);
             position: relative;
@@ -157,7 +157,7 @@ nav {
     }
 
     .mainlibrary-nav button:focus {
-      @include focus;
+      // @include focus;
       outline-offset: -0.25rem;
       // border-color: $uva-brand-blue;
       // outline: 2px solid rgb(0 90 156 / 75%);

@@ -1,20 +1,23 @@
 @use 'colors'as *;
 @use '../mixins/index'as *;
 
-a,
-span a {
+a, span a {
   color: $uva-blue-alt-A;
   text-decoration: underline;
-
   &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     text-decoration: none;
   }
-  &:focus {
-    @include focus;
+  &:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+  &:-webkit-any-link:focus-visible {
+    outline-offset: 2px;
   }
 }
+
 
 h1 a,
 h2 a,
@@ -31,6 +34,13 @@ h4 span a {
   &:active,
   &:focus {
     text-decoration: underline;
+  }
+  &:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+
+  &:-webkit-any-link:focus-visible {
+    outline-offset: 2px;
   }
 }
 mark {
@@ -56,19 +66,6 @@ mark::after {
   content: " [highlight end] ";
 }
 
-// TWO TONE FOCUS STATE
-
-
-
-// accessibility-outline-on-light-bg
-.accessibility-outline-on-light-bg {
-  @include focus-dk;
-}
-
-// accessibility-outline-on-dark-bg 
-.accessibility-outline-on-dark-bg {
-  @include focus-lt;
-}
 
 ul {
   li {
