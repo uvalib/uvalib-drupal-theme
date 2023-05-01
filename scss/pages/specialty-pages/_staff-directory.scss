@@ -1,54 +1,6 @@
 @use '../../mixins/index'as *;
 @use '../../base/index'as *;
 
-/// NOTE - THE WAY DRUPAL CLASSES HAVE BEEN APPLIED,
-/// THE STAFF DIRECTORY HAS BOTH "STAFF-DIRECTORY" AND
-/// "STAFF-BIO" CLASSES. THE STAFF BIO PAGES, ONLY HAVE
-/// THE "STAFF-BIO" CLASS.
-/// 
-/// CLASSES APPLIED TO STAFF-BIO MAY NEED TO BE CLEARED
-/// OUT IN "STAFF DIRECTORY", THEREFORE IT SHOULD APPEAR
-/// FIRST IN THE ORDER.
-
-// .staff-bio {
-//   .field--name-field-uva-ldap-title {
-//     @extend .h3;
-//     margin: .5rem 0;
-
-//     .field__item:last-child {
-//       @extend .h5;
-//     }
-//   }
-  
-//   .field--name-field-uva-ldap-phone,
-//   .field--type-telephone,
-//   .field--name-field-uva-ldap-email,
-//   .field--type-email {
-//     margin: 1rem 0;
-//   }
-
-
-//   .layout__region--second {
-//     h2 {
-//       @extend .h3;
-//     }
-
-//     section {
-//       margin-top: 2rem;
-
-//       &:first-child {
-//         margin-top: 0;
-//       }
-
-//       .field--name-field-professional-profile {
-//         p {
-//           padding-bottom: 0.25rem;
-//         }
-//       }
-//     }
-//   }
-// }
-
 .staff-directory {
   .staff-search-bar {
     margin: 4rem 0;
@@ -63,8 +15,6 @@
 
   table {
     thead tr {
-      // display: grid;
-      // grid-template-columns: 150px repeat(2, 1fr);
       text-align: left;
     }
   }
@@ -95,6 +45,12 @@
       align-self: end;
       @extend h4;
       padding-left: 1rem;
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
 
     .staff-directory-title {
@@ -124,7 +80,6 @@
 
       .staff-directory-image {
         grid-area: 1 / 1 / 4 / 2;
-        // padding-right: 1rem;
       }
 
       .staff-directory-name {

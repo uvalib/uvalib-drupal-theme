@@ -4621,6 +4621,12 @@ footer .footer--post .post-footer div {
   align-self: end;
   padding-left: 1rem;
 }
+.staff-directory .staff-directory-row .staff-directory-name a {
+  text-decoration: underline;
+}
+.staff-directory .staff-directory-row .staff-directory-name a:hover {
+  text-decoration: none;
+}
 .staff-directory .staff-directory-row .staff-directory-title {
   grid-area: 2/2/3/3;
   padding-left: 1rem;
