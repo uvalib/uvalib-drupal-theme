@@ -67,6 +67,7 @@ base:
     - core/drupal
     - core/drupalSettings
     - core/jquery.once
+    - core/modernizr
 # dialog:
 #   version: VERSION
 #   css:
