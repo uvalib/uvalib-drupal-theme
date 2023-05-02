@@ -37,11 +37,12 @@
 		<head-placeholder token="{{ placeholder_token }}">
 			<title>{{ head_title|safe_join(' | ') }}</title>
 			<css-placeholder token="{{ placeholder_token }}">
+				<js-placeholder token="{{ placeholder_token }}"></head>
 				<body{{attributes.addClass(body_classes)}}>
 					{#
-																																								      Keyboard navigation/accessibility link to main content section in
-																																								      page.html.twig.
-																																								    #}
+										      Keyboard navigation/accessibility link to main content section in
+										      page.html.twig.
+										    #}
 					<a href="#main-content" class="visually-hidden focusable skip-link">
 						{{ 'Skip to main content'|t }}
 					</a>
