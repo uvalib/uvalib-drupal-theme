@@ -6,10 +6,12 @@ version: 0.2
 
 env:
   variables:
-    target_host: library-drupal-dev-0.internal.lib.virginia.edu
+    target_host0: library-drupal-dev-0.internal.lib.virginia.edu
+    target_host1: library-drupal-dev-1.internal.lib.virginia.edu
     target_host_user: aws_deploy
     target_host_key: aws_deploy
-    target_command: "sudo docker exec drupal-0 /opt/drupal/util/docker-composer/scripts/pull-uvalib-drupal-theme" 
+    target_command0: "sudo docker exec drupal-0 /opt/drupal/util/docker-composer/scripts/pull-uvalib-drupal-theme" 
+    target_command1: "sudo docker exec drupal-1 /opt/drupal/util/docker-composer/scripts/pull-uvalib-drupal-theme" 
 
 phases:
   install:
@@ -31,8 +33,10 @@ phases:
 
   build:
     commands:
-      - echo "Executing as ${target_host_user} on ${target_host}, command \"${target_command}\""
-      - ssh -oStrictHostKeyChecking=accept-new -i ${PRIVATE_KEY} ${target_host_user}@${target_host} ${target_command}
+      - echo "Executing as ${target_host_user} on ${target_host0}, command \"${target_command0}\""
+      - ssh -oStrictHostKeyChecking=accept-new -i ${PRIVATE_KEY} ${target_host_user}@${target_host0} ${target_command0}
+      - echo "Executing as ${target_host_user} on ${target_host1}, command \"${target_command1}\""
+      - ssh -oStrictHostKeyChecking=accept-new -i ${PRIVATE_KEY} ${target_host_user}@${target_host1} ${target_command1}
 
 #  post_build:
 #    commands:
