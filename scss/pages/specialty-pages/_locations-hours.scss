@@ -31,4 +31,11 @@
       }
     }
   }
+  .hours-locations {
+    outline: 2px solid blue;
+
+    .location-single {
+      outline: 1px solid orange;
+    }
+  }
 }
