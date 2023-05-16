@@ -77,6 +77,14 @@
       margin-right: 1rem;
     }
   }
+  .footer--main {
+    h2, 
+    .field__label {
+      &::before {
+        content: none;
+      }
+    }
+  }
   
   .field--name-field-uva-ldap-title {
     @extend .h3;
