@@ -9,6 +9,7 @@ body,
 h1,
 h2,
 h3,
+.library-hours .uva-library--hours .weekly-hours-header-section,
 .event-container .event-url .event-date .event--day,
 h4,
 .staff-directory .staff-directory-row .staff-directory-name,
@@ -97,9 +98,9 @@ h2,
   line-height: 1.15;
 }
 
-h3, .event-container .event-url .event-date .event--day,
+h3, .library-hours .uva-library--hours .weekly-hours-header-section, .event-container .event-url .event-date .event--day,
 .h3,
-.view-library-locations .view-content .views-row h2,
+.library-hours .uva-library--locations .view-content .views-row h2,
 .staff-bio .field--name-field-uva-ldap-title,
 .uvalib-bento-search .bs-header h2,
 .uvalib-bento-search .bs-header p,
@@ -159,6 +160,7 @@ h1, h2, .h1, .h2, .news-page .views-row h2:first-of-type,
 
 h2,
 h3,
+.library-hours .uva-library--hours .weekly-hours-header-section,
 .event-container .event-url .event-date .event--day,
 h4,
 .staff-directory .staff-directory-row .staff-directory-name,
@@ -1116,6 +1118,7 @@ span a:focus {
 h1 a,
 h2 a,
 h3 a,
+.library-hours .uva-library--hours .weekly-hours-header-section a,
 .event-container .event-url .event-date .event--day a,
 h4 a,
 .staff-directory .staff-directory-row .staff-directory-name a,
@@ -1123,6 +1126,7 @@ footer .footer--main .block h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
+.library-hours .uva-library--hours .weekly-hours-header-section span a,
 h4 span a {
   color: #232D4B;
   text-decoration: none;
@@ -1132,10 +1136,13 @@ h2 a:hover,
 h2 a:active,
 h2 a:focus,
 h3 a:hover,
+.library-hours .uva-library--hours .weekly-hours-header-section a:hover,
 .event-container .event-url .event-date .event--day a:hover,
 h3 a:active,
+.library-hours .uva-library--hours .weekly-hours-header-section a:active,
 .event-container .event-url .event-date .event--day a:active,
 h3 a:focus,
+.library-hours .uva-library--hours .weekly-hours-header-section a:focus,
 .event-container .event-url .event-date .event--day a:focus,
 h4 a:hover,
 .staff-directory .staff-directory-row .staff-directory-name a:hover,
@@ -1766,7 +1773,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   content: attr(data-checked);
   position: absolute;
   top: 0;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -1774,14 +1780,9 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   content: attr(data-unchecked);
   position: absolute;
   z-index: 5;
-  text-transform: uppercase;
   text-align: center;
   background: blue;
   transform: translate3d(0, 0, 0);
-}
-
-input[aria-pressed=true] .toggle__switch::before {
-  content: "fred";
 }
 
 .toggle input[type=checkbox][disabled] ~ label {
@@ -1797,7 +1798,6 @@ input[aria-pressed=true] .toggle__switch::before {
 .toggle input[type=checkbox]:hover ~ label .toggle__switch:after {
   color: white;
   background-color: blue;
-  border-radius: 10px;
 }
 
 .toggle input[type=checkbox]:hover ~ label {
@@ -1823,7 +1823,16 @@ input[aria-pressed=true] .toggle__switch::before {
 
 .toggle input[type=checkbox]:checked:focus ~ label .toggle__switch:after,
 .toggle input[type=checkbox]:checked:hover ~ label .toggle__switch:after {
-  color: #bababa;
+  color: white;
+}
+
+.toggle input[type=checkbox]:checked::after {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  content: url(../assets/svg-icons/triangle-exclamation-solid.svg);
+  margin: 0.55rem;
+  outline: 1px solid red;
 }
 
 .toggle label .toggle__label-text {
@@ -1836,13 +1845,14 @@ input[aria-pressed=true] .toggle__switch::before {
 }
 
 .toggle label .toggle__switch:before {
-  color: grey;
+  color: #2b2b2b;
 }
 
 .toggle label .toggle__switch:after {
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
   transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
-  color: lightgrey;
+  color: white;
+  font-weight: bold;
 }
 
 .toggle input[type=checkbox]:focus ~ label .toggle__switch:after,
@@ -1864,13 +1874,14 @@ input[aria-pressed=true] .toggle__switch::before {
 }
 
 .toggle label .toggle__switch {
-  height: 36px;
-  flex: 0 0 300px;
-  border-radius: 4px;
+  height: 58px;
+  flex: 0 0 324px;
+  border-radius: 10px;
 }
 
 .toggle label .toggle__switch:before {
-  left: 150px;
+  top: 10px;
+  left: 166px;
   font-size: inherit;
   line-height: 36px;
   width: 150px;
@@ -1878,11 +1889,11 @@ input[aria-pressed=true] .toggle__switch::before {
 }
 
 .toggle label .toggle__switch:after {
-  top: 6px;
-  left: 6px;
-  border-radius: 2px;
-  width: 144px;
-  line-height: 24px;
+  top: 12px;
+  left: 12px;
+  border-radius: 10px;
+  width: 139px;
+  line-height: 33px;
   font-size: inherit;
 }
 
@@ -4859,13 +4870,31 @@ footer .footer--post .post-footer div {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
-.view-library-locations .view-content {
+.library-hours .toggle-header {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  align-items: center;
+  gap: 2rem;
+}
+.library-hours .toggle-header .hr--custom {
+  width: 100%;
+}
+.library-hours .uva-library--hours, .library-hours .uva-library--locations {
+  margin: 2rem 0;
+}
+.library-hours .uva-library--locations .views-field-nothing {
+  width: 100%;
+}
+.library-hours .uva-library--locations .views-element-container {
+  margin-bottom: 4rem;
+}
+.library-hours .uva-library--locations .view-content {
   display: grid;
   gap: 2rem 3rem;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   margin-top: 2rem;
 }
-.view-library-locations .view-content .views-row {
+.library-hours .uva-library--locations .view-content .views-row {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -4874,21 +4903,49 @@ footer .footer--post .post-footer div {
   align-items: flex-start;
   gap: 0.5rem;
 }
-.view-library-locations .view-content .views-row h2 {
+.library-hours .uva-library--locations .view-content .views-row:hover {
+  outline: 1px solid magenta;
+}
+.library-hours .uva-library--locations .view-content .views-row > div {
+  padding: 0 0.5rem;
+}
+.library-hours .uva-library--locations .view-content .views-row > div:first-child {
+  padding: 0;
+}
+.library-hours .uva-library--locations .view-content .views-row .views-field-field-main-image {
+  width: 100%;
+  max-height: 16rem;
+  overflow: hidden;
+}
+.library-hours .uva-library--locations .view-content .views-row .views-field-field-main-image img {
+  object-fit: cover;
+}
+.library-hours .uva-library--locations .view-content .views-row h2 {
   margin-bottom: 0.25rem;
 }
-.view-library-locations .view-content .views-row .views-field-field-body {
+.library-hours .uva-library--locations .view-content .views-row .views-field-field-body {
   margin-top: 1.5rem;
 }
-.view-library-locations .view-content .views-row .views-field-field-email-address span,
-.view-library-locations .view-content .views-row .views-field-field-phone-number span {
+.library-hours .uva-library--locations .view-content .views-row .views-field-field-email-address span,
+.library-hours .uva-library--locations .view-content .views-row .views-field-field-phone-number span {
   font-weight: 500;
 }
-.view-library-locations .hours-locations {
+.library-hours .uva-library--hours {
   outline: 2px solid blue;
 }
-.view-library-locations .hours-locations .location-single {
-  outline: 1px solid orange;
+.library-hours .uva-library--hours .weekly-hours-header-section {
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.library-hours .uva-library--hours table {
+  table-layout: auto;
+}
+.library-hours .uva-library--hours thead {
+  background-color: #F1F1F1;
+  height: 5rem;
+}
+.library-hours .uva-library--hours tbody tr th {
+  font-weight: normal;
 }
 
 .sustainable-scholarship .intro-block-half {

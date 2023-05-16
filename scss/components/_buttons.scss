@@ -364,7 +364,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   content: attr(data-checked);
   position: absolute;
   top: 0;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   text-align: center;
 }
 
@@ -372,7 +372,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   content: attr(data-unchecked);
   position: absolute;
   z-index: 5;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   text-align: center;
   //button at rest
   background: blue;
@@ -392,7 +392,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 .toggle input[type=checkbox]:hover~label .toggle__switch:after {
   color: white;
   background-color: blue;
-  border-radius: 10px;
 }
 
 .toggle input[type=checkbox]:hover~label {
@@ -418,7 +417,17 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 
 .toggle input[type=checkbox]:checked:focus~label .toggle__switch:after,
 .toggle input[type=checkbox]:checked:hover~label .toggle__switch:after {
-  color: #bababa;
+  color: white;
+  //location checked
+}
+
+.toggle input[type=checkbox]:checked::after {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  content: $icon-warning;
+  margin: .55rem;
+  outline: 1px solid red;
 }
 
 .toggle label .toggle__label-text {
@@ -431,13 +440,15 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 }
 
 .toggle label .toggle__switch:before {
-  color: grey;
+  color: #2b2b2b;
+  // unchecked
 }
 
 .toggle label .toggle__switch:after {
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
   transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
-  color: lightgrey;
+  color: white;
+  font-weight: bold;
 }
 
 .toggle input[type=checkbox]:focus~label .toggle__switch:after,
@@ -447,6 +458,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 
 .toggle input[type=checkbox]:checked~label .toggle__switch:after {
   transform: translate3d(144px, 0, 0);
+
 }
 
 .toggle input[type=checkbox]:checked:focus~label .toggle__switch:after,
@@ -459,13 +471,14 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 }
 
 .toggle label .toggle__switch {
-  height: 36px;
-  flex: 0 0 300px;
-  border-radius: 4px;
+  height: 58px;
+  flex: 0 0 324px;
+  border-radius: 10px;
 }
 
 .toggle label .toggle__switch:before {
-  left: 150px;
+  top: 10px;
+  left: 166px;
   font-size: inherit;
   line-height: 36px;
   width: 150px;
@@ -473,11 +486,11 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 }
 
 .toggle label .toggle__switch:after {
-  top: 6px;
-  left: 6px;
-  border-radius: 2px;
-  width: 144px;
-  line-height: 24px;
+  top: 12px;
+  left: 12px;
+  border-radius: 10px;
+  width: 139px;
+  line-height: 33px;
   font-size: inherit;
 }
 
