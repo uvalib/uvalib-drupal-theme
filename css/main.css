@@ -4938,14 +4938,32 @@ footer .footer--post .post-footer div {
   margin-bottom: 3rem;
 }
 .library-hours .uva-library--hours table {
-  table-layout: auto;
+  width: 100%;
+  table-layout: fixed;
 }
-.library-hours .uva-library--hours thead {
+.library-hours .uva-library--hours table tbody:first-of-type {
   background-color: #F1F1F1;
-  height: 5rem;
 }
-.library-hours .uva-library--hours tbody tr th {
-  font-weight: normal;
+.library-hours .uva-library--hours table tbody:last-of-type th {
+  font-weight: 400;
+}
+.library-hours .uva-library--hours table tr td {
+  text-align: center;
+}
+.library-hours .uva-library--hours table tr td:not(:first-child) {
+  outline: 1px solid red;
+}
+.library-hours .uva-library--hours .location-column {
+  width: 16rem;
+}
+@media (min-width: 700px) and (max-width: 999px) {
+  .library-hours table tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .library-hours table tbody tr {
+    width: 50%;
+  }
 }
 
 .sustainable-scholarship .intro-block-half {
