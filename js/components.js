@@ -18,6 +18,7 @@
 // 	}
 // });
 
+// Attempt 2
 const toggleButton = document.querySelector(".toggle-button");
 const listDiv = document.querySelector(".list-view");
 const gridDiv = document.querySelector(".grid-view");

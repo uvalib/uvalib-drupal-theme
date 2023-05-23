@@ -80,9 +80,9 @@
       align-items: flex-start;
       gap: 0.5rem;
 
-      &:hover {
-        outline: 1px solid magenta;
-      }
+      // &:hover {
+      //   outline: 1px solid magenta;
+      // }
 
       & > div {
         padding: 0 0.5rem;
@@ -146,7 +146,7 @@
         text-align: center;
         &:not(:first-child) {
           
-          outline: 1px solid red;
+          // outline: 1px solid red;
         }
       }
     }
