@@ -9,9 +9,9 @@ body,
 h1,
 h2,
 h3,
-.library-hours .uva-library--hours .weekly-hours-header-section,
 .event-container .event-url .event-date .event--day,
 h4,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
 .staff-directory .staff-directory-row .staff-directory-name,
 footer .footer--main .block h2,
 p,
@@ -98,7 +98,7 @@ h2,
   line-height: 1.15;
 }
 
-h3, .library-hours .uva-library--hours .weekly-hours-header-section, .event-container .event-url .event-date .event--day,
+h3, .event-container .event-url .event-date .event--day,
 .h3,
 .library-hours .uva-library--locations .view-content .views-row h2,
 .staff-bio .field--name-field-uva-ldap-title,
@@ -111,7 +111,7 @@ h3, .library-hours .uva-library--hours .weekly-hours-header-section, .event-cont
   line-height: 1.15;
 }
 
-h4, .staff-directory .staff-directory-row .staff-directory-name, footer .footer--main .block h2,
+h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, footer .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a,
 .staff-bio h2,
@@ -160,9 +160,9 @@ h1, h2, .h1, .h2, .news-page .views-row h2:first-of-type,
 
 h2,
 h3,
-.library-hours .uva-library--hours .weekly-hours-header-section,
 .event-container .event-url .event-date .event--day,
 h4,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
 .staff-directory .staff-directory-row .staff-directory-name,
 footer .footer--main .block h2,
 h5,
@@ -1118,15 +1118,14 @@ span a:focus {
 h1 a,
 h2 a,
 h3 a,
-.library-hours .uva-library--hours .weekly-hours-header-section a,
 .event-container .event-url .event-date .event--day a,
 h4 a,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a,
 .staff-directory .staff-directory-row .staff-directory-name a,
 footer .footer--main .block h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
-.library-hours .uva-library--hours .weekly-hours-header-section span a,
 h4 span a {
   color: #232D4B;
   text-decoration: none;
@@ -1136,21 +1135,21 @@ h2 a:hover,
 h2 a:active,
 h2 a:focus,
 h3 a:hover,
-.library-hours .uva-library--hours .weekly-hours-header-section a:hover,
 .event-container .event-url .event-date .event--day a:hover,
 h3 a:active,
-.library-hours .uva-library--hours .weekly-hours-header-section a:active,
 .event-container .event-url .event-date .event--day a:active,
 h3 a:focus,
-.library-hours .uva-library--hours .weekly-hours-header-section a:focus,
 .event-container .event-url .event-date .event--day a:focus,
 h4 a:hover,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:hover,
 .staff-directory .staff-directory-row .staff-directory-name a:hover,
 footer .footer--main .block h2 a:hover,
 h4 a:active,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:active,
 .staff-directory .staff-directory-row .staff-directory-name a:active,
 footer .footer--main .block h2 a:active,
 h4 a:focus,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:focus,
 .staff-directory .staff-directory-row .staff-directory-name a:focus,
 footer .footer--main .block h2 a:focus,
 h1 span a:hover,
@@ -1439,12 +1438,12 @@ blockquote p {
 
 .uvalib-button, .path-user-login .user-login-form .form-actions input,
 .drupal-login-page .user-login-form .form-actions input {
-  font-size: 1em;
+  font-size: 1rem;
   appearance: none;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  margin: 0.8em 0.4em;
+  margin: 0.8rem 0.4rem;
   padding: 0.6rem 1.25rem;
   text-align: center;
   text-decoration: none;
@@ -1452,8 +1451,8 @@ blockquote p {
   background-color: #007BAC;
   color: #fff;
   border-radius: 5px;
-  text-transform: uppercase;
   border-radius: 5px;
+  font-weight: normal;
 }
 .uvalib-button:visited, .path-user-login .user-login-form .form-actions input:visited,
 .drupal-login-page .user-login-form .form-actions input:visited {
@@ -1462,8 +1461,8 @@ blockquote p {
 
 a.uvalib_link--button {
   display: inline-block;
-  margin: 0.5em;
-  padding: 0.88em;
+  margin: 0.5rem;
+  padding: 0.88rem;
   background-color: #007BAC;
   border-radius: 5px;
   text-decoration: underline;
@@ -1711,46 +1710,197 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 }
 
 /* buttons for mobile */
-@media (min-width: 30em) {
+@media (min-width: 30rem) {
   .uvalib-button, .path-user-login .user-login-form .form-actions input,
 .drupal-login-page .user-login-form .form-actions input,
 .uvalib_link--button {
     width: auto;
   }
 }
-.large-3 {
-  width: 25%;
+/* Switch Sizes */
+svg {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 4px;
+  left: -5px;
 }
 
-.switch-toggle.switch-candy,
-.switch-light.switch-candy > span {
-  background-color: #2d3035;
-  border-radius: 3px;
-  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
+.toggleSwitch {
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+  padding: 0.3rem;
+  cursor: pointer;
+  width: 14.6rem;
+  background-color: #F1F1F1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 3rem;
 }
-
-.switch-light.switch-candy span span,
-.switch-light.switch-candy input:checked ~ span span:first-child,
-.switch-toggle.switch-candy label {
-  color: #fff;
-  font-weight: bold;
+.toggleSwitch span span {
+  display: none;
+}
+.toggleSwitch * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.toggleSwitch label {
+  line-height: 20px;
+  height: 20px;
+  vertical-align: middle;
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+}
+.toggleSwitch > span {
+  line-height: 20px;
+  height: 20px;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  width: calc(100% - 6px);
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0 3px;
+}
+.toggleSwitch > span span {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  width: 50%;
+  margin-left: 50px;
+  text-align: left;
+  width: auto;
+  left: 0;
+  top: 1px;
+  opacity: 1;
+  width: 40%;
   text-align: center;
-  text-shadow: 1px 1px 1px #191b1e;
+  line-height: 34px;
+}
+.toggleSwitch > span span:first-of-type {
+  color: white;
+  opacity: 1;
+  left: 10px;
+  margin: 0;
+  width: 50%;
+}
+.toggleSwitch > span span:first-of-type svg {
+  fill: white;
+}
+.toggleSwitch > span span:last-of-type {
+  left: auto;
+  right: 0;
+  color: #2B2B2B;
+  margin: 0;
+  width: 50%;
+}
+.toggleSwitch > span span:last-of-type svg {
+  fill: #2B2B2B;
+}
+.toggleSwitch > span:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  border-radius: 30px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.toggleSwitch input {
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
+}
+.toggleSwitch input:focus ~ a {
+  outline: none;
+}
+.toggleSwitch input:focus + label {
+  outline: none;
+}
+.toggleSwitch input:checked ~ a {
+  left: calc(50% - 3px);
+}
+.toggleSwitch input:checked ~ span span:first-of-type {
+  left: 0;
+  color: #2B2B2B;
+}
+.toggleSwitch input:checked ~ span span:first-of-type svg {
+  fill: #2B2B2B;
+}
+.toggleSwitch input:checked ~ span span:last-of-type {
+  color: white;
+}
+.toggleSwitch input:checked ~ span span:last-of-type svg {
+  fill: white;
+}
+.toggleSwitch a {
+  position: absolute;
+  right: 50%;
+  z-index: 4;
+  display: block;
+  top: 10px;
+  bottom: 10px;
+  padding: 0;
+  left: 10px;
+  width: 48%;
+  background-color: #007BAC;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.switch-light.switch-candy input ~ span span:first-child,
-.switch-light.switch-candy input:checked ~ span span:nth-child(2),
-.switch-candy input:checked + label {
-  color: #333;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+.toggleSwitch.large {
+  width: 60px;
+  height: 27px;
+}
+.toggleSwitch.large a {
+  width: 27px;
+}
+.toggleSwitch.large > span {
+  height: 29px;
+  line-height: 28px;
+}
+.toggleSwitch.large > span span {
+  font-size: 1.1rem;
+}
+.toggleSwitch.large > span span:first-of-type {
+  left: 50%;
+}
+.toggleSwitch.large input:checked ~ a {
+  left: 41px;
 }
 
-.switch-candy a {
-  border: 1px solid #333;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
-  background-color: #70c66b;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+.toggleSwitch.xlarge {
+  width: 80px;
+  height: 36px;
+}
+.toggleSwitch.xlarge a {
+  width: 36px;
+}
+.toggleSwitch.xlarge > span {
+  height: 38px;
+  line-height: 37px;
+}
+.toggleSwitch.xlarge > span span {
+  font-size: 1.4rem;
+}
+.toggleSwitch.xlarge > span span:first-of-type {
+  left: 50%;
+}
+.toggleSwitch.xlarge input:checked ~ a {
+  left: 52px;
 }
 
 figure {
@@ -4723,8 +4873,7 @@ footer .footer--post .post-footer div {
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
 .library-hours .toggle-header {
-  display: grid;
-  grid-template-columns: 1fr 300px;
+  display: flex;
   align-items: center;
   gap: 2rem;
 }
@@ -4779,22 +4928,37 @@ footer .footer--post .post-footer div {
 .library-hours .uva-library--locations .view-content .views-row .views-field-field-phone-number span {
   font-weight: 500;
 }
-.library-hours .uva-library--hours {
-  outline: 2px solid blue;
+.library-hours .uva-library--hours .location-head {
+  margin-top: 3rem;
+}
+.library-hours .uva-library--hours .location--hours--single .views-field {
+  margin: 1rem 0;
+}
+.library-hours .uva-library--hours .location--hours--table {
+  display: block;
+  margin-top: 3rem;
 }
 .library-hours .uva-library--hours .weekly-hours-header-section {
   align-items: center;
   margin-bottom: 3rem;
 }
+.library-hours .uva-library--hours .hr--custom {
+  margin: 4rem 0;
+}
 .library-hours .uva-library--hours table {
   width: 100%;
   table-layout: fixed;
 }
-.library-hours .uva-library--hours table tbody:first-of-type {
+.library-hours .uva-library--hours table thead {
   background-color: #F1F1F1;
 }
-.library-hours .uva-library--hours table tbody:last-of-type th {
+.library-hours .uva-library--hours table thead th {
+  padding: 0.5rem;
+  font-weight: 500;
+}
+.library-hours .uva-library--hours table tbody tr th {
   font-weight: 400;
+  height: 4rem;
 }
 .library-hours .uva-library--hours table tr td {
   text-align: center;
@@ -4802,13 +4966,13 @@ footer .footer--post .post-footer div {
 .library-hours .uva-library--hours .location-column {
   width: 16rem;
 }
-@media (min-width: 700px) and (max-width: 999px) {
-  .library-hours table tbody {
-    display: flex;
-    flex-wrap: wrap;
+@media (max-width: 1023px) {
+  .library-hours table {
+    outline: 4px solid orange;
+    display: block;
   }
-  .library-hours table tbody tr {
-    width: 50%;
+  .library-hours table th {
+    display: block;
   }
 }
 

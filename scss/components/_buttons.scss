@@ -6,12 +6,12 @@
 }
 
 .uvalib-button {
-  font-size: 1em;
+  font-size: 1rem;
   appearance: none;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  margin: .8em .4em;
+  margin: .8rem .4rem;
   padding: .6rem 1.25rem;
   text-align: center;
   text-decoration: none;
@@ -19,8 +19,9 @@
   background-color: $uva-blue-alt;
   color: #fff;
   border-radius: 5px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   border-radius: 5px;
+  font-weight: normal;
 
   &:visited {
     color: #fff;
@@ -29,8 +30,8 @@
 
 a.uvalib_link--button {
   display: inline-block;
-  margin: .5em;
-  padding: .88em;
+  margin: .5rem;
+  padding: .88rem;
   background-color: $uva-blue-alt;
   border-radius: 5px;
   text-decoration: underline;
@@ -266,7 +267,7 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
 }
 
 /* buttons for mobile */
-@media (min-width: 30em) {
+@media (min-width: 30rem) {
 
   .uvalib-button,
   .uvalib_link--button {
@@ -274,263 +275,241 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   }
 }
 
+// Toggle Switch
+ $color_1: white;
+ $color_2: $uva-text-color-dark;
+ $background-color_1: $uva-grey-200;
+ $background-color_2: $uva-blue-alt;
 
+ /* Switch Sizes */
+ svg {
+   display: inline-block;
+   width: 17px;
+   height: 17px;
+   position: relative;
+   top: 4px;
+   left: -5px;
+ }
 
-// Toggle button
-// .toggle-button {
-//   position: relative;
-//   display: inline-block;
-//   width: 60px;
-//   height: 34px;
-//   background-color: $uva-grey-50;
-//   border-radius: 34px;
-//   transition: background-color .2s;
-//   border: none;
-// }
-
-// .toggle-button::before {
-//   content: "";
-//   position: absolute;
-//   width: 28px;
-//   height: 28px;
-//   border-radius: 50%;
-//   background-color: white;
-//   top: 3px;
-//   left: 3px;
-//   transition: transform .2s;
-// }
-
-// .toggle-button.active {
-//   background-color: $uva-brand-orange;
-//   margin-top: 1px;
-// }
-
-// .toggle-button.active::before {
-//   transform: translateX(26px);
-// }
-
-// Appempt 2
-// .toggle {
-//   position: relative;
-//   width: fit-content;
-// }
-
-// .toggle *,
-// .toggle *:before,
-// .toggle *:after {
-//   box-sizing: border-box;
-// }
-
-// .toggle input[type=checkbox] {
-//   opacity: 0;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
-
-// .toggle input[type=checkbox][disabled]~label {
-//   pointer-events: none;
-// }
-
-// .toggle input[type=checkbox][disabled]~label .toggle__switch {
-//   opacity: 0.4;
-// }
-
-// .toggle input[type=checkbox]:checked~label .toggle__switch:before {
-//   content: attr(data-unchecked);
-//   left: 0;
-// }
-
-// .toggle input[type=checkbox]:checked~label .toggle__switch:after {
-//   content: attr(data-checked);
-// }
-
-// .toggle label {
-//   user-select: none;
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-// }
-
-// .toggle label .toggle__label-text {
-//   flex: 1;
-//   padding-left: 32px;
-// }
-
-// .toggle label .toggle__switch {
-//   position: relative;
-// }
-
-// .toggle label .toggle__switch:before {
-//   content: attr(data-checked);
-//   position: absolute;
-//   top: 0;
-//   // text-transform: uppercase;
-//   text-align: center;
-// }
-
-// .toggle label .toggle__switch:after {
-//   content: attr(data-unchecked);
-//   position: absolute;
-//   z-index: 5;
-//   // text-transform: uppercase;
-//   text-align: center;
-//   //button at rest
-//   background: blue;
-//   transform: translate3d(0, 0, 0);
-// }
-
-// .toggle input[type=checkbox][disabled]~label {
-//   color: rgba(211, 211, 211, 0.5);
-// }
-
-// .toggle input[type=checkbox]:focus~label .toggle__switch,
-// .toggle input[type=checkbox]:hover~label .toggle__switch {
-//   background-color: lightgrey;
-// }
-
-// .toggle input[type=checkbox]:focus~label .toggle__switch:after,
-// .toggle input[type=checkbox]:hover~label .toggle__switch:after {
-//   color: white;
-//   background-color: blue;
-// }
-
-// .toggle input[type=checkbox]:hover~label {
-//   color: #c6c6c6;
-// }
-
-// .toggle input[type=checkbox]:checked~label:hover {
-//   color: #cbcbcb;
-// }
-
-// .toggle input[type=checkbox]:checked~label .toggle__switch {
-//   background-color: #e0e0e0;
-// }
-
-// .toggle input[type=checkbox]:checked~label .toggle__switch:after {
-//   color: #c6c6c6;
-// }
-
-// .toggle input[type=checkbox]:checked:focus~label .toggle__switch,
-// .toggle input[type=checkbox]:checked:hover~label .toggle__switch {
-//   background-color: lightgrey;
-// }
-
-// .toggle input[type=checkbox]:checked:focus~label .toggle__switch:after,
-// .toggle input[type=checkbox]:checked:hover~label .toggle__switch:after {
-//   color: white;
-//   //location checked
-// }
-
-// .toggle input[type=checkbox]:checked::after {
-//   display: inline-block;
-//   width: 2rem;
-//   height: 2rem;
-//   content: $icon-warning;
-//   margin: .55rem;
-//   outline: 1px solid red;
-// }
-
-// .toggle label .toggle__label-text {
-//   flex: 1;
-// }
-
-// .toggle label .toggle__switch {
-//   transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
-//   background: #e0e0e0;
-// }
-
-// .toggle label .toggle__switch:before {
-//   color: #2b2b2b;
-//   // unchecked
-// }
-
-// .toggle label .toggle__switch:after {
-//   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
-//   transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
-//   color: white;
-//   font-weight: bold;
-// }
-
-// .toggle input[type=checkbox]:focus~label .toggle__switch:after,
-// .toggle input[type=checkbox]:hover~label .toggle__switch:after {
-//   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-// }
-
-// .toggle input[type=checkbox]:checked~label .toggle__switch:after {
-//   transform: translate3d(144px, 0, 0);
-
-// }
-
-// .toggle input[type=checkbox]:checked:focus~label .toggle__switch:after,
-// .toggle input[type=checkbox]:checked:hover~label .toggle__switch:after {
-//   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-// }
-
-// .toggle label {
-//   font-size: inherit;
-// }
-
-// .toggle label .toggle__switch {
-//   height: 58px;
-//   flex: 0 0 324px;
-//   border-radius: 10px;
-// }
-
-// .toggle label .toggle__switch:before {
-//   top: 10px;
-//   left: 166px;
-//   font-size: inherit;
-//   line-height: 36px;
-//   width: 150px;
-//   padding: 0 12px;
-// }
-
-// .toggle label .toggle__switch:after {
-//   top: 12px;
-//   left: 12px;
-//   border-radius: 10px;
-//   width: 139px;
-//   line-height: 33px;
-//   font-size: inherit;
-// }
-
-// .toggle label .toggle__switch:hover:after {
-//   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-// }
-
-// Attempt 3
-   .large-3 {
-     width: 25%
+ .toggleSwitch {
+   span {
+     span {
+       display: none;
+     }
    }
 
-   .switch-toggle.switch-candy,
-   .switch-light.switch-candy>span {
-     background-color: #2d3035;
-     border-radius: 3px;
-     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
+   display: inline-block;
+   position: relative;
+   overflow: visible;
+   padding: 0.3rem;
+   cursor: pointer;
+   width: 14.6rem;
+   background-color: $background-color_1;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+  //  height: 2.59rem;
+  height: 3rem;
+
+   * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
    }
 
-   .switch-light.switch-candy span span,
-   .switch-light.switch-candy input:checked~span span:first-child,
-   .switch-toggle.switch-candy label {
-     color: #fff;
-     font-weight: bold;
-     text-align: center;
-     text-shadow: 1px 1px 1px #191b1e;
+   label {
+     line-height: 20px;
+     height: 20px;
+     vertical-align: middle;
+     position: relative;
+     z-index: 3;
+     display: block;
+     width: 100%;
    }
 
-   .switch-light.switch-candy input~span span:first-child,
-   .switch-light.switch-candy input:checked~span span:nth-child(2),
-   .switch-candy input:checked+label {
-     color: #333;
-     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+   >span {
+     line-height: 20px;
+     height: 20px;
+     vertical-align: middle;
+     position: absolute;
+     left: 0;
+     width: calc(100% - 6px);
+     margin: 0;
+     text-align: left;
+     white-space: nowrap;
+     margin: 0 3px;
+
+     span {
+       position: absolute;
+      //  top: 0;
+      //  left: 0;
+       z-index: 5;
+       display: block;
+       width: 50%;
+       margin-left: 50px;
+       text-align: left;
+      //  font-size: 0.9em;
+       width: auto;
+       left: 0;
+      //  top: -1px;
+      top: 1px;
+       opacity: 1;
+       width: 40%;
+       text-align: center;
+       line-height: 34px;
+
+       &:first-of-type {
+         color: $color_1;
+         opacity: 1;
+        //  left: 0;
+        left: 10px;
+         margin: 0;
+         width: 50%;
+         svg {
+          fill: $color_1;
+         }
+       }
+
+       &:last-of-type {
+         left: auto;
+         right: 0;
+         color: $color_2;
+         margin: 0;
+         width: 50%;
+         svg {
+          fill: $color_2;
+         }
+       }
+     }
+
+     &:before {
+       content: '';
+       display: block;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       left: 0;
+       top: -2px;
+       border-radius: 30px;
+       -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+       transition: all 0.2s ease-out;
+     }
    }
 
-   .switch-candy a {
-     border: 1px solid #333;
-     border-radius: 3px;
-     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
-     background-color: #70c66b;
-     background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+   input {
+     &:focus~a {
+       outline: none;
+     }
+
+     &:focus+label {
+       outline: none;
+     }
+
+     position: absolute;
+     opacity: 0;
+     z-index: 5;
+
+     &:checked~a {
+       left: calc(50% - 3px);
+     }
+
+     &:checked~span {
+       span {
+         &:first-of-type {
+           left: 0;
+           color: $color_2;
+           svg {
+            fill: $color_2;
+           }
+         }
+
+         &:last-of-type {
+           color: $color_1;
+           svg {
+            fill: $color_1;
+           }
+         }
+       }
+     }
    }
+
+   a {
+     position: absolute;
+     right: 50%;
+     z-index: 4;
+     display: block;
+    //  top: 3px;
+    //  bottom: 3px;
+    top: 10px;
+    bottom: 10px;
+     padding: 0;
+    //  left: 3px;
+    left: 10px;
+    //  width: 50%;
+    width: 48%;
+     background-color: $background-color_2;
+     border-radius: 10px;
+     -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+   }
+
+ }
+
+ .toggleSwitch.large {
+   width: 60px;
+   height: 27px;
+
+   a {
+     width: 27px;
+   }
+
+   >span {
+     height: 29px;
+     line-height: 28px;
+
+     span {
+       font-size: 1.1rem;
+
+       &:first-of-type {
+         left: 50%;
+       }
+     }
+   }
+
+   input {
+     &:checked~a {
+       left: 41px;
+     }
+   }
+ }
+
+ .toggleSwitch.xlarge {
+   width: 80px;
+   height: 36px;
+
+   a {
+     width: 36px;
+   }
+
+   >span {
+     height: 38px;
+     line-height: 37px;
+
+     span {
+       font-size: 1.4rem;
+
+       &:first-of-type {
+         left: 50%;
+       }
+     }
+   }
+
+   input {
+     &:checked~a {
+       left: 52px;
+     }
+   }
+ }
+// End Toggle Switch 

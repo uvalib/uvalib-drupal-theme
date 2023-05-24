@@ -1,41 +1,26 @@
-//TOGGLE BUTTON - switching classes based on "active" or not
+//TOGGLE BUTTON - switching classes
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+	// Get the checkbox input element
+	var checkbox = document.querySelector('.toggleSwitch input[type="checkbox"]');
+	// Get the list-view and grid-view elements
+	var listView = document.querySelector(".list-view");
+	var gridView = document.querySelector(".grid-view");
 
-// const toggleButton = document.querySelector(".toggle-button");
-// const listDiv = document.querySelector(".list-view");
-// const gridDiv = document.querySelector(".grid-view");
+	// Set the initial state (grid-view active, list-view hidden)
+	listView.style.display = "block";
+	gridView.style.display = "none";
 
-// toggleButton.addEventListener("click", function () {
-// 	if (listDiv.classList.contains("active")) {
-// 		listDiv.classList.remove("active");
-// 		gridDiv.classList.add("active");
-// 		toggleButton.classList.add("active");
-// 		toggleButton.setAttribute("aria-pressed", "true");
-// 	} else {
-// 		listDiv.classList.add("active");
-// 		gridDiv.classList.remove("active");
-// 		toggleButton.classList.remove("active");
-// 		toggleButton.setAttribute("aria-pressed", "false");
-// 	}
-// });
-
-// Attempt 2
-const toggleButton = document.querySelector(".toggle-button");
-const listDiv = document.querySelector(".list-view");
-const gridDiv = document.querySelector(".grid-view");
-
-// Add the "active" class to the listDiv element
-listDiv.classList.add("active");
-
-toggleButton.addEventListener("click", function () {
-	if (listDiv.classList.contains("active")) {
-		listDiv.classList.remove("active");
-		gridDiv.classList.add("active");
-		toggleButton.classList.add("active");
-		toggleButton.setAttribute("aria-pressed", "true");
-	} else {
-		listDiv.classList.add("active");
-		gridDiv.classList.remove("active");
-		toggleButton.classList.remove("active");
-		toggleButton.setAttribute("aria-pressed", "false");
-	}
+	// Add an event listener for the change event on the checkbox
+	checkbox.addEventListener("change", function () {
+		if (checkbox.checked) {
+			// Hours selected, show list-view and hide grid-view
+			listView.style.display = "block";
+			gridView.style.display = "none";
+		} else {
+			// Location selected, show grid-view and hide list-view
+			listView.style.display = "none";
+			gridView.style.display = "block";
+		}
+	});
 });
