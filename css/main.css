@@ -1860,6 +1860,9 @@ svg {
   transition: all 0.2s ease-out;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+.toggleSwitch a:focus {
+  outline-offset: 3px;
+}
 
 .toggleSwitch.large {
   width: 60px;
@@ -4965,6 +4968,9 @@ footer .footer--post .post-footer div {
 }
 .library-hours .uva-library--hours .location-column {
   width: 16rem;
+}
+.library-hours .today {
+  outline: 2px solid #E57200;
 }
 @media (max-width: 1023px) {
   .library-hours table {

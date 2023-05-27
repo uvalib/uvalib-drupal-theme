@@ -453,6 +453,9 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
      -moz-transition: all 0.2s ease-out;
      transition: all 0.2s ease-out;
      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+     &:focus {
+      outline-offset: 3px;
+     }
    }
 
  }

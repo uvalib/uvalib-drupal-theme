@@ -133,6 +133,9 @@
       width: 16rem;
     }
    }
+   .today {
+    outline : 2px solid $uva-brand-orange;
+   }
  
  
    @media (max-width: $tablet) {
