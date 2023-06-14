@@ -119,12 +119,15 @@
           th {
             font-weight: map-get($font-weights, book);
             height: 4rem;
+            text-align: left;
+            padding-left: 0.76rem;
           }
         }
       }
       tr { 
         td {
           text-align: center;
+          padding-left: 10px;
         }
       }
     }
@@ -133,18 +136,89 @@
       width: 16rem;
     }
    }
-   .today {
-    outline : 2px solid $uva-brand-orange;
-   }
- 
+  td .date--mobile {
+    display: none;
+  }
+  th.today {
+    border-top: 2px solid $uva-brand-orange;
+  }
+  tr>*.today {
+    border-left: 2px solid $uva-brand-orange;
+    border-right: 2px solid $uva-brand-orange;
+  }
+  tr:last-of-type>*.today {
+    border-bottom: 2px solid $uva-brand-orange;
+  }
+  tr:last-of-type>th.today {
+    border-bottom: 0;
+  }
+
+  
  
    @media (max-width: $tablet) {
+    // td.date--mobile {
+    //   display: inherit;
+    // }
     table {
-      outline: 4px solid orange;
       display: block;
-      th {
+
+      thead {
+        display: none;
+      }
+      tbody {
         display: block;
       }
+      tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 0;
+      }
+      th {
+        text-align: left !important;
+        background-color: $uva-grey-200;
+        height: 3rem !important;
+        padding: 0.76rem;
+        margin-top: 2rem;
+      }
+      tr:first-of-type th {
+        margin-top: 0;
+      }
+      td {
+        text-align: left !important;
+        // display: inline-flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        margin: 0.25rem 0.76rem;
+        .date--mobile {
+          display: grid;
+          grid-template-columns: 2.25rem 1fr;
+          gap: 1rem;
+          margin-right: 1rem;
+        }
+      }
+      td.today {
+        // border: 2px solid $uva-brand-orange;
+        outline: 2px solid $uva-brand-orange;
+                font-weight: map-get($font-weights, medium) !important;
+
+      }
+
+      tr>*.today {
+        border-left: 0;
+        border-right: 0;
+      }
+
+      tr:last-of-type>*.today {
+        border-bottom: 0;
+      }
+
+      // tr:last-of-type>th.today {
+      //   border-bottom: 0;
+      // }
+
+
     }
-  }
+ }
 }

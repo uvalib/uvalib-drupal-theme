@@ -4962,23 +4962,81 @@ footer .footer--post .post-footer div {
 .library-hours .uva-library--hours table tbody tr th {
   font-weight: 400;
   height: 4rem;
+  text-align: left;
+  padding-left: 0.76rem;
 }
 .library-hours .uva-library--hours table tr td {
   text-align: center;
+  padding-left: 10px;
 }
 .library-hours .uva-library--hours .location-column {
   width: 16rem;
 }
-.library-hours .today {
-  outline: 2px solid #E57200;
+.library-hours td .date--mobile {
+  display: none;
+}
+.library-hours th.today {
+  border-top: 2px solid #E57200;
+}
+.library-hours tr > *.today {
+  border-left: 2px solid #E57200;
+  border-right: 2px solid #E57200;
+}
+.library-hours tr:last-of-type > *.today {
+  border-bottom: 2px solid #E57200;
+}
+.library-hours tr:last-of-type > th.today {
+  border-bottom: 0;
 }
 @media (max-width: 1023px) {
   .library-hours table {
-    outline: 4px solid orange;
     display: block;
   }
-  .library-hours table th {
+  .library-hours table thead {
+    display: none;
+  }
+  .library-hours table tbody {
     display: block;
+  }
+  .library-hours table tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0;
+  }
+  .library-hours table th {
+    text-align: left !important;
+    background-color: #F1F1F1;
+    height: 3rem !important;
+    padding: 0.76rem;
+    margin-top: 2rem;
+  }
+  .library-hours table tr:first-of-type th {
+    margin-top: 0;
+  }
+  .library-hours table td {
+    text-align: left !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin: 0.25rem 0.76rem;
+  }
+  .library-hours table td .date--mobile {
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+  .library-hours table td.today {
+    outline: 2px solid #E57200;
+    font-weight: 500 !important;
+  }
+  .library-hours table tr > *.today {
+    border-left: 0;
+    border-right: 0;
+  }
+  .library-hours table tr:last-of-type > *.today {
+    border-bottom: 0;
   }
 }
 
