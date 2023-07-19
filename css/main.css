@@ -1173,6 +1173,7 @@ h2 a:focus-visible,
 h3 a:focus-visible,
 .event-container .event-url .event-date .event--day a:focus-visible,
 h4 a:focus-visible,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:focus-visible,
 .staff-directory .staff-directory-row .staff-directory-name a:focus-visible,
 footer .footer--main .block h2 a:focus-visible,
 h1 span a:focus-visible,
@@ -1186,6 +1187,7 @@ h2 a:-webkit-any-link:focus-visible,
 h3 a:-webkit-any-link:focus-visible,
 .event-container .event-url .event-date .event--day a:-webkit-any-link:focus-visible,
 h4 a:-webkit-any-link:focus-visible,
+.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:-webkit-any-link:focus-visible,
 .staff-directory .staff-directory-row .staff-directory-name a:-webkit-any-link:focus-visible,
 h1 span a:-webkit-any-link:focus-visible,
 h2 span a:-webkit-any-link:focus-visible,
@@ -5104,7 +5106,7 @@ footer .footer--post .post-footer div {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 0.5rem;
 }
 .library-hours .uva-library--locations .view-content .views-row > div {
