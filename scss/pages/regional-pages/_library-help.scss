@@ -6,21 +6,31 @@
     text-align: center;
     background-color: #fff;
     border: 1px solid $uva-grey-100;
+    border-top: 0.25rem solid $uva-brand-orange;
+
+    &:hover,
+    &:focus {
+      transition: 0.25s ease-in-out;
+      box-shadow: 0 0 20px 0 $uva-grey-100;
+      z-index: 2;
+    }
   }
   .two-col, .three-col {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 3rem;
   }
   .three-col {
-    grid-template-rows: 7.5rem;
+    grid-template-rows: 12rem;
   }
-  h3 {
-    @include h5;
+  #block-title, h3 {
+    @include h4;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  h3 + ul, h3 + p {
-    margin-bottom: 2rem;
-  }
+  // h3 + ul, h3 + p {
+  //   margin-bottom: 2rem;
+  // }
   .s-consult-container {
     display: flex;
     flex-direction: row;
@@ -28,18 +38,20 @@
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 4rem;
+    padding: 2rem;
 
     .s-consult-block {
       order: 0;
       flex: 0 1 auto;
       align-self: auto;
-      width: 330px;
+      width: 20rem;
       h3 {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
       }
       img {
-        height: 186px;
+        height: 15rem;
         width: 100%;
         object-fit: cover;
       }
