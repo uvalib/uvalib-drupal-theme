@@ -1,3 +1,5 @@
+// This toggle is currently used on the "hours" page
+
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
 	// Get the checkbox input element
