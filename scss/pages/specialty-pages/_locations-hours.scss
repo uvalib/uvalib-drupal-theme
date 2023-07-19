@@ -37,7 +37,8 @@
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-content: flex-start;
-      align-items: flex-start;
+      // align-items: flex-start;
+      align-items: stretch;
       gap: 0.5rem;
 
       // &:hover {
