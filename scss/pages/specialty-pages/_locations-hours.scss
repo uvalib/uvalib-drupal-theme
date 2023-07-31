@@ -2,6 +2,15 @@
 @use '../../base/index'as *;
 
 .library-hours {
+  .three-col {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .hover-block {
+      border-left: 1px solid $uva-grey-100;
+      text-align: center;
+       h3 { @extend .h5; }
+    }
+  }
   .toggle-header {
     display: flex;
     align-items: center;
