@@ -183,7 +183,7 @@ h5 {
   //   background-color: #E9ECEF;
   // }
 
-  .rds-article--input {
+  .rds-article--code {
       background-color: $uva-grey-200;
       padding: 1rem; 
       margin-top: 0.5rem;
@@ -195,7 +195,8 @@ h5 {
     pre, code {
       white-space: pre-wrap;
       word-wrap: break-word;
-      padding: 0.25rem 2rem;
+      // padding: 0.25rem 2rem;
+      padding: 0;
       background-color: $uva-grey-200;
     }
   }
@@ -207,6 +208,9 @@ h5 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
+    code {
+      background-color: white;
+    }
     pre {
       margin-top: 0;
       white-space: pre-wrap;

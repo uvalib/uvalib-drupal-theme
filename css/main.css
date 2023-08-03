@@ -5410,20 +5410,20 @@ footer .footer--post .post-footer div {
 .rds-articles code {
   background-color: #F1F1F1;
 }
-.rds-articles .rds-article--input {
+.rds-articles .rds-article--code {
   background-color: #F1F1F1;
   padding: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
-.rds-articles .rds-article--input pre {
+.rds-articles .rds-article--code pre {
   margin-top: 0;
 }
-.rds-articles .rds-article--input pre, .rds-articles .rds-article--input code {
+.rds-articles .rds-article--code pre, .rds-articles .rds-article--code code {
   white-space: pre-wrap;
   word-wrap: break-word;
-  padding: 0.25rem 2rem;
+  padding: 0;
   background-color: #F1F1F1;
 }
 .rds-articles .rds-article--output {
@@ -5432,6 +5432,9 @@ footer .footer--post .post-footer div {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
+}
+.rds-articles .rds-article--output code {
+  background-color: white;
 }
 .rds-articles .rds-article--output pre {
   margin-top: 0;
