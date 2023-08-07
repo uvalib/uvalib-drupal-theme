@@ -5470,6 +5470,9 @@ footer .footer--post .post-footer div {
   padding: 0.25rem 2rem;
   background-color: white;
 }
+.rds-articles .rds-article--output pre code {
+  background-color: white;
+}
 
 body.maintenance-page {
   background-color: white !important;
