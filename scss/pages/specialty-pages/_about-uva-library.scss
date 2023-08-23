@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    margin: 4rem 0 3rem 0;
+    margin: 3rem 0 3rem 0;
 
     .about-card {
       display: flex;
@@ -31,7 +31,7 @@
       }
 
       .about-card--details {
-        margin: 1rem 2rem;
+        margin: 2rem 2rem;
       }
     }
   }
@@ -121,9 +121,8 @@
     .visit-grid {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
       gap: 0;
-      
+
 
       .hour, .happening, .exhibitions {
         margin: 2rem;
