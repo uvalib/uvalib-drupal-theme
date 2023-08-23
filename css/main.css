@@ -39,7 +39,8 @@ body {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img,
@@ -331,9 +332,7 @@ img {
 .w3-button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1177,7 +1176,8 @@ mark {
 
 mark::before,
 mark::after {
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
@@ -1603,7 +1603,9 @@ blockquote p {
 .uvalib-button, .path-user-login .user-login-form .form-actions input,
 .drupal-login-page .user-login-form .form-actions input {
   font-size: 1rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -1888,8 +1890,6 @@ svg {
   display: none;
 }
 .toggleSwitch * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .toggleSwitch label {
@@ -1957,8 +1957,6 @@ svg {
   left: 0;
   top: -2px;
   border-radius: 30px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .toggleSwitch input {
@@ -2000,8 +1998,6 @@ svg {
   width: 48%;
   background-color: #007BAC;
   border-radius: 10px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -2251,6 +2247,7 @@ figure figcaption {
   display: grid;
   gap: 3rem;
   margin-top: 2rem;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .path-user-login .user-login-form label,
@@ -2311,6 +2308,7 @@ figure figcaption {
 }
 
 .drupal-tabs {
+  width: -moz-fit-content;
   width: fit-content;
   margin: 17px 0;
 }
@@ -2341,6 +2339,7 @@ div[data-drupal-messages] .messages {
 }
 #header #header-inner .block-system-branding-block {
   grid-area: 1/1/2/2;
+  width: -moz-max-content;
   width: max-content;
 }
 #header #header-inner .utility-nav {
@@ -2525,7 +2524,8 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
     z-index: -1;
   }
   .mobile-menu-modal > ul {
@@ -2549,6 +2549,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   }
   .mobile-nav-menu-2 {
     background-color: #fff;
+    height: -moz-fit-content;
     height: fit-content;
     position: absolute !important;
     right: 0;
@@ -2919,7 +2920,8 @@ footer .footer--post .post-footer div {
 }
 .home-page .home-collections .home-collections-image img {
   min-height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-page .home-collections .home-collection-virgo {
   position: absolute;
@@ -2968,6 +2970,7 @@ footer .footer--post .post-footer div {
 .home-page .home-collections .home-collection-virgo p {
   padding: 0.25rem 0.5rem;
   margin: 1rem auto;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -3076,8 +3079,10 @@ footer .footer--post .post-footer div {
 .home-page .home-news-featured .views-row .field--name-field-media-image .field__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .home-page .home-news-featured .views-row .views-field-title {
   margin-top: 1rem;
@@ -3520,6 +3525,7 @@ footer .footer--post .post-footer div {
 .rp-using .virgo-search p {
   padding: 0.25rem 0.5rem;
   margin: 1rem auto;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -3862,7 +3868,8 @@ footer .footer--post .post-footer div {
 .library-help .s-consult-container .s-consult-block img {
   height: 186px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   .library-help .s-consult {
@@ -3906,7 +3913,8 @@ footer .footer--post .post-footer div {
 .uvalibrary-spaces .rerserve-container .reserve-location img {
   height: 186px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .teaching-and-writing .t-w--writing,
@@ -3988,7 +3996,8 @@ footer .footer--post .post-footer div {
     max-width: 100% !important;
   }
   .bookplates .views-row .entry-image img {
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
   }
 }
 
@@ -4390,6 +4399,7 @@ footer .footer--post .post-footer div {
   margin-top: inherit;
 }
 .libra .libra-submit .libra-card .uvalib_link--button {
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -4569,50 +4579,40 @@ footer .footer--post .post-footer div {
   grid-template-columns: 0.5fr 1fr;
   gap: 2rem;
 }
-.about-uva-library .body-grid {
+.about-uva-library .about-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 4rem;
-  margin: 3rem 0;
+  gap: 3rem;
+  margin: 3rem 0 3rem 0;
 }
-.about-uva-library .body-grid .learn {
-  grid-area: 1/1/2/2;
+.about-uva-library .about-grid .about-card {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid #DADADA;
 }
-.about-uva-library .body-grid .mission {
-  grid-area: 1/2/2/3;
+.about-uva-library .about-grid .about-card .header {
+  border-bottom: 4px solid #E57200;
+  width: 100%;
 }
-.about-uva-library .body-grid .support {
-  grid-area: 1/3/2/4;
+.about-uva-library .about-grid .about-card .about-card--details {
+  margin: 2rem 2rem;
 }
-.about-uva-library .body-grid .visit {
-  grid-area: 2/1/3/4;
-}
-.about-uva-library .body-grid .visit-inner-grid {
+.about-uva-library .visit-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 1rem;
+  margin: 0 0 3rem 0;
+  border-top: 4px solid #E57200;
+  outline: 2px solid #F1F1F1;
 }
-.about-uva-library .body-grid .visit-inner-grid h2, .about-uva-library .body-grid .visit-inner-grid h3, .about-uva-library .body-grid .visit-inner-grid .fact-grid .fact-card--details dd, .about-uva-library .fact-grid .fact-card--details .body-grid .visit-inner-grid dd {
-  margin: 0 1rem 1rem 0;
+.about-uva-library .visit-grid .hour {
+  margin: 3rem 2rem;
 }
-.about-uva-library .body-grid .visit-inner-grid .hour, .about-uva-library .body-grid .visit-inner-grid .happening, .about-uva-library .body-grid .visit-inner-grid .exhibitions {
-  margin: 2rem 1rem 0 1rem;
+.about-uva-library .visit-grid .happening, .about-uva-library .visit-grid .exhibitions {
+  margin: 4rem 2rem;
 }
-.about-uva-library .body-grid .about-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  outline: 1px solid #DADADA;
-}
-.about-uva-library .body-grid .about-card .header {
-  border-bottom: 4px solid #E57200;
-}
-.about-uva-library .body-grid .about-card .about-card--details {
-  margin: 2rem 2rem;
+.about-uva-library .visit-grid .happening img, .about-uva-library .visit-grid .exhibitions img {
+  margin: 1rem 0;
 }
 .about-uva-library .fact-grid {
   display: flex;
@@ -4623,20 +4623,21 @@ footer .footer--post .post-footer div {
   align-items: stretch;
   gap: 2rem;
   margin-top: 3rem;
-  min-height: 7.65rem;
+  min-height: 8rem;
 }
 .about-uva-library .fact-grid div:nth-child(even) {
-  outline: 4px solid #E57200;
+  outline: 3px solid #E57200;
 }
 .about-uva-library .fact-grid > div {
-  width: 13rem;
+  width: 10rem;
+  height: 9rem;
 }
 .about-uva-library .fact-grid .fact-card {
   display: flex;
   flex-direction: column;
   align-content: stretch;
   justify-content: center;
-  outline: 4px solid #232D4B;
+  outline: 3px solid #232D4B;
 }
 .about-uva-library .fact-grid .fact-card--details {
   padding: 1rem;
@@ -4650,39 +4651,24 @@ footer .footer--post .post-footer div {
   text-align: center;
 }
 .about-uva-library .image-divider {
-  width: 100vw;
   max-width: 1600px;
   display: block;
   margin: 3rem 0;
 }
 @media (max-width: 992px) {
-  .about-uva-library .body-grid {
+  .about-uva-library .about-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr !important;
-    grid-row-gap: 2rem;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
   }
-  .about-uva-library .body-grid .learn, .about-uva-library .body-grid .mission, .about-uva-library .body-grid .support, .about-uva-library .body-grid .visit, .about-uva-library .body-grid .fact-grid {
-    grid-area: auto;
-    width: 100%;
-  }
-  .about-uva-library .body-grid .visit-inner-grid {
+  .about-uva-library .visit-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr !important;
-    grid-row-gap: 0;
+    gap: 0;
   }
-  .about-uva-library .body-grid .visit-inner-grid .hour, .about-uva-library .body-grid .visit-inner-grid .happening, .about-uva-library .body-grid .visit-inner-grid .exhibitions {
-    grid-area: auto;
-    width: 100%;
-    padding-right: 4rem;
-  }
-  .about-uva-library .fact-grid {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
+  .about-uva-library .visit-grid .hour, .about-uva-library .visit-grid .happening, .about-uva-library .visit-grid .exhibitions {
+    margin: 2rem;
   }
   .about-uva-library .image-divider {
     width: 100vw;
@@ -4691,7 +4677,8 @@ footer .footer--post .post-footer div {
   }
   .about-uva-library .image-divider img {
     min-height: 170px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -5001,8 +4988,10 @@ footer .footer--post .post-footer div {
   display: block;
   width: 100px;
   height: 100px;
-  object-fit: cover;
-  object-position: center top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -5135,7 +5124,8 @@ footer .footer--post .post-footer div {
   overflow: hidden;
 }
 .library-hours .uva-library--locations .view-content .views-row .views-field-field-main-image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .library-hours .uva-library--locations .view-content .views-row h2 {
   margin-bottom: 0.25rem;
@@ -5315,6 +5305,7 @@ footer .footer--post .post-footer div {
 }
 
 .honor-roll .legend {
+  width: -moz-max-content;
   width: max-content;
   margin-top: 1rem;
   border: 1px solid #DADADA;
