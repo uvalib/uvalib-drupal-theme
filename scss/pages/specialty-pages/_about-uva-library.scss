@@ -10,73 +10,53 @@
     // .profileImage img {
     //   border-radius: 50%;
     // } new design ditched library profile image
-
+    // we will leave this blank until we have a good photo
     .top-body {}
   }
 
-  .body-grid {
+  .about-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 4rem;
-    margin: 3rem 0;
-
-    .learn {
-      grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .mission {
-      grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .support {
-      grid-area: 1 / 3 / 2 / 4;
-    }
-
-    .visit {
-      grid-area: 2 / 1 / 3 / 4;
-    }
-
-    .visit-inner-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 2rem;
-      margin: 1rem;
-
-      h2, h3 {
-        margin: 0 1rem 1rem 0;
-      }
-      .hour, .happening, .exhibitions {
-      margin: 2rem 1rem 0 1rem;
-      }
-    }
-
-    //sub grids under "plan a visit"
+    gap: 3rem;
+    margin: 4rem 0 3rem 0;
 
     .about-card {
       display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-content: stretch;
+      flex-direction: column;   
       outline: 1px solid $uva-grey-100;
 
       .header {
         border-bottom: 4px solid $uva-brand-orange;
+        width: 100%;
       }
 
       .about-card--details {
-        margin: 2rem 2rem;
+        margin: 1rem 2rem;
+      }
+    }
+  }
+
+  .visit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 0 3rem 0;
+    border-top: 4px solid $uva-brand-orange;
+    outline: 2px solid $uva-grey-200;
+
+    .hour {
+      margin: 3rem 2rem;
+    }
+    .happening, .exhibitions {
+      margin: 4rem 2rem;
+
+      img {
+        margin: 1rem 0;
       }
     }
   }
 
   .fact-grid {
-    // display: flex;
-    // grid-template-columns: repeat(5, 1fr);
-    // gap: 4rem;
-    // margin: 3rem 0;
-    // flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,15 +65,16 @@
     align-items: stretch;
     gap: 2rem;
     margin-top: 3rem;
-    min-height: 7.65rem;
+    min-height: 8rem;
 
     div:nth-child(even) {
-    outline: 4px solid $uva-brand-orange;
+    outline: 3px solid $uva-brand-orange;
     // background-color: $uva-red-100;
     }
 
     > div {
-      width: 13rem;
+      width: 12rem;
+      height: 9rem;
     }
 
     .fact-card {
@@ -101,7 +82,7 @@
       flex-direction: column;
       align-content: stretch;
       justify-content: center;
-      outline: 4px solid $uva-brand-blue;
+      outline: 3px solid $uva-brand-blue;
     }
 
     .fact-card--details {
@@ -121,7 +102,7 @@
     }
   }
   .image-divider {
-    width: 100vw;
+    // width: 100vw;
     max-width: 1600px;
     display: block;
     margin: 3rem 0;
@@ -129,39 +110,26 @@
   
   @media (max-width:992px) { 
     //about card re-layout 
-    .body-grid {
+    .about-grid {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr !important;
-      grid-row-gap: 2rem;
-
-      .learn, .mission, .support, .visit, .fact-grid {
-        grid-area: auto;
-        width: 100%;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1rem;
       }
+
+    //visit card stacking
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0;
       
-      .visit-inner-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr !important;
-        grid-row-gap: 0;
 
-        .hour, .happening, .exhibitions {
-          grid-area: auto;
-          width: 100%;
-          padding-right: 4rem;
-        }
+      .hour, .happening, .exhibitions {
+        margin: 2rem;
       }
     }
 
-    //fact card re-layout
-    .fact-grid {
-      display: flex;
-      grid-template-columns: repeat(2, 1fr);
-      flex-wrap: wrap;
-      align-content: stretch;
-      justify-content: center;
-    }
 
     .image-divider {
       width: 100vw;
