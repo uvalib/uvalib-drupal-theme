@@ -126,7 +126,7 @@ h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
   line-height: 1.15;
 }
 
-h5, .about-uva-library .fact-grid .fact-card--details dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .field--name-field-subnav nav ul li,
+h5, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .fact-grid .fact-card--details dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .field--name-field-subnav nav ul li,
 .h5,
 .how-do-i-main .view-content .item-list ul li a,
 .how-do-i-detail .view-content h2,
@@ -168,6 +168,7 @@ h4,
 .staff-directory .staff-directory-row .staff-directory-name,
 footer .footer--main .block h2,
 h5,
+.about-uva-library .visit-grid .visit-container .hover-block p,
 .about-uva-library .fact-grid .fact-card--details dt,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
@@ -1097,6 +1098,7 @@ footer .footer--main .block h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
+.about-uva-library .fact-grid .fact-card--details dd span a,
 h4 span a {
   color: #232D4B;
   text-decoration: none;
@@ -4597,22 +4599,30 @@ footer .footer--post .post-footer div {
 .about-uva-library .about-grid .about-card .about-card--details {
   margin: 2rem 2rem;
 }
-.about-uva-library .visit-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 0 0 3rem 0;
+.about-uva-library .about-grid .happenings, .about-uva-library .about-grid .news, .about-uva-library .about-grid .exhibitions {
   border-top: 4px solid #E57200;
-  outline: 2px solid #F1F1F1;
 }
-.about-uva-library .visit-grid .hour {
-  margin: 3rem 2rem;
+.about-uva-library .visit-grid img {
+  padding: 1rem;
 }
-.about-uva-library .visit-grid .happening, .about-uva-library .visit-grid .exhibitions {
-  margin: 4rem 2rem;
+.about-uva-library .visit-grid .visit-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin: 3rem 0 3rem 0;
 }
-.about-uva-library .visit-grid .happening img, .about-uva-library .visit-grid .exhibitions img {
-  margin: 1rem 0;
+.about-uva-library .visit-grid .visit-container .hover-block {
+  border: 1px solid #DADADA;
+  vertical-align: middle;
+  align-content: flex-start;
+  margin: 0;
+}
+.about-uva-library .visit-grid .visit-container .hover-block p {
+  text-align: center;
+  padding-block-end: 0;
+  padding: 0;
+  vertical-align: middle;
+  align-items: baseline;
 }
 .about-uva-library .fact-grid {
   display: flex;
@@ -4623,7 +4633,6 @@ footer .footer--post .post-footer div {
   align-items: stretch;
   gap: 2rem;
   margin-top: 3rem;
-  min-height: 8rem;
 }
 .about-uva-library .fact-grid div:nth-child(even) {
   outline: 3px solid #E57200;
@@ -4655,19 +4664,25 @@ footer .footer--post .post-footer div {
   display: block;
   margin: 3rem 0;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 1023px) {
+  .about-uva-library .about-grid {
+    gap: 2rem;
+    margin: 2rem 2rem;
+  }
+  .about-uva-library .about-grid h2 {
+    font-size: 1.728rem !important;
+    font-weight: 700;
+  }
+  .about-uva-library .visit-grid .visit-container {
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
   .about-uva-library .about-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
-  }
-  .about-uva-library .visit-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  .about-uva-library .visit-grid .hour, .about-uva-library .visit-grid .happening, .about-uva-library .visit-grid .exhibitions {
+    gap: 2rem;
     margin: 2rem;
   }
   .about-uva-library .image-divider {

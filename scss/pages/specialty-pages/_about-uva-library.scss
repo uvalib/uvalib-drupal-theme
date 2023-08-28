@@ -25,7 +25,7 @@
       flex-direction: column;   
       outline: 1px solid $uva-grey-100;
 
-      .header {
+      .header, {
         border-bottom: 4px solid $uva-brand-orange;
         width: 100%;
       }
@@ -34,27 +34,54 @@
         margin: 2rem 2rem;
       }
     }
+
+    .happenings, .news,.exhibitions {
+        border-top: 4px solid $uva-brand-orange;
+    }
   }
 
   .visit-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 0 0 3rem 0;
-    border-top: 4px solid $uva-brand-orange;
-    outline: 2px solid $uva-grey-200;
-
-    .hour {
-      margin: 3rem 2rem;
+    img {
+      padding: 1rem;
     }
-    .happening, .exhibitions {
-      margin: 4rem 2rem;
 
-      img {
-        margin: 1rem 0;
-      }
+    .visit-container {
+      // display: flex;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      // justify-content: space-around;
+      // align-content: flex-start;
+      // align-items: stretch;
+      // gap: 2rem;
+      // margin: 2rem 0;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        margin: 3rem 0 3rem 0;
+        // place-items: center;
+        // width: 100%;
+        // height: 100%;
+  
+        .hover-block {
+          border: 1px solid $uva-grey-100;
+          vertical-align: middle;
+          // justify-content: space-around;
+          align-content: flex-start;
+          margin: 0;
+
+          p {
+            text-align: center;
+            @extend h5;
+            padding-block-end: 0;
+            padding: 0;
+            vertical-align: middle;
+            align-items: baseline
+          }
+        }
+      } 
     }
-  }
+
 
   .fact-grid {
     display: flex;
@@ -65,7 +92,6 @@
     align-items: stretch;
     gap: 2rem;
     margin-top: 3rem;
-    min-height: 8rem;
 
     div:nth-child(even) {
     outline: 3px solid $uva-brand-orange;
@@ -107,28 +133,36 @@
     display: block;
     margin: 3rem 0;
   }
+
+  //tablet view
+  @media screen and (max-width: #{$tablet}){
+    .about-grid {
+      gap: 2rem;
+      margin: 2rem 2rem;
+
+      h2 {
+        font-size: 1.728rem !important;
+        font-weight: map-get($font-weights, demi);
+      }
+    }
+
+    .visit-grid {
+      .visit-container {
+      gap: 2rem;
+      margin: 2rem 0;
+      }
+    }  
+  }
   
-  @media (max-width:992px) { 
+  //mobile view
+  @media screen and (max-width: #{$mobile}){ 
     //about card re-layout 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      gap: 1rem;
+      gap: 2rem;
+      margin: 2rem;
       }
-
-    //visit card stacking
-    .visit-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0;
-
-
-      .hour, .happening, .exhibitions {
-        margin: 2rem;
-      }
-    }
-
 
     .image-divider {
       width: 100vw;
