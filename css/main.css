@@ -3524,6 +3524,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .harlemrenaissance #main-content .layout--twocol-section--33-67 a {
   color: #2B2B2B;
 }
+.harlemrenaissance #main-content #events {
+  margin-bottom: 1rem;
+}
 .harlemrenaissance #main-content .harlem-bio {
   margin: 1rem -1000px;
   padding: 1rem 1000px;
