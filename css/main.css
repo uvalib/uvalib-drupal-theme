@@ -3575,6 +3575,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .harlemrenaissance #main-content .harlem-collections dt a {
   background-color: #F2EBDB;
 }
+.harlemrenaissance #main-content .harlem-gallery {
+  background-color: #000;
+  color: #fff;
+}
 .harlemrenaissance .et-events .event-date {
   background-color: #AB93A5;
 }
