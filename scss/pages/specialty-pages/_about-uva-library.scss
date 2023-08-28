@@ -19,13 +19,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     margin: 3rem 0 3rem 0;
-
     .about-card {
       display: flex;
       flex-direction: column;   
       outline: 1px solid $uva-grey-100;
 
-      .header, {
+      .header {
         border-bottom: 4px solid $uva-brand-orange;
         width: 100%;
       }
@@ -34,7 +33,6 @@
         margin: 2rem 2rem;
       }
     }
-
     .happenings, .news,.exhibitions {
         border-top: 4px solid $uva-brand-orange;
     }
@@ -64,10 +62,13 @@
         // height: 100%;
   
         .hover-block {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-around;
           border: 1px solid $uva-grey-100;
-          vertical-align: middle;
+          // vertical-align: middle;
           // justify-content: space-around;
-          align-content: flex-start;
+          // align-content: flex-start;
           margin: 0;
 
           p {
@@ -75,8 +76,8 @@
             @extend h5;
             padding-block-end: 0;
             padding: 0;
-            vertical-align: middle;
-            align-items: baseline
+            // vertical-align: middle;
+            // align-items: baseline;
           }
         }
       } 
@@ -176,4 +177,4 @@
         }
     }
   }
-}  
+}
