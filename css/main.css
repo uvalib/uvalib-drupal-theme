@@ -9,13 +9,14 @@ body,
 h1,
 h2,
 h3,
-.about-uva-library .fact-grid .fact-card--details dd,
 .event-container .event-url .event-date .event--day,
 h4,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
 .staff-directory .staff-directory-row .staff-directory-name,
+.about-uva-library .fact-grid .fact-card--details dd,
 footer .footer--main .block h2,
 p,
+.about-uva-library .fact-grid .fact-card--details dt,
 figure,
 blockquote,
 dl,
@@ -39,7 +40,8 @@ body {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img,
@@ -73,7 +75,7 @@ body {
   font-size: 17px !important;
 }
 
-p {
+p, .about-uva-library .fact-grid .fact-card--details dt {
   font-size: 1rem;
   font-weight: 400;
   padding-block-end: 1rem;
@@ -98,7 +100,7 @@ h2,
   line-height: 1.15;
 }
 
-h3, .about-uva-library .fact-grid .fact-card--details dd, .event-container .event-url .event-date .event--day,
+h3, .event-container .event-url .event-date .event--day,
 .h3,
 .library-hours .uva-library--locations .view-content .views-row h2,
 .staff-bio .field--name-field-uva-ldap-title,
@@ -111,7 +113,7 @@ h3, .about-uva-library .fact-grid .fact-card--details dd, .event-container .even
   line-height: 1.15;
 }
 
-h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, footer .footer--main .block h2,
+h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a,
 .staff-bio .block > h2,
@@ -125,7 +127,7 @@ h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
   line-height: 1.15;
 }
 
-h5, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .fact-grid .fact-card--details dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .field--name-field-subnav nav ul li,
+h5, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .field--name-field-subnav nav ul li,
 .h5,
 .how-do-i-main .view-content .item-list ul li a,
 .how-do-i-detail .view-content h2,
@@ -160,15 +162,16 @@ h1, h2, .h1, .h2, .news-page .views-row h2:first-of-type,
 
 h2,
 h3,
-.about-uva-library .fact-grid .fact-card--details dd,
 .event-container .event-url .event-date .event--day,
 h4,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
 .staff-directory .staff-directory-row .staff-directory-name,
+.about-uva-library .fact-grid .fact-card--details dd,
 footer .footer--main .block h2,
 h5,
 .about-uva-library .visit-grid .visit-container .hover-block p,
-.about-uva-library .fact-grid .fact-card--details dt,
+.about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt,
+.about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
 .field--name-field-subnav nav ul li {
@@ -332,9 +335,7 @@ img {
 .w3-button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1090,17 +1091,17 @@ a:-webkit-any-link:focus-visible, span a:-webkit-any-link:focus-visible {
 h1 a,
 h2 a,
 h3 a,
-.about-uva-library .fact-grid .fact-card--details dd a,
 .event-container .event-url .event-date .event--day a,
 h4 a,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a,
 .staff-directory .staff-directory-row .staff-directory-name a,
+.about-uva-library .fact-grid .fact-card--details dd a,
 footer .footer--main .block h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
-.about-uva-library .fact-grid .fact-card--details dd span a,
-h4 span a {
+h4 span a,
+.about-uva-library .fact-grid .fact-card--details dd span a {
   color: #232D4B;
   text-decoration: none;
 }
@@ -1109,25 +1110,25 @@ h2 a:hover,
 h2 a:active,
 h2 a:focus,
 h3 a:hover,
-.about-uva-library .fact-grid .fact-card--details dd a:hover,
 .event-container .event-url .event-date .event--day a:hover,
 h3 a:active,
-.about-uva-library .fact-grid .fact-card--details dd a:active,
 .event-container .event-url .event-date .event--day a:active,
 h3 a:focus,
-.about-uva-library .fact-grid .fact-card--details dd a:focus,
 .event-container .event-url .event-date .event--day a:focus,
 h4 a:hover,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:hover,
 .staff-directory .staff-directory-row .staff-directory-name a:hover,
+.about-uva-library .fact-grid .fact-card--details dd a:hover,
 footer .footer--main .block h2 a:hover,
 h4 a:active,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:active,
 .staff-directory .staff-directory-row .staff-directory-name a:active,
+.about-uva-library .fact-grid .fact-card--details dd a:active,
 footer .footer--main .block h2 a:active,
 h4 a:focus,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:focus,
 .staff-directory .staff-directory-row .staff-directory-name a:focus,
+.about-uva-library .fact-grid .fact-card--details dd a:focus,
 footer .footer--main .block h2 a:focus,
 h1 span a:hover,
 h1 span a:active,
@@ -1146,11 +1147,11 @@ h4 span a:focus {
 h1 a:focus-visible,
 h2 a:focus-visible,
 h3 a:focus-visible,
-.about-uva-library .fact-grid .fact-card--details dd a:focus-visible,
 .event-container .event-url .event-date .event--day a:focus-visible,
 h4 a:focus-visible,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:focus-visible,
 .staff-directory .staff-directory-row .staff-directory-name a:focus-visible,
+.about-uva-library .fact-grid .fact-card--details dd a:focus-visible,
 footer .footer--main .block h2 a:focus-visible,
 h1 span a:focus-visible,
 h2 span a:focus-visible,
@@ -1161,11 +1162,11 @@ h4 span a:focus-visible {
 h1 a:-webkit-any-link:focus-visible,
 h2 a:-webkit-any-link:focus-visible,
 h3 a:-webkit-any-link:focus-visible,
-.about-uva-library .fact-grid .fact-card--details dd a:-webkit-any-link:focus-visible,
 .event-container .event-url .event-date .event--day a:-webkit-any-link:focus-visible,
 h4 a:-webkit-any-link:focus-visible,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a:-webkit-any-link:focus-visible,
 .staff-directory .staff-directory-row .staff-directory-name a:-webkit-any-link:focus-visible,
+.about-uva-library .fact-grid .fact-card--details dd a:-webkit-any-link:focus-visible,
 h1 span a:-webkit-any-link:focus-visible,
 h2 span a:-webkit-any-link:focus-visible,
 h3 span a:-webkit-any-link:focus-visible,
@@ -1179,7 +1180,8 @@ mark {
 
 mark::before,
 mark::after {
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
@@ -1605,7 +1607,9 @@ blockquote p {
 .uvalib-button, .path-user-login .user-login-form .form-actions input,
 .drupal-login-page .user-login-form .form-actions input {
   font-size: 1rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -1890,8 +1894,6 @@ svg {
   display: none;
 }
 .toggleSwitch * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .toggleSwitch label {
@@ -1959,8 +1961,6 @@ svg {
   left: 0;
   top: -2px;
   border-radius: 30px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .toggleSwitch input {
@@ -2002,8 +2002,6 @@ svg {
   width: 48%;
   background-color: #007BAC;
   border-radius: 10px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -2253,6 +2251,7 @@ figure figcaption {
   display: grid;
   gap: 3rem;
   margin-top: 2rem;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .path-user-login .user-login-form label,
@@ -2313,6 +2312,7 @@ figure figcaption {
 }
 
 .drupal-tabs {
+  width: -moz-fit-content;
   width: fit-content;
   margin: 17px 0;
 }
@@ -2343,6 +2343,7 @@ div[data-drupal-messages] .messages {
 }
 #header #header-inner .block-system-branding-block {
   grid-area: 1/1/2/2;
+  width: -moz-max-content;
   width: max-content;
 }
 #header #header-inner .utility-nav {
@@ -2527,7 +2528,8 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
     z-index: -1;
   }
   .mobile-menu-modal > ul {
@@ -2551,6 +2553,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   }
   .mobile-nav-menu-2 {
     background-color: #fff;
+    height: -moz-fit-content;
     height: fit-content;
     position: absolute !important;
     right: 0;
@@ -2921,7 +2924,8 @@ footer .footer--post .post-footer div {
 }
 .home-page .home-collections .home-collections-image img {
   min-height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-page .home-collections .home-collection-virgo {
   position: absolute;
@@ -2970,6 +2974,7 @@ footer .footer--post .post-footer div {
 .home-page .home-collections .home-collection-virgo p {
   padding: 0.25rem 0.5rem;
   margin: 1rem auto;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -3078,8 +3083,10 @@ footer .footer--post .post-footer div {
 .home-page .home-news-featured .views-row .field--name-field-media-image .field__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .home-page .home-news-featured .views-row .views-field-title {
   margin-top: 1rem;
@@ -3522,6 +3529,7 @@ footer .footer--post .post-footer div {
 .rp-using .virgo-search p {
   padding: 0.25rem 0.5rem;
   margin: 1rem auto;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -3864,7 +3872,8 @@ footer .footer--post .post-footer div {
 .library-help .s-consult-container .s-consult-block img {
   height: 186px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   .library-help .s-consult {
@@ -3908,7 +3917,8 @@ footer .footer--post .post-footer div {
 .uvalibrary-spaces .rerserve-container .reserve-location img {
   height: 186px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .teaching-and-writing .t-w--writing,
@@ -3990,7 +4000,8 @@ footer .footer--post .post-footer div {
     max-width: 100% !important;
   }
   .bookplates .views-row .entry-image img {
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
   }
 }
 
@@ -4392,6 +4403,7 @@ footer .footer--post .post-footer div {
   margin-top: inherit;
 }
 .libra .libra-submit .libra-card .uvalib_link--button {
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -4585,6 +4597,7 @@ footer .footer--post .post-footer div {
 .about-uva-library .about-grid .about-card .header {
   border-bottom: 4px solid #E57200;
   width: 100%;
+  display: cover;
 }
 .about-uva-library .about-grid .about-card .about-card--details {
   margin: 2rem 2rem;
@@ -4592,14 +4605,20 @@ footer .footer--post .post-footer div {
 .about-uva-library .about-grid .happenings, .about-uva-library .about-grid .news, .about-uva-library .about-grid .exhibitions {
   border-top: 4px solid #E57200;
 }
-.about-uva-library .visit-grid img {
-  padding: 1rem;
+.about-uva-library .visit-grid {
+  margin: 0 0 3rem 0;
+}
+.about-uva-library .visit-grid .exhibitions img {
+  padding: 1rem 0;
 }
 .about-uva-library .visit-grid .visit-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  margin: 3rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 .about-uva-library .visit-grid .visit-container .hover-block {
   display: flex;
@@ -4608,10 +4627,9 @@ footer .footer--post .post-footer div {
   border: 1px solid #DADADA;
   margin: 0;
 }
-.about-uva-library .visit-grid .visit-container .hover-block p {
+.about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt {
   text-align: center;
   padding-block-end: 0;
-  padding: 0;
 }
 .about-uva-library .fact-grid {
   display: flex;
@@ -4641,12 +4659,12 @@ footer .footer--post .post-footer div {
   padding: 1rem;
 }
 .about-uva-library .fact-grid .fact-card--details dd {
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 1rem;
 }
 .about-uva-library .fact-grid .fact-card--details dt {
   text-align: center;
+  padding: 0;
 }
 .about-uva-library .image-divider {
   max-width: 1600px;
@@ -4655,16 +4673,22 @@ footer .footer--post .post-footer div {
 }
 @media screen and (max-width: 1023px) {
   .about-uva-library .about-grid {
-    gap: 2rem;
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
+    gap: 1.5rem;
+  }
+  .about-uva-library .about-grid .about-card .about-card--details {
+    margin: 2rem 1.5rem;
+  }
+  .about-uva-library .about-grid .header {
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
   }
   .about-uva-library .about-grid h2 {
     font-size: 1.728rem !important;
     font-weight: 700;
   }
-  .about-uva-library .visit-grid .visit-container {
-    gap: 2rem;
-    margin: 2rem 0;
+  .about-uva-library .visit-grid .exhibitions img {
+    padding: 0.5rem 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4672,7 +4696,13 @@ footer .footer--post .post-footer div {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 2rem;
+    margin: 1rem;
+  }
+  .about-uva-library .visit-container .hover-block {
+    width: 20rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0 1rem;
   }
   .about-uva-library .image-divider {
     width: 100vw;
@@ -4681,7 +4711,8 @@ footer .footer--post .post-footer div {
   }
   .about-uva-library .image-divider img {
     min-height: 170px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -4991,8 +5022,10 @@ footer .footer--post .post-footer div {
   display: block;
   width: 100px;
   height: 100px;
-  object-fit: cover;
-  object-position: center top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -5125,7 +5158,8 @@ footer .footer--post .post-footer div {
   overflow: hidden;
 }
 .library-hours .uva-library--locations .view-content .views-row .views-field-field-main-image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .library-hours .uva-library--locations .view-content .views-row h2 {
   margin-bottom: 0.25rem;
@@ -5305,6 +5339,7 @@ footer .footer--post .post-footer div {
 }
 
 .honor-roll .legend {
+  width: -moz-max-content;
   width: max-content;
   margin-top: 1rem;
   border: 1px solid #DADADA;
