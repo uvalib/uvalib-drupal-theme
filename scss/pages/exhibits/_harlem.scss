@@ -30,13 +30,20 @@ $color-link: #215D9E;
       a {
         color: $uva-text-color-dark;
       }
+      .layout__region--first {
+        img {
+          margin-bottom: 1rem;
+        }
+      }
     }
     #events {
       margin-bottom: 1rem;
     }
-    // .harlem-top {
-    //   background-color: $color-header;
-    // }
+    .harlem-top {
+      img {
+        margin-bottom: 1rem;
+      }
+    }
     .harlem-bio {
       @include edge-color-fill;
       background-color: $color-bio;
