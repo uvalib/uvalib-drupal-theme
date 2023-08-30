@@ -5441,15 +5441,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
 }
-.rds-section .rds-top .rds-dr,
-.rds-section .rds-top .rds-rdm,
-.rds-section .rds-top .rds-rs,
-.rds-section .rds-top .rds-ld {
-  background-color: white;
-  border: 1px solid #DADADA;
-  border-top: 0.25rem solid #E57200;
-  padding: 1.5rem;
-}
 .rds-section .rds-top .rds-dr h3,
 .rds-section .rds-top .rds-rdm h3,
 .rds-section .rds-top .rds-rs h3,
