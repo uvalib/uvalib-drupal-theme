@@ -139,6 +139,7 @@ h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .event-contain
 .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title,
 .uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
+.home-page .home-hours-block .hour-head,
 .jumpmenu ul li {
   font-size: 1.2rem !important;
   font-weight: 500;
@@ -148,7 +149,6 @@ h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .event-contain
 
 h6, .uva-alert--sitewide .alert4 h2.alert-title,
 .h6,
-.home-page .home-hours-block .hour-head,
 .event-container .event-url .event-title,
 .jumpmenu ul li::after {
   font-size: 1rem !important;
@@ -3080,24 +3080,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   color: #2B2B2B;
   padding: 0.3rem 0.5rem;
   font-weight: 700;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 .home-page .home-hours-block .hour-head {
-  padding: 2rem 0.5rem 1.25rem 0.5rem;
-}
-.home-page .home-hours-block dl {
-  padding-left: 0.5rem;
-}
-.home-page .home-hours-block dl.dl--inline {
-  font-size: 0.95rem;
-  row-gap: normal;
-  grid-template-columns: 1fr;
-}
-.home-page .home-hours-block dl dt {
-  border-bottom: 1px solid #DADADA;
-  width: 100%;
+  margin: 2rem 0 1.25rem 0;
+  border-bottom: 1px dotted #DADADA;
 }
 .home-page .home-hours-block dl dd {
-  padding-left: 1rem;
   text-align: right;
 }
 .home-page .home-hours-block p.hours-see-all {
