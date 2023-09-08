@@ -76,7 +76,6 @@ body {
 p {
   font-size: 1rem;
   font-weight: 400;
-  padding-block-end: 1rem;
   line-height: 1.5;
 }
 
@@ -160,26 +159,6 @@ h6, .uva-alert--sitewide .alert4 h2.alert-title,
 h1, h2, .h1, .h2, .news-page .views-row h2:first-of-type,
 .view-news-full-feed-of-blog-articlces .views-row h2:first-of-type {
   font-weight: 700;
-}
-
-h2,
-h3,
-.event-container .event-url .event-date .event--day,
-h4,
-.rds-articles h2,
-.library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
-.staff-directory .staff-directory-row .staff-directory-name,
-footer .footer--main .block h2,
-h5,
-.rds-section .rds-recent--articles ul li a,
-.rds-articles h3,
-.event-container .event-url .event-date .event--month,
-.event-container .event-url .event-date .event--wkday,
-.site-sidebar--subnav nav ul li,
-h6,
-.uva-alert--sitewide .alert4 h2.alert-title {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .all-caps {
@@ -1079,6 +1058,215 @@ img {
   font-family: adobe-caslon-pro, serif !important;
 }
 
+h1, .h1,
+h2, .h2, .news-page .views-row h2:first-of-type,
+.view-news-full-feed-of-blog-articlces .views-row h2:first-of-type,
+h3,
+.event-container .event-url .event-date .event--day, .h3, .library-hours .uva-library--locations .view-content .views-row h2, .staff-bio .field--name-field-uva-ldap-title, .uvalib-bento-search .bs-header h2, .uvalib-bento-search .bs-header p, .exhibitions .current .view-content .views-field-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, footer .footer--main .block h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
+.staff-bio .field__label, .news-page .views-row h2,
+.view-news-full-feed-of-blog-articlces .views-row h2, .block-field-blocknodearticlebody h2,
+h5,
+.rds-section .rds-recent--articles ul li a,
+.rds-articles h3,
+.event-container .event-url .event-date .event--month,
+.event-container .event-url .event-date .event--wkday,
+.site-sidebar--subnav nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h6, .uva-alert--sitewide .alert4 h2.alert-title, .h6, .event-container .event-url .event-title, .jumpmenu ul li::after {
+  margin-bottom: 0;
+}
+
+p {
+  padding-block-end: 1rem;
+}
+
+.margin-zero {
+  margin: 0 !important;
+}
+
+.margin-zero--top {
+  margin-top: 0 !important;
+}
+
+.margin-zero--bottom {
+  margin-bottom: 0 !important;
+}
+
+.margin-zero--left {
+  margin-left: 0 !important;
+}
+
+.margin-zero--right {
+  margin-right: 0 !important;
+}
+
+.margin-1rem {
+  margin: 1rem !important;
+}
+
+.margin-1rem--top {
+  margin-top: 1rem !important;
+}
+
+.margin-1rem--bottom {
+  margin-bottom: 1rem !important;
+}
+
+.margin-1rem--left {
+  margin-left: 1rem !important;
+}
+
+.margin-1rem--right {
+  margin-right: 1rem !important;
+}
+
+.margin-2rem {
+  margin: 2rem !important;
+}
+
+.margin-2rem--top {
+  margin-top: 2rem !important;
+}
+
+.margin-2rem--bottom {
+  margin-bottom: 2rem !important;
+}
+
+.margin-2rem--left {
+  margin-left: 2rem !important;
+}
+
+.margin-2rem--right {
+  margin-right: 2rem !important;
+}
+
+.margin-3rem {
+  margin: 3rem !important;
+}
+
+.margin-3rem--top {
+  margin-top: 3rem !important;
+}
+
+.margin-3rem--bottom {
+  margin-bottom: 3rem !important;
+}
+
+.margin-3rem--left {
+  margin-left: 3rem !important;
+}
+
+.margin-3rem--right {
+  margin-right: 3rem !important;
+}
+
+.padding-zero {
+  padding: 0 !important;
+}
+
+.padding-zero--top {
+  padding-top: 0 !important;
+}
+
+.padding-zero--bottom {
+  padding-bottom: 0 !important;
+}
+
+.padding-zero--left {
+  padding-left: 0 !important;
+}
+
+.padding-zero--right {
+  padding-right: 0 !important;
+}
+
+.padding-1rem {
+  padding: 1rem !important;
+}
+
+.padding-1rem--top {
+  padding-top: 1rem !important;
+}
+
+.padding-1rem--bottom {
+  padding-bottom: 1rem !important;
+}
+
+.padding-1rem--left {
+  padding-left: 1rem !important;
+}
+
+.padding-1rem--right {
+  padding-right: 1rem !important;
+}
+
+.padding-2rem {
+  padding: 2rem !important;
+}
+
+.padding-2rem--top {
+  padding-top: 2rem !important;
+}
+
+.padding-2rem--bottom {
+  padding-bottom: 2rem !important;
+}
+
+.padding-2rem--left {
+  padding-left: 2rem !important;
+}
+
+.padding-2rem--right {
+  padding-right: 2rem !important;
+}
+
+.padding-3rem {
+  padding: 3rem !important;
+}
+
+.padding-3rem--top {
+  padding-top: 3rem !important;
+}
+
+.padding-3rem--bottom {
+  padding-bottom: 3rem !important;
+}
+
+.padding-3rem--left {
+  padding-left: 3rem !important;
+}
+
+.padding-3rem--right {
+  padding-right: 3rem !important;
+}
+
+dl.dl--inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+dl.dl--inline dt {
+  font-weight: 700;
+}
+
+.list--simple {
+  padding-left: 0;
+}
+.list--simple li {
+  font-size: 1em;
+  list-style-type: none;
+  line-height: 1.5;
+  text-indent: 0;
+}
+
 a, span a {
   color: #005679;
   text-decoration: underline;
@@ -1244,185 +1432,6 @@ ul li a:focus {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-dl.dl--inline {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-}
-dl.dl--inline dt {
-  font-weight: 700;
-}
-
-.list--simple {
-  padding-left: 0;
-}
-.list--simple li {
-  font-size: 1em;
-  list-style-type: none;
-  line-height: 1.5;
-  text-indent: 0;
-}
-
-.margin-zero {
-  margin: 0 !important;
-}
-
-.margin-zero--top {
-  margin-top: 0 !important;
-}
-
-.margin-zero--bottom {
-  margin-bottom: 0 !important;
-}
-
-.margin-zero--left {
-  margin-left: 0 !important;
-}
-
-.margin-zero--right {
-  margin-right: 0 !important;
-}
-
-.margin-1rem {
-  margin: 1rem !important;
-}
-
-.margin-1rem--top {
-  margin-top: 1rem !important;
-}
-
-.margin-1rem--bottom {
-  margin-bottom: 1rem !important;
-}
-
-.margin-1rem--left {
-  margin-left: 1rem !important;
-}
-
-.margin-1rem--right {
-  margin-right: 1rem !important;
-}
-
-.margin-2rem {
-  margin: 2rem !important;
-}
-
-.margin-2rem--top {
-  margin-top: 2rem !important;
-}
-
-.margin-2rem--bottom {
-  margin-bottom: 2rem !important;
-}
-
-.margin-2rem--left {
-  margin-left: 2rem !important;
-}
-
-.margin-2rem--right {
-  margin-right: 2rem !important;
-}
-
-.margin-3rem {
-  margin: 3rem !important;
-}
-
-.margin-3rem--top {
-  margin-top: 3rem !important;
-}
-
-.margin-3rem--bottom {
-  margin-bottom: 3rem !important;
-}
-
-.margin-3rem--left {
-  margin-left: 3rem !important;
-}
-
-.margin-3rem--right {
-  margin-right: 3rem !important;
-}
-
-.padding-zero {
-  padding: 0 !important;
-}
-
-.padding-zero--top {
-  padding-top: 0 !important;
-}
-
-.padding-zero--bottom {
-  padding-bottom: 0 !important;
-}
-
-.padding-zero--left {
-  padding-left: 0 !important;
-}
-
-.padding-zero--right {
-  padding-right: 0 !important;
-}
-
-.padding-1rem {
-  padding: 1rem !important;
-}
-
-.padding-1rem--top {
-  padding-top: 1rem !important;
-}
-
-.padding-1rem--bottom {
-  padding-bottom: 1rem !important;
-}
-
-.padding-1rem--left {
-  padding-left: 1rem !important;
-}
-
-.padding-1rem--right {
-  padding-right: 1rem !important;
-}
-
-.padding-2rem {
-  padding: 2rem !important;
-}
-
-.padding-2rem--top {
-  padding-top: 2rem !important;
-}
-
-.padding-2rem--bottom {
-  padding-bottom: 2rem !important;
-}
-
-.padding-2rem--left {
-  padding-left: 2rem !important;
-}
-
-.padding-2rem--right {
-  padding-right: 2rem !important;
-}
-
-.padding-3rem {
-  padding: 3rem !important;
-}
-
-.padding-3rem--top {
-  padding-top: 3rem !important;
-}
-
-.padding-3rem--bottom {
-  padding-bottom: 3rem !important;
-}
-
-.padding-3rem--left {
-  padding-left: 3rem !important;
-}
-
-.padding-3rem--right {
-  padding-right: 3rem !important;
 }
 
 .ckeditor-accordion-container {
@@ -2082,6 +2091,14 @@ figure figcaption {
   border-left: 0.25rem solid #E57200;
   padding: 2rem;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hover-block h3, .hover-block h4 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .hover-block:hover, .hover-block:focus {
   transition: 0.25s ease-in-out;
@@ -2091,6 +2108,7 @@ figure figcaption {
 .hover-block p {
   color: #4F4F4F;
   text-decoration: none !important;
+  padding-bottom: 0;
 }
 .hover-block p:hover {
   text-decoration: none !important;
@@ -2921,6 +2939,16 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .event-container .event-url .event-date .event--month {
   padding-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.event-container .event-url .event-date .event--day {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .event-container .event-url .event-title {
   grid-area: 1/2/2/3;
@@ -2939,9 +2967,11 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 
 .events-see-all {
+  display: inline-block;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  float: right;
+  text-align: right;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -3043,7 +3073,13 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   padding-right: 2rem;
   border-right: 1px solid #DADADA;
 }
+.home-page .home-using-block h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .home-page .home-using-block h3 {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-block-end: 1rem;
 }
 .home-page .home-using-block .teaching-and-publication .hb-url,
@@ -3179,10 +3215,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   font-style: normal;
   letter-spacing: 2px;
   padding-top: 6px;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 .home-page .campaign h2.h4 {
   font-weight: 100 !important;
   padding-bottom: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .home-page .campaign-sub-block {
   text-align: center;
@@ -3529,6 +3569,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .harlemrenaissance #main-content #events {
   margin-bottom: 1rem;
 }
+.harlemrenaissance #main-content .harlem-top h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
 .harlemrenaissance #main-content .harlem-top img {
   margin-bottom: 1rem;
 }
@@ -3683,6 +3727,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rp-using .using-top .u-s-j h4,
 .rp-using .using-top .u-m-r h3,
 .rp-using .using-top .u-m-r h4 {
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .rp-using .using-top .u-f-n {
@@ -3937,12 +3982,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .equipment-and-tech .et-has-header {
   margin-top: 1rem;
 }
-.equipment-and-tech .et-events {
-  margin-bottom: 3rem;
-}
-.equipment-and-tech .et-events h3 {
-  margin-bottom: 2rem;
-}
 .equipment-and-tech .et-bottom-section h4,
 .equipment-and-tech .et-bottom-section h5 {
   margin-top: 1.5rem;
@@ -3959,25 +3998,34 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     max-width: 100% !important;
   }
 }
-.library-help .hover-block {
-  text-align: center;
-  background-color: #fff;
-  border: 1px solid #DADADA;
+.library-help .two-col {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
-.library-help .two-col, .library-help .three-col {
-  margin-top: 2rem;
+.library-help .two-col h3 {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  margin-top: 1rem;
+}
+.library-help .two-col ul {
+  margin-top: 0;
   margin-bottom: 2rem;
 }
 .library-help .three-col {
-  grid-template-rows: 7.5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.library-help h3 {
+.library-help .three-col .hover-block {
+  text-align: center;
+  border: 1px solid #DADADA;
+}
+.library-help .three-col .hover-block h3 {
   font-size: 1.2rem !important;
   font-weight: 500 !important;
-  margin-bottom: 1rem;
-}
-.library-help h3 + ul, .library-help h3 + p {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .library-help .s-consult-container {
   display: flex;
@@ -3995,6 +4043,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   width: 330px;
 }
 .library-help .s-consult-container .s-consult-block h3 {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
   margin-top: 1.5rem;
 }
 .library-help .s-consult-container .s-consult-block img {
@@ -4002,7 +4052,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   width: 100%;
   object-fit: cover;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .library-help .three-col {
+    grid-template-columns: 1fr !important;
+  }
   .library-help .s-consult {
     margin-bottom: 2rem !important;
   }
@@ -4053,6 +4106,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   grid-template-columns: 1.15fr 0.85fr;
   gap: 4rem;
   margin-top: 3rem;
+}
+.teaching-and-writing .t-w--writing h2,
+.teaching-and-writing .t-w--planning h2 {
+  margin-top: 0;
 }
 .teaching-and-writing .t-w--writing:last-child,
 .teaching-and-writing .t-w--planning:last-child {
@@ -4902,6 +4959,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .staff-bio .bio-head .layout__region--content h1 {
   grid-area: 1/2/2/3;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .staff-bio .bio-head .layout__region--content .hr--custom {
   grid-area: 2/2/3/3;
@@ -5225,6 +5284,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   object-fit: cover;
 }
 .library-hours .uva-library--locations .view-content .views-row h2 {
+  margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
 .library-hours .uva-library--locations .view-content .views-row .views-field-field-body {

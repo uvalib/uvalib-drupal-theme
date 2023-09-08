@@ -8,6 +8,7 @@
   gap: 2rem;
   align-items: stretch;
 
+
   .event-url {
      display: grid;
      grid-template-columns: .25fr 1fr;
@@ -46,12 +47,18 @@
         }
         .event--month {
           padding-top: 1rem;
+          margin-top: 0;
+          margin-bottom: 0;          
         }
         .event--month, .event--wkday {
           @extend h5;
+          margin-top: 0;
+          margin-bottom: 0;
         }
         .event--day {
           @extend h3;
+          margin-top: 0;
+          margin-bottom: 0;
         }
      }
      .event-title {
@@ -75,9 +82,11 @@
 }
 
 .events-see-all {
+  display: inline-block;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  float: right;
+  text-align: right;
+  width: 100%;
 }
 
 @media (max-width:992px) {

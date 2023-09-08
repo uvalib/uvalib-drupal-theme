@@ -63,8 +63,14 @@
     gap: 2rem;
     padding-right: 2rem;
     border-right: 1px solid $uva-grey-light;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
     h3 {
+      margin-top: 0;
+      margin-bottom: 0;
       padding-block-end: 1rem;
     }
 
@@ -137,11 +143,11 @@
     //     grid-template-columns: 1fr;
     //   }
 
-      dt {
+      // dt {
         // padding-left: 0.5rem;
     //     border-bottom: 1px solid $uva-grey-100;
     //     width: 100%;
-      }
+      // }
 
       dd {
         // padding-right: .5rem;
@@ -268,11 +274,15 @@
       font-style: normal;
       letter-spacing: 2px;
       padding-top: 6px;
+      margin-top: 1rem;
+      margin-bottom: 0;
     }
 
     h2.h4 {
       font-weight: 100 !important;
       padding-bottom: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 
