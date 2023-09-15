@@ -1088,6 +1088,14 @@ p {
   padding-block-end: 1rem;
 }
 
+p + ul {
+  margin-top: -0.5rem;
+}
+
+ul + p {
+  margin-top: 1.5rem;
+}
+
 .margin-zero {
   margin: 0 !important;
 }
@@ -3081,6 +3089,11 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   margin-top: 0;
   margin-bottom: 0;
   padding-block-end: 1rem;
+}
+.home-page .home-using-block .teaching-and-publication,
+.home-page .home-using-block .using-spaces,
+.home-page .home-using-block .equipment-tech {
+  justify-content: flex-start;
 }
 .home-page .home-using-block .teaching-and-publication .hb-url,
 .home-page .home-using-block .using-spaces .hb-url,

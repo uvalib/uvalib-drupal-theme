@@ -29,6 +29,14 @@ p {
   padding-block-end: 1rem;
 }
 
+p + ul {
+  margin-top: -0.5rem;
+}
+
+ul + p {
+  margin-top: 1.5rem;
+}
+
 
 .margin-zero {
   margin: 0 !important;
