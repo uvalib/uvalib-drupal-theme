@@ -5615,6 +5615,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-articles .rds-article--code pre,
 .rds-articles .rds-article--output pre {
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 1rem;
 }
 .rds-articles .rds-article--code pre {
