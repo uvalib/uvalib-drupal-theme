@@ -138,60 +138,65 @@ h5 {
   h3 {
     @extend h5;
   }
-  /*The monospace is, indeed, important. */
-  code,
-  pre {
+
+
+  code {
     font-family: monospace !important;
   }
-  pre { background-color: $uva-grey-200;}
-  code {
+  p > code {
     background-color: $uva-grey-200;
   }
+  .rds-article--code, 
+  .rds-article--output {
+    font-size: 0.8rem;
+    pre {
+      margin-top: 0;
+      padding-left: 1rem;
+    }
+  }
 
-  /*These are largely blocks*/
-  // pre, 
-  // code {
-  //   white-space: pre-wrap;
-  //   word-wrap: break-word;
-  //   padding: .25rem 2rem;
-  //   background-color: #E9ECEF;
+  .rds-article--code pre {
+    background-color: $uva-grey-200;
+  }
+  .rds-article--output pre {
+    background-color: white;
+  }
+
+
+
+  // .rds-article--code {
+  //     background-color: $uva-grey-200;
+  //     font-size: 0.9rem;
+  //   pre {
+  //     margin-top: 0;
+  //   }
+  //   pre, code {
+  //     white-space: pre-wrap;
+  //     word-wrap: break-word;
+  //     padding: 0.25rem 2rem;
+  //     background-color: $uva-grey-200;
+  //   }
   // }
 
-  .rds-article--code {
-      background-color: $uva-grey-200;
-      // padding: 1rem; 
-      // margin-top: 0.5rem;
-      // margin-bottom: 0.5rem;
-      font-size: 0.9rem;
-    pre {
-      margin-top: 0;
-    }
-    pre, code {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      padding: 0.25rem 2rem;
-      background-color: $uva-grey-200;
-    }
-  }
+  // .rds-article--output {
+  //   background-color: white;
+  //   padding: 1rem;
+  //   margin-top: 0.5rem;
+  //   margin-bottom: 0.5rem;
+  //   font-size: 0.8rem;
+  //   pre {
+  //     margin-top: 0;
+  //     white-space: pre-wrap;
+  //     word-wrap: break-word;
+  //     padding: 0.25rem 2rem;
+  //     background-color: white;
+  //     code {
+  //       background-color: white;
+  //     }
+  //   }
+  // }
 
-  .rds-article--output {
-    // background-color: $uva-grey-200;
-    background-color: white;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    pre {
-      margin-top: 0;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      padding: 0.25rem 2rem;
-      // background-color: $uva-grey-200;
-      background-color: white;
-      code {
-        background-color: white;
-      }
-    }
-  }
+
+
 }
 

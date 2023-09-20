@@ -2794,25 +2794,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     align-items: center !important;
   }
 }
-.layout__region--first {
-  padding-right: 3.5rem;
-}
-@media screen and (min-width: 576px) {
-  .layout__region--first {
-    padding-right: 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px), screen and (min-width: 992px) {
-  .layout__region--first {
-    padding-right: 3.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .layout__region--first {
-    padding-right: inherit;
-  }
-}
-
 .field--name-field-subnav ul li {
   list-style: none;
 }
@@ -2839,9 +2820,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  article .layout--twocol-section > .layout__region {
-    flex: 0 1 100% !important;
-  }
   /* Styles for tablet screens go here */
   .not-mobile {
     display: inherit;
@@ -5621,51 +5599,28 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   grid-template-columns: 1fr 1fr;
 }
 
-.rds-articles {
-  /*The monospace is, indeed, important. */
-  /*These are largely blocks*/
-}
 .rds-articles h2 {
   margin-bottom: 0.5rem;
 }
-.rds-articles code,
-.rds-articles pre {
+.rds-articles code {
   font-family: monospace !important;
 }
-.rds-articles pre {
+.rds-articles p > code {
   background-color: #F1F1F1;
 }
-.rds-articles code {
-  background-color: #F1F1F1;
-}
-.rds-articles .rds-article--code {
-  background-color: #F1F1F1;
-  font-size: 0.9rem;
-}
-.rds-articles .rds-article--code pre {
-  margin-top: 0;
-}
-.rds-articles .rds-article--code pre, .rds-articles .rds-article--code code {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 0.25rem 2rem;
-  background-color: #F1F1F1;
-}
+.rds-articles .rds-article--code,
 .rds-articles .rds-article--output {
-  background-color: white;
-  padding: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
+.rds-articles .rds-article--code pre,
 .rds-articles .rds-article--output pre {
   margin-top: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 0.25rem 2rem;
-  background-color: white;
+  padding-left: 1rem;
 }
-.rds-articles .rds-article--output pre code {
+.rds-articles .rds-article--code pre {
+  background-color: #F1F1F1;
+}
+.rds-articles .rds-article--output pre {
   background-color: white;
 }
 
