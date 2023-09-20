@@ -5504,20 +5504,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   padding-left: 0;
 }
 
-.rds-section h1,
-.rds-section h2,
-.rds-section h3 {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-.rds-section h4, .rds-section .rds-articles h2, .rds-articles .rds-section h2,
-.rds-section h5,
-.rds-section .rds-articles h3,
-.rds-articles .rds-section h3,
-.rds-section .rds-recent--articles ul li a {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
 .rds-section .rds-top {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -1,22 +1,6 @@
 @use '../../base/index'as *;
 
-
 .rds-section {
-
-/// This gets cleaned out after launch and when we can look at the site globally.
-h1,
-h2,
-h3 {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-h4,
-h5 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
   .rds-top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -27,22 +11,17 @@ h5 {
     .rds-rdm,
     .rds-rs,
     .rds-ld {
-      // background-color: white;
-      // border: 1px solid $uva-grey-100;
-      // border-top: 0.25rem solid $uva-brand-orange;
-      // padding: 1.5rem;
-
       h3 {
         margin-bottom: 1rem;
         margin-top: 0;
       }
     }
   }
+
   @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), (max-width: #{$mobile}) {
     .rds-top {
       grid-template-columns: 1fr;
     }
-    // 8/4/23 - problems with boxes not sizing properly. need to fix.
   }
 
   //This needs to get moved into a component. This also appears on the "using the library" page
@@ -59,12 +38,10 @@ h5 {
       align-items: start;
       overflow: hidden;
       width: 300px;
-      // height: 257px;
 
       img {
         flex-shrink: 0;
         min-width: 100%;
-        // min-height: 100%;
       }
     }
 
@@ -110,7 +87,6 @@ h5 {
         border-bottom: 1px solid #{$uva-grey-100};
         a {
           @extend h5;
-          // font-weight: map-get($font-weights, demi);
           text-decoration: none !important;
           &:hover {
             text-decoration: underline !important;
@@ -139,7 +115,6 @@ h5 {
     @extend h5;
   }
 
-
   code {
     font-family: monospace !important;
   }
@@ -162,42 +137,4 @@ h5 {
   .rds-article--output pre {
     background-color: white;
   }
-
-
-
-  // .rds-article--code {
-  //     background-color: $uva-grey-200;
-  //     font-size: 0.9rem;
-  //   pre {
-  //     margin-top: 0;
-  //   }
-  //   pre, code {
-  //     white-space: pre-wrap;
-  //     word-wrap: break-word;
-  //     padding: 0.25rem 2rem;
-  //     background-color: $uva-grey-200;
-  //   }
-  // }
-
-  // .rds-article--output {
-  //   background-color: white;
-  //   padding: 1rem;
-  //   margin-top: 0.5rem;
-  //   margin-bottom: 0.5rem;
-  //   font-size: 0.8rem;
-  //   pre {
-  //     margin-top: 0;
-  //     white-space: pre-wrap;
-  //     word-wrap: break-word;
-  //     padding: 0.25rem 2rem;
-  //     background-color: white;
-  //     code {
-  //       background-color: white;
-  //     }
-  //   }
-  // }
-
-
-
 }
-
