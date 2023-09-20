@@ -2,25 +2,37 @@
 @use '../../base/index'as *;
 
 .library-help {
-  .hover-block {
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid $uva-grey-100;
-  }
-  .two-col, .three-col {
-    margin-top: 2rem;
+
+  .two-col {
+    margin-top: 0;
     margin-bottom: 2rem;
+    h3 {
+      @include h5;
+      margin-top: 1rem;
+    }
+    ul {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
   }
   .three-col {
-    grid-template-rows: 7.5rem;
-  }
-  h3 {
-    @include h5;
-    margin-bottom: 1rem;
-  }
-  h3 + ul, h3 + p {
+    display: grid;
+
+    grid-template-rows: 1fr;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+
+    .hover-block {
+      text-align: center;
+      border: 1px solid $uva-grey-100;
+      h3 {
+        @include h5;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
   }
+
   .s-consult-container {
     display: flex;
     flex-direction: row;
@@ -36,6 +48,7 @@
       align-self: auto;
       width: 330px;
       h3 {
+        @include h5;
         margin-top: 1.5rem;
       }
       img {
@@ -45,7 +58,11 @@
       }
     }
   }
-  @media (max-width:992px) {
+
+  @media screen and (max-width: #{$tablet-min}) {
+    .three-col {
+      grid-template-columns: 1fr !important;
+    }
     .s-consult {
       margin-bottom: 2rem !important;
     }

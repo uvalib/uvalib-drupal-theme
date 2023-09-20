@@ -20,7 +20,7 @@ body {
 p {
   font-size: 1rem;
   font-weight: map-get($font-weights, book);
-  padding-block-end: 1rem;
+  // padding-block-end: 1rem;
   line-height: 1.5;
 }
 
@@ -43,14 +43,17 @@ h1, h2, .h1, .h2 {
 }
 
 // Margins and Spacing
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
+/// SEE _spacing.scss 
+/// FOR PADDING AND MARGIN ON MAJOR ELEMENTS
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
 
 // h1,
 // h2,

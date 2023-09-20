@@ -53,12 +53,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SIDEBAR HR CUSTOM ADD
+// // Wait for the DOM to load
+// document.addEventListener("DOMContentLoaded", function () {
+// 	// Check if the class ".site-sidebar--subnav" is present on the page
+// 	if (document.querySelector(".site-sidebar--subnav")) {
+// 		// Find the first <h4> tag on the page
+// 		var firstH4 = document.querySelector("h4");
+
+// 		if (firstH4) {
+// 			// Create the <hr> element
+// 			var hrElement = document.createElement("hr");
+// 			hrElement.className = "hr--custom sidebar";
+// 			hrElement.setAttribute("aria-hidden", "true"); // Add aria-hidden attribute
+
+// 			// Insert the <hr> element after the closing </h4> tag
+// 			firstH4.insertAdjacentElement("afterend", hrElement);
+// 		}
+// 	}
+// });
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
 	// Check if the class ".site-sidebar--subnav" is present on the page
-	if (document.querySelector(".site-sidebar--subnav")) {
-		// Find the first <h4> tag on the page
-		var firstH4 = document.querySelector("h4");
+	var subnavContainer = document.querySelector(".site-sidebar--subnav");
+
+	if (subnavContainer) {
+		// Find the first <h4> tag within the subnav container
+		var firstH4 = subnavContainer.querySelector("h4");
 
 		if (firstH4) {
 			// Create the <hr> element

@@ -2,21 +2,21 @@
 
 ///Amount of spacing between the sidebar and the main content - 
 /// increasing this decreases the width of the sidebar 
-.layout__region--first {
-  padding-right: 3.5rem;
-  @media screen and (min-width: #{$sm}) {
-    padding-right: 0;
-    // background-color: blueviolet;
-  }
-  @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), screen and (min-width: #{$lg}) {
-    padding-right: 3.5rem;
-    // background-color:yellow;
-  }
-  @media screen and (max-width: #{$md}) {
-    padding-right: inherit;
-    // background-color: seagreen;
-  }
-}
+// .layout__region--first {
+//   padding-right: 3.5rem;
+//   @media screen and (min-width: #{$sm}) {
+//     padding-right: 0;
+//     // background-color: blueviolet;
+//   }
+//   @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), screen and (min-width: #{$lg}) {
+//     padding-right: 3.5rem;
+//     // background-color:yellow;
+//   }
+//   @media screen and (max-width: #{$md}) {
+//     padding-right: inherit;
+//     // background-color: seagreen;
+//   }
+// }
 
 // removing bullets from sub-nav lists
 .field--name-field-subnav {
@@ -58,11 +58,11 @@
 }
 
 @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
-  article {
-    .layout--twocol-section > .layout__region {
-      flex: 0 1 100% !important;
-    }
-  }
+  // article {
+  //   .layout--twocol-section > .layout__region {
+  //     flex: 0 1 100% !important;
+  //   }
+  // }
 
   /* Styles for tablet screens go here */
   .not-mobile {
