@@ -3616,12 +3616,6 @@ footer .footer--post .post-footer div {
 .rp-using .neighborhood-teaser .n-t-frame .n-t-title {
   align-self: center;
 }
-.rp-using .neighborhood-teaser .n-t-frame .n-t-contents {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2.2rem;
-  gap: 2rem;
-  padding-right: 2rem;
-}
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents div:last-of-type {
   display: grid;
   margin-bottom: 1rem;
@@ -4583,30 +4577,33 @@ footer .footer--post .post-footer div {
   grid-template-columns: 0.5fr 1fr;
   gap: 2rem;
 }
-.about-uva-library .about-grid {
+.about-uva-library .top-section .top-body p, .about-uva-library .top-section .top-body .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .top-section .top-body dt {
+  padding-right: 15vw;
+}
+.about-uva-library .about-grid, .about-uva-library .other-happenings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin: 3rem 0 3rem 0;
+  margin: 4rem 0;
 }
-.about-uva-library .about-grid .about-card {
+.about-uva-library .about-grid .about-card, .about-uva-library .other-happenings-grid .about-card {
   display: flex;
   flex-direction: column;
   outline: 1px solid #DADADA;
 }
-.about-uva-library .about-grid .about-card .header {
+.about-uva-library .about-grid .about-card .header, .about-uva-library .other-happenings-grid .about-card .header {
   border-bottom: 4px solid #E57200;
   width: 100%;
   display: cover;
 }
-.about-uva-library .about-grid .about-card .about-card--details {
+.about-uva-library .about-grid .about-card .about-card--details, .about-uva-library .other-happenings-grid .about-card .about-card--details {
   margin: 2rem 2rem;
 }
-.about-uva-library .about-grid .happenings, .about-uva-library .about-grid .news, .about-uva-library .about-grid .exhibitions {
+.about-uva-library .about-grid .happenings, .about-uva-library .about-grid .news, .about-uva-library .about-grid .exhibitions, .about-uva-library .other-happenings-grid .happenings, .about-uva-library .other-happenings-grid .news, .about-uva-library .other-happenings-grid .exhibitions {
   border-top: 4px solid #E57200;
 }
 .about-uva-library .visit-grid {
-  margin: 0 0 3rem 0;
+  margin-bottom: 4rem;
 }
 .about-uva-library .visit-grid .exhibitions img {
   padding: 1rem 0;
@@ -4614,11 +4611,9 @@ footer .footer--post .post-footer div {
 .about-uva-library .visit-grid .visit-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: stretch;
+  justify-content: space-between;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem 0 3rem 0;
 }
 .about-uva-library .visit-grid .visit-container .hover-block {
   display: flex;
@@ -4630,6 +4625,43 @@ footer .footer--post .post-footer div {
 .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt {
   text-align: center;
   padding-block-end: 0;
+}
+.about-uva-library .visit-grid .happenings-grid {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 6rem;
+  margin: 2rem;
+}
+.about-uva-library .visit-grid .happenings-grid img {
+  padding: 2rem 2rem 2rem 0;
+}
+.about-uva-library .visit-grid .other-happenings-grid {
+  margin: 2rem;
+}
+.about-uva-library .visit-grid .happenings-card {
+  display: flex;
+  flex-direction: column;
+}
+.about-uva-library .visit-grid .happenings-card .happenings-contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 1rem;
+}
+.about-uva-library .visit-grid .happenings-card .happenings-contents div:first-of-type {
+  grid-area: 1/1/2/3;
+}
+.about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type {
+  align-self: top;
+  justify-self: end;
+}
+.about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a {
+  width: 2rem;
+  height: 2rem;
+  content: url(../assets/svg-icons/color/circle-arrow-right-link.svg);
+}
+.about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a:hover {
+  content: url(../assets/svg-icons/color/circle-arrow-right-solid-hover.svg);
 }
 .about-uva-library .fact-grid {
   display: flex;
@@ -4672,37 +4704,52 @@ footer .footer--post .post-footer div {
   margin: 3rem 0;
 }
 @media screen and (max-width: 1023px) {
-  .about-uva-library .about-grid {
+  .about-uva-library .top-section .top-body p, .about-uva-library .top-section .top-body .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .top-section .top-body dt {
+    padding-right: 0;
+  }
+  .about-uva-library .about-grid, .about-uva-library .other-happenings-grid {
     margin: 2rem 1rem;
     gap: 1.5rem;
   }
-  .about-uva-library .about-grid .about-card .about-card--details {
+  .about-uva-library .about-grid .about-card .about-card--details, .about-uva-library .other-happenings-grid .about-card .about-card--details {
     margin: 2rem 1.5rem;
   }
-  .about-uva-library .about-grid .header {
+  .about-uva-library .about-grid .header, .about-uva-library .other-happenings-grid .header {
     margin-inline-start: 50%;
     transform: translateX(-50%);
   }
-  .about-uva-library .about-grid h2 {
+  .about-uva-library .about-grid h2, .about-uva-library .other-happenings-grid h2 {
     font-size: 1.728rem !important;
     font-weight: 700;
   }
-  .about-uva-library .visit-grid .exhibitions img {
-    padding: 0.5rem 0;
+  .about-uva-library .visit-grid .happenings-grid {
+    gap: 3rem;
+  }
+  .about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .about-uva-library .about-grid {
+  .about-uva-library .about-grid, .about-uva-library .happenings-grid, .about-uva-library .other-happenings-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 1rem;
   }
-  .about-uva-library .visit-container .hover-block {
-    width: 20rem;
-    text-align: center;
+  .about-uva-library .visit-grid .visit-container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
     justify-content: center;
+  }
+  .about-uva-library .visit-grid .visit-container .hover-block {
+    text-align: center;
     margin: 0 1rem;
+    display: grid;
+  }
+  .about-uva-library .visit-grid .happenings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .about-uva-library .image-divider {
     width: 100vw;
