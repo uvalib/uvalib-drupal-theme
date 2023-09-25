@@ -14,10 +14,8 @@ h4,
 .rds-articles h2,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
 .staff-directory .staff-directory-row .staff-directory-name,
-.about-uva-library .fact-grid .fact-card--details dd,
 footer .footer--main .block h2,
 p,
-.about-uva-library .fact-grid .fact-card--details dt,
 figure,
 blockquote,
 dl,
@@ -41,8 +39,7 @@ body {
 }
 
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 img,
@@ -65,8 +62,6 @@ select {
   *,
   *::before,
   *::after {
-  *::before,
-  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -78,7 +73,7 @@ body {
   font-size: 17px !important;
 }
 
-p, .about-uva-library .fact-grid .fact-card--details dt {
+p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -322,7 +317,9 @@ img {
 .w3-button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -485,7 +482,6 @@ img {
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -638,11 +634,9 @@ img {
   }
   .w3-col.m3,
   .w3-quarter {
-  .w3-quarter {
     width: 24.99999%;
   }
   .w3-col.m4,
-  .w3-third {
   .w3-third {
     width: 33.33333%;
   }
@@ -651,7 +645,6 @@ img {
   }
   .w3-col.m6,
   .w3-half {
-  .w3-half {
     width: 49.99999%;
   }
   .w3-col.m7 {
@@ -659,11 +652,9 @@ img {
   }
   .w3-col.m8,
   .w3-twothird {
-  .w3-twothird {
     width: 66.66666%;
   }
   .w3-col.m9,
-  .w3-threequarter {
   .w3-threequarter {
     width: 74.99999%;
   }
@@ -787,7 +778,6 @@ img {
   }
   .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
   .w3-dropdown-click.w3-mobile .w3-dropdown-content {
-  .w3-dropdown-click.w3-mobile .w3-dropdown-content {
     position: relative;
   }
   .w3-hide-small {
@@ -800,16 +790,9 @@ img {
   .w3-bar-item.w3-mobile,
   .w3-dropdown-hover.w3-mobile,
   .w3-dropdown-click.w3-mobile {
-  .w3-dropdown-hover.w3-mobile,
-  .w3-dropdown-click.w3-mobile {
     text-align: center;
   }
   .w3-dropdown-hover.w3-mobile,
-  .w3-dropdown-hover.w3-mobile .w3-btn,
-  .w3-dropdown-hover.w3-mobile .w3-button,
-  .w3-dropdown-click.w3-mobile,
-  .w3-dropdown-click.w3-mobile .w3-btn,
-  .w3-dropdown-click.w3-mobile .w3-button {
   .w3-dropdown-hover.w3-mobile .w3-btn,
   .w3-dropdown-hover.w3-mobile .w3-button,
   .w3-dropdown-click.w3-mobile,
@@ -1648,9 +1631,7 @@ blockquote p {
 .uvalib-button, .path-user-login .user-login-form .form-actions input,
 .drupal-login-page .user-login-form .form-actions input {
   font-size: 1rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -1906,8 +1887,6 @@ a.uvalib_link--button--alt.uvalib_link--button--active {
   .uvalib-button, .path-user-login .user-login-form .form-actions input,
   .drupal-login-page .user-login-form .form-actions input,
   .uvalib_link--button {
-  .drupal-login-page .user-login-form .form-actions input,
-  .uvalib_link--button {
     width: auto;
   }
 }
@@ -1937,6 +1916,8 @@ svg {
   display: none;
 }
 .toggleSwitch * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .toggleSwitch label {
@@ -2004,6 +1985,8 @@ svg {
   left: 0;
   top: -2px;
   border-radius: 30px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .toggleSwitch input {
@@ -2045,6 +2028,8 @@ svg {
   width: 48%;
   background-color: #007BAC;
   border-radius: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -2307,7 +2292,6 @@ figure figcaption {
   display: grid;
   gap: 3rem;
   margin-top: 2rem;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .path-user-login .user-login-form label,
@@ -2328,7 +2312,6 @@ figure figcaption {
 }
 @media (max-width: 992px) {
   .path-user-login .user-login-form .form-text,
-  .drupal-login-page .user-login-form .form-text {
   .drupal-login-page .user-login-form .form-text {
     max-width: 286px !important;
   }
@@ -2369,7 +2352,6 @@ figure figcaption {
 }
 
 .drupal-tabs {
-  width: -moz-fit-content;
   width: fit-content;
   margin: 17px 0;
 }
@@ -2400,7 +2382,6 @@ div[data-drupal-messages] .messages {
 }
 #header #header-inner .block-system-branding-block {
   grid-area: 1/1/2/2;
-  width: -moz-max-content;
   width: max-content;
 }
 #header #header-inner .utility-nav {
@@ -2585,8 +2566,7 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     z-index: -1;
   }
   .mobile-menu-modal > ul {
@@ -2610,7 +2590,6 @@ nav #uvalibrary-nav .mainlibrary-nav button[aria-expanded=true]::after {
   }
   .mobile-nav-menu-2 {
     background-color: #fff;
-    height: -moz-fit-content;
     height: fit-content;
     position: absolute !important;
     right: 0;
@@ -2899,7 +2878,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 @media screen and (max-width: 767px) {
   .two-col, .section--grid .layout__region--content,
   .three-col {
-  .three-col {
     grid-template-columns: 1fr !important;
   }
 }
@@ -3008,8 +2986,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .home-page .home-collections .home-collections-image img {
   min-height: 230px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .home-page .home-collections .home-collection-virgo {
   position: absolute;
@@ -3058,7 +3035,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .home-page .home-collections .home-collection-virgo p {
   padding: 0.25rem 0.5rem;
   margin: 1rem auto;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -3168,10 +3144,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .home-page .home-news-featured .views-row .field--name-field-media-image .field__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top center;
-     object-position: top center;
+  object-fit: cover;
+  object-position: top center;
 }
 .home-page .home-news-featured .views-row .views-field-title {
   margin-top: 1rem;
@@ -3354,7 +3328,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .home-page .home-news-featured .views-row .views-field-title,
   .home-page .home-news-featured .views-row .views-field-body {
-  .home-page .home-news-featured .views-row .views-field-body {
     padding: 0 0.5rem;
     max-width: 42.5rem;
   }
@@ -3531,7 +3504,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .mitford .exhibit_JK .container_column,
   .mitford .exhibit_JK .auto-column {
-  .mitford .exhibit_JK .auto-column {
     grid-template-columns: 1fr;
   }
   .mitford .column_swap-mobile {
@@ -3545,7 +3517,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     flex: 90%;
   }
   .mitford .exhibit_lead-block,
-  .mitford .exhibit_block {
   .mitford .exhibit_block {
     display: grid;
     grid-template-columns: 1fr;
@@ -3743,7 +3714,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rp-using .virgo-search p {
   padding: 0.25rem 0.5rem;
   margin: 1rem auto;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -3831,6 +3801,12 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rp-using .neighborhood-teaser .n-t-frame .n-t-title {
   align-self: center;
 }
+.rp-using .neighborhood-teaser .n-t-frame .n-t-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.2rem;
+  gap: 2rem;
+  padding-right: 2rem;
+}
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents div:last-of-type {
   display: grid;
   margin-bottom: 1rem;
@@ -3867,11 +3843,13 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   .rp-using .virgo-search form button {
     padding: 10px 0.5rem;
   }
+  .rp-using .using-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1.25fr !important;
+    grid-row-gap: 1.5rem;
+  }
   .rp-using .using-top .u-f-n,
-  .rp-using .using-top .u-c-r,
-  .rp-using .using-top .u-d-j,
-  .rp-using .using-top .u-s-j,
-  .rp-using .using-top .u-m-r {
   .rp-using .using-top .u-c-r,
   .rp-using .using-top .u-d-j,
   .rp-using .using-top .u-s-j,
@@ -4032,8 +4010,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   .et-top-container,
   .et-mid-section,
   .et-bottom-section {
-  .et-mid-section,
-  .et-bottom-section {
     grid-template-columns: 1fr !important;
   }
   .et-top-container {
@@ -4092,8 +4068,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .library-help .s-consult-container .s-consult-block img {
   height: 186px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .library-help .three-col {
@@ -4140,8 +4115,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .uvalibrary-spaces .rerserve-container .reserve-location img {
   height: 186px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .teaching-and-writing .t-w--writing,
@@ -4163,16 +4137,13 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 @media screen and (max-width: 767px) {
   .t-w--writing,
   .t-w--planning {
-  .t-w--planning {
     grid-template-columns: 1fr !important;
   }
   .t-w--writing div:first-of-type,
   .t-w--planning div:first-of-type {
-  .t-w--planning div:first-of-type {
     grid-area: 2/1/3/2;
   }
   .t-w--writing div:last-of-type,
-  .t-w--planning div:last-of-type {
   .t-w--planning div:last-of-type {
     grid-area: 1/1/2/2;
   }
@@ -4230,8 +4201,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     max-width: 100% !important;
   }
   .bookplates .views-row .entry-image img {
-    -o-object-fit: cover !important;
-       object-fit: cover !important;
+    object-fit: cover !important;
   }
 }
 
@@ -4350,7 +4320,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .exhibitions .permanent .view-content,
   .exhibitions .view-exhibitions-past .view-content {
-  .exhibitions .view-exhibitions-past .view-content {
     grid-template-columns: 1fr;
   }
 }
@@ -4459,7 +4428,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .special-collections .sc-fa-uva,
   .special-collections .sc-fa-sarv {
-  .special-collections .sc-fa-sarv {
     grid-template-columns: 1fr !important;
     gap: 2rem;
   }
@@ -4552,10 +4520,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   .r-m-c .equip-section, .scholars-lab .top-section,
   .scholars-lab .mid-section,
   .scholars-lab .equip-section {
-  .r-m-c .mid-section,
-  .r-m-c .equip-section, .scholars-lab .top-section,
-  .scholars-lab .mid-section,
-  .scholars-lab .equip-section {
     grid-template-columns: 1fr;
   }
   .r-m-c .mid-content-block .event-container, .scholars-lab .mid-content-block .event-container {
@@ -4639,7 +4603,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   margin-top: inherit;
 }
 .libra .libra-submit .libra-card .uvalib_link--button {
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -4816,192 +4779,73 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 
 .about-uva-library .top-section {
+  display: grid;
   grid-template-columns: 0.5fr 1fr;
   gap: 2rem;
 }
-.about-uva-library .top-section .top-body p, .about-uva-library .top-section .top-body .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .top-section .top-body dt {
-  padding-right: 15vw;
+.about-uva-library .top-section .profileImage img {
+  border-radius: 50%;
 }
-.about-uva-library .about-grid, .about-uva-library .other-happenings-grid {
+.about-uva-library .top-section .noBG {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about-uva-library .body-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin: 4rem 0;
-}
-.about-uva-library .about-grid .about-card, .about-uva-library .other-happenings-grid .about-card {
-  display: flex;
-  flex-direction: column;
-  outline: 1px solid #DADADA;
-}
-.about-uva-library .about-grid .about-card .header, .about-uva-library .other-happenings-grid .about-card .header {
-  border-bottom: 4px solid #E57200;
-  width: 100%;
-  display: cover;
-}
-.about-uva-library .about-grid .about-card .about-card--details, .about-uva-library .other-happenings-grid .about-card .about-card--details {
-  margin: 2rem 2rem;
-}
-.about-uva-library .about-grid .happenings, .about-uva-library .about-grid .news, .about-uva-library .about-grid .exhibitions, .about-uva-library .other-happenings-grid .happenings, .about-uva-library .other-happenings-grid .news, .about-uva-library .other-happenings-grid .exhibitions {
-  border-top: 4px solid #E57200;
-}
-.about-uva-library .visit-grid {
-  margin-bottom: 4rem;
-}
-.about-uva-library .visit-grid .exhibitions img {
-  padding: 1rem 0;
-}
-.about-uva-library .visit-grid .visit-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
-  margin: 2rem 0 3rem 0;
-}
-.about-uva-library .visit-grid .visit-container .hover-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  border: 1px solid #DADADA;
-  margin: 0;
-}
-.about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt {
-  text-align: center;
-  padding-block-end: 0;
-}
-.about-uva-library .visit-grid .happenings-grid {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-  gap: 6rem;
-  margin: 2rem;
-}
-.about-uva-library .visit-grid .happenings-grid img {
-  padding: 2rem 2rem 2rem 0;
-}
-.about-uva-library .visit-grid .other-happenings-grid {
-  margin: 2rem;
-}
-.about-uva-library .visit-grid .happenings-card {
-  display: flex;
-  flex-direction: column;
-}
-.about-uva-library .visit-grid .happenings-card .happenings-contents {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  margin-top: 1rem;
-}
-.about-uva-library .visit-grid .happenings-card .happenings-contents div:first-of-type {
-  grid-area: 1/1/2/3;
-}
-.about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type {
-  align-self: top;
-  justify-self: end;
-}
-.about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a {
-  width: 2rem;
-  height: 2rem;
-  content: url(../assets/svg-icons/color/circle-arrow-right-link.svg);
-}
-.about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a:hover {
-  content: url(../assets/svg-icons/color/circle-arrow-right-solid-hover.svg);
-}
-.about-uva-library .fact-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: stretch;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-.about-uva-library .fact-grid div:nth-child(even) {
-  outline: 3px solid #E57200;
-}
-.about-uva-library .fact-grid > div {
-  width: 10rem;
-  height: 9rem;
-}
-.about-uva-library .fact-grid .fact-card {
-  display: flex;
-  flex-direction: column;
-  align-content: stretch;
-  justify-content: center;
-  outline: 3px solid #232D4B;
-}
-.about-uva-library .fact-grid .fact-card--details {
-  padding: 1rem;
-}
-.about-uva-library .fact-grid .fact-card--details dd {
-  font-weight: 700;
-  text-align: center;
-}
-.about-uva-library .fact-grid .fact-card--details dt {
-  text-align: center;
-  padding: 0;
-}
-.about-uva-library .image-divider {
-  max-width: 1600px;
-  display: block;
   margin: 3rem 0;
 }
-@media screen and (max-width: 1023px) {
-  .about-uva-library .top-section .top-body p, .about-uva-library .top-section .top-body .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .top-section .top-body dt {
-    padding-right: 0;
-  }
-  .about-uva-library .about-grid, .about-uva-library .other-happenings-grid {
-    margin: 2rem 1rem;
-    gap: 1.5rem;
-  }
-  .about-uva-library .about-grid .about-card .about-card--details, .about-uva-library .other-happenings-grid .about-card .about-card--details {
-    margin: 2rem 1.5rem;
-  }
-  .about-uva-library .about-grid .header, .about-uva-library .other-happenings-grid .header {
-    margin-inline-start: 50%;
-    transform: translateX(-50%);
-  }
-  .about-uva-library .about-grid h2, .about-uva-library .other-happenings-grid h2 {
-    font-size: 1.728rem !important;
-    font-weight: 700;
-  }
-  .about-uva-library .visit-grid .happenings-grid {
-    gap: 3rem;
-  }
-  .about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+.about-uva-library .body-grid .learn {
+  grid-area: 1/1/2/2;
+}
+.about-uva-library .body-grid .idea {
+  grid-area: 1/2/2/3;
+}
+.about-uva-library .body-grid .help {
+  grid-area: 2/1/3/2;
+}
+.about-uva-library .body-grid .visit {
+  grid-area: 2/2/3/3;
+}
+.about-uva-library .body-grid .facts {
+  grid-area: 1/3/3/4;
+}
+.about-uva-library .body-grid .about-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  border: 1px solid #F1F1F1;
+}
+.about-uva-library .body-grid .about-card .about-card--details {
+  padding: 0 1rem;
+}
+.about-uva-library .body-grid .about-card img {
+  margin-bottom: 1rem;
 }
 @media (max-width: 992px) {
   .about-uva-library .top-section,
   .about-uva-library .body-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
-  .about-uva-library .visit-grid .visit-container {
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: center;
+  .about-uva-library .learn {
+    grid-area: 1/1/2/2 !important;
   }
-  .about-uva-library .visit-grid .visit-container .hover-block {
-    text-align: center;
-    margin: 0 1rem;
-    display: grid;
+  .about-uva-library .idea {
+    grid-area: 2/1/3/2 !important;
   }
-  .about-uva-library .visit-grid .happenings-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+  .about-uva-library .help {
+    grid-area: 3/1/4/2 !important;
   }
-  .about-uva-library .image-divider {
-    width: 100vw;
-    margin-inline-start: 50%;
-    transform: translateX(-50%);
+  .about-uva-library .visit {
+    grid-area: 4/1/5/2 !important;
   }
-  .about-uva-library .image-divider img {
-    min-height: 170px;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .about-uva-library .facts {
+    grid-area: 5/1/6/2 !important;
   }
 }
 
@@ -5313,10 +5157,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   display: block;
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
+  object-fit: cover;
+  object-position: center top;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -5457,8 +5299,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   overflow: hidden;
 }
 .library-hours .uva-library--locations .view-content .views-row .views-field-field-main-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .library-hours .uva-library--locations .view-content .views-row h2 {
   margin-top: 1rem;
@@ -5645,7 +5486,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 
 .honor-roll .legend {
-  width: -moz-max-content;
   width: max-content;
   margin-top: 1rem;
   border: 1px solid #DADADA;
