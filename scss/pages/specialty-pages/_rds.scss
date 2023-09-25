@@ -124,10 +124,16 @@
   .rds-article--code, 
   .rds-article--output {
     font-size: 0.8rem;
+    width: 100%;
     pre {
       margin-top: 0;
       margin-bottom: 0;
       padding-left: 1rem;
+      // overflow-x: scroll;
+      width: 100%;
+      code {
+        overflow: auto;
+      }
     }
   }
 
