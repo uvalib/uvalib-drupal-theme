@@ -3,89 +3,275 @@
 
 .about-uva-library {
   .top-section {
-    display: grid;
+    // display: grid;
     grid-template-columns: 0.5fr 1fr;
     gap: 2rem;
 
-    .profileImage img {
-      border-radius: 50%;
+    // .profileImage img {
+    //   border-radius: 50%;
+    // } new design ditched library profile image
+    // we will leave this blank until we have a new photo
+    .top-body {
+      p {
+        padding-right: 15vw;
+      }
     }
-    .noBG {
-      background-color: white;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .top-body {}
   }
 
-  .body-grid {
+  .about-grid, .other-happenings-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-    margin: 3rem 0;
-
-    .learn {
-      grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .idea {
-      grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .help {
-      grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .visit {
-      grid-area: 2 / 2 / 3 / 3;
-    }
-
-    .facts {
-      grid-area: 1 / 3 / 3 / 4;
-    }
+    gap: 3rem;
+    margin: 4rem 0;
 
     .about-card {
       display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-content: stretch;
-      border: 1px solid $uva-grey-200;
+      flex-direction: column;   
+      outline: 1px solid $uva-grey-100;
+
+      .header {
+        border-bottom: 4px solid $uva-brand-orange;
+        width: 100%;
+        // max-width: 1600px;
+        display: cover;
+      }
 
       .about-card--details {
-        padding: 0 1rem;
+        margin: 2rem 2rem;
       }
-      img {
-        margin-bottom: 1rem;
-      }
+    }
+    .happenings, .news,.exhibitions {
+        border-top: 4px solid $uva-brand-orange;
     }
   }
 
-  @media (max-width:992px) { 
-    .top-section,
-    .body-grid {
+  //plan a visit
+  .visit-grid {
+    margin-bottom: 4rem;
+
+    .exhibitions {
+      img {
+      padding: 1rem 0;
+      }
+    }
+
+    .visit-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 2rem 0 3rem 0;
+
+        .hover-block {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-around;
+          border: 1px solid $uva-grey-100;
+          margin: 0;
+
+          p {
+            text-align: center;
+            @extend h5;
+            padding-block-end: 0;
+          }
+        }
+    }
+    
+    //news and exbihition
+    .happenings-grid {
+      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+      gap: 6rem;
+      margin: 2rem;
+      
+        img {
+          padding: 2rem 2rem 2rem 0;
+        }
+    }
+
+    //blogs, renovation, events
+    .other-happenings-grid {
+      margin: 2rem;
+    }
+    .happenings-card {
+      display: flex;
+      flex-direction: column;   
+
+      .happenings-contents {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin-top: 1rem;
+
+        div:first-of-type {
+          grid-area: 1 / 1 / 2 / 3;
+        }
+
+        div:last-of-type {
+          // display: grid;
+          // margin-bottom: 1rem;
+          align-self: top;
+          justify-self: end;
+
+          a {
+            width: 2rem;
+            height: 2rem;
+            // color is defined within the svg file
+            content: $icon-arrow-right-link;
+
+            // color is defined within the svg file
+            &:hover {
+              content: $icon-arrow-right-hover;
+              // border-radius: 50%;
+              // transition: none;
+            }
+          }
+        }
+      }
+    }
+  }
+//end of plan a visit
+
+  .fact-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: stretch;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    div:nth-child(even) {
+    outline: 3px solid $uva-brand-orange;
+    // background-color: $uva-red-100;
+    }
+
+    > div {
+      width: 10rem;
+      height: 9rem;
+    }
+
+    .fact-card {
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+      justify-content: center;
+      outline: 3px solid $uva-brand-blue;
+    }
+
+    .fact-card--details {
+      padding: 1rem;
+
+      dd {
+        @extend h4;
+        font-weight: map-get($font-weights, demi);
+        text-align: center;
+      }
+
+      dt {
+        @extend p;
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  .image-divider {
+    // width: 100vw;
+    max-width: 1600px;
+    display: block;
+    margin: 3rem 0;
+  }
+
+  //tablet view
+  @media screen and (max-width: #{$tablet}){
+
+    .top-section {
+      .top-body {
+      p {
+        padding-right: 0;
+      }
+      }
+    }
+    
+    .about-grid, .other-happenings-grid {
+      margin: 2rem 1rem;
+      gap: 1.5rem;
+
+      .about-card {
+        .about-card--details {
+        margin: 2rem 1.5rem;
+        }
+      }
+
+      .header {
+      margin-inline-start: 50%;
+      transform: translateX(-50%);
+      }
+
+      h2 {
+        font-size: 1.728rem !important;
+        font-weight: map-get($font-weights, demi);
+      }
+    }
+
+    .visit-grid {
+      .happenings-grid {
+        gap: 3rem;
+      }
+
+      .happenings-card {
+        .happenings-contents {
+          div:last-of-type {
+            a {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }  
+  }
+  
+  //mobile view
+  @media screen and (max-width: #{$mobile}){ 
+    //about card re-layout 
+    .about-grid, .happenings-grid, .other-happenings-grid {
+      display: grid;
       grid-template-columns: 1fr;
-    }
-    .learn {
-      grid-area: 1 / 1 / 2 / 2 !important;
+      gap: 2rem;
     }
 
-    .idea {
-      grid-area: 2 / 1 / 3 / 2 !important;
-    }
+    .visit-grid {
+      .visit-container {
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+      justify-content: center;
+        
+        .hover-block {
+          text-align: center;
+          margin: 0 1rem;
+          display: grid;
+        }
+      }
 
-    .help {
-      grid-area: 3 / 1 / 4 / 2 !important;
+      .happenings-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
     }
+    
+    .image-divider {
+      width: 100vw;
+      // max-width: 1600px;
+      margin-inline-start: 50%;
+      transform: translateX(-50%);
 
-    .visit {
-      grid-area: 4 / 1 / 5 / 2 !important;
+        img {
+          min-height: 170px;
+          object-fit: cover;
+        }
     }
-
-    .facts {
-      grid-area: 5 / 1 / 6 / 2 !important;
-    }
-
   }
 }
