@@ -5578,6 +5578,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-section .rds-recent--articles .more-link {
   text-align: right;
+  color: inherit;
 }
 .rds-section .rds-blog-categories .tex2jax_process {
   margin-top: 3rem;
