@@ -123,26 +123,46 @@
   p > code {
     background-color: $uva-grey-200;
   }
+  // .rds-article--code, 
+  // .rds-article--output {
+  //   font-size: 0.8rem;
+  //   width: 100%;
+  //   pre {
+  //     margin-top: 0;
+  //     margin-bottom: 0;
+  //     padding-left: 1rem;
+  //     // overflow-x: scroll;
+  //     width: 100%;
+  //     code {
+  //       overflow: auto;
+  //     }
+  //   }
+  // }
+
+  // .rds-article--code pre {
+  //   background-color: $uva-grey-200;
+  // }
+  // .rds-article--output pre {
+  //   background-color: white;
+  // }
   .rds-article--code, 
   .rds-article--output {
-    font-size: 0.8rem;
-    width: 100%;
+    width: 100% !important; /* Makes the container responsive */
+    max-width: 100% !important; /* Ensures it doesn't exceed the parent's width */
+    overflow: hidden !important; /* Ensures that any overflow content from children is hidden */
     pre {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-left: 1rem;
-      // overflow-x: scroll;
-      width: 100%;
-      code {
-        overflow: auto;
-      }
+      margin: 0 !important; /* Removes default margin from pre */
+      overflow-x: auto !important; /* Adds horizontal scrollbar when necessary */
+      white-space: pre !important; /* Preserves whitespace and ensures content doesn't wrap */
+    }
+    code {
+        display: block !important; /* Makes the code block-level so it fills the width of its container */
+        white-space: pre !important; /* Preserves whitespace and ensures content doesn't wrap */
+        overflow-wrap: normal !important; /* Prevents the content from wrapping */
+        word-wrap: normal !important; /* Older version of overflow-wrap, added for better compatibility */
     }
   }
 
-  .rds-article--code pre {
-    background-color: $uva-grey-200;
-  }
-  .rds-article--output pre {
-    background-color: white;
-  }
+  
+
 }

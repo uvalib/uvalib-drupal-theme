@@ -5753,25 +5753,22 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-articles .rds-article--code,
 .rds-articles .rds-article--output {
-  font-size: 0.8rem;
-  width: 100%;
+  width: 100% !important; /* Makes the container responsive */
+  max-width: 100% !important; /* Ensures it doesn't exceed the parent's width */
+  overflow: hidden !important; /* Ensures that any overflow content from children is hidden */
 }
 .rds-articles .rds-article--code pre,
 .rds-articles .rds-article--output pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 1rem;
-  width: 100%;
+  margin: 0 !important; /* Removes default margin from pre */
+  overflow-x: auto !important; /* Adds horizontal scrollbar when necessary */
+  white-space: pre !important; /* Preserves whitespace and ensures content doesn't wrap */
 }
-.rds-articles .rds-article--code pre code,
-.rds-articles .rds-article--output pre code {
-  overflow: auto;
-}
-.rds-articles .rds-article--code pre {
-  background-color: #F1F1F1;
-}
-.rds-articles .rds-article--output pre {
-  background-color: white;
+.rds-articles .rds-article--code code,
+.rds-articles .rds-article--output code {
+  display: block !important; /* Makes the code block-level so it fills the width of its container */
+  white-space: pre !important; /* Preserves whitespace and ensures content doesn't wrap */
+  overflow-wrap: normal !important; /* Prevents the content from wrapping */
+  word-wrap: normal !important; /* Older version of overflow-wrap, added for better compatibility */
 }
 
 body.maintenance-page {
