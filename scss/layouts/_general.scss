@@ -58,7 +58,8 @@
   }
 }
 
-.uvalib-col--first {
+.layout__region .layout__region--first .uvalib-col--first {
+  max-width: 100vw;
   // padding-right: 3.5rem;
   @media screen and (min-width: #{$sm}) {
     // padding-right: 0;

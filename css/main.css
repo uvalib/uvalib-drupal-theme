@@ -2827,6 +2827,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     grid-template-columns: 1fr !important;
   }
 }
+.layout__region .layout__region--first .uvalib-col--first {
+  max-width: 100vw;
+}
 .uvalib-col--second {
   min-width: 10rem;
 }
