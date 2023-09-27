@@ -5508,7 +5508,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .library-hours tr:last-of-type > th.today {
   border-bottom: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .library-hours table {
     display: block;
   }
