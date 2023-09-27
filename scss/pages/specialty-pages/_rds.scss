@@ -24,7 +24,6 @@
     }
   }
 
-  //This needs to get moved into a component. This also appears on the "using the library" page
   .neighborhood-teaser {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -65,10 +64,8 @@
           height: 2rem;
           align-self: end;
           justify-self: center;
-          // color is defined within the svg file
           content: $icon-arrow-right-link;
 
-          // color is defined within the svg file
           &:hover {
             content: $icon-arrow-right-hover;
           }
@@ -96,8 +93,6 @@
     }
     .more-link {
       text-align: right;
-      // take this out later
-      color: inherit;
     }
   }
 
@@ -105,6 +100,9 @@
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .tex2jax_process {
+    max-width: 90vw;
   }
 }
 
@@ -123,45 +121,28 @@
   p > code {
     background-color: $uva-grey-200;
   }
-  // .rds-article--code, 
-  // .rds-article--output {
-  //   font-size: 0.8rem;
-  //   width: 100%;
-  //   pre {
-  //     margin-top: 0;
-  //     margin-bottom: 0;
-  //     padding-left: 1rem;
-  //     // overflow-x: scroll;
-  //     width: 100%;
-  //     code {
-  //       overflow: auto;
-  //     }
-  //   }
-  // }
 
-  // .rds-article--code pre {
-  //   background-color: $uva-grey-200;
-  // }
-  // .rds-article--output pre {
-  //   background-color: white;
-  // }
   .rds-article--code, 
   .rds-article--output {
     font-size: 0.8rem;
-    width: 100%; /* Makes the container responsive */
-    max-width: 100%; /* Ensures it doesn't exceed the parent's width */
-    overflow: hidden; /* Ensures that any overflow content from children is hidden */
+    width: 100%;
+    max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
+    overflow: hidden;
+    margin-top: -1rem;
+    pre, code {
+      margin: 0;
+    }
     pre {
-      margin: 0; /* Removes default margin from pre */
-      overflow-x: auto; /* Adds horizontal scrollbar when necessary */
-      white-space: pre; /* Preserves whitespace and ensures content doesn't wrap */
-      padding-left: 1rem;
+      overflow-x: auto;
+      white-space: pre;
     }
     code {
-        display: block; /* Makes the code block-level so it fills the width of its container */
-        white-space: pre; /* Preserves whitespace and ensures content doesn't wrap */
-        overflow-wrap: normal; /* Prevents the content from wrapping */
-        word-wrap: normal; /* Older version of overflow-wrap, added for better compatibility */
+        display: block;
+        white-space: pre;
+        overflow-wrap: normal;
+        word-wrap: normal;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
     }
   }
   .rds-article--code {
@@ -169,7 +150,12 @@
       background-color: $uva-grey-200;
     }
   }
-
-  
-
+  .rds-article--output {
+    pre {
+      background-color: white;
+    }
+    code {
+      background-color: white;
+    }
+  }
 }

@@ -2812,16 +2812,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   gap: 2rem;
 }
 
-@media screen and (min-width: 40em) {
-  .layout--twocol-section.layout--twocol-section--33-67 > .layout__region--first,
-  .layout--twocol-section.layout--twocol-section--67-33 > .layout__region--second {
-    flex: initial;
-  }
-  .layout--twocol-section.layout--twocol-section--33-67 > .layout__region--second,
-  .layout--twocol-section.layout--twocol-section--67-33 > .layout__region--first {
-    flex: initial;
-  }
-}
 @media screen and (max-width: 992px) {
   .layout--twocol-section {
     grid-template-columns: 1fr !important;
@@ -2838,21 +2828,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   list-style: none;
 }
 
-@media screen and (max-width: 993px) and (min-width: 993px) {
-  article .layout--twocol-section--67-33 .layout__region--first {
-    flex: 0 1 67% !important;
-  }
-  article .layout--twocol-section--67-33 .layout__region--second {
-    flex: 0 1 33% !important;
-  }
-  /* Styles for desktop screens go here */
-  .not-mobile {
-    display: inherit;
-  }
-  .mobile-only {
-    display: none;
-  }
-}
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5736,12 +5711,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-section .rds-recent--articles .more-link {
   text-align: right;
-  color: inherit;
 }
 .rds-section .rds-blog-categories .tex2jax_process {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.rds-section .tex2jax_process {
+  max-width: 90vw;
 }
 
 .rds-articles h2 {
@@ -5756,26 +5733,38 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-articles .rds-article--code,
 .rds-articles .rds-article--output {
   font-size: 0.8rem;
-  width: 100%; /* Makes the container responsive */
-  max-width: 100%; /* Ensures it doesn't exceed the parent's width */
-  overflow: hidden; /* Ensures that any overflow content from children is hidden */
+  width: 100%;
+  max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
+  overflow: hidden;
+  margin-top: -1rem;
+}
+.rds-articles .rds-article--code pre, .rds-articles .rds-article--code code,
+.rds-articles .rds-article--output pre,
+.rds-articles .rds-article--output code {
+  margin: 0;
 }
 .rds-articles .rds-article--code pre,
 .rds-articles .rds-article--output pre {
-  margin: 0; /* Removes default margin from pre */
-  overflow-x: auto; /* Adds horizontal scrollbar when necessary */
-  white-space: pre; /* Preserves whitespace and ensures content doesn't wrap */
-  padding-left: 1rem;
+  overflow-x: auto;
+  white-space: pre;
 }
 .rds-articles .rds-article--code code,
 .rds-articles .rds-article--output code {
-  display: block; /* Makes the code block-level so it fills the width of its container */
-  white-space: pre; /* Preserves whitespace and ensures content doesn't wrap */
-  overflow-wrap: normal; /* Prevents the content from wrapping */
-  word-wrap: normal; /* Older version of overflow-wrap, added for better compatibility */
+  display: block;
+  white-space: pre;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .rds-articles .rds-article--code code {
   background-color: #F1F1F1;
+}
+.rds-articles .rds-article--output pre {
+  background-color: white;
+}
+.rds-articles .rds-article--output code {
+  background-color: white;
 }
 
 body.maintenance-page {
