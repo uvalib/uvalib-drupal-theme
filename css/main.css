@@ -5757,6 +5757,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   padding-left: 1rem;
   padding-bottom: 1rem;
 }
+.rds-articles .rds-article--code pre {
+  background-color: #F1F1F1;
+}
 .rds-articles .rds-article--code code {
   background-color: #F1F1F1;
 }

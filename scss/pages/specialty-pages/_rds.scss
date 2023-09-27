@@ -146,6 +146,9 @@
     }
   }
   .rds-article--code {
+    pre{
+      background-color: $uva-grey-200;
+    }
     code {
       background-color: $uva-grey-200;
     }
