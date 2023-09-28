@@ -2830,7 +2830,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 
 .two-col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr !important;
   gap: 1rem;
 }
 
@@ -2846,7 +2846,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 @media screen and (max-width: 767px) {
   .two-col {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   /* Styles for mobile screens go here */
   .not-mobile {
@@ -3102,12 +3102,15 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   align-self: center;
 }
 .home-page .home-using-block .teaching-and-publication {
+  align-items: inherit;
   grid-area: 3/1/4/2;
 }
 .home-page .home-using-block .using-spaces {
+  align-items: inherit;
   grid-area: 3/2/4/3;
 }
 .home-page .home-using-block .equipment-tech {
+  align-items: inherit;
   grid-area: 3/3/4/4;
 }
 .home-page .home-using-block .using-help {
@@ -3283,12 +3286,15 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     align-self: center;
   }
   .home-page .home-using-block .teaching-and-publication {
+    align-items: center;
     grid-area: 3/1/4/2;
   }
   .home-page .home-using-block .using-spaces {
+    align-items: center;
     grid-area: 4/1/5/2;
   }
   .home-page .home-using-block .equipment-tech {
+    align-items: center;
     grid-area: 5/1/6/2;
   }
   .home-page .home-using-block .using-help {
@@ -5557,6 +5563,18 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .library-hours table tr:last-of-type > *.today {
     border-bottom: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .library-hours .weekly-hours-header-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .library-hours .weekly-hours-header-section div.heading-h2 {
+    order: 1;
+  }
+  .library-hours .weekly-hours-header-section button {
+    order: 2;
   }
 }
 

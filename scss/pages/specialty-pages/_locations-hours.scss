@@ -217,5 +217,18 @@
         border-bottom: 0;
       }
     }
- }
+  }
+  @media screen and (max-width: #{$sm}) {
+    //stack the buttons
+    .weekly-hours-header-section {
+      display: flex;
+      flex-direction: column;
+      div.heading-h2 {
+        order: 1;
+      }
+      button {
+        order: 2;
+      }
+    }
+  }
 }

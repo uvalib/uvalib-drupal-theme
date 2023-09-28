@@ -94,14 +94,17 @@
     }
 
     .teaching-and-publication {
+      align-items: inherit;
       grid-area: 3 / 1 / 4 / 2;
     }
 
     .using-spaces {
+      align-items: inherit;
       grid-area: 3 / 2 / 4 / 3;
     }
 
     .equipment-tech {
+      align-items: inherit;
       grid-area: 3 / 3 / 4 / 4;
     }
 
@@ -350,14 +353,17 @@
       }
 
       .teaching-and-publication {
+        align-items: center;
         grid-area: 3 / 1 / 4 / 2;
       }
 
       .using-spaces {
+        align-items: center;
         grid-area: 4 / 1 / 5 / 2;
       }
 
       .equipment-tech {
+        align-items: center;
         grid-area: 5 / 1 / 6 / 2;
       }
 

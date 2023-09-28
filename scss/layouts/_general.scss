@@ -69,7 +69,7 @@
 
 .two-col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr !important;
   gap: 1rem;
 }
 
@@ -93,7 +93,7 @@
 @media screen and (max-width: #{$mobile}) {
   .two-col {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   /* Styles for mobile screens go here */
