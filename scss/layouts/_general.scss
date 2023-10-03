@@ -7,10 +7,6 @@
   gap: 2rem;
 }
 
-.layout--twocol-section > .layout__region {
-
-}
-
 @media screen and (max-width: #{$tablet-max}) {
   .layout--twocol-section {
     grid-template-columns: 1fr !important;
@@ -19,18 +15,9 @@
 
 .layout__region .layout__region--first .uvalib-col--first {
   max-width: 100vw;
-  @media screen and (min-width: #{$sm}) {
-    // background-color: blueviolet;
-  }
-  @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), screen and (min-width: #{$lg}) {
-    // background-color:yellow;
-  }
-  @media screen and (max-width: #{$md}) {
-    // background-color: seagreen;
-  }
 }
+
 .uvalib-col--second {
-  // background-color: aliceblue;
   min-width: 10rem;
 }
 
@@ -41,45 +28,25 @@
   }
 }
 
-//trying to force the sidebar to stay between 993px and 1086px
-// @media screen and (width: #{$lg-adjusted}) {
-// @media screen and (max-width: #{$lg-adjusted}) and (min-width: #{$desktop}) {
-//   article {
-//     .layout--twocol-section--67-33 {
-//       .layout__region--first {
-//         flex: 0 1 67% !important;
-//         // outline: 1px solid red;
-//       }
-//       .layout__region--second {
-//         flex: 0 1 33% !important;
-//         // outline: 1px solid blue;
-//       }
-//     }
-//   }
-
-//   /* Styles for desktop screens go here */
-//   .not-mobile {
-//     display: inherit;
-//   }
-
-//   .mobile-only {
-//     display: none;
-//   }
-// }
-
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr !important;
   gap: 1rem;
 }
 
-@media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
-  // article {
-  //   .layout--twocol-section > .layout__region {
-  //     flex: 0 1 100% !important;
-  //   }
-  // }
+.small-col_large-col {
+  display: grid;
+  grid-template-columns: 1fr 2fr !important;
+  gap: 1rem;
+}
 
+.large-col_small-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr !important;
+  gap: 1rem;
+}
+
+@media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
   /* Styles for tablet screens go here */
   .not-mobile {
     display: inherit;
@@ -91,7 +58,7 @@
 }
 
 @media screen and (max-width: #{$mobile}) {
-  .two-col {
+  .two-col, .small-col_large-col, .large-col_small-col {
     display: grid;
     grid-template-columns: 1fr !important;
   }

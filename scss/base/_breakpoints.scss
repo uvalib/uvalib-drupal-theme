@@ -15,10 +15,8 @@ $xxl: 1400px;
 /// Be sure to test multiple pages before changing values
 $mobile: $md - 1px;
 $tablet-min: $md;
-// $tablet-max: $lg + 81px;
 $tablet-max: $lg;
 $desktop: $lg + 1px;
-
 
 /// These adjustments are so that they match what was in the original parent theme files.
 /// If we need to tweak the base sizes, I suggest we test it out here.
