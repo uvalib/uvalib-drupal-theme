@@ -3155,6 +3155,18 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .home-page .home-hours-block p.hours-see-all a {
   font-size: 0.95rem;
 }
+.home-page .block-views-blockhome-news-block-1 h2 {
+  margin-top: 0;
+}
+.home-page .block-views-blocknews-recent-blog-headlines-only-block-1 .view-header {
+  padding-left: 0;
+}
+.home-page .block-views-blocknews-recent-blog-headlines-only-block-1 h3 {
+  margin-top: 1rem;
+}
+.home-page .block-views-blocknews-recent-blog-headlines-only-block-1 .more-link {
+  text-align: right;
+}
 .home-page .news-title-mobile {
   display: none;
 }
@@ -3227,6 +3239,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .home-page .home-exhibits .home-exhibit-title,
 .home-page .home-exhibits .home-exhibit-body {
   padding-left: 0.5rem;
+}
+.home-page .home-exhibits .view-footer {
+  text-align: right;
 }
 .home-page .campaign {
   text-align: center;

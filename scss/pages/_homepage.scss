@@ -119,7 +119,6 @@
 
   // location hours block
   .home-hours-block {
-    // padding-left: 2rem;
 
     .home-hour-date {
       background-color: $uva-brand-orange-base;
@@ -132,29 +131,12 @@
 
     .hour-head {
       @extend .h5;
-      // padding: 2rem 0.5rem 1.25rem 0.5rem;
       margin: 2rem 0 1.25rem 0;
       border-bottom: 1px dotted $uva-grey-100;
-      // font-weight: map-get($font-weights, demi);
     }
 
     dl {
-    //   padding-left: 0.5rem;
-
-    //   &.dl--inline {
-    //     font-size: 0.95rem;
-    //     row-gap: normal;
-    //     grid-template-columns: 1fr;
-    //   }
-
-      // dt {
-        // padding-left: 0.5rem;
-    //     border-bottom: 1px solid $uva-grey-100;
-    //     width: 100%;
-      // }
-
       dd {
-        // padding-right: .5rem;
         text-align: right;
       }
     }
@@ -170,6 +152,22 @@
   }
 
   //news and blog
+  .block-views-blockhome-news-block-1 {
+    h2 {
+      margin-top: 0;
+    }
+  }
+  .block-views-blocknews-recent-blog-headlines-only-block-1 {
+    .view-header {
+      padding-left: 0;
+    }
+    h3 {
+      margin-top: 1rem;
+    }
+    .more-link {
+      text-align: right;
+    }
+  }
   .news-title-mobile {
     display: none;
   }
@@ -265,6 +263,9 @@
     .home-exhibit-title,
     .home-exhibit-body {
       padding-left: 0.5rem;
+    }
+    .view-footer {
+      text-align: right;
     }
   }
 
