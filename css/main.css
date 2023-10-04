@@ -4917,6 +4917,18 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .about-uva-library .visit-grid .happenings-card .happenings-contents div:last-of-type a:hover {
   content: url(../assets/svg-icons/color/circle-arrow-right-solid-hover.svg);
 }
+.about-uva-library .view-header {
+  padding: 0;
+}
+.about-uva-library .more-link {
+  text-align: right;
+}
+.about-uva-library .home-exhibits .field-content {
+  margin-bottom: 1rem;
+}
+.about-uva-library .home-exhibits .view-footer {
+  text-align: right;
+}
 .about-uva-library .fact-grid {
   display: flex;
   flex-direction: row;

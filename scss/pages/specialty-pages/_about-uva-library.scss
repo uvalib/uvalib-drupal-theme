@@ -113,6 +113,23 @@
     }
   }
 //end of plan a visit
+.view-header {
+  padding: 0;
+}
+.more-link {
+  text-align: right;
+}
+
+.home-exhibits {
+  .field-content {
+    margin-bottom: 1rem;
+  }
+  .view-footer {
+    text-align: right;
+  }
+}
+
+
   .fact-grid {
     display: flex;
     flex-direction: row;
