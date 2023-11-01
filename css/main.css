@@ -3593,17 +3593,17 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   font-weight: 600;
   margin-bottom: 0;
 }
-.harlemrenaissance #main-content .layout--twocol-section--33-67 {
+.harlemrenaissance #main-content .layout--twocol-section--33-67, .harlemrenaissance #main-content .two-col {
   margin: 1rem -1000px;
   padding: 1rem 1000px;
   background-color: #ffffff;
   background-color: #C5A22D;
   margin-top: 0;
 }
-.harlemrenaissance #main-content .layout--twocol-section--33-67 a {
+.harlemrenaissance #main-content .layout--twocol-section--33-67 a, .harlemrenaissance #main-content .two-col a {
   color: #2B2B2B;
 }
-.harlemrenaissance #main-content .layout--twocol-section--33-67 .layout__region--first img {
+.harlemrenaissance #main-content .layout--twocol-section--33-67 .layout__region--first img, .harlemrenaissance #main-content .two-col .layout__region--first img {
   margin-bottom: 1rem;
 }
 .harlemrenaissance #main-content #events {

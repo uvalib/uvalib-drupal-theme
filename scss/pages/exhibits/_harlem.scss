@@ -23,7 +23,7 @@ $color-link: #215D9E;
       font-weight: 600;
       margin-bottom: 0;
     }
-    .layout--twocol-section--33-67 {
+    .layout--twocol-section--33-67, .two-col {
       @include edge-color-fill;
       background-color: $color-header;
       margin-top: 0;
