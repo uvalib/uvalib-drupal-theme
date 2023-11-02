@@ -74,6 +74,12 @@
     }
   }
 
+  // article.node--type-rds-article-news {
+  //   h2 > .rds-article--code {
+  //     margin-top: 1rem;
+  //   }
+  // }
+
   .rds-recent--articles {
     ul {
       list-style-type: none;
@@ -128,9 +134,10 @@
     width: 100%;
     max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
     overflow: hidden;
-    margin-top: -1rem;
+    // margin-top: -1rem;
     pre, code {
       margin: 0;
+      margin-bottom: 0.5rem;
     }
     pre {
       overflow-x: auto;
@@ -142,7 +149,7 @@
         overflow-wrap: normal;
         word-wrap: normal;
         padding-left: 1rem;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
     }
   }
   .rds-article--code {
