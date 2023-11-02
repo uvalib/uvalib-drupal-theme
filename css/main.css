@@ -2768,6 +2768,7 @@ footer .footer--main .block ul {
 }
 footer .footer--main .block .social-media {
   display: flex;
+  justify-content: flex-start;
 }
 footer .footer--main .block .social-media a {
   display: inline-block;
@@ -2778,6 +2779,10 @@ footer .footer--main .block .social-media a {
 }
 footer .footer--main .block .social-media a:hover, footer .footer--main .block .social-media a:focus {
   fill: #E57200;
+}
+footer .footer--main .block .social-media a svg {
+  width: 2rem;
+  height: 2rem;
 }
 footer .footer--post {
   background-color: #141E3C;
