@@ -5799,12 +5799,12 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-articles .rds-article--output pre,
 .rds-articles .rds-article--output code {
   margin: 0;
-  margin-bottom: 0.5rem;
 }
 .rds-articles .rds-article--code pre,
 .rds-articles .rds-article--output pre {
   overflow-x: auto;
   white-space: pre;
+  margin-bottom: 0.5rem;
 }
 .rds-articles .rds-article--code code,
 .rds-articles .rds-article--output code {
