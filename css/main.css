@@ -3939,7 +3939,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .equipment-and-tech .et-top-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 256px);
+  grid-template-rows: repeat(3, 290px);
   gap: 2rem;
   max-width: 80%;
   margin: 3rem auto;
@@ -3952,7 +3952,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   align-items: center;
   border: 1px solid #DADADA;
   text-decoration: none;
-  height: 256px;
+  height: 290px;
 }
 .equipment-and-tech .et-top-container .et-block .et-url:hover h3 {
   text-decoration: underline;
@@ -4026,6 +4026,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   fill: #E57200;
   transform: rotate(-45deg);
   transition: transform 0.7s ease-in-out;
+  top: 0;
+  left: 0;
 }
 .equipment-and-tech .et-top-container .et-block .et-title {
   font-size: 1.2rem !important;

@@ -6,7 +6,7 @@
   .et-top-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 256px);
+    grid-template-rows: repeat(3, 290px);
     gap: 2rem;
     max-width: 80%;
     margin: 3rem auto;
@@ -20,7 +20,7 @@
         align-items: center;
         border: 1px solid $uva-grey-100;
         text-decoration: none;
-        height: 256px;
+        height: 290px;
 
         &:hover h3 {
           text-decoration: underline;
@@ -110,6 +110,8 @@
               fill: $uva-brand-orange;
               transform: rotate(-45deg);
               transition: transform .7s ease-in-out;
+              top: 0;
+              left: 0;
             }
           }
         }
