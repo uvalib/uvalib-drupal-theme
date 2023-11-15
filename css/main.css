@@ -3670,6 +3670,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .harlemrenaissance #main-content .harlem-collections dt a {
   background-color: #F2EBDB;
 }
+.harlemrenaissance #main-content .harlem-collections .two-col {
+  background-color: #F2EBDB;
+}
 .harlemrenaissance #main-content .harlem-gallery {
   margin: 1rem -1000px;
   padding: 1rem 1000px;

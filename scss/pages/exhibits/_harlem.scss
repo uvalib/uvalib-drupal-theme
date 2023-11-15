@@ -92,6 +92,9 @@ $color-link: #215D9E;
       dt a {
       background-color: $color-featured-collection;
       }
+      .two-col {
+        background-color: $color-featured-collection;
+      }
     }
     .harlem-gallery {
       @include edge-color-fill;
