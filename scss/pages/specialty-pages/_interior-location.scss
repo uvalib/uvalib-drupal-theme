@@ -1,0 +1,42 @@
+@use '../../mixins/index' as *;
+@use '../../base/index' as *;
+
+.interior-library {
+  .library-intro {
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+
+    .contact-info {
+
+    }
+
+    .interior-photo {
+
+    }
+  }
+
+  .library-about {
+
+ }
+
+  .library-spaces {
+    .reservable {
+
+  }
+    .tech {
+
+    }
+    .other {
+
+    }
+ }
+
+ .interactive-maps {
+
+ }
+
+ .exhibitions {
+
+ }
+
+}

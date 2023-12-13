@@ -1,0 +1,13 @@
+@use '../base/index'as *;
+
+/// To use this, place <hr class="hr--custom-dash"> in the HTML
+
+.hr--custom-dash {
+  border-top: 1px dashed red
+}
+
+// .hr--custom {
+//   background-color: $uva-brand-orange;
+//   height: 4px;
+//   border: none;
+// }
