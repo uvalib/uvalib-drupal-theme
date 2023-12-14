@@ -5852,15 +5852,18 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   background-color: white;
 }
 
+.oerpage p {
+  max-width: 70rem;
+}
 .oerpage .oer-intro {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   margin-right: 10vw;
   margin-top: 1rem;
 }
-.oerpage .oer-intro .oer-intro-content p {
-  vertical-align: middle;
+.oerpage .oer-intro .oer-intro-content {
+  margin: auto;
 }
 .oerpage .oer-matter {
   margin: 4rem 15vw 0 0;
@@ -5900,56 +5903,31 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   grid-row-gap: 3rem;
   margin-top: 2rem;
 }
-.oerpage .oer-impacts .impacts-body .impacts-content-left {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  border: #DADADA 1px solid;
-  border-left: 0.25rem solid #E57200;
-}
-.oerpage .oer-impacts .impacts-body .impacts-content-left p {
-  padding: 2rem 3rem;
-}
-.oerpage .oer-impacts .impacts-body .impacts-content-left .quote-content-left {
-  grid-area: 1/2/2/6;
-}
-.oerpage .oer-impacts .impacts-body .impacts-content-left .quote-icon-left {
-  grid-area: 1/1/2/2;
-  position: relative;
-}
-.oerpage .oer-impacts .impacts-body .impacts-content-left .quote-icon-left svg {
-  width: 6rem;
-  height: 7rem;
-  fill: #3395D4;
-  opacity: 80%;
-  justify-content: right;
-  display: block;
-  margin-left: 2rem;
-}
-.oerpage .oer-impacts .impacts-body .impacts-content-right {
+.oerpage .oer-impacts .impacts-body .impacts-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border: #DADADA 1px solid;
   border-left: 0.25rem solid #E57200;
 }
-.oerpage .oer-impacts .impacts-body .impacts-content-right p {
+.oerpage .oer-impacts .impacts-body .impacts-content .quote-content {
+  grid-area: 1/1/2/5;
+  margin: auto;
+}
+.oerpage .oer-impacts .impacts-body .impacts-content .quote-content p {
   padding: 2rem 3rem;
 }
-.oerpage .oer-impacts .impacts-body .impacts-content-right .quote-content-right {
-  grid-area: 1/1/2/5;
-}
-.oerpage .oer-impacts .impacts-body .impacts-content-right .quote-icon-right {
+.oerpage .oer-impacts .impacts-body .impacts-content .quote-icon {
   grid-area: 1/5/2/6;
   position: relative;
+  Margin: auto;
 }
-.oerpage .oer-impacts .impacts-body .impacts-content-right .quote-icon-right svg {
+.oerpage .oer-impacts .impacts-body .impacts-content .quote-icon svg {
   width: 6rem;
-  height: 7rem;
-  fill: #FFB370;
+  height: 6rem;
+  fill: #E57200;
   opacity: 100%;
   align-content: end;
   margin-right: 2rem;
-  display: block;
-  justify-content: center;
 }
 @media screen and (max-width: 992px) {
   .oerpage .oer-intro {
@@ -5978,16 +5956,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .oerpage .oer-impacts .impacts-body .impacts-content-left p {
-    padding: 3rem 2rem;
-  }
-  .oerpage .oer-impacts .impacts-body .impacts-content-left .quote-icon-left svg {
-    height: 5rem;
-  }
-  .oerpage .oer-impacts .impacts-body .impacts-content-right p {
-    padding: 3rem 2rem;
-  }
-  .oerpage .oer-impacts .impacts-body .impacts-content-right .quote-icon-right svg {
+  .oerpage .oer-impacts .impacts-body .impacts-content .quote-icon svg {
     height: 5rem;
   }
 }
