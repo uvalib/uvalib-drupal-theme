@@ -223,6 +223,12 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
+
+      .about-card {
+        .about-card--details {
+          margin: 0 2rem 2rem 2rem;
+        }
+      }
     }
     .visit-grid {
       .visit-container {
