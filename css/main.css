@@ -5022,6 +5022,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .about-uva-library .about-grid .about-card .about-card--details, .about-uva-library .happenings-grid .about-card .about-card--details, .about-uva-library .other-happenings-grid .about-card .about-card--details {
+    margin: 0 2rem 2rem 2rem;
+  }
   .about-uva-library .visit-grid .visit-container {
     display: flex;
     flex-direction: column;
