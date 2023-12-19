@@ -1,0 +1,29 @@
+@use '../../mixins/index'as *;
+@use '../../base/index'as *;
+
+.interior-library {
+  .library-intro {
+    margin-top: 2rem;
+  }
+
+  .library-spaces {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: #{$mobile}){
+  
+      .image-divider {
+      width: 100vw;
+      // max-width: 1600px;
+      margin-inline-start: 50%;
+      transform: translateX(-50%);
+        img {
+          min-height: 170px;
+          object-fit: cover;
+        }
+    }
+}

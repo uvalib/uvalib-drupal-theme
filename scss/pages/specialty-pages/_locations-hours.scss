@@ -36,8 +36,9 @@
   }
   .view-content {
     display: grid;
-    gap: 2rem 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2rem 1rem;
+    // grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     margin-top: 2rem;
 
     .views-row {
@@ -49,10 +50,14 @@
       // align-items: flex-start;
       align-items: stretch;
       gap: 0.5rem;
+      padding: 0 1rem 1rem 1rem;
 
-      // &:hover {
-      //   outline: 1px solid magenta;
-      // }
+      &:hover {
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 0 20px 0 $uva-grey-100;
+        z-index: 2;
+        outline: $uva-grey-100;
+      }
 
       & > div {
         padding: 0 0.5rem;
