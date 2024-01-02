@@ -37,7 +37,7 @@
   .view-content {
     display: grid;
     gap: 2rem 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
     margin-top: 2rem;
 
     .views-row {
@@ -46,8 +46,16 @@
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-content: flex-start;
+      // align-items: flex-start;
       align-items: stretch;
       gap: 0.5rem;
+
+      // &:hover {
+      //   transition: 0.25s ease-in-out;
+      //   box-shadow: 0 0 20px 0 $uva-grey-100;
+      //   z-index: 2;
+      //   outline: $uva-grey-100;
+      // }
 
       & > div {
         padding: 0 0.5rem;
@@ -143,6 +151,7 @@
         }
       }
     }
+
     .location-column {
       width: 16rem;
     }
@@ -164,8 +173,13 @@
     border-bottom: 0;
   }
 
-  @media screen and (max-width: #{$tablet-max}) {
-     table {
+  
+ 
+   @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
+    // td.date--mobile {
+    //   display: inherit;
+    // }
+    table {
       display: block;
 
       thead {
@@ -191,6 +205,7 @@
       }
       td {
         text-align: left !important;
+        // display: inline-flex;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
@@ -204,8 +219,10 @@
         }
       }
       td.today {
+        // border: 2px solid $uva-brand-orange;
         outline: 2px solid $uva-brand-orange;
-        font-weight: map-get($font-weights, medium) !important;
+                font-weight: map-get($font-weights, medium) !important;
+
       }
 
       tr>*.today {
@@ -216,19 +233,12 @@
       tr:last-of-type>*.today {
         border-bottom: 0;
       }
+
+      // tr:last-of-type>th.today {
+      //   border-bottom: 0;
+      // }
+
+
     }
-  }
-  @media screen and (max-width: #{$sm}) {
-    //stack the buttons
-    .weekly-hours-header-section {
-      display: flex;
-      flex-direction: column;
-      div.heading-h2 {
-        order: 1;
-      }
-      button {
-        order: 2;
-      }
-    }
-  }
+ }
 }

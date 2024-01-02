@@ -5480,7 +5480,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .library-hours .uva-library--locations .view-content {
   display: grid;
   gap: 2rem 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
   margin-top: 2rem;
 }
 .library-hours .uva-library--locations .view-content .views-row {
@@ -5581,7 +5581,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .library-hours tr:last-of-type > th.today {
   border-bottom: 0;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .library-hours table {
     display: block;
   }
@@ -5630,18 +5630,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .library-hours table tr:last-of-type > *.today {
     border-bottom: 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .library-hours .weekly-hours-header-section {
-    display: flex;
-    flex-direction: column;
-  }
-  .library-hours .weekly-hours-header-section div.heading-h2 {
-    order: 1;
-  }
-  .library-hours .weekly-hours-header-section button {
-    order: 2;
   }
 }
 

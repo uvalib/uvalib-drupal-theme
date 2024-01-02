@@ -1,42 +1,38 @@
-@use '../../mixins/index' as *;
-@use '../../base/index' as *;
-
+@use '../../mixins/index'as *;
+@use '../../base/index'as *;
 .interior-library {
   .library-intro {
-    grid-template-columns: 0.5fr 1fr;
-    gap: 2rem;
-
-    .contact-info {
-
-    }
-
-    .interior-photo {
-
+    margin-top: 2rem;
+    h2 {
+      @extend h3;
     }
   }
 
-  .library-about {
+  // .library-about {
+  //   img {
+  //     min-height: 170px;
+  //     object-fit: cover;
+  //   }
+  // }
 
- }
-
-  .library-spaces {
-    .reservable {
-
+  .spaces-cluster {
+      .spaces-cluster-type {
+        display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+        grid-template-columns: repeat (3, 1fr);
+        gap: 2rem 3rem;
+      }
   }
-    .tech {
-
+}
+@media screen and (max-width: #{$mobile}){
+      .image-divider {
+      width: 100vw;
+      // max-width: 1600px;
+      margin-inline-start: 50%;
+      transform: translateX(-50%);
+        img {
+          min-height: 170px;
+          object-fit: cover;
+        }
     }
-    .other {
-
-    }
- }
-
- .interactive-maps {
-
- }
-
- .exhibitions {
-
- }
-
 }
