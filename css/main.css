@@ -5480,7 +5480,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .library-hours .uva-library--locations .view-content {
   display: grid;
-  gap: 2rem 3rem;
+  gap: 2.01rem 3rem;
   grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
   margin-top: 2rem;
 }
