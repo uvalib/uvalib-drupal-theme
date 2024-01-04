@@ -5,11 +5,17 @@
   .three-col {
     margin-top: 2rem;
     margin-bottom: 2rem;
+
     .hover-block {
       border-left: 1px solid $uva-grey-100;
       text-align: center;
+      margin: 2rem;
        h3 { @extend .h5; }
     }
+
+    // .test-block {
+    //   border-radius: 2rem;
+    // }
   }
   .toggle-header {
     display: flex;

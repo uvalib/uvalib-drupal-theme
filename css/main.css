@@ -5459,6 +5459,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .library-hours .three-col .hover-block {
   border-left: 1px solid #DADADA;
   text-align: center;
+  margin: 2rem;
 }
 .library-hours .toggle-header {
   display: flex;
@@ -5630,6 +5631,42 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
   .library-hours table tr:last-of-type > *.today {
     border-bottom: 0;
+  }
+}
+
+.interior-library-space .two-col {
+  display: grid;
+  gap: 4rem !important;
+  margin: 2rem 0 0 0;
+}
+.interior-library-space .library-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 0 0 2rem 0;
+}
+.interior-library-space .spaces-cluster .spaces-cluster-type .spaces-cluster-group {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+  gap: 3rem;
+}
+.interior-library-space .spaces-cluster .spaces-cluster-type .spaces-cluster-group p {
+  padding: 1rem 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .interior-library-space .library-about {
+    display: block;
+  }
+  .interior-library-space .image-spacer {
+    width: 100vw;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
+  }
+  .interior-library-space .image-spacer img {
+    min-height: 170px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

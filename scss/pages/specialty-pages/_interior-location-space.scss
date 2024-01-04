@@ -1,0 +1,59 @@
+@use '../../mixins/index'as *;
+@use '../../base/index'as *;
+
+.interior-library-space {
+  //top section
+  .two-col {
+    display: grid;
+    gap: 4rem !important;
+    margin: 2rem 0 0 0;
+  }
+
+  //about 
+  .library-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 0 0 2rem 0;
+  }
+
+  //library space
+  .spaces-cluster {
+      .spaces-cluster-type {
+        .spaces-cluster-group{
+          margin-top: 2rem;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+          gap: 3rem;
+
+          p {
+            padding: 1rem 0 0 0;
+          }
+        }
+      }
+    }
+
+    //exhibition
+    
+
+
+  @media screen and (max-width: #{$mobile}){
+    .library-about {
+      display: block;
+    }  
+
+    .image-spacer {
+      width: 100vw;
+      // max-width: 1600px;
+      margin-inline-start: 50%;
+      transform: translateX(-50%);
+        img {
+          min-height: 170px;
+          object-fit: cover;
+        }
+      } 
+
+
+  }
+}
+
