@@ -5634,11 +5634,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
-.interior-library-space .two-col {
-  display: grid;
-  gap: 4rem !important;
-  margin: 2rem 0 0 0;
-}
 .interior-library-space .library-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
