@@ -1,0 +1,177 @@
+@use '../../mixins/index' as *;
+@use '../../base/index' as *;
+
+.oerpage { 
+  p {
+    max-width: 70rem; 
+    //test p width for better readibility 
+  }
+
+  .oer-intro {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    margin-right: 10vw;
+    margin-top: 1rem;
+
+    .oer-intro-content {
+      margin: auto;
+    }
+  }
+
+// why does it matter?
+  .oer-matter {
+    margin: 4rem 15vw 0 0;
+    
+    .accordion {
+      width: 80%;
+    }
+  }
+
+  // how can we help?
+  .oer-help {
+    .oer-help-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      margin: 3rem 0 4rem 0;
+
+      .oer-consultation, .oer-learning, .oer-publish {
+        background-color: white;
+        border: 1px solid $uva-grey-100;
+        border-top: 0.25rem solid $uva-brand-orange;
+        padding: 2rem;
+        
+        h3 {
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  // Getting started with Open Educational Resources
+    .start-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 2rem 0;
+
+    h3 {
+      margin-top: 2rem;
+    }
+  }
+
+  //testimony
+    .oer-impacts {
+      .impacts-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4rem;
+        grid-row-gap: 3rem;
+        margin-top: 2rem;         
+
+        .impacts-content {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          // outline: 2px dotted $uva-brand-orange;
+          border: $uva-grey-100 1px solid;             
+          border-left: 0.25rem solid $uva-brand-orange;
+
+          .quote-content {
+            grid-area: 1 / 1 / 2 / 5; 
+            margin: auto;
+            p {
+              padding: 2rem 3rem;
+            }
+          }
+
+          .quote-icon {
+            grid-area: 1 / 5 / 2 / 6;
+            position:relative;
+            Margin: auto;
+
+            svg {
+              width: 6rem;
+              height: 6rem;
+              fill: $uva-brand-orange;
+              opacity: 100%;
+              align-content: end;
+              margin-right: 2rem;
+            }
+          }
+        }    
+      }
+    }
+
+  //tablet view
+  @media screen and (max-width: #{$tablet-max}){
+    .oer-intro {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-right: 0;
+
+      .oer-intro-content {
+      outline: none;
+      padding: 1rem;
+      background-color: white;
+      width: 100%;
+
+        p {
+          padding: 0;
+        }
+      }
+    }
+
+    .oer-matter {  
+      margin: 4rem 0 0 0;
+      .accordion {
+        width: 100%;
+        }
+    }
+
+    .oer-impacts {
+      .impacts-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+       .impacts-content {
+          .quote-icon {
+            svg {
+              // width: 5rem;
+              height: 5rem;
+            }
+          }
+        }
+      }  
+    }
+  }
+
+  //mobile view
+  @media screen and (max-width: #{$mobile}){
+    .oer-help {
+      .oer-help-grid {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr;
+      margin-top: 3rem;
+      } 
+    }
+
+    .start-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+
+      h3 {
+        margin: 1rem 0 0 0;
+      }
+
+      p {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
