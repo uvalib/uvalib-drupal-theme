@@ -52,6 +52,7 @@ base:
       # css/components/ui-dialog.css:
       #   weight: -10
   js:
+    js/alerts.js: {}
     js/scroll-to-top.js: {}
     js/getdate.js: {}
     js/sc-virgo-search.js: {}

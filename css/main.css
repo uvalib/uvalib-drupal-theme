@@ -1540,6 +1540,41 @@ ul li a:focus {
   content: url(../assets/svg-icons/circle-info-solid.svg);
   margin: 0.55rem;
 }
+.uva-alert--sitewide .alert1 p,
+.uva-alert--sitewide .alert2 p,
+.uva-alert--sitewide .alert3 p {
+  margin-top: -0.8rem;
+}
+.uva-alert--sitewide .alert2,
+.uva-alert--sitewide .alert3 {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+.uva-alert--sitewide .alert2 button,
+.uva-alert--sitewide .alert3 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  margin: 3px 9px 0 0;
+  padding: 0 0 8px 11px;
+  width: 38px;
+  height: 38px;
+}
+.uva-alert--sitewide .alert2 button svg,
+.uva-alert--sitewide .alert3 button svg {
+  fill: #2B2B2B;
+  height: 30px;
+  width: 30px;
+}
+.uva-alert--sitewide .alert2 button:hover svg,
+.uva-alert--sitewide .alert3 button:hover svg {
+  fill: #808080;
+}
 .uva-alert--sitewide .alert4 {
   display: flex;
   flex-direction: row;
@@ -5150,6 +5185,22 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   .status-dashboard .s-row div.service-status.s-not-available {
     border: 5px solid #B30000 !important;
   }
+}
+.status-dashboard .uva-alert--status .alert1 p,
+.status-dashboard .uva-alert--status .alert2 p,
+.status-dashboard .uva-alert--status .alert3 p {
+  margin-top: -1.25rem;
+}
+.status-dashboard .uva-alert--status button {
+  display: none;
+}
+.status-dashboard .uva-alert--status .alert2,
+.status-dashboard .uva-alert--status .alert3 {
+  display: inherit;
+}
+.status-dashboard .uva-alert--status .status-until {
+  padding: 0 0 1rem 3rem;
+  font-style: italic;
 }
 
 .staff-bio .bio-head .layout__region--content {
