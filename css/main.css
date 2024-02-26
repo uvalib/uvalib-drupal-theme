@@ -5202,6 +5202,12 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   padding: 0 0 1rem 3rem;
   font-style: italic;
 }
+.status-dashboard .uva-alert--status .alert4 {
+  width: inherit;
+}
+.status-dashboard .uva-alert--status .alert4 .status-until {
+  padding: 1rem;
+}
 
 .staff-bio .bio-head .layout__region--content {
   display: grid;

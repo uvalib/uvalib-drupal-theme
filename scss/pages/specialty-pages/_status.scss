@@ -137,5 +137,12 @@
       padding: 0 0 1rem 3rem;
       font-style: italic;
     }
+    .alert4 {
+      width: inherit;
+     
+      .status-until {
+        padding: 1rem;
+      }
+    }
   }
 }
