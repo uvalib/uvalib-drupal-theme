@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	var closeButton = document.createElement("button");
 	closeButton.setAttribute("type", "button");
 	closeButton.setAttribute("class", "close-alert");
-	closeButton.setAttribute("aria-label", "Close this window");
+	closeButton.setAttribute("aria-label", "Close this alert");
 	closeButton.setAttribute("data-close-modal", "");
 
 	// Create the new SVG element
