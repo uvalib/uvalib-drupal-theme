@@ -1,6 +1,5 @@
 // This toggle is currently used on the "hours" page
 
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
 	// Check if both .list-view and .grid-view elements exist
 	var listView = document.querySelector(".list-view");
@@ -13,10 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		);
 		// Get the toggle button element
 		var toggleButton = document.querySelector(".toggleSwitch a");
-
-		// Set the initial state (grid-view active, list-view hidden)
-		listView.style.display = "block";
-		gridView.style.display = "none";
 
 		// Function to handle the toggle state
 		function toggleState() {
@@ -49,28 +44,23 @@ document.addEventListener("DOMContentLoaded", function () {
 				toggleState();
 			}
 		});
+
+		// Read URL parameters
+		var urlParams = new URLSearchParams(window.location.search);
+		var viewParam = urlParams.get("view");
+
+		// Set initial state based on URL parameter
+		if (viewParam === "list") {
+			checkbox.checked = true;
+		} else if (viewParam === "grid") {
+			checkbox.checked = false;
+		}
+
+		// Update view based on initial state
+		toggleState();
 	}
 });
 
-// SIDEBAR HR CUSTOM ADD
-// // Wait for the DOM to load
-// document.addEventListener("DOMContentLoaded", function () {
-// 	// Check if the class ".site-sidebar--subnav" is present on the page
-// 	if (document.querySelector(".site-sidebar--subnav")) {
-// 		// Find the first <h4> tag on the page
-// 		var firstH4 = document.querySelector("h4");
-
-// 		if (firstH4) {
-// 			// Create the <hr> element
-// 			var hrElement = document.createElement("hr");
-// 			hrElement.className = "hr--custom sidebar";
-// 			hrElement.setAttribute("aria-hidden", "true"); // Add aria-hidden attribute
-
-// 			// Insert the <hr> element after the closing </h4> tag
-// 			firstH4.insertAdjacentElement("afterend", hrElement);
-// 		}
-// 	}
-// });
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
 	// Check if the class ".site-sidebar--subnav" is present on the page
