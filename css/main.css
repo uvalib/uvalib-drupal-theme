@@ -1454,6 +1454,14 @@ ul li a:focus {
   overflow: hidden;
 }
 
+.ckeditor-image-float-left {
+  padding-right: 0.5rem;
+}
+
+.ckeditor-image-float-right {
+  padding-left: 0.5rem;
+}
+
 .ckeditor-accordion-container {
   margin-top: 1rem;
   margin-bottom: 1rem;
