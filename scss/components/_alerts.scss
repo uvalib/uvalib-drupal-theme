@@ -35,9 +35,9 @@
     background-color: $uva-yellow-100;
     border-left: 10px solid $uva-yellow;
 
-    h2 {
-      margin-top: -2.75rem !important;
-    }
+    // h2 {
+    //   margin-top: -2.75rem !important;
+    // }
 
     h2,
     p {
@@ -57,9 +57,9 @@
     background-color: $uva-blue-alt-300;
     border-left: 10px solid $uva-blue-alt;
 
-    h2 {
-      margin-top: -2.75rem !important;
-    }
+    // h2 {
+    //   margin-top: -2.75rem !important;
+    // }
 
     h2,
     p {
@@ -78,14 +78,17 @@
   .alert1 p, 
   .alert2 p, 
   .alert3 p {
-    margin-top: -0.8rem;
+    margin-top: -0.4rem;
+    line-height: 1.2;
   }
 
   .alert2,
   .alert3 {
     display: grid;
-    grid-template-columns: 1fr 50px;
-
+    grid-template-columns: 1px 1fr 40px;
+    .alert-content {
+      padding-top: 5px;
+    }
     button {
       -webkit-appearance: none;
       -moz-appearance: none;
