@@ -4,7 +4,7 @@ version: VERSION
 description: This a copy of the v2 theme, currently in the theme/custom folder - sub-theme of W3CSS Theme.
 base theme: drupal8_w3css_theme
 screenshot: assets/uvalibrary-theme.png
-core_version_requirement: ^9
+core_version_requirement: ^9|^10
 generator: "starterkit_theme:9.4.8"
 libraries:
   - uvalibrary_v2a/base
