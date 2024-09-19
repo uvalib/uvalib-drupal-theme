@@ -16,6 +16,6 @@
 // Parent & module overrides - to be loaded LAST
 @use 'theme_overrides';
 
-// * {
-//   outline: 1px solid green;
-// }
+* {
+  outline: 1px solid green;
+}
