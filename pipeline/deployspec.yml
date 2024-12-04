@@ -10,8 +10,8 @@ env:
     #target_host1: library-drupal-develop-1.internal.lib.virginia.edu
     target_host_user: aws_deploy
     target_host_key: aws_deploy
-    target_command0: "sudo docker exec drupal-0 /opt/drupal/util/docker-composer/scripts/pull-uvalib-drupal-theme" 
-    #target_command1: "sudo docker exec drupal-1 /opt/drupal/util/docker-composer/scripts/pull-uvalib-drupal-theme" 
+    target_command0: "sudo docker exec drupal-0 /opt/drupal/scripts/pull-uvalib-drupal-theme" 
+    #target_command1: "sudo docker exec drupal-1 /opt/drupal/scripts/pull-uvalib-drupal-theme" 
 
 phases:
   install:
