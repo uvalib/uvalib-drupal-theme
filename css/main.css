@@ -1474,17 +1474,27 @@ ul li a:focus {
   background-color: #fff;
   color: #2B2B2B;
   border-bottom: none;
+  border-radius: 0.3rem;
 }
 .ckeditor-accordion-container > dl dt > a:hover {
   background-color: #BFE7F7;
   border-radius: 0.3rem;
 }
-.ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:after {
+.ckeditor-accordion-container > dl dt > a .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > a .ckeditor-accordion-toggle:after {
   background: #2B2B2B;
 }
 .ckeditor-accordion-container > dl dt.active > a {
   background-color: #BFE7F7;
-  border-radius: 0.3rem;
+  color: #2B2B2B;
+}
+.ckeditor-accordion-container > dl dt > a:not(.button) {
+  padding: 10px 15px 10px 50px;
+  background-color: #fff;
+  color: #2B2B2B;
+  border-bottom: none;
+}
+.ckeditor-accordion-container > dl dt > a:not(.button):hover {
+  background-color: #BFE7F7;
   color: #2B2B2B;
 }
 

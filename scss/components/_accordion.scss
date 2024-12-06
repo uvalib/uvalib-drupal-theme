@@ -7,32 +7,45 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  &>dl {
+  > dl {
     border: none;
 
-    dt>a {
-      padding: 10px 15px 10px 50px;
-      // background-color: $uva-blue-alt-400;
-      background-color: #fff;
-      color: $uva-text-color-dark;
-      // border-bottom: 1px solid $uva-blue-alt-400;
-      border-bottom: none;
-
-      &:hover {
-        background-color: $uva-blue-alt-300;
+    dt {
+      > a {
+        padding: 10px 15px 10px 50px;
+        background-color: #fff;
+        color: $uva-text-color-dark;
+        border-bottom: none;
         border-radius: 0.3rem;
+
+        &:hover {
+          background-color: $uva-blue-alt-300;
+          border-radius: 0.3rem;
+        }
+
+        .ckeditor-accordion-toggle {
+          &:before,
+          &:after {
+            background: $uva-text-color-dark;
+          }
+        }
       }
 
-      &>.ckeditor-accordion-toggle:before,
-      &>.ckeditor-accordion-toggle:after {
-        background: $uva-text-color-dark;
+      &.active > a {
+        background-color: $uva-blue-alt-300;
+        color: $uva-text-color-dark;
       }
     }
 
-    dt.active>a {
-      background-color: $uva-blue-alt-300;
-      border-radius: 0.3rem;
+    dt > a:not(.button) {
+      padding: 10px 15px 10px 50px;
+      background-color: #fff;
       color: $uva-text-color-dark;
+      border-bottom: none;
+      &:hover {
+        background-color: $uva-blue-alt-300;
+        color: $uva-text-color-dark;
+      }
     }
   }
 }
