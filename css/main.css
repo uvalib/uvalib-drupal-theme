@@ -118,8 +118,7 @@ h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-se
 .staff-bio .block > h2,
 .staff-bio .field__label,
 .news-page .views-row h2,
-.view-news-full-feed-of-blog-articlces .views-row h2,
-.block-field-blocknodearticlebody h2 {
+.view-news-full-feed-of-blog-articlces .views-row h2 {
   font-size: 1.44rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -1071,7 +1070,7 @@ h3,
 
 h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
 .staff-bio .field__label, .news-page .views-row h2,
-.view-news-full-feed-of-blog-articlces .views-row h2, .block-field-blocknodearticlebody h2,
+.view-news-full-feed-of-blog-articlces .views-row h2,
 h5,
 .rds-section .rds-recent--articles ul li a,
 .rds-articles h3,
@@ -4276,10 +4275,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .news-page .views-row h2:first-of-type,
 .view-news-full-feed-of-blog-articlces .views-row h2:first-of-type {
   padding-top: inherit;
-}
-
-.block-field-blocknodearticlebody h2 {
-  padding-top: 1.5rem;
 }
 
 .news-page .views-row {
