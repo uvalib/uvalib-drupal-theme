@@ -34,6 +34,12 @@
   gap: 1rem;
 }
 
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 1rem;
+}
+
 .small-col_large-col {
   display: grid;
   grid-template-columns: 1fr 2fr !important;
@@ -58,7 +64,7 @@
 }
 
 @media screen and (max-width: #{$mobile}) {
-  .two-col, .small-col_large-col, .large-col_small-col {
+  .two-col, .three-col, .small-col_large-col, .large-col_small-col {
     display: grid;
     grid-template-columns: 1fr !important;
   }
