@@ -4649,6 +4649,49 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
+.page-node-type-design-system-item .ds-about-teaser,
+.page-node-type-design-system-item .ds-status,
+.page-node-type-design-system-item .ds-about,
+.page-node-type-design-system-item .ds-example_code,
+.page-node-type-design-system-item .ds-guidance {
+  outline: 1px solid yellow;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.page-node-type-design-system-item .ds-about-teaser {
+  outline-color: green;
+}
+.page-node-type-design-system-item .ds-status {
+  outline-color: blue;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: first baseline;
+}
+.page-node-type-design-system-item .ds-status .status-in-use {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+}
+.page-node-type-design-system-item .ds-status .status-testing {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+}
+.page-node-type-design-system-item .ds-about {
+  outline-color: orange;
+}
+.page-node-type-design-system-item .ds-example_code {
+  outline-color: pink;
+}
+.page-node-type-design-system-item .ds-guidance {
+  outline-color: aqua;
+}
+
 .exhibitions h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;

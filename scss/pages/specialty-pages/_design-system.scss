@@ -6,4 +6,67 @@
   // * {
   //   outline: 1px solid pink;
   // }
+
+.ds-about-teaser,
+.ds-status,
+.ds-about,
+.ds-example_code,
+.ds-guidance {
+  outline: 1px solid yellow;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.ds-about-teaser {
+  outline-color: green;
+}
+.ds-status {
+  outline-color: blue;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: first baseline;
+ .status-in-use {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    background-color: green;
+    color: white; 
+    }
+     .status-testing {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    background-color: red;
+    color: white; 
+    }
+}
+.ds-about {
+  outline-color: orange;
+}
+.ds-example_code {
+  outline-color: pink;
+}
+.ds-guidance {
+  outline-color: aqua;
+}
+
+  // //title block
+  // .block-field-blocknodedesign-system-itembody{
+  //   outline: 1px solid green;
+  //   padding: 1rem;
+  //   margin: 2rem 0;
+  // }
+
+  // //status block
+  // .block-field-blocknodedesign-system-itemfield-status {
+  //   outline: 1px solid blue;
+  //   .field--name-field-status{
+  //     display: flex;
+  //     flex-direction: row;
+  //     gap: 1rem;
+  //   }
+  //   padding: 1rem;
+  //   margin: 2rem 0;
+  // }
 }
