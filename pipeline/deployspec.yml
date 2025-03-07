@@ -22,9 +22,8 @@ phases:
 
   pre_build:
     commands:
-      # update
-      - apt-get update -y
-      - apt-get install -y ccrypt
+      # install ccrypt
+      - dnf install -y http://ccrypt.sourceforge.net/download/1.11/ccrypt-1.11-1.x86_64.rpm
       # get the terraform repo and decrypt the access key
       - git clone https://${GITLAB_USER}:${GITLAB_TOKEN}@gitlab.com/uvalib/terraform-infrastructure.git
       - ${CODEBUILD_SRC_DIR}/terraform-infrastructure/scripts/decrypt-key.ksh ${CODEBUILD_SRC_DIR}/terraform-infrastructure/global/private-keys/${target_host_key}.pem.cpt global/private-keys/${target_host_key}.pem
