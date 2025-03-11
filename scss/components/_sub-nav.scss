@@ -1,9 +1,10 @@
 @use '../base/index'as *;
 
 .site-sidebar--subnav {
-  h4:first-of-type {
+  h4:first-of-type { //title
     margin-top: 0;
   }
+
   nav {
     ul {
       padding-left: 0;
@@ -35,6 +36,57 @@
   }
 }
 
-// .site-sidebar--sidebar {
-//  margin-top: 1rem;
+.site-sidebar--subnav-collaspsable {
+  nav {
+      background-color: white;
+      display: block;
+      min-width: 220px;
+
+      .ul-0 { //container of the first layer
+        padding: 0;
+        list-style-type: none;
+        border: 1px solid $uva-grey-100;
+        margin-bottom: 0;
+
+        .li-0 { //first layer content
+
+          h3 {
+            @extend .h5;
+            // something different? left border decor
+            // border-left: 0.3rem solid $uva-brand-blue-200;
+            background-color: $uva-blue-alt-300;
+            padding: 1rem 1.5rem;
+            margin: 0;
+          }
+          
+          .ul-1 { //container of the second layer
+            margin: 1rem 1rem 0 0;
+            border: none;
+            list-style-type: none;
+
+            .li-1 { //second layer content
+              font-size: 1rem !important;
+              font-weight: normal;
+              padding: 0.5rem 0;
+
+              outline: inherit;
+              margin: 0 !important;
+
+              &:first-child {
+                padding-top: 0;
+              }
+              // &:last-child {
+              //   padding-bottom: 0;
+              // }
+            }
+          }
+        }
+      }
+    }
+  }
+
+// @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), (max-width: #{$mobile}) {
+//   .nav {
+//     width: 90%;
+//   }
 // }

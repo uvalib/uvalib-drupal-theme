@@ -141,7 +141,8 @@ h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-lib
 .uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
 .home-page .home-hours-block .hour-head,
-.jumpmenu ul li {
+.jumpmenu ul li,
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 h3 {
   font-size: 1.2rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -1080,7 +1081,7 @@ h5,
 .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
-.site-sidebar--subnav nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
+.site-sidebar--subnav nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li, .site-sidebar--subnav-collaspsable nav .ul-0 .li-0 h3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -2320,6 +2321,38 @@ figure figcaption {
   padding-bottom: 0;
 }
 
+.site-sidebar--subnav-collaspsable nav {
+  background-color: white;
+  display: block;
+  min-width: 220px;
+}
+.site-sidebar--subnav-collaspsable nav .ul-0 {
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid #DADADA;
+  margin-bottom: 0;
+}
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 h3 {
+  background-color: #BFE7F7;
+  padding: 1rem 1.5rem;
+  margin: 0;
+}
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 {
+  margin: 1rem 1rem 0 0;
+  border: none;
+  list-style-type: none;
+}
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1 {
+  font-size: 1rem !important;
+  font-weight: normal;
+  padding: 0.5rem 0;
+  outline: inherit;
+  margin: 0 !important;
+}
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1:first-child {
+  padding-top: 0;
+}
+
 .hr--custom {
   border: none;
   border-top: 1px dotted #DADADA;
@@ -2856,7 +2889,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -4186,6 +4219,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
+.uvalibrary-spaces .header-image img {
+  margin: 1rem 0;
+  width: 100%;
+}
 .uvalibrary-spaces h3 {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
@@ -4198,6 +4235,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 100% auto;
   align-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
@@ -4217,6 +4255,22 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   height: 186px;
   width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  .uvalibrary-spaces .rerserve-container {
+    display: block;
+  }
+  .uvalibrary-spaces .rerserve-container h3 {
+    margin: 0;
+  }
+  .uvalibrary-spaces .rerserve-container img {
+    margin: 2rem 0;
+    height: auto;
+  }
+  .uvalibrary-spaces .rerserve-container .reserve-location {
+    width: auto;
+    height: auto;
+  }
 }
 
 .teaching-and-writing .t-w--writing,
@@ -6071,6 +6125,41 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
+.extra-credit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #FFEAD6;
+}
+.extra-credit .extra-credit-bg {
+  grid-area: 1/1/2/2;
+  background-image: url("/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-full.svg");
+  background-position: 0 -3rem;
+  background-repeat: no-repeat;
+  background-size: 83% auto;
+}
+.extra-credit .extra-credit-text {
+  grid-area: 1/2/2/5;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  .extra-credit {
+    display: block;
+    background-image: url("/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-20.svg");
+    background-repeat: no-repeat;
+    padding: 0.5rem;
+    background-position: 100%;
+    max-width: 100%;
+  }
+  .extra-credit .extra-credit-bg {
+    display: none;
+  }
+  .extra-credit .extra-credit-text {
+    max-width: 100%;
+  }
+}
 body.maintenance-page {
   background-color: white !important;
   padding: 40px;

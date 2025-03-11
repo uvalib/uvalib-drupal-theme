@@ -2,6 +2,13 @@
 @use '../../base/index'as *;
 
 .uvalibrary-spaces{
+  .header-image {
+    img {
+      margin: 1rem 0;
+      width: 100%;
+    }
+  }
+
   h3 {
     margin-top: 3rem;
     margin-bottom: 0.5rem;
@@ -14,6 +21,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 100% auto;
     align-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
@@ -38,4 +46,24 @@
       }
     }
   }
+
+  @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), (max-width: #{$mobile}) {
+    .rerserve-container{
+      display: block;
+      
+      h3 {
+        margin: 0;
+      }
+
+      img {
+        margin: 2rem 0;
+        height: auto;
+      }
+
+      .reserve-location {
+        width: auto;
+        height: auto;
+      }
+    }
+  }  
 }
