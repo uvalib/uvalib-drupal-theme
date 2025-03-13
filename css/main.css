@@ -117,6 +117,7 @@ h4, .staff-directory .staff-directory-row .staff-directory-name, .rds-articles h
 .sustainable-scholarship .sustainable-links a,
 .staff-bio .block > h2,
 .staff-bio .field__label,
+.page-node-type-design-system-item .ds-about-teaser,
 .news-page .views-row h2,
 .view-news-full-feed-of-blog-articlces .views-row h2 {
   font-size: 1.44rem !important;
@@ -1069,7 +1070,7 @@ h3,
 }
 
 h4, .staff-directory .staff-directory-row .staff-directory-name, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
-.staff-bio .field__label, .news-page .views-row h2,
+.staff-bio .field__label, .page-node-type-design-system-item .ds-about-teaser, .news-page .views-row h2,
 .view-news-full-feed-of-blog-articlces .views-row h2,
 h5,
 .rds-section .rds-recent--articles ul li a,
@@ -2865,7 +2866,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 2rem;
+  gap: 6rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -4654,19 +4655,21 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .page-node-type-design-system-item .ds-about,
 .page-node-type-design-system-item .ds-example_code,
 .page-node-type-design-system-item .ds-guidance {
-  outline: 1px solid yellow;
-  padding: 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .page-node-type-design-system-item .ds-about-teaser {
-  outline-color: green;
+  color: #4F4F4F !important;
+  font-weight: 400;
+  line-height: 1.6;
 }
 .page-node-type-design-system-item .ds-status {
-  outline-color: blue;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: first baseline;
+}
+.page-node-type-design-system-item .ds-status .field__label {
+  font-weight: bold;
 }
 .page-node-type-design-system-item .ds-status .status-in-use {
   display: block;
@@ -4679,8 +4682,19 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   display: block;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
-  background-color: red;
-  color: white;
+  outline: 2px solid orange;
+}
+.page-node-type-design-system-item .ds-status .status-draft {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  outline: 2px solid red;
+}
+.page-node-type-design-system-item .ds-status .status-deprecated {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  outline: 2px solid red;
 }
 .page-node-type-design-system-item .ds-about {
   outline-color: orange;
