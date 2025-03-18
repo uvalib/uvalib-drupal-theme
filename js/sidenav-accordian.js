@@ -11,24 +11,36 @@ document.addEventListener("DOMContentLoaded", function () {
 		".site-sidebar--subnav-collaspsable > nav > ul > li > ul"
 	);
 
+	// Make sure the parentItems and nestedLists are found
+	if (parentItems.length === 0 || nestedLists.length === 0) {
+		console.warn("No collapsible sidebar items found.");
+		return; // Exit if no collapsible items are found
+	}
+
 	// Initially collapse all menus
 	nestedLists.forEach((list) => {
 		list.style.display = "none";
 		list.setAttribute("aria-expanded", "false"); // Set aria-expanded to false
 	});
 
-	// Open the first menu by default (or keep previously opened menu)
-	nestedLists[0].style.display = "block";
-	nestedLists[0].setAttribute("aria-expanded", "true");
+	// Open the first menu by default (or keep previously opened menu) if available
+	if (nestedLists[0]) {
+		nestedLists[0].style.display = "block";
+		nestedLists[0].setAttribute("aria-expanded", "true");
+	}
 
-	// Update arrows immediately after the first menu is open
-	parentItems[0].classList.add("open");
-	parentItems[0].classList.remove("closed");
+	// Update arrows immediately after the first menu is open, if available
+	if (parentItems[0]) {
+		parentItems[0].classList.add("open");
+		parentItems[0].classList.remove("closed");
+	}
 
+	// Add event listener for each parent item
 	parentItems.forEach((item, index) => {
 		item.addEventListener("click", function () {
 			const nestedList = this.nextElementSibling;
 
+			// Only proceed if a nested <ul> exists
 			if (nestedList && nestedList.tagName === "UL") {
 				const isOpen = nestedList.style.display === "block"; // Check if the menu is already open
 
