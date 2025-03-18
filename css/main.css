@@ -141,8 +141,7 @@ h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-lib
 .uvalibrary-spaces .rerserve-container .reserve-location h3,
 .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4,
 .home-page .home-hours-block .hour-head,
-.jumpmenu ul li,
-.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 h3 {
+.jumpmenu ul li {
   font-size: 1.2rem !important;
   font-weight: 500;
   color: #232D4B !important;
@@ -1081,7 +1080,7 @@ h5,
 .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
-.site-sidebar--subnav nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li, .site-sidebar--subnav-collaspsable nav .ul-0 .li-0 h3 {
+.site-sidebar--subnav nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -2321,36 +2320,41 @@ figure figcaption {
   padding-bottom: 0;
 }
 
-.site-sidebar--subnav-collaspsable nav {
-  background-color: white;
-  display: block;
-  min-width: 220px;
+.site-sidebar--subnav-collaspsable h3 {
+  position: relative;
+  padding-right: 25px;
 }
-.site-sidebar--subnav-collaspsable nav .ul-0 {
-  padding: 0;
-  list-style-type: none;
-  border: 1px solid #DADADA;
-  margin-bottom: 0;
+.site-sidebar--subnav-collaspsable h3::after {
+  content: "+";
+  position: absolute;
+  right: 5px;
+  top: 25%;
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
-.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 h3 {
-  background-color: #BFE7F7;
-  padding: 1rem 1.5rem;
-  margin: 0;
+.site-sidebar--subnav-collaspsable h3.open::after {
+  content: "";
+  border-bottom: 1px solid #232D4B;
+  border-right: 1px solid #232D4B;
+  height: 0.5em;
+  margin-left: 0.75em;
+  width: 0.5em;
+  transform: rotate(135deg) scaleX(-1);
+  transition: transform 0.3s ease-in-out;
 }
-.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 {
-  margin: 1rem 1rem 0 0;
-  border: none;
-  list-style-type: none;
+.site-sidebar--subnav-collaspsable h3.closed::after {
+  content: "";
+  border-bottom: 1px solid #232D4B;
+  border-right: 1px solid #232D4B;
+  height: 0.5em;
+  margin-left: 0.75em;
+  width: 0.5em;
+  transform: rotate(45deg) scaleX(1);
+  transition: transform 0.3s ease-in-out;
 }
-.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1 {
-  font-size: 1rem !important;
-  font-weight: normal;
-  padding: 0.5rem 0;
-  outline: inherit;
-  margin: 0 !important;
-}
-.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1:first-child {
-  padding-top: 0;
+.site-sidebar--subnav-collaspsable h3.open::after, .site-sidebar--subnav-collaspsable h3.closed::after {
+  transition: transform 0.3s ease-in-out;
 }
 
 .hr--custom {
