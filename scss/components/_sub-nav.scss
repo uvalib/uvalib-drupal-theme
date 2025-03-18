@@ -1,9 +1,10 @@
 @use '../base/index'as *;
 
 .site-sidebar--subnav {
-  h4:first-of-type {
+  h4:first-of-type { //title
     margin-top: 0;
   }
+
   nav {
     ul {
       padding-left: 0;
@@ -35,6 +36,48 @@
   }
 }
 
-// .site-sidebar--sidebar {
-//  margin-top: 1rem;
-// }
+.site-sidebar--subnav-collaspsable {
+  h3 {
+    position: relative;
+    padding-right: 25px;
+
+    &::after {
+      content: '+';
+      position: absolute;
+      right: 5px;
+      top: 25%;
+      font-size: 20px;
+      // font-weight: bold;
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    &.open::after {
+      content: "";
+      border-bottom: 1px solid $uva-brand-blue;
+      border-right: 1px solid $uva-brand-blue;
+      height: 0.5em;
+      margin-left: 0.75em;
+      width: 0.5em;
+      transform: rotate(135deg) scaleX(-1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.closed::after {
+      content: "";
+      border-bottom: 1px solid $uva-brand-blue;
+      border-right: 1px solid $uva-brand-blue;
+      height: 0.5em;
+      margin-left: 0.75em;
+      width: 0.5em;
+      transform: rotate(45deg) scaleX(1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  h3.open, h3.closed {
+    &::after {
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}

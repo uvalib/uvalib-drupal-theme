@@ -2329,6 +2329,43 @@ figure figcaption {
   padding-bottom: 0;
 }
 
+.site-sidebar--subnav-collaspsable h3 {
+  position: relative;
+  padding-right: 25px;
+}
+.site-sidebar--subnav-collaspsable h3::after {
+  content: "+";
+  position: absolute;
+  right: 5px;
+  top: 25%;
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.site-sidebar--subnav-collaspsable h3.open::after {
+  content: "";
+  border-bottom: 1px solid #232D4B;
+  border-right: 1px solid #232D4B;
+  height: 0.5em;
+  margin-left: 0.75em;
+  width: 0.5em;
+  transform: rotate(135deg) scaleX(-1);
+  transition: transform 0.3s ease-in-out;
+}
+.site-sidebar--subnav-collaspsable h3.closed::after {
+  content: "";
+  border-bottom: 1px solid #232D4B;
+  border-right: 1px solid #232D4B;
+  height: 0.5em;
+  margin-left: 0.75em;
+  width: 0.5em;
+  transform: rotate(45deg) scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+.site-sidebar--subnav-collaspsable h3.open::after, .site-sidebar--subnav-collaspsable h3.closed::after {
+  transition: transform 0.3s ease-in-out;
+}
+
 .hr--custom {
   border: none;
   border-top: 1px dotted #DADADA;
@@ -2865,7 +2902,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -4176,6 +4213,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
+.uvalibrary-spaces .header-image img {
+  margin: 1rem 0;
+  width: 100%;
+}
 .uvalibrary-spaces h3 {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
@@ -4188,6 +4229,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 100% auto;
   align-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
@@ -4207,6 +4249,22 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   height: 186px;
   width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  .uvalibrary-spaces .rerserve-container {
+    display: block;
+  }
+  .uvalibrary-spaces .rerserve-container h3 {
+    margin: 0;
+  }
+  .uvalibrary-spaces .rerserve-container img {
+    margin: 2rem 0;
+    height: auto;
+  }
+  .uvalibrary-spaces .rerserve-container .reserve-location {
+    width: auto;
+    height: auto;
+  }
 }
 
 .teaching-and-writing .t-w--writing,
@@ -6057,6 +6115,41 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
+.extra-credit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #FFEAD6;
+}
+.extra-credit .extra-credit-bg {
+  grid-area: 1/1/2/2;
+  background-image: url("/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-full.svg");
+  background-position: 0 -3rem;
+  background-repeat: no-repeat;
+  background-size: 83% auto;
+}
+.extra-credit .extra-credit-text {
+  grid-area: 1/2/2/5;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  .extra-credit {
+    display: block;
+    background-image: url("/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-20.svg");
+    background-repeat: no-repeat;
+    padding: 0.5rem;
+    background-position: 100%;
+    max-width: 100%;
+  }
+  .extra-credit .extra-credit-bg {
+    display: none;
+  }
+  .extra-credit .extra-credit-text {
+    max-width: 100%;
+  }
+}
 body.maintenance-page {
   background-color: white !important;
   padding: 40px;
