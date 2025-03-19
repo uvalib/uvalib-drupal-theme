@@ -82,7 +82,6 @@
 //             }
 //         });
 //     }
-
 //     // Initial update for the arrows (to handle the first menu state)
 //     updateArrows();
 // });
