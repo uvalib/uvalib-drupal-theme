@@ -2379,7 +2379,6 @@ figure figcaption {
   font-weight: normal;
   padding: 0.5rem 1rem;
   border-left: 2px solid #E57200;
-  outline: inherit;
   margin: 0 !important;
 }
 .site-sidebar--subnav-collaspsable nav ul li ul li:first-child {
