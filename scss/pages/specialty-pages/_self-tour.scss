@@ -1,52 +1,50 @@
-@use '../../mixins/index'as *;
-@use '../../base/index'as *;
+@use "../../mixins/index" as *;
+@use "../../base/index" as *;
 
 .shannon-tour {
-  img {
-    margin: 2rem 0;
-  }
+	img {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
 }
 
 .extra-credit {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    background-color: $uva-brand-orange-300;
-    // background-color: #FFF4E9; alternative orange
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	background-color: $uva-brand-orange-300;
 
-    .extra-credit-bg { 
-    grid-area: 1 / 1 / 2 / 2; 
-    background-image: url('/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-full.svg');
-    background-position: 0 -3rem;
-    background-repeat: no-repeat;
-    background-size: 83% auto;
-    }
+	.extra-credit-bg {
+		grid-area: 1 / 1 / 2 / 2;
+		background-image: url("/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-full.svg");
+		background-position: 0 -3rem;
+		background-repeat: no-repeat;
+		background-size: 83% auto;
+	}
 
-    .extra-credit-text { 
-    grid-area: 1 / 2 / 2 / 5; 
-    padding: 1rem;
-    max-width: 90%;
-  } 
+	.extra-credit-text {
+		grid-area: 1 / 2 / 2 / 5;
+		padding: 1rem;
+		max-width: 90%;
+	}
 }
 
 @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}), (max-width: #{$mobile}) {
-  .extra-credit {
-    display: block;
-    // background-image: url('/themes/uvalib-drupal-theme/assets/svg-icons/extra-credit-bg.png');
-    background-image: url('/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-20.svg');
-    background-repeat: no-repeat;
-    padding: 0.5rem;
-    background-position: 100%;
-    max-width: 100%;
+	.extra-credit {
+		display: block;
+		// background-image: url('/themes/uvalib-drupal-theme/assets/svg-icons/extra-credit-bg.png');
+		background-image: url("/themes/uvalib-drupal-theme/assets/self-guided tours/extra-credit-20.svg");
+		background-repeat: no-repeat;
+		padding: 0.5rem;
+		background-position: 100%;
+		max-width: 100%;
 
-    .extra-credit-bg {
-      display: none;
-    }
+		.extra-credit-bg {
+			display: none;
+		}
 
-    .extra-credit-text {
-      max-width: 100%;
-    }
-  }
+		.extra-credit-text {
+			max-width: 100%;
+		}
+	}
 }
-
-

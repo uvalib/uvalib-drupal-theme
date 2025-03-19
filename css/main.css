@@ -6174,7 +6174,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 
 .shannon-tour img {
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .extra-credit {
