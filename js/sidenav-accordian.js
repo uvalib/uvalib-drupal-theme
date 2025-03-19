@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (nestedList && nestedList.tagName === "UL") {
                 const isOpen = nestedList.style.display === "block"; // Check if the menu is already open
 
+
                 // Collapse all nested lists
                 nestedLists.forEach((list) => {
                     list.style.display = "none";

@@ -125,7 +125,7 @@ h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-se
   line-height: 1.15;
 }
 
-h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .site-sidebar--subnav nav ul li,
+h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .site-sidebar--subnav nav ul li, .site-sidebar--subnav-collaspsable nav ul li,
 .h5,
 .rds-section .neighborhood-teaser .n-t-contents h4,
 .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2,
@@ -1079,7 +1079,8 @@ h5,
 .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
-.site-sidebar--subnav nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
+.site-sidebar--subnav nav ul li,
+.site-sidebar--subnav-collaspsable nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -2364,6 +2365,28 @@ figure figcaption {
 }
 .site-sidebar--subnav-collaspsable h3.open::after, .site-sidebar--subnav-collaspsable h3.closed::after {
   transition: transform 0.3s ease-in-out;
+}
+.site-sidebar--subnav-collaspsable nav ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.site-sidebar--subnav-collaspsable nav ul li ul {
+  padding: 1rem 0;
+  margin: 0;
+}
+.site-sidebar--subnav-collaspsable nav ul li ul li {
+  font-size: 1rem !important;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+  border-left: 2px solid #E57200;
+  outline: inherit;
+  margin: 0 !important;
+}
+.site-sidebar--subnav-collaspsable nav ul li ul li:first-child {
+  padding-top: 0;
+}
+.site-sidebar--subnav-collaspsable nav ul li ul li:last-child {
+  padding-bottom: 0;
 }
 
 .hr--custom {
