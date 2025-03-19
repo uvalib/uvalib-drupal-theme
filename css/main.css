@@ -6137,6 +6137,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 
+img {
+  margin: 1rem 0;
+}
+
 .extra-credit {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
