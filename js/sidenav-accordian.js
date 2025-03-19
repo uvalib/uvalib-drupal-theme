@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		return;
 	}
 
-	// Function to update arrows based on the state of nested lists
+	// Function to update the arrows based on the state of nested lists
 	function updateArrows() {
 		parentItems.forEach((item) => {
 			const nestedList = item.nextElementSibling;
@@ -183,3 +183,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+// updated 3:50pm
