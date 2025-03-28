@@ -114,7 +114,8 @@
 .site-sidebar--subnav-collaspsable {
   h3 {
     position: relative;
-    padding-right: 25px;
+    @extend h5;
+    margin: 1.5rem 0.5rem;
 
     &::after {
       content: '+';
@@ -149,29 +150,37 @@
     }
   }
 
-  h3.open, h3.closed {
+  h3.open {
+    // margin: 1rem 0;
+    &::after {
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+  
+  h3.closed {
     &::after {
       transition: transform 0.3s ease-in-out;
     }
   }
 
   nav {
-    ul {
-      padding-left: 0;
+    .ul-0 {
       list-style-type: none;
+      padding: 0rem;
 
-      li {
+      .li-0 {
         @extend h5;
 
-        ul {
-          padding: 1rem 0;
+        .ul-1 {
+          padding: 0;
           margin: 0;
-          li {
+          .li-1 {
             font-size: 1rem !important;
             font-weight: normal;
-            padding: 0.5rem 1rem;
-            border-left: 2px solid #{$uva-brand-orange};
-            margin: 0 !important;
+            padding: 0.725rem 1rem;
+            // border-left: 0.25rem solid $uva-blue-alt-200;alternative color
+            border-left: 0.25rem solid $uva-brand-orange;
+            margin: 0 0 0 0.5rem !important;
             &:first-child {
               padding-top: 0;
             }
