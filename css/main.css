@@ -125,7 +125,7 @@ h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-se
   line-height: 1.15;
 }
 
-h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .site-sidebar--subnav nav ul li, .site-sidebar--subnav-collaspsable nav ul li,
+h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .site-sidebar--subnav nav ul li, .site-sidebar--subnav-collaspsable h3, .site-sidebar--subnav-collaspsable nav .ul-0 .li-0,
 .h5,
 .rds-section .neighborhood-teaser .n-t-contents h4,
 .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2,
@@ -1080,7 +1080,8 @@ h5,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
 .site-sidebar--subnav nav ul li,
-.site-sidebar--subnav-collaspsable nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
+.site-sidebar--subnav-collaspsable h3,
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -2332,7 +2333,7 @@ figure figcaption {
 
 .site-sidebar--subnav-collaspsable h3 {
   position: relative;
-  padding-right: 25px;
+  margin: 1.5rem 0.5rem;
 }
 .site-sidebar--subnav-collaspsable h3::after {
   content: "+";
@@ -2363,28 +2364,31 @@ figure figcaption {
   transform: rotate(45deg) scaleX(1);
   transition: transform 0.3s ease-in-out;
 }
-.site-sidebar--subnav-collaspsable h3.open::after, .site-sidebar--subnav-collaspsable h3.closed::after {
+.site-sidebar--subnav-collaspsable h3.open::after {
   transition: transform 0.3s ease-in-out;
 }
-.site-sidebar--subnav-collaspsable nav ul {
-  padding-left: 0;
-  list-style-type: none;
+.site-sidebar--subnav-collaspsable h3.closed::after {
+  transition: transform 0.3s ease-in-out;
 }
-.site-sidebar--subnav-collaspsable nav ul li ul {
-  padding: 1rem 0;
+.site-sidebar--subnav-collaspsable nav .ul-0 {
+  list-style-type: none;
+  padding: 0rem;
+}
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 {
+  padding: 0;
   margin: 0;
 }
-.site-sidebar--subnav-collaspsable nav ul li ul li {
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1 {
   font-size: 1rem !important;
   font-weight: normal;
-  padding: 0.5rem 1rem;
-  border-left: 2px solid #E57200;
-  margin: 0 !important;
+  padding: 0.725rem 1rem;
+  border-left: 0.25rem solid #E57200;
+  margin: 0 0 0 0.5rem !important;
 }
-.site-sidebar--subnav-collaspsable nav ul li ul li:first-child {
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1:first-child {
   padding-top: 0;
 }
-.site-sidebar--subnav-collaspsable nav ul li ul li:last-child {
+.site-sidebar--subnav-collaspsable nav .ul-0 .li-0 .ul-1 .li-1:last-child {
   padding-bottom: 0;
 }
 
@@ -2924,7 +2928,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 992px) {
