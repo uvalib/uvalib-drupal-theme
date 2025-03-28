@@ -2928,12 +2928,19 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
+  gap: 5rem;
+}
+
+.layout--twocol-section--75-25 {
+  display: grid;
+  grid-template-columns: 3fr 1fr !important;
   gap: 2rem;
 }
 
 @media screen and (max-width: 992px) {
   .layout--twocol-section {
     grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
 }
 .layout__region .layout__region--first .uvalib-col--first {
@@ -5916,6 +5923,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-section .neighborhood-teaser .n-t-img img {
   flex-shrink: 0;
   min-width: 100%;
+  margin: 0;
 }
 .rds-section .neighborhood-teaser .n-t-contents {
   display: grid;
