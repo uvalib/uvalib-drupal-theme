@@ -2936,7 +2936,13 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 3rem;
+  gap: 5rem;
+}
+
+.layout--twocol-section--75-25 {
+  display: grid;
+  grid-template-columns: 3fr 1fr !important;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -2985,7 +2991,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   }
 }
 @media screen and (max-width: 767px) {
-  .two-col, .small-col_large-col, .large-col_small-col {
+  .two-col,
+  .small-col_large-col,
+  .large-col_small-col {
     display: grid;
     grid-template-columns: 1fr !important;
   }

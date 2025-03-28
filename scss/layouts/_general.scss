@@ -1,81 +1,89 @@
-@use '../base/index'as *;
+@use "../base/index" as *;
 
 //TWO COLUMN LAYOUT -  WRAPPING
 // .layout--twocol-section {
 //   display: grid;
 //   grid-template-columns: 3fr 1fr !important;
 //   gap: 5rem;
-// } //temporary fix 
+// } //temporary fix
 
 .layout--twocol-section {
-  display: grid;
-  grid-template-columns: 3fr 1fr !important;
-  gap: 3rem;
-} 
+	display: grid;
+	grid-template-columns: 3fr 1fr !important;
+	gap: 5rem;
+} //temporary fix
+
+.layout--twocol-section--75-25 {
+	display: grid;
+	grid-template-columns: 3fr 1fr !important;
+	gap: 2rem;
+} //temporary fix
 
 @media screen and (max-width: #{$tablet-max}) {
-  .layout--twocol-section {
-    grid-template-columns: 1fr !important;
-    gap: 1rem;
-  }
+	.layout--twocol-section {
+		grid-template-columns: 1fr !important;
+		gap: 1rem;
+	}
 }
 
 .layout__region .layout__region--first .uvalib-col--first {
-  max-width: 100vw;
+	max-width: 100vw;
 }
 
 .uvalib-col--second {
-  min-width: 10rem;
+	min-width: 10rem;
 }
 
 // removing bullets from sub-nav lists
 .field--name-field-subnav {
-  ul li {
-    list-style: none;
-  }
+	ul li {
+		list-style: none;
+	}
 }
 
 .two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr !important;
+	gap: 1rem;
 }
 
 .small-col_large-col {
-  display: grid;
-  grid-template-columns: 1fr 2fr !important;
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 2fr !important;
+	gap: 1rem;
 }
 
 .large-col_small-col {
-  display: grid;
-  grid-template-columns: 2fr 1fr !important;
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: 2fr 1fr !important;
+	gap: 1rem;
 }
 
 @media screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
-  /* Styles for tablet screens go here */
-  .not-mobile {
-    display: inherit;
-  }
+	/* Styles for tablet screens go here */
+	.not-mobile {
+		display: inherit;
+	}
 
-  .mobile-only {
-    display: none;
-  }
+	.mobile-only {
+		display: none;
+	}
 }
 
 @media screen and (max-width: #{$mobile}) {
-  .two-col, .small-col_large-col, .large-col_small-col {
-    display: grid;
-    grid-template-columns: 1fr !important;
-  }
+	.two-col,
+	.small-col_large-col,
+	.large-col_small-col {
+		display: grid;
+		grid-template-columns: 1fr !important;
+	}
 
-  /* Styles for mobile screens go here */
-  .not-mobile {
-    display: none;
-  }
+	/* Styles for mobile screens go here */
+	.not-mobile {
+		display: none;
+	}
 
-  .mobile-only {
-    display: inherit;
-  }
+	.mobile-only {
+		display: inherit;
+	}
 }
