@@ -4,12 +4,19 @@
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
+  gap: 5rem;
+} //temporary fix 
+
+.layout--twocol-section--75-25 {
+  display: grid;
+  grid-template-columns: 3fr 1fr !important;
   gap: 2rem;
-}
+} //temporary fix 
 
 @media screen and (max-width: #{$tablet-max}) {
   .layout--twocol-section {
     grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
 }
 
