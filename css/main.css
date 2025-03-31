@@ -5966,6 +5966,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-articles code {
   font-family: monospace !important;
+  padding-bottom: 1rem;
 }
 .rds-articles p > code {
   background-color: #F1F1F1;
