@@ -1,11 +1,14 @@
 @use '../../mixins/index'as *;
 @use '../../base/index'as *;
 
-img {
-  margin: 1rem 0;
+.shannon-tour {
+  img {
+    margin: 1rem 0;
+  }
 }
 
 .extra-credit {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
