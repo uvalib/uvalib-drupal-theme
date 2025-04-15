@@ -2945,6 +2945,12 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   gap: 2rem;
 }
 
+.layout--twocol-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr !important;
+  gap: 3rem;
+}
+
 @media screen and (max-width: 992px) {
   .layout--twocol-section {
     grid-template-columns: 1fr !important;
