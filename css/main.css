@@ -16,6 +16,7 @@ h4,
 .staff-directory .staff-directory-row .staff-directory-name,
 .about-uva-library .fact-grid .fact-card--details dd,
 footer .footer--main .block h2,
+.site-sidebar--subnav-collaspsable h2,
 p,
 .about-uva-library .fact-grid .fact-card--details dt,
 figure,
@@ -112,7 +113,7 @@ h3, .event-container .event-url .event-date .event--day,
   line-height: 1.15;
 }
 
-h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2,
+h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .site-sidebar--subnav-collaspsable h2,
 .h4,
 .sustainable-scholarship .sustainable-links a,
 .staff-bio .block > h2,
@@ -1068,7 +1069,7 @@ h3,
   margin-bottom: 1rem;
 }
 
-h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
+h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .site-sidebar--subnav-collaspsable h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
 .staff-bio .field__label, .news-page .views-row h2,
 .view-news-full-feed-of-blog-articlces .views-row h2,
 h5,
@@ -1305,6 +1306,7 @@ h4 a,
 .staff-directory .staff-directory-row .staff-directory-name a,
 .about-uva-library .fact-grid .fact-card--details dd a,
 footer .footer--main .block h2 a,
+.site-sidebar--subnav-collaspsable h2 a,
 h1 span a,
 h2 span a,
 h3 span a,
@@ -2305,7 +2307,7 @@ figure figcaption {
     display: none !important;
   }
 }
-.site-sidebar--subnav h4:first-of-type {
+.site-sidebar--subnav h4:first-of-type, .site-sidebar--subnav .site-sidebar--subnav-collaspsable h2:first-of-type, .site-sidebar--subnav-collaspsable .site-sidebar--subnav h2:first-of-type {
   margin-top: 0;
 }
 .site-sidebar--subnav nav ul {
@@ -2331,9 +2333,15 @@ figure figcaption {
   padding-bottom: 0;
 }
 
+.site-sidebar--subnav-collaspsable {
+  margin: 0 0 0 1rem;
+}
+.site-sidebar--subnav-collaspsable h2 {
+  margin: 0 0 0.5rem 0rem;
+}
 .site-sidebar--subnav-collaspsable h3 {
   position: relative;
-  margin: 1.5rem 0.5rem;
+  margin: 1.5rem 0rem;
 }
 .site-sidebar--subnav-collaspsable h3::after {
   content: "+";
@@ -2928,13 +2936,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 5rem;
-}
-
-.layout--twocol-section--75-25 {
-  display: grid;
-  grid-template-columns: 3fr 1fr !important;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -6150,7 +6152,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 
 .shannon-tour img {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .extra-credit {
