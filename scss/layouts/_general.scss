@@ -1,17 +1,17 @@
 @use '../base/index'as *;
 
 //TWO COLUMN LAYOUT -  WRAPPING
+// .layout--twocol-section {
+//   display: grid;
+//   grid-template-columns: 3fr 1fr !important;
+//   gap: 5rem;
+// } //temporary fix 
+
 .layout--twocol-section {
   display: grid;
   grid-template-columns: 3fr 1fr !important;
-  gap: 5rem;
-} //temporary fix 
-
-.layout--twocol-section--75-25 {
-  display: grid;
-  grid-template-columns: 3fr 1fr !important;
-  gap: 2rem;
-} //temporary fix 
+  gap: 3rem;
+} 
 
 @media screen and (max-width: #{$tablet-max}) {
   .layout--twocol-section {

@@ -112,10 +112,17 @@
 // }
 
 .site-sidebar--subnav-collaspsable {
+  margin: 0 0 0 1rem;
+
+  h2 {
+    margin: 0 0 0.5rem 0rem;
+    @extend h4;
+  }
+
   h3 {
     position: relative;
     @extend h5;
-    margin: 1.5rem 0.5rem;
+    margin: 1.5rem 0rem;
 
     &::after {
       content: '+';
@@ -167,6 +174,7 @@
     .ul-0 {
       list-style-type: none;
       padding: 0rem;
+      // background-color: lightgrey;
 
       .li-0 {
         @extend h5;
