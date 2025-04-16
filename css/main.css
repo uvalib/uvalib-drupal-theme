@@ -4260,44 +4260,51 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   margin-top: 3rem;
 }
 .uvalibrary-spaces .rerserve-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100% auto;
-  align-content: flex-start;
-  align-items: flex-start;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  margin-bottom: 2rem;
 }
 .uvalibrary-spaces .rerserve-container .reserve-location {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  width: 330px;
+  border: 1px solid #DADADA;
+}
+.uvalibrary-spaces .rerserve-container .reserve-location:hover, .uvalibrary-spaces .rerserve-container .reserve-location:active {
+  box-shadow: 0 0 10px 0 #DADADA;
+  transition: 0.25s ease-in-out;
+  z-index: 2;
 }
 .uvalibrary-spaces .rerserve-container .reserve-location h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin: 2rem 1rem 1rem 1rem;
+}
+.uvalibrary-spaces .rerserve-container .reserve-location p {
+  margin-left: 1rem;
 }
 .uvalibrary-spaces .rerserve-container .reserve-location img {
-  height: 186px;
   width: 100%;
+  height: 200px;
   object-fit: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
   .uvalibrary-spaces .rerserve-container {
     display: block;
+    margin-top: 1rem;
+  }
+  .uvalibrary-spaces .rerserve-container .reserve-location {
+    width: 90%;
+    margin-bottom: 2rem;
+    border: 1px solid #DADADA;
+    display: block;
+    min-height: 150px;
   }
   .uvalibrary-spaces .rerserve-container h3 {
     margin: 0;
   }
-  .uvalibrary-spaces .rerserve-container img {
-    margin: 2rem 0;
-    height: auto;
-  }
   .uvalibrary-spaces .rerserve-container .reserve-location {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 }
