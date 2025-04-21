@@ -11,7 +11,6 @@ h2,
 h3,
 .event-container .event-url .event-date .event--day,
 h4,
-.rds-articles h2,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2,
 .staff-directory .staff-directory-row .staff-directory-name,
 .about-uva-library .fact-grid .fact-card--details dd,
@@ -112,7 +111,7 @@ h3, .event-container .event-url .event-date .event--day,
   line-height: 1.15;
 }
 
-h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2,
+h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2,
 .h4,
 .sustainable-scholarship .sustainable-links a,
 .staff-bio .block > h2,
@@ -125,11 +124,9 @@ h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-se
   line-height: 1.15;
 }
 
-h5, .rds-section .rds-recent--articles ul li a, .rds-articles h3, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .site-sidebar--subnav nav ul li, .site-sidebar--subnav-collaspsable nav ul li,
+h5, .rds-section .rds-recent--articles ul li a, .about-uva-library .visit-grid .visit-container .hover-block p, .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt, .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt, .event-container .event-url .event-date .event--month, .event-container .event-url .event-date .event--wkday, .site-sidebar--subnav nav ul li, .site-sidebar--subnav-collaspsable nav ul li,
 .h5,
 .rds-section .neighborhood-teaser .n-t-contents h4,
-.rds-section .neighborhood-teaser .n-t-contents .rds-articles h2,
-.rds-articles .rds-section .neighborhood-teaser .n-t-contents h2,
 .library-hours .three-col .hover-block h3,
 .how-do-i-main .view-content .item-list ul li a,
 .how-do-i-detail .view-content h2,
@@ -1068,19 +1065,18 @@ h3,
   margin-bottom: 1rem;
 }
 
-h4, .rds-articles h2, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
+h4, .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2, .staff-directory .staff-directory-row .staff-directory-name, .about-uva-library .fact-grid .fact-card--details dd, footer .footer--main .block h2, .h4, .sustainable-scholarship .sustainable-links a, .staff-bio .block > h2,
 .staff-bio .field__label, .news-page .views-row h2,
 .view-news-full-feed-of-blog-articlces .views-row h2,
 h5,
 .rds-section .rds-recent--articles ul li a,
-.rds-articles h3,
 .about-uva-library .visit-grid .visit-container .hover-block p,
 .about-uva-library .visit-grid .visit-container .hover-block .fact-grid .fact-card--details dt,
 .about-uva-library .fact-grid .fact-card--details .visit-grid .visit-container .hover-block dt,
 .event-container .event-url .event-date .event--month,
 .event-container .event-url .event-date .event--wkday,
 .site-sidebar--subnav nav ul li,
-.site-sidebar--subnav-collaspsable nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .rds-section .neighborhood-teaser .n-t-contents .rds-articles h2, .rds-articles .rds-section .neighborhood-teaser .n-t-contents h2, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
+.site-sidebar--subnav-collaspsable nav ul li, .h5, .rds-section .neighborhood-teaser .n-t-contents h4, .library-hours .three-col .hover-block h3, .how-do-i-main .view-content .item-list ul li a, .how-do-i-detail .view-content h2, .staff-bio .field--name-field-uva-ldap-title .field__item:last-child, .uvalib-bento-search .bs-results-container .bs-results--block .bs-results--header h3, .exhibitions .permanent .view-content .views-row .views-field-title, .exhibitions .view-exhibitions-past .view-content .views-row .views-field-title, .uvalibrary-spaces .rerserve-container .reserve-location h3, .rp-using .neighborhood-teaser .n-t-frame .n-t-contents h4, .home-page .home-hours-block .hour-head, .jumpmenu ul li {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -1304,7 +1300,6 @@ h2 a,
 h3 a,
 .event-container .event-url .event-date .event--day a,
 h4 a,
-.rds-articles h2 a,
 .library-hours .uva-library--hours .weekly-hours-header-section .heading-h2 a,
 .staff-directory .staff-directory-row .staff-directory-name a,
 .about-uva-library .fact-grid .fact-card--details dd a,
@@ -5917,6 +5912,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-section .neighborhood-teaser .n-t-img img {
   flex-shrink: 0;
   min-width: 100%;
+  margin: 0;
 }
 .rds-section .neighborhood-teaser .n-t-contents {
   display: grid;
@@ -5964,56 +5960,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-section .tex2jax_process {
   max-width: 90vw;
-}
-
-.rds-articles h2 {
-  margin-bottom: 0.5rem;
-}
-.rds-articles code {
-  font-family: monospace !important;
-  padding-bottom: 1rem;
-}
-.rds-articles p > code {
-  background-color: #F1F1F1;
-}
-.rds-articles .rds-article--code,
-.rds-articles .rds-article--output {
-  font-size: 0.8rem;
-  width: 100%;
-  max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
-  overflow: hidden;
-}
-.rds-articles .rds-article--code pre,
-.rds-articles .rds-article--code code,
-.rds-articles .rds-article--output pre,
-.rds-articles .rds-article--output code {
-  margin: 0;
-}
-.rds-articles .rds-article--code pre,
-.rds-articles .rds-article--output pre {
-  overflow-x: auto;
-  white-space: pre;
-  margin-bottom: 0.5rem;
-}
-.rds-articles .rds-article--code code,
-.rds-articles .rds-article--output code {
-  display: block;
-  white-space: pre;
-  overflow-wrap: normal;
-  word-wrap: normal;
-  padding-left: 1rem;
-}
-.rds-articles .rds-article--code pre {
-  background-color: #F1F1F1;
-}
-.rds-articles .rds-article--code code {
-  background-color: #F1F1F1;
-}
-.rds-articles .rds-article--output pre {
-  background-color: white;
-}
-.rds-articles .rds-article--output code {
-  background-color: white;
 }
 
 .oerpage p {

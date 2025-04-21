@@ -41,6 +41,7 @@
 			img {
 				flex-shrink: 0;
 				min-width: 100%;
+				margin: 0;
 			}
 		}
 
@@ -107,67 +108,8 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+
 	.tex2jax_process {
 		max-width: 90vw;
-	}
-}
-
-.rds-articles {
-	h2 {
-		@extend h4;
-		margin-bottom: 0.5rem;
-	}
-	h3 {
-		@extend h5;
-	}
-
-	code {
-		font-family: monospace !important;
-		padding-bottom: 1rem;
-	}
-	p > code {
-		background-color: $uva-grey-200;
-	}
-
-	.rds-article--code,
-	.rds-article--output {
-		font-size: 0.8rem;
-		width: 100%;
-		max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
-		overflow: hidden;
-		// margin-top: -1rem;
-		pre,
-		code {
-			margin: 0;
-		}
-		pre {
-			overflow-x: auto;
-			white-space: pre;
-			margin-bottom: 0.5rem;
-		}
-		code {
-			display: block;
-			white-space: pre;
-			overflow-wrap: normal;
-			word-wrap: normal;
-			padding-left: 1rem;
-			// padding-bottom: 1rem;
-		}
-	}
-	.rds-article--code {
-		pre {
-			background-color: $uva-grey-200;
-		}
-		code {
-			background-color: $uva-grey-200;
-		}
-	}
-	.rds-article--output {
-		pre {
-			background-color: white;
-		}
-		code {
-			background-color: white;
-		}
 	}
 }
