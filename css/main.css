@@ -1280,18 +1280,23 @@ dl.dl--inline dt {
   text-indent: 0;
 }
 
-a, span a {
+a,
+span a {
   color: #005679;
   text-decoration: underline;
 }
-a:hover, a:active, a:focus, a:focus-visible, span a:hover, span a:active, span a:focus, span a:focus-visible {
+a:hover, a:active, a:focus, a:focus-visible,
+span a:hover,
+span a:active,
+span a:focus,
+span a:focus-visible {
   text-decoration: none;
 }
-a:focus-visible, span a:focus-visible {
-  outline: -webkit-focus-ring-color auto 1px;
-}
-a:-webkit-any-link:focus-visible, span a:-webkit-any-link:focus-visible {
-  outline-offset: 2px;
+a:focus-visible,
+span a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px #005fcc, 0 0 0 7px #ffffff;
+  border-radius: 2px;
 }
 
 h1 a,
@@ -5978,7 +5983,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
   overflow: hidden;
 }
-.rds-articles .rds-article--code pre, .rds-articles .rds-article--code code,
+.rds-articles .rds-article--code pre,
+.rds-articles .rds-article--code code,
 .rds-articles .rds-article--output pre,
 .rds-articles .rds-article--output code {
   margin: 0;
