@@ -1,204 +1,164 @@
-@use '../base/index'as *;
+@use "../base/index" as *;
 
+///
+///
+/// Default Sidebar SubNav
+///
+///
 .site-sidebar--subnav {
-  h4:first-of-type { //title
-    margin-top: 0;
-  }
+	h4:first-of-type {
+		//title
+		margin-top: 0;
+	}
 
-  nav {
-    ul {
-      padding-left: 0;
-      list-style-type: none;
+	nav {
+		ul {
+			padding-left: 0;
+			list-style-type: none;
 
-      li { 
-        @extend h5;
-        
-        ul {
-          padding: 1rem 0;
-          margin: 0;
-          li {
-            font-size: 1rem !important;
-            font-weight: normal;
-            padding: 0.5rem 1rem;
-            border-left: 2px solid #{$uva-brand-orange};
-            outline: inherit;
-            margin: 0 !important;
-            &:first-child {
-              padding-top: 0;
-            }
-            &:last-child {
-              padding-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-  }
+			li {
+				@extend h5;
+
+				ul {
+					padding: 1rem 0;
+					margin: 0;
+					li {
+						font-size: 1rem !important;
+						font-weight: normal;
+						padding: 0.5rem 1rem;
+						border-left: 2px solid #{$uva-brand-orange};
+						outline: inherit;
+						margin: 0 !important;
+						&:first-child {
+							padding-top: 0;
+						}
+						&:last-child {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-// .site-sidebar--subnav-collaspsable {
-//   h3 {
-//     position: relative;
-//     padding-right: 25px;
-
-//     &::after {
-//       content: '+';
-//       position: absolute;
-//       right: 5px;
-//       top: 25%;
-//       font-size: 20px;
-//       // font-weight: bold;
-//       transition: transform 0.2s ease-in-out;
-//       cursor: pointer;
-//     }
-
-//     &.open::after {
-//       content: "";
-//       border-bottom: 1px solid $uva-brand-blue;
-//       border-right: 1px solid $uva-brand-blue;
-//       height: 0.5em;
-//       margin-left: 0.75em;
-//       width: 0.5em;
-//       transform: rotate(135deg) scaleX(-1);
-//       transition: transform 0.3s ease-in-out;
-//     }
-
-//     &.closed::after {
-//       content: "";
-//       border-bottom: 1px solid $uva-brand-blue;
-//       border-right: 1px solid $uva-brand-blue;
-//       height: 0.5em;
-//       margin-left: 0.75em;
-//       width: 0.5em;
-//       transform: rotate(45deg) scaleX(1);
-//       transition: transform 0.3s ease-in-out;
-//     }
-//   }
-
-//   h3.open, h3.closed {
-//     &::after {
-//       transition: transform 0.3s ease-in-out;
-//     }
-//   }
-//     nav {
-//     ul {
-//       padding-left: 0;
-//       list-style-type: none;
-
-//       li { 
-//         @extend h5;
-        
-//         ul {
-//           padding: 1rem 0;
-//           margin: 0;
-//           li {
-//             font-size: 1rem !important;
-//             font-weight: normal;
-//             padding: 0.5rem 1rem;
-//             border-left: 2px solid #{$uva-brand-orange};
-//             outline: inherit;
-//             margin: 0 !important;
-//             &:first-child {
-//               padding-top: 0;
-//             }
-//             &:last-child {
-//               padding-bottom: 0;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+///
+///
+/// Collapsible (incorrectly spelled as "collaspsable") Sidebar SubNav
+///
+///
 
 .site-sidebar--subnav-collaspsable {
-  margin: 0 0 0 1rem;
+	margin: 0 0 0 1rem;
 
-  h2 {
-    margin: 0 0 0.5rem 0rem;
-    @extend h4;
-  }
+	h2 {
+		margin: 0 0 0.5rem 0rem;
+		@extend h4;
+	}
 
-  h3 {
-    position: relative;
-    @extend h5;
-    margin: 1.5rem 0rem;
+	// h3 {
+	// 	position: relative;
+	// 	@extend h5;
+	// 	margin: 1.5rem 0rem;
 
-    &::after {
-      content: '+';
-      position: absolute;
-      right: 5px;
-      top: 25%;
-      font-size: 20px;
-      transition: transform 0.2s ease-in-out;
-      cursor: pointer;
-    }
+	// 	&::after {
+	// 		content: "+";
+	// 		position: absolute;
+	// 		right: 5px;
+	// 		top: 25%;
+	// 		font-size: 20px;
+	// 		transition: transform 0.2s ease-in-out;
+	// 		cursor: pointer;
+	// 	}
 
-    &.open::after {
-      content: "";
-      border-bottom: 1px solid $uva-brand-blue;
-      border-right: 1px solid $uva-brand-blue;
-      height: 0.5em;
-      margin-left: 0.75em;
-      width: 0.5em;
-      transform: rotate(135deg) scaleX(-1);
-      transition: transform 0.3s ease-in-out;
-    }
+	// 	&.open::after {
+	// 		content: "";
+	// 		border-bottom: 1px solid $uva-brand-blue;
+	// 		border-right: 1px solid $uva-brand-blue;
+	// 		height: 0.5em;
+	// 		margin-left: 0.75em;
+	// 		width: 0.5em;
+	// 		transform: rotate(135deg) scaleX(-1);
+	// 		transition: transform 0.3s ease-in-out;
+	// 	}
 
-    &.closed::after {
-      content: "";
-      border-bottom: 1px solid $uva-brand-blue;
-      border-right: 1px solid $uva-brand-blue;
-      height: 0.5em;
-      margin-left: 0.75em;
-      width: 0.5em;
-      transform: rotate(45deg) scaleX(1);
-      transition: transform 0.3s ease-in-out;
-    }
-  }
+	// 	&.closed::after {
+	// 		content: "";
+	// 		border-bottom: 1px solid $uva-brand-blue;
+	// 		border-right: 1px solid $uva-brand-blue;
+	// 		height: 0.5em;
+	// 		margin-left: 0.75em;
+	// 		width: 0.5em;
+	// 		transform: rotate(45deg) scaleX(1);
+	// 		transition: transform 0.3s ease-in-out;
+	// 	}
+	// }
 
-  h3.open {
-    // margin: 1rem 0;
-    &::after {
-      transition: transform 0.3s ease-in-out;
-    }
-  }
-  
-  h3.closed {
-    &::after {
-      transition: transform 0.3s ease-in-out;
-    }
-  }
+	// h3.open {
+	// 	&::after {
+	// 		transition: transform 0.3s ease-in-out;
+	// 	}
+	// }
 
-  nav {
-    .ul-0 {
-      list-style-type: none;
-      padding: 0rem;
-      // background-color: lightgrey;
+	// h3.closed {
+	// 	&::after {
+	// 		transition: transform 0.3s ease-in-out;
+	// 	}
+	// }
+	h3 {
+		position: relative;
+		@extend h5;
+		margin: 1.5rem 0rem;
+		cursor: pointer;
 
-      .li-0 {
-        @extend h5;
+		span.arrow {
+			position: absolute;
+			right: 5px;
+			top: 35%;
+			width: 0.5em;
+			height: 0.5em;
+			border-bottom: 1px solid $uva-brand-blue;
+			border-right: 1px solid $uva-brand-blue;
+			transform: rotate(45deg);
+			transition: transform 0.3s ease-in-out;
+			display: inline-block;
+		}
 
-        .ul-1 {
-          padding: 0;
-          margin: 0;
-          .li-1 {
-            font-size: 1rem !important;
-            font-weight: normal;
-            padding: 0.725rem 1rem;
-            // border-left: 0.25rem solid $uva-blue-alt-200;alternative color
-            border-left: 0.25rem solid $uva-brand-orange;
-            margin: 0 0 0 0.5rem !important;
-            &:first-child {
-              padding-top: 0;
-            }
-            &:last-child {
-              padding-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-  }
+		&.open span.arrow {
+			transform: rotate(135deg) scaleX(-1);
+		}
+
+		&.closed span.arrow {
+			transform: rotate(45deg) scaleX(1);
+		}
+	}
+
+	nav {
+		.ul-0 {
+			list-style-type: none;
+			padding: 0rem;
+
+			.li-0 {
+				@extend h5;
+
+				.ul-1 {
+					padding: 0;
+					margin: 0;
+					.li-1 {
+						font-size: 1rem !important;
+						font-weight: normal;
+						padding: 0.725rem 1rem;
+						border-left: 0.25rem solid $uva-brand-orange;
+						margin: 0 0 0 0.5rem !important;
+						&:first-child {
+							padding-top: 0;
+						}
+						&:last-child {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
-
