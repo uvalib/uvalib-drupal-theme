@@ -2342,41 +2342,25 @@ figure figcaption {
 .site-sidebar--subnav-collaspsable h3 {
   position: relative;
   margin: 1.5rem 0rem;
-}
-.site-sidebar--subnav-collaspsable h3::after {
-  content: "+";
-  position: absolute;
-  right: 5px;
-  top: 25%;
-  font-size: 20px;
-  transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
-.site-sidebar--subnav-collaspsable h3.open::after {
-  content: "";
+.site-sidebar--subnav-collaspsable h3 span.arrow {
+  position: absolute;
+  right: 5px;
+  top: 35%;
+  width: 0.5em;
+  height: 0.5em;
   border-bottom: 1px solid #232D4B;
   border-right: 1px solid #232D4B;
-  height: 0.5em;
-  margin-left: 0.75em;
-  width: 0.5em;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+.site-sidebar--subnav-collaspsable h3.open span.arrow {
   transform: rotate(135deg) scaleX(-1);
-  transition: transform 0.3s ease-in-out;
 }
-.site-sidebar--subnav-collaspsable h3.closed::after {
-  content: "";
-  border-bottom: 1px solid #232D4B;
-  border-right: 1px solid #232D4B;
-  height: 0.5em;
-  margin-left: 0.75em;
-  width: 0.5em;
+.site-sidebar--subnav-collaspsable h3.closed span.arrow {
   transform: rotate(45deg) scaleX(1);
-  transition: transform 0.3s ease-in-out;
-}
-.site-sidebar--subnav-collaspsable h3.open::after {
-  transition: transform 0.3s ease-in-out;
-}
-.site-sidebar--subnav-collaspsable h3.closed::after {
-  transition: transform 0.3s ease-in-out;
 }
 .site-sidebar--subnav-collaspsable nav .ul-0 {
   list-style-type: none;
