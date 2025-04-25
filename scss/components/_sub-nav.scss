@@ -105,30 +105,38 @@
 	// 		transition: transform 0.3s ease-in-out;
 	// 	}
 	// }
-	h3 {
-		position: relative;
-		@extend h5;
-		margin: 1.5rem 0rem;
-		cursor: pointer;
+	.site-sidebar--subnav-collaspsable {
+		// Style for the main heading
+		h3 {
+			position: relative;
+			@extend h5;
+			margin: 1.5rem 0rem;
+			cursor: pointer;
+		}
+		div {
+			position: relative;
 
-		span.arrow {
-			position: absolute;
-			right: 5px;
-			top: 35%;
-			width: 0.5em;
-			height: 0.5em;
-			border-bottom: 1px solid $uva-brand-blue;
-			border-right: 1px solid $uva-brand-blue;
-			transform: rotate(45deg);
-			transition: transform 0.3s ease-in-out;
-			display: inline-block;
+			// Style for the arrow
+			.arrow {
+				position: absolute;
+				right: 5px;
+				top: 35%;
+				width: 0.5em;
+				height: 0.5em;
+				border-bottom: 1px solid $uva-brand-blue;
+				border-right: 1px solid $uva-brand-blue;
+				transform: rotate(45deg);
+				transition: transform 0.3s ease-in-out;
+				display: inline-block;
+			}
 		}
 
-		&.open span.arrow {
+		// Adjust arrow based on parent state
+		.open .arrow {
 			transform: rotate(135deg) scaleX(-1);
 		}
 
-		&.closed span.arrow {
+		.closed .arrow {
 			transform: rotate(45deg) scaleX(1);
 		}
 	}
