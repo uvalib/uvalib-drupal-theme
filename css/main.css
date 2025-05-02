@@ -5992,6 +5992,7 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-articles p > code {
   background-color: #F1F1F1;
+  padding-bottom: initial;
 }
 .rds-articles .rds-article--code,
 .rds-articles .rds-article--output {
@@ -6000,7 +6001,8 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   max-width: 90vw; /* Ensures it doesn't exceed the parent's width */
   overflow: hidden;
 }
-.rds-articles .rds-article--code pre, .rds-articles .rds-article--code code,
+.rds-articles .rds-article--code pre,
+.rds-articles .rds-article--code code,
 .rds-articles .rds-article--output pre,
 .rds-articles .rds-article--output code {
   margin: 0;
