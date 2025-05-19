@@ -6016,10 +6016,9 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-articles .rds-article--code code,
 .rds-articles .rds-article--output code {
   display: block;
-  white-space: pre;
   overflow-wrap: normal;
   word-wrap: normal;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 .rds-articles .rds-article--code pre {
   background-color: #F1F1F1;
