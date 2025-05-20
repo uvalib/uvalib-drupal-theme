@@ -127,10 +127,6 @@
 		// padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
-	p > code {
-		background-color: $uva-grey-200;
-		padding-bottom: initial;
-	}
 
 	.rds-article--code,
 	.rds-article--output {
@@ -150,11 +146,11 @@
 		}
 		code {
 			display: block;
-			// white-space: pre;
+			white-space: pre;
 			overflow-wrap: normal;
 			word-wrap: normal;
 			//padding-left: 1rem;
-			padding: 1rem;
+			padding: 0 1rem 1rem 1rem;
 		}
 	}
 	.rds-article--code {
@@ -172,5 +168,10 @@
 		code {
 			background-color: white;
 		}
+	}
+	p > code {
+		background-color: $uva-grey-200;
+		padding-bottom: initial;
+		font-size: 0.9rem;
 	}
 }

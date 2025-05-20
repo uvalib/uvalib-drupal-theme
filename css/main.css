@@ -5990,10 +5990,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   font-family: monospace !important;
   padding-bottom: 1rem;
 }
-.rds-articles p > code {
-  background-color: #F1F1F1;
-  padding-bottom: initial;
-}
 .rds-articles .rds-article--code,
 .rds-articles .rds-article--output {
   font-size: 0.8rem;
@@ -6016,9 +6012,10 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 .rds-articles .rds-article--code code,
 .rds-articles .rds-article--output code {
   display: block;
+  white-space: pre;
   overflow-wrap: normal;
   word-wrap: normal;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .rds-articles .rds-article--code pre {
   background-color: #F1F1F1;
@@ -6031,6 +6028,11 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rds-articles .rds-article--output code {
   background-color: white;
+}
+.rds-articles p > code {
+  background-color: #F1F1F1;
+  padding-bottom: initial;
+  font-size: 0.9rem;
 }
 
 .oerpage p {
