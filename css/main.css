@@ -1282,6 +1282,32 @@ dl.dl--inline dt {
   text-indent: 0;
 }
 
+dt {
+  font-weight: 700;
+}
+
+.dl--stacked dd {
+  margin-inline-start: inherit;
+  margin-bottom: 0.25rem;
+}
+
+dl.dl--inline {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dl--inline dt {
+  flex-basis: 20%;
+  padding: 2px 4px;
+  text-align: right;
+}
+.dl--inline dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 2px 4px;
+}
+
 a, span a {
   color: #005679;
   text-decoration: underline;
