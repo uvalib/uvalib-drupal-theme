@@ -1,8 +1,10 @@
+@use "typography" as *;
+
 dl {
 	&.dl--inline {
 		dt {
-			// font-weight: map-get($font-weights, demi);
-			font-weight: 700;
+			font-weight: map-get($font-weights, demi);
+			// font-weight: 700;
 		}
 
 		display: grid;
@@ -22,7 +24,8 @@ dl {
 }
 
 dt {
-	font-weight: 700;
+	font-weight: map-get($font-weights, demi);
+	// font-weight: 700;
 }
 
 .dl--stacked {
