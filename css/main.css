@@ -2507,6 +2507,10 @@ div[data-drupal-messages] .messages {
   display: inline-block;
 }
 
+#drupal-off-canvas .blb_breakpoint_col {
+  height: inherit;
+}
+
 #header {
   background-color: #ffffff !important;
   padding: 0.5rem 0;
