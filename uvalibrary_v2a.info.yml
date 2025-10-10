@@ -21,26 +21,26 @@ libraries:
 #     - uvalibrary_v2/file
 #   core/drupal.progress:
 #     - uvalibrary_v2/progress
-# STYLESHEETS-REMOVE HAS BEEN DEPRECATED.  Moved all these removals to libraries-override (below). 
+# STYLESHEETS-REMOVE HAS BEEN DEPRECATED.  Moved all these removals to libraries-override (below).
 # stylesheets-remove:
-  #  - themes/contrib/d8w3css/css/base/base.css
-  #  - themes/contrib/d8w3css/css/theme/border-animation.css
-  # - themes/contrib/d8w3css/css/theme/sitename-animation.css
-  # - themes/contrib/d8w3css/css/w3-css/w3.css
-  # - themes/contrib/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
-  # - themes/contrib/d8w3css/css/components/default-node.css
-  # - themes/contrib/d8w3css/css/components/page-title.css
-  # - themes/contrib/d8w3css/css/theme/a-image.css
-  # - themes/contrib/d8w3css/fonts/css/d8w3css-open-sans.css
-  # - themes/d8w3css/css/base/base.css
-  #  - themes/d8w3css/css/theme/border-animation.css
-  # - themes/d8w3css/css/theme/sitename-animation.css
-  # - themes/d8w3css/css/w3-css/w3.css
-  # - themes/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
-  # - themes/d8w3css/css/components/default-node.css
-  # - themes/d8w3css/css/components/page-title.css
-  # - themes/d8w3css/css/theme/a-image.css
-  # - themes/d8w3css/fonts/css/d8w3css-open-sans.css
+#  - themes/contrib/d8w3css/css/base/base.css
+#  - themes/contrib/d8w3css/css/theme/border-animation.css
+# - themes/contrib/d8w3css/css/theme/sitename-animation.css
+# - themes/contrib/d8w3css/css/w3-css/w3.css
+# - themes/contrib/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
+# - themes/contrib/d8w3css/css/components/default-node.css
+# - themes/contrib/d8w3css/css/components/page-title.css
+# - themes/contrib/d8w3css/css/theme/a-image.css
+# - themes/contrib/d8w3css/fonts/css/d8w3css-open-sans.css
+# - themes/d8w3css/css/base/base.css
+#  - themes/d8w3css/css/theme/border-animation.css
+# - themes/d8w3css/css/theme/sitename-animation.css
+# - themes/d8w3css/css/w3-css/w3.css
+# - themes/d8w3css/css/w3-css-theme-custom/w3-theme-00000.css
+# - themes/d8w3css/css/components/default-node.css
+# - themes/d8w3css/css/components/page-title.css
+# - themes/d8w3css/css/theme/a-image.css
+# - themes/d8w3css/fonts/css/d8w3css-open-sans.css
 
 libraries-override:
   drupal8_w3css_theme/d8w3css-global-styling:
@@ -50,6 +50,7 @@ libraries-override:
       component:
         css/components/page-title.css: false
         css/components/default-node.css: false
+        css/components/layout-builder.css: false
       theme:
         css/theme/a-image.css: false
         css/theme/border-animation.css: false
@@ -61,7 +62,6 @@ libraries-override:
   drupal8_w3css_theme/w3-css-theme-00000: false
   d8w3css-gfex-open-sans: false
   d8w3css-gfin-open-sans: false
-  
 
 #Regions
 regions:
