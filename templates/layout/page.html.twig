@@ -124,7 +124,7 @@
 	{% set main_classes = ['w3-col', 'w3-clear', 'w3-theme-l5', color_main] %}
 	{% if node and node.bundle == '2025_annual_report' %}
 		{% if node.field_ar_category.entity is not empty %}
-			{% set css_class = node.field_ar_category.entity.field_css_class.value %}
+			{% set css_class = node.field_ar_year.entity.field_css_class.value node.field_ar_page_type.entity.field_css_class.value node.field_ar_category.entity.field_css_class.value %}
 			{% set main_classes = main_classes|merge([css_class]) %}
 		{% endif %}
 	{% endif %}
