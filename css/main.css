@@ -1263,13 +1263,13 @@ ul + p, .about-uva-library .fact-grid .fact-card--details ul + dt {
   padding-right: 3rem !important;
 }
 
+dl.dl--inline dt {
+  font-weight: 700;
+}
 dl.dl--inline {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-}
-dl.dl--inline dt {
-  font-weight: 700;
 }
 
 .list--simple {
@@ -1993,6 +1993,9 @@ svg {
   left: -5px;
 }
 
+.toggleSwitch span span {
+  display: none;
+}
 .toggleSwitch {
   display: inline-block;
   position: relative;
@@ -2005,9 +2008,6 @@ svg {
   border-radius: 10px;
   height: 3rem;
 }
-.toggleSwitch span span {
-  display: none;
-}
 .toggleSwitch * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2016,7 +2016,6 @@ svg {
 .toggleSwitch label {
   line-height: 20px;
   height: 20px;
-  vertical-align: middle;
   position: relative;
   z-index: 3;
   display: block;
@@ -2082,16 +2081,16 @@ svg {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.toggleSwitch input {
-  position: absolute;
-  opacity: 0;
-  z-index: 5;
-}
 .toggleSwitch input:focus ~ a {
   outline: none;
 }
 .toggleSwitch input:focus + label {
   outline: none;
+}
+.toggleSwitch input {
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
 }
 .toggleSwitch input:checked ~ a {
   left: calc(50% - 3px);
@@ -3553,6 +3552,51 @@ footer .footer--post .post-footer .post-footer--copyright svg {
     margin-left: 0 !important;
   }
 }
+.login-heading {
+  font-weight: 700;
+}
+
+.login-primary-wrapper .login-primary.login-netbadge.uvalib-button.uvalib_link--button a {
+  color: #fff;
+}
+.login-primary-wrapper .login-primary.login-netbadge.uvalib-button.uvalib_link--button a:hover {
+  color: #fff;
+}
+
+.login-secondary-wrapper .login-secondary.login-local {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.login-secondary-wrapper .login-secondary.login-local .js-form-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0 1rem;
+}
+.login-secondary-wrapper .login-secondary.login-local .form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.login-secondary-wrapper .login-secondary.login-local .form-actions input[type=submit] {
+  background-color: #BFE7F7;
+  color: #4F4F4F;
+  box-shadow: inset 0 0 0 2px #007BAC;
+  border: 0;
+}
+.login-secondary-wrapper .login-secondary.login-local .form-actions input[type=submit]:hover {
+  background-color: #91D8F2;
+  box-shadow: inset 0 0 0 2px #007BAC;
+}
+.login-secondary-wrapper .login-secondary.login-local .form-actions input[type=submit]:active {
+  background-color: #55C4EC;
+  box-shadow: inset 0 0 0 2px #007BAC;
+}
+.login-secondary-wrapper .form-required::after {
+  display: none;
+}
+
 .mitford .shady {
   margin: 1rem -1000px 1rem -1000px;
   padding: 2rem 1000px 2rem 1000px;
@@ -3880,12 +3924,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   text-align: center;
   z-index: 100;
   width: 100%;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  transform: inherit;
-  text-align: inherit;
-  margin-bottom: 3rem;
 }
 .rp-using .virgo-search form {
   display: flex;
@@ -3921,6 +3959,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .rp-using .virgo-search form button:hover {
   background-color: #005679;
+}
+.rp-using .virgo-search {
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
 }
 .rp-using .virgo-search p {
   padding: 0.25rem 0.5rem;
@@ -4569,6 +4615,11 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .special-collections .sc-find {
   margin: 4rem 0;
+}
+.special-collections .sc-find h2 {
+  margin-bottom: 1.5rem;
+}
+.special-collections .sc-find {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -4576,14 +4627,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   text-align: center;
   z-index: 100;
   width: 100%;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  transform: inherit;
-  text-align: inherit;
-}
-.special-collections .sc-find h2 {
-  margin-bottom: 1.5rem;
 }
 .special-collections .sc-find form {
   display: flex;
@@ -4619,6 +4662,13 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .special-collections .sc-find form button:hover {
   background-color: #005679;
+}
+.special-collections .sc-find {
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
 }
 .special-collections .sc-finding-aids {
   margin-bottom: 2rem;
@@ -4773,12 +4823,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   text-align: center;
   z-index: 100;
   width: 100%;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  transform: inherit;
-  text-align: inherit;
-  margin-bottom: 3rem;
 }
 .libra .libra-search form {
   display: flex;
@@ -4814,6 +4858,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .libra .libra-search form button:hover {
   background-color: #005679;
+}
+.libra .libra-search {
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
 }
 .libra .libra-submit {
   display: grid;
@@ -4881,12 +4933,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   text-align: center;
   z-index: 100;
   width: 100%;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  transform: inherit;
-  text-align: inherit;
-  margin-bottom: 3rem;
 }
 .uvalib-bento-search .bento-search-bar form {
   display: flex;
@@ -4922,6 +4968,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .uvalib-bento-search .bento-search-bar form button:hover {
   background-color: #005679;
+}
+.uvalib-bento-search .bento-search-bar {
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
 }
 .uvalib-bento-search .bento-search-bar p {
   text-align: center;
@@ -5490,12 +5544,6 @@ footer .footer--post .post-footer .post-footer--copyright svg {
   text-align: center;
   z-index: 100;
   width: 100%;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  transform: inherit;
-  text-align: inherit;
-  margin-bottom: 3rem;
 }
 .staff-directory .staff-search-bar form {
   display: flex;
@@ -5531,6 +5579,14 @@ footer .footer--post .post-footer .post-footer--copyright svg {
 }
 .staff-directory .staff-search-bar form button:hover {
   background-color: #005679;
+}
+.staff-directory .staff-search-bar {
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  text-align: inherit;
+  margin-bottom: 3rem;
 }
 .staff-directory table thead tr {
   text-align: left;
