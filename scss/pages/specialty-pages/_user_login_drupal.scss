@@ -1,0 +1,63 @@
+@use "../../mixins/index" as *;
+@use "../../base/index" as *;
+
+.login-heading {
+	font-weight: map-get($font-weights, demi);
+}
+
+.login-primary-wrapper {
+	.login-primary.login-netbadge.uvalib-button.uvalib_link--button {
+		a {
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.login-secondary-wrapper {
+	.login-secondary.login-local {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		padding-top: 1rem;
+
+		.js-form-item {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			align-items: center;
+			gap: 0 1rem;
+		}
+
+		.form-actions {
+			display: flex;
+			justify-content: flex-end;
+
+			// Style the submit button to match .uvalib-button--subtle
+			input[type="submit"] {
+				background-color: $uva-blue-alt-300;
+				color: $uva-grey-A;
+				box-shadow: inset 0 0 0 2px $uva-blue-alt;
+
+				// Strip W3CSS overrides that may be fighting these styles
+				border: 0;
+
+				&:hover {
+					background-color: $uva-blue-alt-200;
+					box-shadow: inset 0 0 0 2px $uva-blue-alt;
+				}
+
+				&:active {
+					background-color: $uva-blue-alt-100;
+					box-shadow: inset 0 0 0 2px $uva-blue-alt;
+				}
+			}
+		}
+	}
+
+	.form-required::after {
+		display: none;
+	}
+}

@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Theme override for the user login form.
+ *
+ * Overrides form.html.twig specifically for the user login form (#user-login-form).
+ * Structured to allow NetBadge (SAML) login to be visually emphasized
+ * and local credential fields to be de-emphasized via CSS.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the <form> element.
+ * - element: The full render array for the form. Individual elements
+ *   can be referenced as element.KEY (e.g. element.name, element.pass).
+ *
+ * Form elements (all rendered here explicitly):
+ * - element.simplesamlphp_auth_login_link — NetBadge SSO link (from simplesamlphp_auth module)
+ * - element.name — Username/email text field
+ * - element.pass — Password field
+ * - element.actions — Submit button wrapper
+ */
+#}
+
+<form{{attributes}}>
+
+	{# ============================================================
+								     PRIMARY LOGIN — NetBadge SSO
+								     Emphasized visually; this is the expected login path for most users.
+								     ============================================================ #}
+	{% if element.simplesamlphp_auth_login_link %}
+		<fieldset class="login-primary-wrapper">
+			<legend class="login-heading">Please log in using your UVA Netbadge credentials.</legend>
+			<div class="login-primary login-netbadge uvalib-button uvalib_link--button">
+				{{ element.simplesamlphp_auth_login_link }}
+			</div>
+		</fieldset>
+	{% endif %}
+
+	{# ============================================================
+					SECONDARY LOGIN — Local credentials
+					De-emphasized; intended for accounts not covered by NetBadge.
+					============================================================ #}
+	<fieldset class="login-secondary-wrapper">
+		<legend class="login-heading">Alternate log in (if Netbadge is not available)</legend>
+		<div class="login-secondary login-local">
+			{{ element.name }}
+			{{ element.pass }}
+			{{ element.actions }}
+		</div>
+	</fieldset</form>
