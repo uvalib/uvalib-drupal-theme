@@ -48,8 +48,4 @@
 		</div>
 	</fieldset>
 
-	{# Render everything not output above: required hidden fields
-	   (form_build_id, form_id, form_token) and any elements added by other modules. #}
-	{{ element|without('simplesamlphp_auth_login_link', 'name', 'pass', 'actions') }}
-
 </form>
