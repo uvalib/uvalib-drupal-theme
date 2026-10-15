@@ -42,14 +42,11 @@
 	<fieldset class="login-secondary-wrapper">
 		<legend class="login-heading">Alternate log in (if Netbadge is not available)</legend>
 		<div class="login-secondary login-local">
-			{{ element.name }}
-			{{ element.pass }}
-			{{ element.actions }}
+		{# Render everything not output above: required hidden fields
+	   	(form_build_id, form_id, form_token) and any elements added by other modules. #}
+			{{ element|without('name', 'pass', 'actions') }}
 		</div>
 	</fieldset>
 
-	{# Render everything not output above: required hidden fields
-	   (form_build_id, form_id, form_token) and any elements added by other modules. #}
-	{{ element|without('simplesamlphp_auth_login_link', 'name', 'pass', 'actions') }}
 
 </form>
